@@ -5,7 +5,7 @@
 - [x] Create `PROJECT_CONTEXT.md` with locked scope, architecture, and rules
 - [x] Create `TASKS.md`, `EXPERIMENTS.md`, `README.md`, and `requirements.txt`
 - [x] Set up Python 3.11 virtual environment and install dependencies
-- [ ] Understand conceptual flow: **Input → CNN → BiLSTM → CTC → Output**
+- [x] Understand conceptual flow: **Input → CNN → BiLSTM → CTC → Output**
 
 ---
 
