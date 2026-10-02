@@ -58,6 +58,7 @@ def train_one_epoch(model: nn.Module, loader: DataLoader, optimizer, criterion, 
         log_probs = model(images)
         loss = criterion(log_probs, targets, input_lengths, target_lengths)
         loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
         optimizer.step()
 
         batch_size = images.shape[0]
@@ -117,7 +118,8 @@ def fit(
     device = device or get_device()
     model.to(device)
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate, weight_decay=1e-4)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", factor=0.5, patience=5)
     criterion = nn.CTCLoss(blank=0, zero_infinity=True)
 
     history: list[dict] = []
@@ -131,14 +133,16 @@ def fit(
     for epoch in range(1, config.max_epochs + 1):
         train_loss = train_one_epoch(model, train_loader, optimizer, criterion, device)
         val_metrics = evaluate(model, val_loader, tokenizer, criterion, device)
+        scheduler.step(val_metrics["cer"])
 
         history.append({
             "epoch": epoch,
             "train_loss": train_loss,
             **{f"val_{k}": v for k, v in val_metrics.items()},
         })
+        current_lr = optimizer.param_groups[0]["lr"]
         print(
-            f"epoch {epoch:3d} | train_loss={train_loss:.4f} | val_loss={val_metrics['loss']:.4f} "
+            f"epoch {epoch:3d} | lr={current_lr:.1e} | train_loss={train_loss:.4f} | val_loss={val_metrics['loss']:.4f} "
             f"| val_CER={val_metrics['cer']*100:.2f}% | val_WordAcc={val_metrics['word_accuracy']*100:.2f}%"
         )
 
