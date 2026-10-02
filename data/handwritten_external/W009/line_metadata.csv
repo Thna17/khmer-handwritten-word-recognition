@@ -1,0 +1,57 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes
+W009_P001_L001,lines_raw/W009_P001_L001.png,page_001.png,W009,138,16,1271,82,ប្រធាន: ទស្សនៈមួយបានយល់ថា ៖ “ អ្នកសាងអំពើអកុសលរមែង,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L002,lines_raw/W009_P001_L002.png,page_001.png,W009,261,78,1271,144,តែងតែជួបក្តីអន្តរាយក្នុងជីវិត » ចូរពន្យល់ដោយរកឧទា,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L003,lines_raw/W009_P001_L003.png,page_001.png,W009,263,140,1271,197,ហរណ៍ បញ្ជាក់ ផង ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L004,lines_raw/W009_P001_L004.png,page_001.png,W009,400,210,760,268,សេចក្តីអធិប្បាយ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L005,lines_raw/W009_P001_L005.png,page_001.png,W009,125,254,1271,329,ជីវិតគឺជាការរស់នៅប្រចាំថ្ងៃ ទាំងបុរសស្រីសុទ្ធតែប្រាថ្នាសេចក្តីសុខ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L006,lines_raw/W009_P001_L006.png,page_001.png,W009,14,325,1271,392,មិនចង់បានទុក្ខឲ្យបុគ្គលណាមកធ្វើនូវភ័យអន្តរាយមកលើខ្លួនឡើយ ទើប,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L007,lines_raw/W009_P001_L007.png,page_001.png,W009,15,388,1271,453,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P001_L008,lines_raw/W009_P001_L008.png,page_001.png,W009,77,449,1271,514,ក្សាន្ត ក្នុងអំពើល្អរបស់ខ្លួន ។ រក្សាសីល ៥ ហេតុនេះ ទើបទស្សនៈមួយបានលើក,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L009,lines_raw/W009_P001_L009.png,page_001.png,W009,13,510,1271,577,ឡើងថា “ អ្នកសាងអំពើអកុសល រមែងតែងតែជួបក្តីអន្តរាយក្នុងជីវិត ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L010,lines_raw/W009_P001_L010.png,page_001.png,W009,123,573,1271,637,តើទស្សនៈខាងលើនេះមានអត្ថន័យ យ៉ាងណា?,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L011,lines_raw/W009_P001_L011.png,page_001.png,W009,120,633,1271,697,ដើម្បីបានជាចក្ខុវិស័យយល់នូវអត្ថន័យនៃទស្សនៈខាងលើឱ្យបានកាន់តែ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L012,lines_raw/W009_P001_L012.png,page_001.png,W009,8,693,1271,759,ជាក់ច្បាស់ យើងគប្បីយល់នូវពាក្យគន្លឹះជាមុនសិន ។ ពាក្យអន្តរាយ គឺជា,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L013,lines_raw/W009_P001_L013.png,page_001.png,W009,5,755,1271,822,សេចក្តីវិនាស ។ ពាក្យថា ទង្វើ គឺជាការប្រព្រឹត្ត ។ ពាក្យថា អកុសល គឺ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L014,lines_raw/W009_P001_L014.png,page_001.png,W009,25,818,1271,884,ជា អំពើ បាប ឬ អំពើ អាក្រក់ ទាំងពួង ។ អត្ថន័យខាងលើចង់បង្ហាញពី,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L015,lines_raw/W009_P001_L015.png,page_001.png,W009,21,880,1271,951,ការធ្វើអំពើអាក្រក់ទាំងឡាយ រមែងដល់នូវសេចក្តីវិនាស អន្តរាយ ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L016,lines_raw/W009_P001_L016.png,page_001.png,W009,118,947,1271,1014,ជាការពិតណាស់ មនុស្សយើងម្នាក់ៗ សុទ្ធតែមានសេចក្តីភ័យខ្លាចដូច,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L017,lines_raw/W009_P001_L017.png,page_001.png,W009,19,1010,1271,1074,គ្នាទាំងអស់ ភ័យនៃអន្តរាយនោះគឺ ភ័យព្រោះសេចក្តីស្លាប់ មនុស្សណាក៏,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L018,lines_raw/W009_P001_L018.png,page_001.png,W009,17,1070,1271,1137,ខ្លាចស្លាប់ដែរ ប្រសិនបើមនុស្សតែងញ៉ាំងអន្តរាយដល់អ្នកដទៃ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L019,lines_raw/W009_P001_L019.png,page_001.png,W009,8,1133,1271,1197,ដោយទៅសម្លាប់គេ នោះអំពើអាក្រក់របស់គេ នឹងផ្តល់ផលអាក្រក់មក,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L020,lines_raw/W009_P001_L020.png,page_001.png,W009,15,1193,1271,1259,វិញ គឺត្រូវជាប់ពន្ធនាគារអស់កាលយូរឆ្នាំ ឬ មួយជីវិត ត្រូវបែកបាក់គ្រួសារ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L021,lines_raw/W009_P001_L021.png,page_001.png,W009,10,1255,1271,1321,មនុស្សជាទីស្រលាញ់ ។ ភ័យព្រោះបាត់ទ្រព្យសម្បត្តិ ការលួចឆក់ ប្លន់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L022,lines_raw/W009_P001_L022.png,page_001.png,W009,5,1317,1271,1382,អ្នកដទៃ រមែងជួបក្តីភ័យខ្លាច ពីការតាមចាប់ខ្លួនពីសមត្ថកិច្ច ចោរលួចចោរ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L023,lines_raw/W009_P001_L023.png,page_001.png,W009,14,1378,1271,1438,ប្លន់បើនៅពេលមិនទាន់ចាប់បាន ថ្ងៃមួយគេតាមទាន់ នឹងត្រូវទោសធ្ងន់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L024,lines_raw/W009_P001_L024.png,page_001.png,W009,19,1434,1271,1501,អាប់ឱនកិត្តិយស បាត់បង់តម្លៃ ត្រូវសង្គមស្អប់ខ្ពើម ។ ការក្បត់ក្បោះប្តី,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L025,lines_raw/W009_P001_L025.png,page_001.png,W009,44,1497,1271,1568,ប្រពន្ធ កូនរបស់អ្នកដទៃ ដោយប្រព្រឹត្តខុសក្នុងកាម ការចាប់បង្ខំ រំលោភ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L026,lines_raw/W009_P001_L026.png,page_001.png,W009,21,1564,1271,1626,បំពាន រមែងដេកភ័យ កើតទុក្ខ មិនបានសុខឡើយ ប្រសិនបើគេចាប់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W009_P001_L027,lines_raw/W009_P001_L027.png,page_001.png,W009,13,1622,1271,1684,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P001_L028,lines_raw/W009_P001_L028.png,page_001.png,W009,5,1680,1271,1761,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L001,lines_raw/W009_P002_L001.png,page_002.png,W009,5,16,1241,87,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L002,lines_raw/W009_P002_L002.png,page_002.png,W009,8,83,1241,149,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L003,lines_raw/W009_P002_L003.png,page_002.png,W009,17,145,1241,209,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L004,lines_raw/W009_P002_L004.png,page_002.png,W009,70,205,1241,270,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L005,lines_raw/W009_P002_L005.png,page_002.png,W009,17,266,1241,332,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L006,lines_raw/W009_P002_L006.png,page_002.png,W009,13,328,1241,394,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L007,lines_raw/W009_P002_L007.png,page_002.png,W009,13,390,1241,457,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L008,lines_raw/W009_P002_L008.png,page_002.png,W009,10,453,1241,519,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L009,lines_raw/W009_P002_L009.png,page_002.png,W009,5,515,1241,581,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L010,lines_raw/W009_P002_L010.png,page_002.png,W009,11,577,1241,642,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L011,lines_raw/W009_P002_L011.png,page_002.png,W009,17,638,1241,703,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L012,lines_raw/W009_P002_L012.png,page_002.png,W009,9,699,1241,765,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L013,lines_raw/W009_P002_L013.png,page_002.png,W009,7,761,1241,827,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L014,lines_raw/W009_P002_L014.png,page_002.png,W009,13,823,1241,887,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L015,lines_raw/W009_P002_L015.png,page_002.png,W009,20,883,1241,948,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L016,lines_raw/W009_P002_L016.png,page_002.png,W009,17,944,1241,1015,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L017,lines_raw/W009_P002_L017.png,page_002.png,W009,12,1011,1241,1078,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L018,lines_raw/W009_P002_L018.png,page_002.png,W009,17,1074,1241,1139,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L019,lines_raw/W009_P002_L019.png,page_002.png,W009,15,1135,1241,1199,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L020,lines_raw/W009_P002_L020.png,page_002.png,W009,14,1195,1241,1259,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L021,lines_raw/W009_P002_L021.png,page_002.png,W009,22,1255,1241,1318,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L022,lines_raw/W009_P002_L022.png,page_002.png,W009,101,1314,1241,1376,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L023,lines_raw/W009_P002_L023.png,page_002.png,W009,5,1372,1241,1437,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L024,lines_raw/W009_P002_L024.png,page_002.png,W009,10,1433,1241,1500,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L025,lines_raw/W009_P002_L025.png,page_002.png,W009,5,1496,1241,1566,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L026,lines_raw/W009_P002_L026.png,page_002.png,W009,16,1562,1241,1626,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L027,lines_raw/W009_P002_L027.png,page_002.png,W009,90,1622,1241,1689,,,0.0,0.95,True,pending,Line crop; human transcription required
+W009_P002_L028,lines_raw/W009_P002_L028.png,page_002.png,W009,88,1685,1241,1736,,,0.0,0.95,True,rejected,Handwritten source/date attribution outside essay content

@@ -1,7 +1,7 @@
 # PROJECT CONTEXT
 
 ## Title
-**Khmer Handwritten Short-Word Recognition: A Comparison of Three CRNN-Based Deep Learning Approaches**
+**Khmer Handwritten Line Recognition: A Comparison of Three CTC-Based Deep Learning Approaches**
 
 ## Course context
 This is the individual Final Project for a Deep Learning course (Bachelor of Software Engineering,
@@ -11,7 +11,7 @@ decisions whenever it conflicts with earlier, single-model planning.
 
 ## Objective
 Build an accurate, reproducible, and beginner-friendly Deep Learning OCR system that receives an
-image containing one handwritten Khmer short word and outputs the corresponding Khmer Unicode text
+image containing one handwritten Khmer line or short text segment and outputs the corresponding Khmer Unicode text
 — implemented as **three distinct deep learning approaches**, fairly compared on the same held-out
 test set, with an evidence-based discussion of which one works best and why.
 
@@ -49,18 +49,15 @@ Source: official Final Project Instruction and Evaluation Rubric.
 ---
 
 ## 1. Locked Scope
-- **Domain:** Handwritten Khmer short words.
-- **Image content:** Exactly one short word per image (isolated word recognition).
-- **Vocabulary size:** 20–50 selected Khmer words (exact number driven by how much real data can be
-  collected in the time available — see Risk note below).
-- **Dataset size target:** as many real samples as time allows across 15–25 human writers, writer-disjoint
-  train/val/test split; describe the final count and any limitations honestly in the README (the rubric
-  explicitly allows and expects an honest, imperfect self-collected dataset over a fabricated large one).
-- **Out of scope:** sentence recognition, paragraph OCR, text detection/document layout analysis,
+- **Domain:** Handwritten Khmer lines and short text segments.
+- **Image content:** Exactly one detected text line per image; no character-level or word-level segmentation.
+- **Vocabulary:** Open character vocabulary derived from the supported Khmer Unicode inventory, not a fixed word list.
+- **Dataset size target:** as many verified line transcriptions as time allows across independent public
+  writers/documents, using a writer- or document-disjoint train/validation/test split.
+- **Out of scope:** full-page end-to-end layout recognition, paragraph OCR, text detection at inference time,
   large pretrained OCR systems (TrOCR, etc.) as a fourth approach — three approaches is the target, not four.
-- **Risk note:** dataset collection is the highest-risk item on a 4-week clock. If collection lags,
-  shrink the vocabulary (not the writer-disjoint rule, not the honesty of reporting) before the deadline
-  forces a rushed, undocumented dataset.
+- **Risk note:** transcription verification and independent writer/document coverage are the highest-risk
+  items. Never replace a missing page transcription with labels from a different page.
 
 ---
 
@@ -161,8 +158,8 @@ fairly-compared approaches score higher than four rushed ones.
 ## 6. Preprocessing & Input Constraints
 - **Grayscale (1 channel)**.
 - **Height = 48 pixels** (fixed).
-- **Maximum width ≈ 256 pixels**.
-- **Preserve aspect ratio:** Resize proportionally to height 48, clamp max width to 256, and dynamically pad to batch maximum width with white background (value 1.0 or 255).
+- **Maximum width = 1024 pixels** for full line crops.
+- **Preserve aspect ratio:** Resize proportionally to height 48, clamp max width to 1024, and dynamically pad to batch maximum width with white background (value 1.0 or 255).
 - **No horizontal stretching:** Never force all images to fixed width by squishing or stretching.
 
 ---

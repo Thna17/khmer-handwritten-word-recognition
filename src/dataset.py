@@ -60,7 +60,7 @@ class KhmerWordDataset(Dataset):
         samples: list[Sample],
         tokenizer: KhmerTokenizer,
         image_height: int = 48,
-        max_width: int = 256,
+        max_width: int = 1024,
         transform=None,
     ):
         self.samples = samples

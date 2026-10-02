@@ -1,0 +1,126 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes,reviewer_notes
+W002_P001_L001,lines_raw/W002_P001_L001.png,page_001.png,W002,56,36,682,76,ប្រធាន៖ សុភាសិតខ្មែរបានចែងថា « ការពារជាជាងព្យាបាល » ។ ចូរបកស្រាយ,,1.0,0.95,False,verified,Line crop; human transcription required; inspect possible header or source-overlay contamination,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L002,lines_raw/W002_P001_L002.png,page_001.png,W002,134,72,493,115,ដោយលើកឧទាហរណ៍ក្នុងជីវិត មកបញ្ជាក់ ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L003,lines_raw/W002_P001_L003.png,page_001.png,W002,259,111,423,153,សេចក្តីអធិប្បាយ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L004,lines_raw/W002_P001_L004.png,page_001.png,W002,93,149,687,189,នៅលើសកលលោកយើងនេះ គ្រប់អ្វីៗ ទាំងអស់តែងតែមានការប្រែប្រួលជា,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L005,lines_raw/W002_P001_L005.png,page_001.png,W002,29,185,683,225,និច្ច ។ គ្រាន់តែពេលខ្លះ ប្រែប្រួលតិច និងពេលខ្លះ មាន ការប្រែប្រួលខ្លាំងប៉ុណ្ណោះ ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L006,lines_raw/W002_P001_L006.png,page_001.png,W002,31,221,680,263,មាន ហេតុ ត្រូវតែ មានផល ។ ដោយសារតែបែបនេះហើយទើបចាស់បុរាណយើង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L007,lines_raw/W002_P001_L007.png,page_001.png,W002,32,259,689,299,បានចំណាយពេលវេលា របស់ខ្លួនស្ទើរពេញ មួយជីវិតរបស់ខ្លួន ដើម្បីសិក្សាស្វែងយល់,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L008,lines_raw/W002_P001_L008.png,page_001.png,W002,31,295,677,336,នូវអ្វីៗ ដែលកើតមានឡើង ដើម្បីយកមកចងក្រងជាសុភាសិត ចងក្រង ជាពាក្យ-,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L009,lines_raw/W002_P001_L009.png,page_001.png,W002,30,332,682,374,ស្លោក ពាក្យប្រដៅ របស់ផ្សេងៗ ដើម្បីទុកអប់រំទូន្មានដល់កូនចៅជំនាន់ក្រោយ ឱ្យ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L010,lines_raw/W002_P001_L010.png,page_001.png,W002,29,370,677,411,សិក្សាស្វែងយល់ ។ ដែលពាក្យស្លោក ក៏ដូចជាសុភាសិតទាំងនោះ មានឥទ្ធិពលខ្ពស់,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L011,lines_raw/W002_P001_L011.png,page_001.png,W002,31,407,694,447,សង្គមជាតិផងដែរ ។ ហេតុនេះ ហើយទើបមានសុភាសិតមួយលើកឡើងថា “ ការពា,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L012,lines_raw/W002_P001_L012.png,page_001.png,W002,24,443,204,485,រ ជាជាងព្យាបាល » ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L013,lines_raw/W002_P001_L013.png,page_001.png,W002,89,481,634,524,តើសុភាសិត ដែលបានលើកឡើងខាងលើនេះ មាន អត្ថន័យដូចម្តេចខ្លះ ?,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L014,lines_raw/W002_P001_L014.png,page_001.png,W002,89,520,672,561,ដើម្បីជាស្ពានឈានទៅដល់ការបកស្រាយ អត្ថន័យខ្លឹមសារនៃទស្សនៈប្រធាន,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L015,lines_raw/W002_P001_L015.png,page_001.png,W002,30,557,686,599,ឱ្យកាន់តែពិរោះពិសា និងច្បាស់លាស់ថែមទាំងស៊ីជម្រៅ មួយកម្រិតទៀតនោះ យើងគប្បី,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L016,lines_raw/W002_P001_L016.png,page_001.png,W002,29,595,689,638,ត្រូវស្វែងយល់គន្លឹះនៃគំនិតជាមុន ត្រូវសិក្សាអំពីអត្ថន័យនៃពាក្យគន្លឹះ ដែលមានក្នុងអត្ថ-,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L017,lines_raw/W002_P001_L017.png,page_001.png,W002,31,634,690,675,ន័យ ប្រធាន ដែលជាសុភាសិតខាងលើនេះជាមុនសិន ។ ការពារ មានន័យថា ការប្រឆាំង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L018,lines_raw/W002_P001_L018.png,page_001.png,W002,28,671,688,713,ការទប់ស្កាត់ នូវអ្វីៗដែលមិនទាន់កើតឡើងតែយើងដឹងមុន ។ ចំណែកឯ « ព្យាបាល»,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L019,lines_raw/W002_P001_L019.png,page_001.png,W002,26,709,678,751,សម្ដៅលើ ដំណោះស្រាយ ការស្វែងរកនូវ វិធីសាស្ត្រក្នុងការដោះស្រាយ នូវអ្វីៗដែល,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L020,lines_raw/W002_P001_L020.png,page_001.png,W002,27,747,689,788,បានកើតឡើងរួចហើយ ។ ដូចនេះ សុភាសិតខាងលើនេះ ចង់សម្ដៅលើ ការប្រឆាំង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L021,lines_raw/W002_P001_L021.png,page_001.png,W002,29,784,691,824,ឬការប្រុងប្រយ័ត្ន ការទប់ស្កាត់មុន គឺជាវិធានការមួយដែលល្អជាង ការជួបហើយ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L022,lines_raw/W002_P001_L022.png,page_001.png,W002,29,820,583,863,ទើបដោះស្រាយ តាមក្រោយ ឬក៏ទាល់តែមានគ្រោះថ្នាក់ទើបប្រុងប្រយ័ត្ន ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L023,lines_raw/W002_P001_L023.png,page_001.png,W002,77,859,681,902,ជាការពិតណាស់ វិធីសាស្ត្រការពារមុន គឺជាជម្រើសដ៏ល្អមួយក្នុងការ-,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L024,lines_raw/W002_P001_L024.png,page_001.png,W002,29,898,682,939,ចៀសផុតពីគ្រោះថ្នាក់ផ្សេងៗ ។ រាល់រឿងរ៉ាវ រាល់បញ្ហា តែងតែកើតមានឡើង។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P001_L025,lines_raw/W002_P001_L025.png,page_001.png,W002,28,935,664,982,គ្រាន់តែ បញ្ហាទាំងនោះ មាន តូចមានធំ ឬបញ្ហា តិច ឬច្រើន ប៉ុណ្ណោះ ។ ពាក្យថា,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W002_P002_L001,lines_raw/W002_P002_L001.png,page_002.png,W002,43,36,673,83,,,0.0,0.95,True,pending,Line crop; human transcription required; inspect possible header or source-overlay contamination,
+W002_P002_L002,lines_raw/W002_P002_L002.png,page_002.png,W002,43,79,691,120,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L003,lines_raw/W002_P002_L003.png,page_002.png,W002,40,116,689,156,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L004,lines_raw/W002_P002_L004.png,page_002.png,W002,43,152,692,193,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L005,lines_raw/W002_P002_L005.png,page_002.png,W002,36,189,679,230,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L006,lines_raw/W002_P002_L006.png,page_002.png,W002,42,226,690,267,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L007,lines_raw/W002_P002_L007.png,page_002.png,W002,38,263,676,305,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L008,lines_raw/W002_P002_L008.png,page_002.png,W002,44,301,687,342,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L009,lines_raw/W002_P002_L009.png,page_002.png,W002,42,338,690,379,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L010,lines_raw/W002_P002_L010.png,page_002.png,W002,40,375,698,416,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L011,lines_raw/W002_P002_L011.png,page_002.png,W002,43,412,700,453,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L012,lines_raw/W002_P002_L012.png,page_002.png,W002,44,449,693,490,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L013,lines_raw/W002_P002_L013.png,page_002.png,W002,44,486,685,528,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L014,lines_raw/W002_P002_L014.png,page_002.png,W002,43,524,685,566,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L015,lines_raw/W002_P002_L015.png,page_002.png,W002,40,562,694,603,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L016,lines_raw/W002_P002_L016.png,page_002.png,W002,45,599,688,641,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L017,lines_raw/W002_P002_L017.png,page_002.png,W002,46,637,691,678,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L018,lines_raw/W002_P002_L018.png,page_002.png,W002,43,674,697,715,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L019,lines_raw/W002_P002_L019.png,page_002.png,W002,21,711,696,753,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L020,lines_raw/W002_P002_L020.png,page_002.png,W002,43,749,692,791,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L021,lines_raw/W002_P002_L021.png,page_002.png,W002,43,787,670,828,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L022,lines_raw/W002_P002_L022.png,page_002.png,W002,45,824,685,867,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L023,lines_raw/W002_P002_L023.png,page_002.png,W002,46,863,684,904,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L024,lines_raw/W002_P002_L024.png,page_002.png,W002,44,900,685,941,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P002_L025,lines_raw/W002_P002_L025.png,page_002.png,W002,44,937,667,985,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L001,lines_raw/W002_P003_L001.png,page_003.png,W002,32,36,680,85,,,0.0,0.95,True,pending,Line crop; human transcription required; inspect possible header or source-overlay contamination,
+W002_P003_L002,lines_raw/W002_P003_L002.png,page_003.png,W002,31,81,683,121,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L003,lines_raw/W002_P003_L003.png,page_003.png,W002,31,117,680,156,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L004,lines_raw/W002_P003_L004.png,page_003.png,W002,33,152,671,192,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L005,lines_raw/W002_P003_L005.png,page_003.png,W002,32,188,672,228,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L006,lines_raw/W002_P003_L006.png,page_003.png,W002,26,224,671,265,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L007,lines_raw/W002_P003_L007.png,page_003.png,W002,35,261,674,301,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L008,lines_raw/W002_P003_L008.png,page_003.png,W002,35,297,677,338,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L009,lines_raw/W002_P003_L009.png,page_003.png,W002,35,334,671,374,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L010,lines_raw/W002_P003_L010.png,page_003.png,W002,35,370,680,410,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L011,lines_raw/W002_P003_L011.png,page_003.png,W002,35,406,670,447,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L012,lines_raw/W002_P003_L012.png,page_003.png,W002,35,443,680,484,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L013,lines_raw/W002_P003_L013.png,page_003.png,W002,35,480,683,521,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L014,lines_raw/W002_P003_L014.png,page_003.png,W002,35,517,668,558,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L015,lines_raw/W002_P003_L015.png,page_003.png,W002,36,554,687,595,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L016,lines_raw/W002_P003_L016.png,page_003.png,W002,36,591,677,632,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L017,lines_raw/W002_P003_L017.png,page_003.png,W002,34,628,658,669,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L018,lines_raw/W002_P003_L018.png,page_003.png,W002,35,665,681,707,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L019,lines_raw/W002_P003_L019.png,page_003.png,W002,34,703,680,744,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L020,lines_raw/W002_P003_L020.png,page_003.png,W002,36,740,538,780,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L021,lines_raw/W002_P003_L021.png,page_003.png,W002,43,776,685,816,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L022,lines_raw/W002_P003_L022.png,page_003.png,W002,37,812,683,854,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L023,lines_raw/W002_P003_L023.png,page_003.png,W002,33,850,674,891,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L024,lines_raw/W002_P003_L024.png,page_003.png,W002,37,887,682,928,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P003_L025,lines_raw/W002_P003_L025.png,page_003.png,W002,30,924,703,987,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L001,lines_raw/W002_P004_L001.png,page_004.png,W002,34,36,681,87,,,0.0,0.95,True,pending,Line crop; human transcription required; inspect possible header or source-overlay contamination,
+W002_P004_L002,lines_raw/W002_P004_L002.png,page_004.png,W002,32,83,677,124,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L003,lines_raw/W002_P004_L003.png,page_004.png,W002,32,120,678,160,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L004,lines_raw/W002_P004_L004.png,page_004.png,W002,34,156,685,196,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L005,lines_raw/W002_P004_L005.png,page_004.png,W002,33,192,685,233,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L006,lines_raw/W002_P004_L006.png,page_004.png,W002,33,229,679,268,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L007,lines_raw/W002_P004_L007.png,page_004.png,W002,35,264,685,305,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L008,lines_raw/W002_P004_L008.png,page_004.png,W002,35,301,678,343,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L009,lines_raw/W002_P004_L009.png,page_004.png,W002,33,339,692,380,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L010,lines_raw/W002_P004_L010.png,page_004.png,W002,32,376,687,417,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L011,lines_raw/W002_P004_L011.png,page_004.png,W002,36,413,667,454,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L012,lines_raw/W002_P004_L012.png,page_004.png,W002,36,450,695,491,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L013,lines_raw/W002_P004_L013.png,page_004.png,W002,36,487,684,528,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L014,lines_raw/W002_P004_L014.png,page_004.png,W002,34,524,689,566,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L015,lines_raw/W002_P004_L015.png,page_004.png,W002,37,562,686,603,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L016,lines_raw/W002_P004_L016.png,page_004.png,W002,35,599,674,640,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L017,lines_raw/W002_P004_L017.png,page_004.png,W002,37,636,674,677,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L018,lines_raw/W002_P004_L018.png,page_004.png,W002,37,673,683,715,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L019,lines_raw/W002_P004_L019.png,page_004.png,W002,35,711,688,752,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L020,lines_raw/W002_P004_L020.png,page_004.png,W002,39,748,677,788,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L021,lines_raw/W002_P004_L021.png,page_004.png,W002,36,784,682,826,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L022,lines_raw/W002_P004_L022.png,page_004.png,W002,38,822,693,864,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L023,lines_raw/W002_P004_L023.png,page_004.png,W002,41,860,696,902,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L024,lines_raw/W002_P004_L024.png,page_004.png,W002,40,898,698,940,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P004_L025,lines_raw/W002_P004_L025.png,page_004.png,W002,41,936,678,982,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L001,lines_raw/W002_P005_L001.png,page_005.png,W002,29,36,684,89,,,0.0,0.95,True,pending,Line crop; human transcription required; inspect possible header or source-overlay contamination,
+W002_P005_L002,lines_raw/W002_P005_L002.png,page_005.png,W002,26,85,694,126,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L003,lines_raw/W002_P005_L003.png,page_005.png,W002,22,122,678,161,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L004,lines_raw/W002_P005_L004.png,page_005.png,W002,26,157,680,197,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L005,lines_raw/W002_P005_L005.png,page_005.png,W002,28,193,677,233,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L006,lines_raw/W002_P005_L006.png,page_005.png,W002,27,229,689,270,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L007,lines_raw/W002_P005_L007.png,page_005.png,W002,27,266,674,307,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L008,lines_raw/W002_P005_L008.png,page_005.png,W002,23,303,669,344,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L009,lines_raw/W002_P005_L009.png,page_005.png,W002,28,340,674,381,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L010,lines_raw/W002_P005_L010.png,page_005.png,W002,27,377,676,418,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L011,lines_raw/W002_P005_L011.png,page_005.png,W002,26,414,677,454,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L012,lines_raw/W002_P005_L012.png,page_005.png,W002,27,450,674,492,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L013,lines_raw/W002_P005_L013.png,page_005.png,W002,25,488,673,528,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L014,lines_raw/W002_P005_L014.png,page_005.png,W002,27,524,673,564,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L015,lines_raw/W002_P005_L015.png,page_005.png,W002,25,560,668,601,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L016,lines_raw/W002_P005_L016.png,page_005.png,W002,27,597,673,638,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L017,lines_raw/W002_P005_L017.png,page_005.png,W002,27,634,685,675,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L018,lines_raw/W002_P005_L018.png,page_005.png,W002,86,671,688,713,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L019,lines_raw/W002_P005_L019.png,page_005.png,W002,29,709,670,750,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L020,lines_raw/W002_P005_L020.png,page_005.png,W002,31,746,662,786,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L021,lines_raw/W002_P005_L021.png,page_005.png,W002,28,782,312,823,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L022,lines_raw/W002_P005_L022.png,page_005.png,W002,83,819,681,861,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L023,lines_raw/W002_P005_L023.png,page_005.png,W002,29,857,676,898,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L024,lines_raw/W002_P005_L024.png,page_005.png,W002,26,894,689,935,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W002_P005_L025,lines_raw/W002_P005_L025.png,page_005.png,W002,27,931,663,980,,,0.0,0.95,True,pending,Line crop; human transcription required,

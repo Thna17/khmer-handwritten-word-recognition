@@ -1,0 +1,76 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes,reviewer_notes
+W003_P001_L001,lines_raw/W003_P001_L001.png,page_001.png,W003,73,31,623,69,ប្រធាន: បុរាណលោកពោលថា៖ « ចេះដប់ពុំស្មើនឹងប្រសប់មួយ » ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L002,lines_raw/W003_P001_L002.png,page_001.png,W003,267,65,421,101,សេចក្តីអធិប្បាយ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L003,lines_raw/W003_P001_L003.png,page_001.png,W003,100,97,678,135,បុព្វបុរសខ្មែរបានបន្សល់ទុកនូវសម្បត្តិដ៏មហាសាលដល់កូនចៅគ្រប់ជំនាន់ក្នុង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L004,lines_raw/W003_P001_L004.png,page_001.png,W003,47,131,681,168,នោះមានទឹកដីដ៏ស្រស់បំព្រង មានប្រាសាទរាប់ពាន់ដែលបានផ្តល់ចំណូលថវិកាយ៉ាងច្រើន,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L005,lines_raw/W003_P001_L005.png,page_001.png,W003,46,164,676,201,ដល់សេដ្ឋកិច្ចជាតិ ។ មិនតែប៉ុណ្ណោះ លោកបានបន្សល់ទុកនូវទស្សនៈអប់រំល្អៗដើម្បី,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L006,lines_raw/W003_P001_L006.png,page_001.png,W003,43,197,681,235,ដាស់តឿនក្រើនរំលឹក មិនឱ្យមានការធ្វេសប្រហែស ឱ្យខំសិក្សារៀនសូត្រដើម្បីមាន,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L007,lines_raw/W003_P001_L007.png,page_001.png,W003,42,231,674,268,ជំនាញមួយច្បាស់លាស់ប្រចាំជីវិត ។ អាស្រ័យហេតុនេះហើយ ទើបមានសុភាសិត,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L008,lines_raw/W003_P001_L008.png,page_001.png,W003,42,264,441,302,មួយពោលថា៖ « ចេះដប់ពុំស្មើនឹងប្រសប់មួយ » ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L009,lines_raw/W003_P001_L009.png,page_001.png,W003,93,298,562,336,តើសុភាសិតមួយឃ្លានេះ មានអត្ថន័យខ្លឹមសារយ៉ាងណាខ្លះ ?,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L010,lines_raw/W003_P001_L010.png,page_001.png,W003,93,332,687,370,"មុននឹងបកស្រាយអត្ថន័យនៃសុភាសិតនេះ យើងត្រូវយល់នូវពាក្យថា""ប្រសប់""",,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L011,lines_raw/W003_P001_L011.png,page_001.png,W003,37,366,668,404,"ជាមុនសិន។ ពាក្យថា ""ប្រសប់"" គឺជាការចេះធ្វើស្ទាត់ច្បាស់លាស់ចំពោះអ្វីមួយ។",,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L012,lines_raw/W003_P001_L012.png,page_001.png,W003,36,400,669,436,ប្រធានខាងលើចង់មានន័យថា អ្នកចេះដប់នាក់ មិនអាចស្មើនឹងបុគ្គលដែលមាននូវ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L013,lines_raw/W003_P001_L013.png,page_001.png,W003,36,432,656,470,ជំនាញច្បាស់លាស់ម្នាក់ទេ។,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L014,lines_raw/W003_P001_L014.png,page_001.png,W003,87,466,682,505,ជាការពិតណាស់ ការចេះនូវជំនាញមួយឱ្យបានច្បាស់លាស់ មានសារៈសំខាន់ខ្លាំង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L015,lines_raw/W003_P001_L015.png,page_001.png,W003,34,501,687,539,ណាស់ដើម្បីប្រកបរបរចិញ្ចឹមជីវិតប្រចាំថ្ងៃ។ ការចេះប្រសប់នេះ អាចនាំឱ្យយើង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L016,lines_raw/W003_P001_L016.png,page_001.png,W003,34,535,680,574,ខំប្រឹងអនុវត្តនូវកិច្ចការរបស់យើងបានស្ទាត់ មិនភ្លាំងភ្លេច គឺត្រូវស្រាវជ្រាវឱ្យបាន,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L017,lines_raw/W003_P001_L017.png,page_001.png,W003,30,570,679,610,វិទ្យាសាស្ត្រ នោះការងាររបស់យើងនឹងទទួលបានជោគជ័យ។ នៅពេលដែលយើង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L018,lines_raw/W003_P001_L018.png,page_001.png,W003,34,606,683,645,ចំណេះដឹងខ្ពស់ខ្ពស់រួមផ្សំនឹងភាពប៉ុនប្រសប់លើការងារនោះទៀត អ្នកដទៃគេប្រាកដ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L019,lines_raw/W003_P001_L019.png,page_001.png,W003,32,641,688,680,ជាគោរពនិងឱ្យតម្លៃលើការងាររបស់យើង នោះសង្គមគេទទួលស្គាល់ស្នាដៃយើង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L020,lines_raw/W003_P001_L020.png,page_001.png,W003,30,676,684,717,និងមានកេរ្តិ៍ឈ្មោះល្បីល្បាញ អ្នកដទៃគេនឹងយកយើងធ្វើជាគំរូថែមទៀតផង។ ប៉ុន្តែ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L021,lines_raw/W003_P001_L021.png,page_001.png,W003,30,713,683,755,បើយើងចេះនេះបន្តិច ចេះនោះបន្តិច មិនច្បាស់ត្រង់ណា នោះធ្វើអ្វីមិនបាននូវ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L022,lines_raw/W003_P001_L022.png,page_001.png,W003,27,751,667,790,លទ្ធផលជាទីពេញចិត្ត ហើយច្រើនតែបរាជ័យ ។ ជាក់ស្តែង យើងរៀនដល់ថ្នាក់,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L023,lines_raw/W003_P001_L023.png,page_001.png,W003,27,786,678,825,បណ្ឌិត មានសញ្ញាបត្ររាប់ភ្លេច ពូកែទ្រឹស្តីវេយ្យាករណ៍ គ្មាននរណាអាចប្រៀបធៀបបាន,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L024,lines_raw/W003_P001_L024.png,page_001.png,W003,24,821,684,861,តែដល់ពេលឱ្យអនុវត្តកិច្ចការជាក់ស្តែងធ្វើមិនកើត នោះសញ្ញាបត្រថ្នាក់បណ្ឌិតនិង,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P001_L025,lines_raw/W003_P001_L025.png,page_001.png,W003,22,857,684,906,ពាក្យសម្តីដ៏ពូកែរបស់យើងគ្មានតម្លៃសោះឡើយ។ បើមើលក្នុងសង្គមសព្វថ្ងៃនេះ,,1.0,0.95,False,verified,Line crop; human transcription required,Verified: character-by-character transcription confirmed against crop image.
+W003_P002_L001,lines_raw/W003_P002_L001.png,page_002.png,W003,48,29,683,73,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L002,lines_raw/W003_P002_L002.png,page_002.png,W003,46,69,668,105,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L003,lines_raw/W003_P002_L003.png,page_002.png,W003,45,101,683,138,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L004,lines_raw/W003_P002_L004.png,page_002.png,W003,44,134,661,173,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L005,lines_raw/W003_P002_L005.png,page_002.png,W003,43,169,682,207,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L006,lines_raw/W003_P002_L006.png,page_002.png,W003,42,203,678,240,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L007,lines_raw/W003_P002_L007.png,page_002.png,W003,42,236,674,274,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L008,lines_raw/W003_P002_L008.png,page_002.png,W003,40,270,683,308,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L009,lines_raw/W003_P002_L009.png,page_002.png,W003,42,304,668,342,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L010,lines_raw/W003_P002_L010.png,page_002.png,W003,41,338,672,375,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L011,lines_raw/W003_P002_L011.png,page_002.png,W003,40,371,683,408,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L012,lines_raw/W003_P002_L012.png,page_002.png,W003,37,404,665,442,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L013,lines_raw/W003_P002_L013.png,page_002.png,W003,39,438,672,477,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L014,lines_raw/W003_P002_L014.png,page_002.png,W003,34,473,687,512,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L015,lines_raw/W003_P002_L015.png,page_002.png,W003,34,508,663,546,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L016,lines_raw/W003_P002_L016.png,page_002.png,W003,38,542,677,582,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L017,lines_raw/W003_P002_L017.png,page_002.png,W003,36,578,688,617,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L018,lines_raw/W003_P002_L018.png,page_002.png,W003,35,613,680,651,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L019,lines_raw/W003_P002_L019.png,page_002.png,W003,34,647,686,688,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L020,lines_raw/W003_P002_L020.png,page_002.png,W003,33,684,689,726,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L021,lines_raw/W003_P002_L021.png,page_002.png,W003,32,722,680,762,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L022,lines_raw/W003_P002_L022.png,page_002.png,W003,35,758,681,797,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L023,lines_raw/W003_P002_L023.png,page_002.png,W003,31,793,688,832,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L024,lines_raw/W003_P002_L024.png,page_002.png,W003,30,828,689,866,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P002_L025,lines_raw/W003_P002_L025.png,page_002.png,W003,29,862,690,911,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L001,lines_raw/W003_P003_L001.png,page_003.png,W003,51,35,658,73,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L002,lines_raw/W003_P003_L002.png,page_003.png,W003,51,69,664,106,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L003,lines_raw/W003_P003_L003.png,page_003.png,W003,46,102,663,139,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L004,lines_raw/W003_P003_L004.png,page_003.png,W003,47,135,674,171,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L005,lines_raw/W003_P003_L005.png,page_003.png,W003,45,167,668,204,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L006,lines_raw/W003_P003_L006.png,page_003.png,W003,45,200,668,238,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L007,lines_raw/W003_P003_L007.png,page_003.png,W003,42,234,658,271,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L008,lines_raw/W003_P003_L008.png,page_003.png,W003,42,267,670,305,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L009,lines_raw/W003_P003_L009.png,page_003.png,W003,41,301,670,339,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L010,lines_raw/W003_P003_L010.png,page_003.png,W003,39,335,671,372,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L011,lines_raw/W003_P003_L011.png,page_003.png,W003,38,368,669,404,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L012,lines_raw/W003_P003_L012.png,page_003.png,W003,35,400,672,438,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L013,lines_raw/W003_P003_L013.png,page_003.png,W003,37,434,671,473,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L014,lines_raw/W003_P003_L014.png,page_003.png,W003,33,469,675,506,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L015,lines_raw/W003_P003_L015.png,page_003.png,W003,29,502,558,541,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L016,lines_raw/W003_P003_L016.png,page_003.png,W003,88,537,674,577,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L017,lines_raw/W003_P003_L017.png,page_003.png,W003,28,573,669,611,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L018,lines_raw/W003_P003_L018.png,page_003.png,W003,29,607,616,646,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L019,lines_raw/W003_P003_L019.png,page_003.png,W003,83,642,678,681,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L020,lines_raw/W003_P003_L020.png,page_003.png,W003,24,677,672,717,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L021,lines_raw/W003_P003_L021.png,page_003.png,W003,26,713,678,750,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L022,lines_raw/W003_P003_L022.png,page_003.png,W003,23,746,671,785,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L023,lines_raw/W003_P003_L023.png,page_003.png,W003,22,781,677,822,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L024,lines_raw/W003_P003_L024.png,page_003.png,W003,21,818,655,855,,,0.0,0.95,True,pending,Line crop; human transcription required,
+W003_P003_L025,lines_raw/W003_P003_L025.png,page_003.png,W003,21,851,559,896,,,0.0,0.95,True,pending,Line crop; human transcription required,

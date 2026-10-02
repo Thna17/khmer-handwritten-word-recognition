@@ -1,9 +1,9 @@
-# Khmer Handwritten Short-Word Recognition: Comparing Three CRNN-Based Deep Learning Approaches
+# Khmer Handwritten Line Recognition: Comparing Three CTC-Based Deep Learning Approaches
 
 **Author:** Hong Than Brathna
 **Course:** Deep Learning — Final Project (Bachelor of Software Engineering)
 
-A Deep Learning system that recognizes single handwritten Khmer short words from images and
+A Deep Learning system that recognizes handwritten Khmer lines or short text segments and
 transcribes them into standard Khmer Unicode text — implemented as **three distinct approaches**,
 fairly compared on the same held-out, writer-disjoint test set.
 
@@ -16,7 +16,7 @@ fairly compared on the same held-out, writer-disjoint test set.
 
 ## Problem Statement
 
-**Task:** Given an image containing exactly one handwritten Khmer short word, predict the Khmer
+**Task:** Given an image containing one handwritten Khmer line or short text segment, predict the Khmer
 Unicode text it represents. This is a **sequence labeling / OCR** problem: the model outputs a
 variable-length sequence of characters aligned (via CTC) to a fixed-length sequence of image
 features, without needing pre-segmented per-character images.
@@ -29,16 +29,16 @@ contribution, independent of which model wins the comparison.
 
 ## Dataset
 
-- **Source:** Self-collected. Real handwriting samples gathered from multiple volunteer writers, each
-  assigned a `writer_id` (W001, W002, ...).
+- **Source:** Publicly available Khmer handwriting documents approved for course use, grouped by
+  writer/document provenance and cited before submission.
 - **Format:** `data/metadata/*.csv` with columns `image,label,writer_id`.
 - **Size / vocabulary:** documented here once collection is complete (see [TASKS.md](TASKS.md) Week 1)
   — reported honestly, including any known bias or limitation (e.g. handwriting style skew, uneven
   samples per writer).
 - **Split:** writer-disjoint train/validation/test — a writer that appears in training **never**
   appears in validation or test. This is the same fixed split used, unchanged, by all three approaches.
-- **Preprocessing:** grayscale, resized to height 48px preserving aspect ratio (no stretching), max
-  width ≈256px, dynamically padded to the batch's max width. Identical preprocessing is applied at
+- **Preprocessing:** line segmentation, grayscale, resized to height 48px preserving aspect ratio
+  (no stretching), max width 1024px, dynamically padded to the batch's max width. Identical preprocessing is applied at
   test time for every approach.
 
 ---

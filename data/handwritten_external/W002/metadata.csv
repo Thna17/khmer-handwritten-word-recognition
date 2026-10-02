@@ -1,0 +1,229 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes
+W002_P001_0001,crops_raw/W002_P001_0001.png,page_001.png,W002,56,45,126,79,ប្រធាន:,ប្រធាន:,0.95,0.95,false,pending,
+W002_P001_0002,crops_raw/W002_P001_0002.png,page_001.png,W002,115,34,226,87,សុភាសិតខ្មែរ,សុភាសិតខ្មែរ,0.95,0.85,false,pending,
+W002_P001_0003,crops_raw/W002_P001_0003.png,page_001.png,W002,213,35,318,81,បានចែងថា,បានចែងថា,0.95,0.85,false,pending,
+W002_P001_0004,crops_raw/W002_P001_0004.png,page_001.png,W002,309,40,337,60,“,“,0.90,0.80,true,pending,narrow component
+W002_P001_0005,crops_raw/W002_P001_0005.png,page_001.png,W002,332,32,550,80,ការពារប្រសើរជាងព្យាបាល,ការពារប្រសើរជាងព្យាបាល,0.90,0.95,false,pending,compound title
+W002_P001_0006,crops_raw/W002_P001_0006.png,page_001.png,W002,555,45,580,67,”,”,0.90,0.80,true,pending,narrow component
+W002_P001_0007,crops_raw/W002_P001_0007.png,page_001.png,W002,570,44,682,82,។ ចូរស្រាយ,។ ចូរស្រាយ,0.90,0.95,false,pending,
+W002_P001_0008,crops_raw/W002_P001_0008.png,page_001.png,W002,134,72,382,119,ដោយលើកឧទាហរណ៍ក្នុងជីវិត,ដោយលើកឧទាហរណ៍ក្នុងជីវិត,0.90,0.95,false,pending,compound phrase
+W002_P001_0009,crops_raw/W002_P001_0009.png,page_001.png,W002,371,68,473,120,មកបញ្ជាក់,មកបញ្ជាក់,0.95,0.95,false,pending,
+W002_P001_0010,crops_raw/W002_P001_0010.png,page_001.png,W002,466,80,493,105,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0011,crops_raw/W002_P001_0011.png,page_001.png,W002,259,109,423,158,សេចក្តីអធិប្បាយ,សេចក្តីអធិប្បាយ,0.95,0.95,false,pending,section heading
+W002_P001_0012,crops_raw/W002_P001_0012.png,page_001.png,W002,93,146,413,193,នៅលើសកលលោកយើងនេះ,នៅលើសកលលោកយើងនេះ,0.90,0.85,false,pending,continuous phrase
+W002_P001_0013,crops_raw/W002_P001_0013.png,page_001.png,W002,403,147,687,192,គ្រប់អ្វីៗទាំងអស់តែងតែមានការប្រែប្រួលជា,គ្រប់អ្វីៗទាំងអស់តែងតែមានការប្រែប្រួលជា,0.85,0.85,false,pending,continuous sentence
+W002_P001_0014,crops_raw/W002_P001_0014.png,page_001.png,W002,29,183,69,233,និច្ច,និច្ច,0.95,0.95,false,pending,
+W002_P001_0015,crops_raw/W002_P001_0015.png,page_001.png,W002,61,194,87,216,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0016,crops_raw/W002_P001_0016.png,page_001.png,W002,85,184,219,229,គ្រាន់តែពេលខ្លះ,គ្រាន់តែពេលខ្លះ,0.90,0.95,false,pending,
+W002_P001_0017,crops_raw/W002_P001_0017.png,page_001.png,W002,207,183,321,230,ប្រែប្រួលតិច,ប្រែប្រួលតិច,0.90,0.95,false,pending,
+W002_P001_0018,crops_raw/W002_P001_0018.png,page_001.png,W002,316,184,419,226,និងពេលខ្លះ,និងពេលខ្លះ,0.90,0.95,false,pending,
+W002_P001_0019,crops_raw/W002_P001_0019.png,page_001.png,W002,408,194,451,221,មាន,មាន,0.95,0.95,false,pending,
+W002_P001_0020,crops_raw/W002_P001_0020.png,page_001.png,W002,439,183,652,232,ការប្រែប្រួលខ្លាំងប៉ុណ្ណោះ,ការប្រែប្រួលខ្លាំងប៉ុណ្ណោះ,0.85,0.95,false,pending,
+W002_P001_0021,crops_raw/W002_P001_0021.png,page_001.png,W002,656,194,683,216,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0022,crops_raw/W002_P001_0022.png,page_001.png,W002,31,229,76,254,មាន,មាន,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0023,crops_raw/W002_P001_0023.png,page_001.png,W002,63,229,122,266,ហេតុ,ហេតុ,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0024,crops_raw/W002_P001_0024.png,page_001.png,W002,109,224,157,268,ត្រូវតែ,ត្រូវតែ,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0025,crops_raw/W002_P001_0025.png,page_001.png,W002,144,223,242,255,មានផល,មានផល,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0026,crops_raw/W002_P001_0026.png,page_001.png,W002,233,231,258,255,។,។,0.95,0.70,true,pending,narrow component; compound word or continuous phrase
+W002_P001_0027,crops_raw/W002_P001_0027.png,page_001.png,W002,256,220,680,267,ដោយសារតែបែបនេះហើយទើបចាស់បុរាណយើង,ដោយសារតែបែបនេះហើយទើបចាស់បុរាណយើង,0.85,0.85,false,pending,continuous phrase
+W002_P001_0028,crops_raw/W002_P001_0028.png,page_001.png,W002,32,255,202,308,បានចំណាយពេលវេលា,បានចំណាយពេលវេលា,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0029,crops_raw/W002_P001_0029.png,page_001.png,W002,189,256,380,308,របស់ខ្លួនស្ទើរពេញ,របស់ខ្លួនស្ទើរពេញ,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0030,crops_raw/W002_P001_0030.png,page_001.png,W002,367,258,521,308,មួយជីវិតរបស់ខ្លួន,មួយជីវិតរបស់ខ្លួន,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0031,crops_raw/W002_P001_0031.png,page_001.png,W002,508,255,689,304,ដើម្បីសិក្សាស្វែងយល់,ដើម្បីសិក្សាស្វែងយល់,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0032,crops_raw/W002_P001_0032.png,page_001.png,W002,31,295,105,342,នូវអ្វីៗ,នូវអ្វីៗ,0.95,0.95,false,pending,
+W002_P001_0033,crops_raw/W002_P001_0033.png,page_001.png,W002,96,293,255,339,ដែលកើតមានឡើង,ដែលកើតមានឡើង,0.90,0.95,false,pending,
+W002_P001_0034,crops_raw/W002_P001_0034.png,page_001.png,W002,258,292,466,340,ដើម្បីយកមកចងក្រងជាសុភាសិត,ដើម្បីយកមកចងក្រងជាសុភាសិត,0.85,0.85,false,pending,
+W002_P001_0035,crops_raw/W002_P001_0035.png,page_001.png,W002,453,292,538,342,ចងក្រង,ចងក្រង,0.95,0.85,false,pending,
+W002_P001_0036,crops_raw/W002_P001_0036.png,page_001.png,W002,537,300,677,340,ជាពាក្យ-,ជាពាក្យ-,0.90,0.95,false,pending,
+W002_P001_0037,crops_raw/W002_P001_0037.png,page_001.png,W002,30,340,89,376,ស្លោក,ស្លោក,0.95,0.95,false,pending,
+W002_P001_0038,crops_raw/W002_P001_0038.png,page_001.png,W002,89,330,199,380,ពាក្យប្រដៅ,ពាក្យប្រដៅ,0.95,0.85,false,pending,
+W002_P001_0039,crops_raw/W002_P001_0039.png,page_001.png,W002,186,333,305,380,របស់ផ្សេងៗ,របស់ផ្សេងៗ,0.95,0.85,false,pending,
+W002_P001_0040,crops_raw/W002_P001_0040.png,page_001.png,W002,305,328,658,390,ដើម្បីទុកអប់រំទូន្មានដល់កូនចៅជំនាន់ក្រោយ,ដើម្បីទុកអប់រំទូន្មានដល់កូនចៅជំនាន់ក្រោយ,0.85,0.95,false,pending,
+W002_P001_0041,crops_raw/W002_P001_0041.png,page_001.png,W002,646,337,682,381,ឱ្យ,ឱ្យ,0.95,0.95,false,pending,
+W002_P001_0042,crops_raw/W002_P001_0042.png,page_001.png,W002,29,367,183,416,សិក្សាស្វែងយល់,សិក្សាស្វែងយល់,0.90,0.95,false,pending,
+W002_P001_0043,crops_raw/W002_P001_0043.png,page_001.png,W002,183,380,210,402,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0044,crops_raw/W002_P001_0044.png,page_001.png,W002,203,370,341,417,ដែលពាក្យស្លោក,ដែលពាក្យស្លោក,0.90,0.95,false,pending,
+W002_P001_0045,crops_raw/W002_P001_0045.png,page_001.png,W002,338,372,541,420,ក៏ដូចជាសុភាសិតទាំងនោះ,ក៏ដូចជាសុភាសិតទាំងនោះ,0.85,0.95,false,pending,
+W002_P001_0046,crops_raw/W002_P001_0046.png,page_001.png,W002,530,368,677,411,មានឥទ្ធិពលដ៏ខ្ពង់ខ្ពស់,មានឥទ្ធិពលដ៏ខ្ពង់ខ្ពស់,0.85,0.95,false,pending,
+W002_P001_0047,crops_raw/W002_P001_0047.png,page_001.png,W002,31,407,186,447,សង្គមជាតិផងដែរ,សង្គមជាតិផងដែរ,0.90,0.95,false,pending,
+W002_P001_0048,crops_raw/W002_P001_0048.png,page_001.png,W002,177,417,204,442,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0049,crops_raw/W002_P001_0049.png,page_001.png,W002,202,416,291,459,ហេតុនេះ,ហេតុនេះ,0.95,0.95,false,pending,
+W002_P001_0050,crops_raw/W002_P001_0050.png,page_001.png,W002,282,396,412,442,ហើយទើបមាន,ហើយទើបមាន,0.90,0.85,false,pending,
+W002_P001_0051,crops_raw/W002_P001_0051.png,page_001.png,W002,399,396,627,455,សុភាសិតមួយលើកឡើងថា,សុភាសិតមួយលើកឡើងថា,0.85,0.85,false,pending,
+W002_P001_0052,crops_raw/W002_P001_0052.png,page_001.png,W002,619,413,694,441,“ការពា,“ការពា,0.90,0.95,false,pending,hyphenated across lines
+W002_P001_0053,crops_raw/W002_P001_0053.png,page_001.png,W002,24,450,101,479,រ,រ,0.90,0.85,false,pending,continuation of ការពារ
+W002_P001_0054,crops_raw/W002_P001_0054.png,page_001.png,W002,88,452,170,490,ប្រសើរជាងព្យាបាល,ប្រសើរជាងព្យាបាល,0.90,0.85,false,pending,
+W002_P001_0055,crops_raw/W002_P001_0055.png,page_001.png,W002,158,448,184,469,”,”,0.90,0.80,true,pending,narrow component
+W002_P001_0056,crops_raw/W002_P001_0056.png,page_001.png,W002,178,454,204,475,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0057,crops_raw/W002_P001_0057.png,page_001.png,W002,89,481,263,529,តើសុភាសិត,តើសុភាសិត,0.95,0.95,false,pending,
+W002_P001_0058,crops_raw/W002_P001_0058.png,page_001.png,W002,251,478,432,526,ដែលបានលើកឡើងខាងលើនេះ,ដែលបានលើកឡើងខាងលើនេះ,0.85,0.95,false,pending,
+W002_P001_0059,crops_raw/W002_P001_0059.png,page_001.png,W002,420,491,465,518,មាន,មាន,0.95,0.95,false,pending,
+W002_P001_0060,crops_raw/W002_P001_0060.png,page_001.png,W002,453,480,619,530,អត្ថន័យដូចម្តេចខ្លះ,អត្ថន័យដូចម្តេចខ្លះ,0.90,0.95,false,pending,
+W002_P001_0061,crops_raw/W002_P001_0061.png,page_001.png,W002,609,485,634,519,?,?,0.95,0.80,true,pending,narrow component
+W002_P001_0062,crops_raw/W002_P001_0062.png,page_001.png,W002,89,518,408,564,ដើម្បីជាស្ពានឈានទៅដល់ការបកស្រាយ,ដើម្បីជាស្ពានឈានទៅដល់ការបកស្រាយ,0.85,0.85,false,pending,
+W002_P001_0063,crops_raw/W002_P001_0063.png,page_001.png,W002,404,519,672,564,អត្ថន័យខ្លឹមសារនៃប្រធាន,អត្ថន័យខ្លឹមសារនៃប្រធាន,0.85,0.85,false,pending,
+W002_P001_0064,crops_raw/W002_P001_0064.png,page_001.png,W002,30,557,197,607,ឱ្យកាន់តែពិរោះពិសា,ឱ្យកាន់តែពិរោះពិសា,0.90,0.85,false,pending,
+W002_P001_0065,crops_raw/W002_P001_0065.png,page_001.png,W002,190,554,491,609,និងច្បាស់លាស់ថែមទាំងស៊ីជម្រៅ,និងច្បាស់លាស់ថែមទាំងស៊ីជម្រៅ,0.85,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0066,crops_raw/W002_P001_0066.png,page_001.png,W002,478,558,610,609,មួយកម្រិតទៀតនោះ,មួយកម្រិតទៀតនោះ,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0067,crops_raw/W002_P001_0067.png,page_001.png,W002,597,557,686,598,យើងគប្បី,យើងគប្បី,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0068,crops_raw/W002_P001_0068.png,page_001.png,W002,29,592,220,649,ត្រូវស្វែងយល់គន្លឹះនៃគំនិតជាមុន,ត្រូវស្វែងយល់គន្លឹះនៃគំនិតជាមុន,0.85,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0069,crops_raw/W002_P001_0069.png,page_001.png,W002,207,592,473,649,ត្រូវសិក្សាអំពីអត្ថន័យនៃពាក្យគន្លឹះ,ត្រូវសិក្សាអំពីអត្ថន័យនៃពាក្យគន្លឹះ,0.85,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0070,crops_raw/W002_P001_0070.png,page_001.png,W002,460,595,689,649,ដែលមានក្នុងអត្ថ-,ដែលមានក្នុងអត្ថ-,0.90,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0071,crops_raw/W002_P001_0071.png,page_001.png,W002,31,641,59,666,ន័យ,ន័យ,0.95,0.80,true,pending,narrow component
+W002_P001_0072,crops_raw/W002_P001_0072.png,page_001.png,W002,51,632,119,679,ប្រធាន,ប្រធាន,0.95,0.95,false,pending,
+W002_P001_0073,crops_raw/W002_P001_0073.png,page_001.png,W002,108,631,439,692,ដែលជាសុភាសិតខាងលើនេះជាមុនសិន,ដែលជាសុភាសិតខាងលើនេះជាមុនសិន,0.85,0.95,false,pending,
+W002_P001_0074,crops_raw/W002_P001_0074.png,page_001.png,W002,433,643,457,668,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0075,crops_raw/W002_P001_0075.png,page_001.png,W002,454,642,527,668,ការពារ,ការពារ,0.95,0.95,false,pending,
+W002_P001_0076,crops_raw/W002_P001_0076.png,page_001.png,W002,516,633,614,670,មានន័យថា,មានន័យថា,0.95,0.95,false,pending,
+W002_P001_0077,crops_raw/W002_P001_0077.png,page_001.png,W002,602,639,690,677,ការប្រឆាំង,ការប្រឆាំង,0.95,0.95,false,pending,
+W002_P001_0078,crops_raw/W002_P001_0078.png,page_001.png,W002,28,669,136,714,ការទប់ស្កាត់,ការទប់ស្កាត់,0.95,0.95,false,pending,
+W002_P001_0079,crops_raw/W002_P001_0079.png,page_001.png,W002,125,669,235,719,នូវអ្វីៗ,នូវអ្វីៗ,0.95,0.85,false,pending,
+W002_P001_0080,crops_raw/W002_P001_0080.png,page_001.png,W002,222,669,494,719,ដែលមិនទាន់កើតឡើងតែយើងដឹងមុន,ដែលមិនទាន់កើតឡើងតែយើងដឹងមុន,0.85,0.85,false,pending,
+W002_P001_0081,crops_raw/W002_P001_0081.png,page_001.png,W002,485,681,511,706,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0082,crops_raw/W002_P001_0082.png,page_001.png,W002,507,670,596,706,ចំណែកឯ,ចំណែកឯ,0.95,0.95,false,pending,
+W002_P001_0083,crops_raw/W002_P001_0083.png,page_001.png,W002,586,679,613,697,“,“,0.90,0.80,true,pending,narrow component
+W002_P001_0084,crops_raw/W002_P001_0084.png,page_001.png,W002,601,678,688,716,ព្យាបាល”,ព្យាបាល”,0.90,0.95,false,pending,
+W002_P001_0085,crops_raw/W002_P001_0085.png,page_001.png,W002,26,709,128,754,សម្ដៅលើ,សម្ដៅលើ,0.95,0.85,false,pending,
+W002_P001_0086,crops_raw/W002_P001_0086.png,page_001.png,W002,115,710,239,753,ដំណោះស្រាយ,ដំណោះស្រាយ,0.95,0.85,false,pending,
+W002_P001_0087,crops_raw/W002_P001_0087.png,page_001.png,W002,235,710,363,765,ការស្វែងរកនូវ,ការស្វែងរកនូវ,0.90,0.85,false,pending,
+W002_P001_0088,crops_raw/W002_P001_0088.png,page_001.png,W002,350,707,575,765,វិធីសាស្ត្រក្នុងការដោះស្រាយ,វិធីសាស្ត្រក្នុងការដោះស្រាយ,0.85,0.85,false,pending,
+W002_P001_0089,crops_raw/W002_P001_0089.png,page_001.png,W002,568,708,678,756,នូវអ្វីៗដែល,នូវអ្វីៗដែល,0.90,0.95,false,pending,
+W002_P001_0090,crops_raw/W002_P001_0090.png,page_001.png,W002,27,745,230,793,បានកើតឡើងរួចហើយ,បានកើតឡើងរួចហើយ,0.90,0.95,false,pending,
+W002_P001_0091,crops_raw/W002_P001_0091.png,page_001.png,W002,221,755,248,779,។,។,0.95,0.80,true,pending,narrow component
+W002_P001_0092,crops_raw/W002_P001_0092.png,page_001.png,W002,238,743,314,793,ដូចនេះ,ដូចនេះ,0.95,0.95,false,pending,
+W002_P001_0093,crops_raw/W002_P001_0093.png,page_001.png,W002,309,743,490,798,សុភាសិតខាងលើនេះ,សុភាសិតខាងលើនេះ,0.90,0.95,false,pending,
+W002_P001_0094,crops_raw/W002_P001_0094.png,page_001.png,W002,480,744,611,791,ចង់សម្ដៅលើ,ចង់សម្ដៅលើ,0.90,0.95,false,pending,
+W002_P001_0095,crops_raw/W002_P001_0095.png,page_001.png,W002,601,750,689,790,ការប្រឆាំង,ការប្រឆាំង,0.95,0.95,false,pending,
+W002_P001_0096,crops_raw/W002_P001_0096.png,page_001.png,W002,29,781,192,833,ឬការប្រុងប្រយ័ត្ន,ឬការប្រុងប្រយ័ត្ន,0.90,0.95,false,pending,
+W002_P001_0097,crops_raw/W002_P001_0097.png,page_001.png,W002,189,781,328,834,ការទប់ស្កាត់មុន,ការទប់ស្កាត់មុន,0.90,0.95,false,pending,
+W002_P001_0098,crops_raw/W002_P001_0098.png,page_001.png,W002,324,781,578,831,គឺជារឿងមួយដែលល្អពិត,គឺជារឿងមួយដែលល្អពិត,0.85,0.95,false,pending,
+W002_P001_0099,crops_raw/W002_P001_0099.png,page_001.png,W002,572,784,691,831,ការជួបហើយ,ការជួបហើយ,0.90,0.95,false,pending,
+W002_P001_0100,crops_raw/W002_P001_0100.png,page_001.png,W002,29,819,168,865,ទើបដោះស្រាយ,ទើបដោះស្រាយ,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0101,crops_raw/W002_P001_0101.png,page_001.png,W002,155,819,252,867,តាមក្រោយ,តាមក្រោយ,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W002_P001_0102,crops_raw/W002_P001_0102.png,page_001.png,W002,246,816,583,871,ឬក៏ទាល់តែមានគ្រោះថ្នាក់ទើបប្រុងប្រយ័ត្ន ។,ឬក៏ទាល់តែមានគ្រោះថ្នាក់ទើបប្រុងប្រយ័ត្ន ។,0.85,0.85,false,pending,
+W002_P001_0103,crops_raw/W002_P001_0103.png,page_001.png,W002,77,858,230,895,ការពិតណាស់,ការពិតណាស់,0.95,0.85,false,pending,
+W002_P001_0104,crops_raw/W002_P001_0104.png,page_001.png,W002,225,857,419,913,វិធីសាស្ត្រការពារមុន,វិធីសាស្ត្រការពារមុន,0.90,0.85,false,pending,
+W002_P001_0105,crops_raw/W002_P001_0105.png,page_001.png,W002,412,858,681,916,គឺជាជម្រើសដ៏ល្អមួយក្នុងការ-,គឺជាជម្រើសដ៏ល្អមួយក្នុងការ-,0.85,0.85,false,pending,
+W002_P001_0106,crops_raw/W002_P001_0106.png,page_001.png,W002,29,895,269,943,ចៀសវាងពីគ្រោះថ្នាក់ផ្សេងៗ,ចៀសវាងពីគ្រោះថ្នាក់ផ្សេងៗ,0.85,0.85,false,pending,
+W002_P001_0107,crops_raw/W002_P001_0107.png,page_001.png,W002,263,908,288,930,។,។,0.95,0.70,true,pending,narrow component; compound word or continuous phrase
+W002_P001_0108,crops_raw/W002_P001_0108.png,page_001.png,W002,289,897,404,944,រាល់រឿងរ៉ាវ,រាល់រឿងរ៉ាវ,0.95,0.85,false,pending,
+W002_P001_0109,crops_raw/W002_P001_0109.png,page_001.png,W002,402,895,496,941,រាល់បញ្ហា,រាល់បញ្ហា,0.95,0.85,false,pending,
+W002_P001_0110,crops_raw/W002_P001_0110.png,page_001.png,W002,491,896,682,939,តែងតែកើតមានឡើង។,តែងតែកើតមានឡើង។,0.90,0.85,false,pending,
+W002_P001_0111,crops_raw/W002_P001_0111.png,page_001.png,W002,28,936,104,979,គ្រាន់តែ,គ្រាន់តែ,0.95,0.85,false,pending,
+W002_P001_0112,crops_raw/W002_P001_0112.png,page_001.png,W002,91,939,182,980,បញ្ហាទាំងនោះ,បញ្ហាទាំងនោះ,0.90,0.85,false,pending,
+W002_P001_0113,crops_raw/W002_P001_0113.png,page_001.png,W002,169,944,218,969,មាន,មាន,0.95,0.85,false,pending,
+W002_P001_0114,crops_raw/W002_P001_0114.png,page_001.png,W002,208,937,328,986,តូចមានធំ,តូចមានធំ,0.90,0.95,false,pending,
+W002_P001_0115,crops_raw/W002_P001_0115.png,page_001.png,W002,330,935,433,979,ឬបញ្ហា,ឬបញ្ហា,0.95,0.95,false,pending,
+W002_P001_0116,crops_raw/W002_P001_0116.png,page_001.png,W002,431,934,570,986,តិចឬច្រើន,តិចឬច្រើន,0.90,0.95,false,pending,
+W002_P001_0117,crops_raw/W002_P001_0117.png,page_001.png,W002,564,944,589,969,ប៉ុណ្ណោះ,ប៉ុណ្ណោះ,0.95,0.80,true,pending,narrow component
+W002_P001_0118,crops_raw/W002_P001_0118.png,page_001.png,W002,588,936,664,984,។ ពាក្យថា,។ ពាក្យថា,0.90,0.95,false,pending,
+W002_P002_0001,crops_raw/W002_P002_0001.png,page_002.png,W002,43,53,98,90,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0002,crops_raw/W002_P002_0002.png,page_002.png,W002,98,36,431,92,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0003,crops_raw/W002_P002_0003.png,page_002.png,W002,423,32,673,78,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0004,crops_raw/W002_P002_0004.png,page_002.png,W002,43,79,227,130,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0005,crops_raw/W002_P002_0005.png,page_002.png,W002,223,90,250,113,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0006,crops_raw/W002_P002_0006.png,page_002.png,W002,247,87,341,128,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0007,crops_raw/W002_P002_0007.png,page_002.png,W002,328,82,424,128,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0008,crops_raw/W002_P002_0008.png,page_002.png,W002,411,78,498,126,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0009,crops_raw/W002_P002_0009.png,page_002.png,W002,485,77,578,123,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0010,crops_raw/W002_P002_0010.png,page_002.png,W002,568,89,594,113,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0011,crops_raw/W002_P002_0011.png,page_002.png,W002,590,75,691,129,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0012,crops_raw/W002_P002_0012.png,page_002.png,W002,40,103,320,165,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0013,crops_raw/W002_P002_0013.png,page_002.png,W002,310,113,478,165,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0014,crops_raw/W002_P002_0014.png,page_002.png,W002,478,116,668,168,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0015,crops_raw/W002_P002_0015.png,page_002.png,W002,664,126,689,149,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0016,crops_raw/W002_P002_0016.png,page_002.png,W002,43,154,199,200,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0017,crops_raw/W002_P002_0017.png,page_002.png,W002,199,153,502,200,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0018,crops_raw/W002_P002_0018.png,page_002.png,W002,490,160,533,194,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0019,crops_raw/W002_P002_0019.png,page_002.png,W002,521,162,547,184,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0020,crops_raw/W002_P002_0020.png,page_002.png,W002,544,149,692,186,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0021,crops_raw/W002_P002_0021.png,page_002.png,W002,36,177,269,240,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0022,crops_raw/W002_P002_0022.png,page_002.png,W002,269,190,387,239,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0023,crops_raw/W002_P002_0023.png,page_002.png,W002,375,188,524,234,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0024,crops_raw/W002_P002_0024.png,page_002.png,W002,512,197,539,220,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0025,crops_raw/W002_P002_0025.png,page_002.png,W002,536,190,669,223,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0026,crops_raw/W002_P002_0026.png,page_002.png,W002,42,235,127,273,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0027,crops_raw/W002_P002_0027.png,page_002.png,W002,126,223,428,277,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0028,crops_raw/W002_P002_0028.png,page_002.png,W002,415,225,460,277,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0029,crops_raw/W002_P002_0029.png,page_002.png,W002,500,223,660,275,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0030,crops_raw/W002_P002_0030.png,page_002.png,W002,651,233,690,259,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0031,crops_raw/W002_P002_0031.png,page_002.png,W002,38,260,404,312,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0032,crops_raw/W002_P002_0032.png,page_002.png,W002,396,273,423,299,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0033,crops_raw/W002_P002_0033.png,page_002.png,W002,456,261,668,310,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0034,crops_raw/W002_P002_0034.png,page_002.png,W002,44,299,118,344,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0035,crops_raw/W002_P002_0035.png,page_002.png,W002,117,301,331,350,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0036,crops_raw/W002_P002_0036.png,page_002.png,W002,328,298,372,353,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0037,crops_raw/W002_P002_0037.png,page_002.png,W002,359,297,554,353,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0038,crops_raw/W002_P002_0038.png,page_002.png,W002,551,299,654,344,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0039,crops_raw/W002_P002_0039.png,page_002.png,W002,645,308,687,333,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0040,crops_raw/W002_P002_0040.png,page_002.png,W002,42,339,264,388,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0041,crops_raw/W002_P002_0041.png,page_002.png,W002,255,335,377,381,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0042,crops_raw/W002_P002_0042.png,page_002.png,W002,366,337,445,387,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0043,crops_raw/W002_P002_0043.png,page_002.png,W002,440,335,690,389,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0044,crops_raw/W002_P002_0044.png,page_002.png,W002,40,373,292,422,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0045,crops_raw/W002_P002_0045.png,page_002.png,W002,281,380,307,400,,,0.50,0.70,true,pending,Unmatched candidate — human transcription required
+W002_P002_0046,crops_raw/W002_P002_0046.png,page_002.png,W002,300,373,341,408,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0047,crops_raw/W002_P002_0047.png,page_002.png,W002,330,373,698,420,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0048,crops_raw/W002_P002_0048.png,page_002.png,W002,43,408,237,462,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0049,crops_raw/W002_P002_0049.png,page_002.png,W002,229,423,255,446,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0050,crops_raw/W002_P002_0050.png,page_002.png,W002,250,410,532,456,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0051,crops_raw/W002_P002_0051.png,page_002.png,W002,533,409,700,457,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0052,crops_raw/W002_P002_0052.png,page_002.png,W002,44,447,255,496,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0053,crops_raw/W002_P002_0053.png,page_002.png,W002,250,461,277,484,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0054,crops_raw/W002_P002_0054.png,page_002.png,W002,276,449,458,498,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0055,crops_raw/W002_P002_0055.png,page_002.png,W002,447,445,567,492,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0056,crops_raw/W002_P002_0056.png,page_002.png,W002,555,444,693,492,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0057,crops_raw/W002_P002_0057.png,page_002.png,W002,44,484,224,534,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0058,crops_raw/W002_P002_0058.png,page_002.png,W002,217,486,366,532,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0059,crops_raw/W002_P002_0059.png,page_002.png,W002,360,483,638,535,,,0.50,0.75,true,pending,Unmatched candidate — human transcription required
+W002_P002_0060,crops_raw/W002_P002_0060.png,page_002.png,W002,625,495,685,535,,,0.50,0.75,true,pending,Unmatched candidate — human transcription required
+W002_P002_0061,crops_raw/W002_P002_0061.png,page_002.png,W002,43,522,268,574,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0062,crops_raw/W002_P002_0062.png,page_002.png,W002,265,527,430,573,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0063,crops_raw/W002_P002_0063.png,page_002.png,W002,424,520,685,573,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0064,crops_raw/W002_P002_0064.png,page_002.png,W002,40,560,196,606,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0065,crops_raw/W002_P002_0065.png,page_002.png,W002,187,571,213,594,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0066,crops_raw/W002_P002_0066.png,page_002.png,W002,204,560,539,608,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0067,crops_raw/W002_P002_0067.png,page_002.png,W002,531,558,694,609,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0068,crops_raw/W002_P002_0068.png,page_002.png,W002,45,599,351,645,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0069,crops_raw/W002_P002_0069.png,page_002.png,W002,351,595,594,640,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0070,crops_raw/W002_P002_0070.png,page_002.png,W002,587,594,688,639,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0071,crops_raw/W002_P002_0071.png,page_002.png,W002,46,637,128,679,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0072,crops_raw/W002_P002_0072.png,page_002.png,W002,136,636,188,672,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0073,crops_raw/W002_P002_0073.png,page_002.png,W002,176,635,248,688,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0074,crops_raw/W002_P002_0074.png,page_002.png,W002,250,635,474,693,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0075,crops_raw/W002_P002_0075.png,page_002.png,W002,461,633,596,693,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0076,crops_raw/W002_P002_0076.png,page_002.png,W002,584,634,691,683,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0077,crops_raw/W002_P002_0077.png,page_002.png,W002,43,679,121,722,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0078,crops_raw/W002_P002_0078.png,page_002.png,W002,113,674,305,712,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0079,crops_raw/W002_P002_0079.png,page_002.png,W002,297,684,321,709,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0080,crops_raw/W002_P002_0080.png,page_002.png,W002,310,671,600,721,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0081,crops_raw/W002_P002_0081.png,page_002.png,W002,588,673,697,714,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0082,crops_raw/W002_P002_0082.png,page_002.png,W002,45,709,454,761,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0083,crops_raw/W002_P002_0083.png,page_002.png,W002,441,709,589,761,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0084,crops_raw/W002_P002_0084.png,page_002.png,W002,579,720,605,745,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0085,crops_raw/W002_P002_0085.png,page_002.png,W002,601,709,696,757,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0086,crops_raw/W002_P002_0086.png,page_002.png,W002,43,735,320,794,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0087,crops_raw/W002_P002_0087.png,page_002.png,W002,315,745,692,803,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0088,crops_raw/W002_P002_0088.png,page_002.png,W002,43,770,277,837,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0089,crops_raw/W002_P002_0089.png,page_002.png,W002,268,797,294,821,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0090,crops_raw/W002_P002_0090.png,page_002.png,W002,289,781,414,841,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0091,crops_raw/W002_P002_0091.png,page_002.png,W002,401,781,483,841,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0092,crops_raw/W002_P002_0092.png,page_002.png,W002,470,781,653,841,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0093,crops_raw/W002_P002_0093.png,page_002.png,W002,644,796,670,819,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0094,crops_raw/W002_P002_0094.png,page_002.png,W002,45,822,148,874,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0095,crops_raw/W002_P002_0095.png,page_002.png,W002,135,822,426,874,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0096,crops_raw/W002_P002_0096.png,page_002.png,W002,419,823,562,868,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0097,crops_raw/W002_P002_0097.png,page_002.png,W002,549,823,625,865,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0098,crops_raw/W002_P002_0098.png,page_002.png,W002,618,822,685,858,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0099,crops_raw/W002_P002_0099.png,page_002.png,W002,46,860,211,915,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0100,crops_raw/W002_P002_0100.png,page_002.png,W002,207,870,345,907,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0101,crops_raw/W002_P002_0101.png,page_002.png,W002,342,859,684,908,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0102,crops_raw/W002_P002_0102.png,page_002.png,W002,44,906,81,937,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0103,crops_raw/W002_P002_0103.png,page_002.png,W002,71,899,317,950,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0104,crops_raw/W002_P002_0104.png,page_002.png,W002,312,896,685,948,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W002_P002_0105,crops_raw/W002_P002_0105.png,page_002.png,W002,44,934,104,971,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0106,crops_raw/W002_P002_0106.png,page_002.png,W002,94,948,121,971,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W002_P002_0107,crops_raw/W002_P002_0107.png,page_002.png,W002,116,936,347,986,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0108,crops_raw/W002_P002_0108.png,page_002.png,W002,337,947,381,988,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0109,crops_raw/W002_P002_0109.png,page_002.png,W002,372,937,636,989,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W002_P002_0110,crops_raw/W002_P002_0110.png,page_002.png,W002,638,946,667,972,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required

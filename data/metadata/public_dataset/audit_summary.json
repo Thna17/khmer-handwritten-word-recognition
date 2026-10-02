@@ -1,0 +1,29 @@
+{
+  "automated_pass_only": true,
+  "max_label_length": 25,
+  "total_records": 1705,
+  "writer_or_source_groups": 2,
+  "writers": [
+    "W001",
+    "W002"
+  ],
+  "source_pages": 9,
+  "non_empty_labels": 1376,
+  "unique_labels": 1003,
+  "singleton_labels": 883,
+  "unique_codepoints": 82,
+  "decision_counts": {
+    "review": 1329,
+    "reject": 376
+  },
+  "reason_counts": {
+    "transcription_not_human_verified": 1284,
+    "source_marked_rejected": 1,
+    "contains_whitespace": 15,
+    "empty_label": 328,
+    "no_khmer_character": 47,
+    "long_text_segment": 30
+  },
+  "human_verified_candidates": 0,
+  "warning": "Do not create a final train/validation/test split until there are at least three independent writer/document groups; ten or more is recommended."
+}

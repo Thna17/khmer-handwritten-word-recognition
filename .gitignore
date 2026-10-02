@@ -19,17 +19,25 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/handwritten_external/**/*.png
+data/handwritten_external/**/*.jpg
+data/handwritten_external/**/*.jpeg
 
 # Results & Logs
 results/*
 !results/.gitkeep
 *.log
+scratch/
 
 # Jupyter
 .ipynb_checkpoints
 
-# IDE
+# IDE & OS
 .vscode/
 .idea/
 *.swp
 .DS_Store
+
+# Temporary & Archive files
+*.zip
+data/metadata/dataset_snapshots/

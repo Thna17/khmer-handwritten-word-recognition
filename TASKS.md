@@ -7,6 +7,14 @@ and Section 2 for the three approaches (A1 baseline, A2 transfer learning, A3 Tr
 Target checkpoint: aim to have A1 fully trained + evaluated on the real dataset by the end of Week 2,
 so there is always something real to show if a progress check happens on short notice.
 
+**Hard data-collection deadline: 2026-09-23** (~1.5 weeks out). Target 10-15 writers — whatever is
+collected by this date is what gets used, reported honestly (rubric rewards honest small datasets
+over fabricated big ones). No further open-ended waiting on data collection past this date; every
+downstream piece (tokenizer, dataset, all 3 models, training CLI, Colab notebook) is already built
+and tested, so training starts the same day real data crosses this deadline. The W001
+external-essay data source is dropped — it could only ever yield ~2-3 usable in-vocabulary words,
+not worth further time.
+
 ---
 
 ## Phase 0: Lock Project & Scaffolding — DONE
@@ -27,10 +35,9 @@ so there is always something real to show if a progress check happens on short n
 ## WEEK 1 — Dataset foundation + shared pipeline + A1 implementation
 
 ### Dataset design & collection (highest-risk item — start immediately, runs in parallel with everything else)
-- [x] Draft word vocabulary (30 Khmer short words) — [data/metadata/word_list.csv](data/metadata/word_list.csv) — **pending your final sign-off on spelling before wide distribution**; easy to edit the CSV if any word needs changing
-- [x] Collection sheet built and published (writer ID field, consent statement, instructions, one write-in box per word) — printable, links each writer's samples to a Writer ID
-- [ ] Recruit writers (target 15–25 people; more writers matters more than more repetitions per writer, since it's the writer-disjoint split that proves generalization)
-- [ ] Print/share the collection sheet, assign each writer a Writer ID (W001, W002, ...), collect filled sheets
+- [x] Scope revised from a fixed 30-word vocabulary to open-vocabulary Khmer line/short-text recognition using public handwritten documents approved by the lecturer
+- [ ] Record source URL, permission/license, writer/document grouping, and page count for every public source
+- [ ] Expand to at least 3 independent groups for a valid split; target 10+ groups for credible generalization
 - [x] Scan-to-crop pipeline built and verified on synthetic sheets — [src/scan_pipeline.py](src/scan_pipeline.py) (`GridLayout` grid calibration from 4 points, `deskew_page` for phone photos, `crop_word_boxes`, `process_sheet`), [tests/test_scan_pipeline.py](tests/test_scan_pipeline.py) 20/20 passed, including an exact geometric proof of the perspective-correction math via a sheared-parallelogram test. **Not yet run on a real scan** — calibration points (4 pixel coordinates) must be measured once against an actual scanned/photographed sheet before this can process real data; automatic corner/grid detection (no manual marking) is a reasonable later improvement once real scans exist to tune it against.
 - [ ] Calibrate `GridLayout` against a real scanned sheet (once the first filled sheet comes back) and process it end-to-end
 - [ ] Build metadata CSV (`image,label,writer_id`) incrementally as samples come in (via `process_sheet`, one call per scanned page)
@@ -48,7 +55,7 @@ so there is always something real to show if a progress check happens on short n
 - [x] Round-trip test: `original Khmer → encode → decode → identical original` (**Gate #4 passed** — 39/39 tests in [tests/test_tokenizer.py](tests/test_tokenizer.py), including the ខ្មែរ = 5-codepoints-not-4-glyphs check and rejection of unknown characters instead of silently dropping them)
 
 ### Dataset pipeline (shared) — core implementation DONE, verified with synthetic placeholder images
-- [x] Implement `src/dataset.py`: aspect-ratio-preserving resize (H=48, max W≈256), grayscale, dynamic batch padding, safe augmentation hook (`transform=`) — [src/dataset.py](src/dataset.py)
+- [x] Implement `src/dataset.py`: aspect-ratio-preserving resize (H=48, line max W=1024), grayscale, dynamic batch padding, safe augmentation hook (`transform=`) — [src/dataset.py](src/dataset.py)
 - [x] Verified end-to-end with synthetic (rendered-font, NOT real handwriting) placeholder images in [tests/test_dataset.py](tests/test_dataset.py) — 10/10 passed: preserved aspect ratio (no stretching), per-batch dynamic padding (not a hardcoded 256), writer_id never dropped, tokenizer round-trip through the full Dataset, empty labels raise instead of being silently skipped
 - [ ] Implement a small integrity-check script (empty labels, duplicate files, missing writer IDs, unsupported characters) — do this once the real metadata CSV exists
 

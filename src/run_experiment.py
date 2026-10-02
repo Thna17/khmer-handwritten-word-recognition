@@ -177,7 +177,7 @@ def parse_args(argv=None) -> argparse.Namespace:
 
     parser.add_argument("--freeze-backbone", action="store_true", help="A2 only: freeze the pretrained backbone (linear probe)")
     parser.add_argument("--image-height", type=int, default=48)
-    parser.add_argument("--max-width", type=int, default=256)
+    parser.add_argument("--max-width", type=int, default=1024)
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--max-epochs", type=int, default=100)

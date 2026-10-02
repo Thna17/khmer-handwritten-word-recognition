@@ -1,0 +1,81 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes
+W0011_P001_L001,lines_raw/W0011_P001_L001.png,page_001.png,W0011,209,44,1271,120,ប្រធាន: នៅក្នុងច្បាប់ល្បើកថ្មី,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L002,lines_raw/W0011_P001_L002.png,page_001.png,W0011,47,116,1271,198,របស់ព្រះភិរម្យភាសាអ៊ូ ហៅង៉ុយបានចែងថា “ បម្រើម្ចាស់ពិត ប្រុងក្តី,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L003,lines_raw/W0011_P001_L003.png,page_001.png,W0011,309,194,1271,266,ឲ្យមត់ ស្មារតីឲ្យមាន សៅហ្មងឲ្យបាត់ សេពគប់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L004,lines_raw/W0011_P001_L004.png,page_001.png,W0011,311,262,1271,332,ឲ្យហាន ចង់បានរបៀន កុំលោភកុំខ្វល់ » ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L005,lines_raw/W0011_P001_L005.png,page_001.png,W0011,96,328,1271,410,ចូរពន្យល់ដោយលើកឧទាហរណ៍មកបញ្ជាក់ ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L006,lines_raw/W0011_P001_L006.png,page_001.png,W0011,613,406,1271,485,,,0.0,0.95,True,rejected,Prompt-box bottom border with no handwritten text
+W0011_P001_L007,lines_raw/W0011_P001_L007.png,page_001.png,W0011,504,481,1271,550,សេចក្តីអធិប្បាយ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L008,lines_raw/W0011_P001_L008.png,page_001.png,W0011,308,546,1271,600,នៅក្នុងសង្គមមួយៗ មនុស្សតែងមានទំនាក់ទំនង,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L009,lines_raw/W0011_P001_L009.png,page_001.png,W0011,169,596,1271,668,គ្នាទៅវិញទៅមក ពិសេសបញ្ហាការងារ ឬការសេពគប់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L010,lines_raw/W0011_P001_L010.png,page_001.png,W0011,64,664,1271,736,រាប់អាន ។ ជាមួយគ្នានេះ វត្តមាន ចិត្តគំនិតរបស់មនុស្សល្អ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L011,lines_raw/W0011_P001_L011.png,page_001.png,W0011,18,732,1271,804,ក៏មានលក្ខណៈច្រើនយ៉ាង តែយ៉ាងណាក៏ដោយ ក៏,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L012,lines_raw/W0011_P001_L012.png,page_001.png,W0011,164,800,1271,881,យ៉ាងតម្រូវឲ្យមនុស្សមានប្រាជ្ញាឈ្លាសវៃ នៅពេលផ្សារភ្ជាប់ទំនាក់ទំនង ធ្វើការ ឬរាប់អាននឹង,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L013,lines_raw/W0011_P001_L013.png,page_001.png,W0011,163,877,1271,950,គ្នាដោយការប្រុងប្រយ័ត្នឲ្យបានម៉ត់ចត់ ។ បើមនុស្ស,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L014,lines_raw/W0011_P001_L014.png,page_001.png,W0011,24,946,1271,1018,ល្អ គ្មានបញ្ហាអ្វីនោះទេ តែបើប៉ះមនុស្សទៀចវៀច មុខជា,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L015,lines_raw/W0011_P001_L015.png,page_001.png,W0011,18,1014,1271,1085,ជួបប្រទះ ការខាតបង់មិនខាន ។ ចំណែកចំណេះវិជ្ជាក៏,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L016,lines_raw/W0011_P001_L016.png,page_001.png,W0011,53,1081,1271,1155,ទាមទារឲ្យមនុស្ស ខិតខំប្រឹងប្រែង បើចង់ចេះ ចង់ដឹងត្រូវ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P001_L017,lines_raw/W0011_P001_L017.png,page_001.png,W0011,49,1151,1271,1224,ហ៊ានជម្នះ ឧបសគ្គ មិនត្រូវភ័យខ្លាចនោះទេ ។ អាស្រ័យ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L001,lines_raw/W0011_P002_L001.png,page_002.png,W0011,116,20,1271,85,ហេតុនេះហើយ ទើបនៅក្នុងច្បាប់ល្បើកថ្មីរបស់ព្រះភិរម្យ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L002,lines_raw/W0011_P002_L002.png,page_002.png,W0011,116,81,1271,153,ភាសាអ៊ូ ហៅង៉ុយ បានចែងថា “ បម្រើម្ចាស់ពិត ប្រុងក្តី,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L003,lines_raw/W0011_P002_L003.png,page_002.png,W0011,116,149,1271,221,ឲ្យមត់ ស្មារតីឲ្យមាន សៅហ្មងឲ្យបាត់ បើខ្វះឲ្យហាន ចង់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L004,lines_raw/W0011_P002_L004.png,page_002.png,W0011,116,217,1271,288,បានរបៀន កុំលោភកុំខ្វល់ » ។,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L005,lines_raw/W0011_P002_L005.png,page_002.png,W0011,116,284,1271,356,តើពំនោលក្នុងច្បាប់នេះ មានខ្លឹមសារយ៉ាងដូចម្តេច ?,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L006,lines_raw/W0011_P002_L006.png,page_002.png,W0011,116,352,1271,423,ដើម្បីជាជំនួយដល់ការបកស្រាយពំនោលក្នុងច្បាប់,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L007,lines_raw/W0011_P002_L007.png,page_002.png,W0011,116,419,1271,489,ល្បើកថ្មីខាងលើឲ្យបានក្បោះក្បាយ គប្បីយល់ន័យនៃ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L008,lines_raw/W0011_P002_L008.png,page_002.png,W0011,116,485,1271,554,ពាក្យ ព្រត មុត ល្ងៅ និងពាក្យរបៀន ជាមុនសិន ។ ពាក្យ ព្រត,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L009,lines_raw/W0011_P002_L009.png,page_002.png,W0011,116,550,1271,627,គឺសំដៅលើ ល្បិចកល ចិត្តគំនិត រវត្ដចរិត ។ មុត គឺ សំដៅ,,1.0,0.95,False,verified,Verified character-by-character line crop transcription
+W0011_P002_L010,lines_raw/W0011_P002_L010.png,page_002.png,W0011,116,623,1271,694,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L011,lines_raw/W0011_P002_L011.png,page_002.png,W0011,116,690,1271,753,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L012,lines_raw/W0011_P002_L012.png,page_002.png,W0011,116,749,1271,828,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L013,lines_raw/W0011_P002_L013.png,page_002.png,W0011,116,824,1271,895,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L014,lines_raw/W0011_P002_L014.png,page_002.png,W0011,116,891,1271,954,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L015,lines_raw/W0011_P002_L015.png,page_002.png,W0011,116,950,1271,1022,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L016,lines_raw/W0011_P002_L016.png,page_002.png,W0011,116,1018,1271,1090,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L017,lines_raw/W0011_P002_L017.png,page_002.png,W0011,116,1086,1271,1159,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L018,lines_raw/W0011_P002_L018.png,page_002.png,W0011,116,1155,1271,1229,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L019,lines_raw/W0011_P002_L019.png,page_002.png,W0011,116,1225,1271,1298,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L020,lines_raw/W0011_P002_L020.png,page_002.png,W0011,116,1294,1271,1377,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P002_L021,lines_raw/W0011_P002_L021.png,page_002.png,W0011,116,1373,1271,1464,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L001,lines_raw/W0011_P003_L001.png,page_003.png,W0011,116,21,1271,98,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L002,lines_raw/W0011_P003_L002.png,page_003.png,W0011,116,94,1271,166,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L003,lines_raw/W0011_P003_L003.png,page_003.png,W0011,116,162,1271,226,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L004,lines_raw/W0011_P003_L004.png,page_003.png,W0011,116,222,1271,302,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L005,lines_raw/W0011_P003_L005.png,page_003.png,W0011,116,298,1271,370,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L006,lines_raw/W0011_P003_L006.png,page_003.png,W0011,116,366,1271,429,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L007,lines_raw/W0011_P003_L007.png,page_003.png,W0011,116,425,1271,496,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L008,lines_raw/W0011_P003_L008.png,page_003.png,W0011,116,492,1271,563,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L009,lines_raw/W0011_P003_L009.png,page_003.png,W0011,116,559,1271,629,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L010,lines_raw/W0011_P003_L010.png,page_003.png,W0011,116,625,1271,695,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L011,lines_raw/W0011_P003_L011.png,page_003.png,W0011,116,691,1271,762,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L012,lines_raw/W0011_P003_L012.png,page_003.png,W0011,116,758,1271,830,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L013,lines_raw/W0011_P003_L013.png,page_003.png,W0011,116,826,1271,898,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L014,lines_raw/W0011_P003_L014.png,page_003.png,W0011,116,894,1271,974,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L015,lines_raw/W0011_P003_L015.png,page_003.png,W0011,116,970,1271,1051,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L016,lines_raw/W0011_P003_L016.png,page_003.png,W0011,116,1047,1271,1120,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L017,lines_raw/W0011_P003_L017.png,page_003.png,W0011,116,1116,1271,1191,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L018,lines_raw/W0011_P003_L018.png,page_003.png,W0011,116,1187,1271,1261,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L019,lines_raw/W0011_P003_L019.png,page_003.png,W0011,116,1257,1271,1331,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L020,lines_raw/W0011_P003_L020.png,page_003.png,W0011,116,1327,1271,1402,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P003_L021,lines_raw/W0011_P003_L021.png,page_003.png,W0011,116,1398,1271,1484,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L001,lines_raw/W0011_P004_L001.png,page_004.png,W0011,116,21,1271,90,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L002,lines_raw/W0011_P004_L002.png,page_004.png,W0011,116,86,1271,154,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L003,lines_raw/W0011_P004_L003.png,page_004.png,W0011,116,150,1271,217,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L004,lines_raw/W0011_P004_L004.png,page_004.png,W0011,116,213,1271,283,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L005,lines_raw/W0011_P004_L005.png,page_004.png,W0011,116,279,1271,349,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L006,lines_raw/W0011_P004_L006.png,page_004.png,W0011,116,345,1271,414,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L007,lines_raw/W0011_P004_L007.png,page_004.png,W0011,116,410,1271,480,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L008,lines_raw/W0011_P004_L008.png,page_004.png,W0011,116,476,1271,545,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L009,lines_raw/W0011_P004_L009.png,page_004.png,W0011,116,541,1271,610,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L010,lines_raw/W0011_P004_L010.png,page_004.png,W0011,116,606,1271,676,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L011,lines_raw/W0011_P004_L011.png,page_004.png,W0011,116,672,1271,741,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L012,lines_raw/W0011_P004_L012.png,page_004.png,W0011,116,737,1271,807,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L013,lines_raw/W0011_P004_L013.png,page_004.png,W0011,116,803,1271,875,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L014,lines_raw/W0011_P004_L014.png,page_004.png,W0011,116,871,1271,951,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L015,lines_raw/W0011_P004_L015.png,page_004.png,W0011,116,947,1271,1019,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L016,lines_raw/W0011_P004_L016.png,page_004.png,W0011,116,1015,1271,1082,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L017,lines_raw/W0011_P004_L017.png,page_004.png,W0011,116,1078,1271,1152,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L018,lines_raw/W0011_P004_L018.png,page_004.png,W0011,116,1148,1271,1222,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L019,lines_raw/W0011_P004_L019.png,page_004.png,W0011,116,1218,1271,1302,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L020,lines_raw/W0011_P004_L020.png,page_004.png,W0011,116,1298,1271,1374,,,0.0,0.95,True,pending,Line crop; human transcription required
+W0011_P004_L021,lines_raw/W0011_P004_L021.png,page_004.png,W0011,116,1370,1271,1469,,,0.0,0.95,True,pending,Line crop; human transcription required

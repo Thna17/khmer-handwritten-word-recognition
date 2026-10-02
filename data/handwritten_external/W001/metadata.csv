@@ -1,0 +1,1478 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes
+W001_P001_0001,crops_raw/W001_P001_0001.png,page_001.png,W001,333,352,492,392,សេចក្តីអធិប្បាយ,សេចក្តីអធិប្បាយ,0.96,0.95,true,pending,
+W001_P001_0002,crops_raw/W001_P001_0002.png,page_001.png,W001,655,377,681,397,,,0.00,0.80,true,rejected,stray margin mark / non-handwriting noise
+W001_P001_0003,crops_raw/W001_P001_0003.png,page_001.png,W001,142,374,414,412,នៅលើសកលលោកយើងនេះ,នៅលើសកលលោកយើងនេះ,0.92,0.95,true,pending,compound phrase
+W001_P001_0004,crops_raw/W001_P001_0004.png,page_001.png,W001,410,379,577,425,គ្រប់បណ្តា,គ្រប់បណ្តា,0.94,0.95,true,pending,
+W001_P001_0005,crops_raw/W001_P001_0005.png,page_001.png,W001,574,378,688,418,មនុស្ស,មនុស្ស,0.96,0.95,true,pending,
+W001_P001_0006,crops_raw/W001_P001_0006.png,page_001.png,W001,79,404,204,450,តែងតែ,តែងតែ,0.97,0.95,true,pending,
+W001_P001_0007,crops_raw/W001_P001_0007.png,page_001.png,W001,195,405,270,445,ប្រាថ្នា,ប្រាថ្នា,0.96,0.95,true,pending,
+W001_P001_0008,crops_raw/W001_P001_0008.png,page_001.png,W001,258,405,301,448,ចង់បាន,ចង់បាន,0.95,0.95,true,pending,
+W001_P001_0009,crops_raw/W001_P001_0009.png,page_001.png,W001,329,404,416,448,នូវ,នូវ,0.97,0.95,true,pending,
+W001_P001_0010,crops_raw/W001_P001_0010.png,page_001.png,W001,416,411,525,450,សុខសន្តិភាព,សុខសន្តិភាព,0.95,0.95,true,pending,
+W001_P001_0011,crops_raw/W001_P001_0011.png,page_001.png,W001,524,405,599,448,សុភមង្គល,សុភមង្គល,0.95,0.95,true,pending,
+W001_P001_0012,crops_raw/W001_P001_0012.png,page_001.png,W001,592,410,626,448,គ្រប់ៗ,គ្រប់ៗ,0.96,0.95,true,pending,
+W001_P001_0013,crops_raw/W001_P001_0013.png,page_001.png,W001,619,411,645,436,គ្នា,គ្នា,0.96,0.80,true,pending,narrow component
+W001_P001_0014,crops_raw/W001_P001_0014.png,page_001.png,W001,643,409,688,436,។ ការរស់,។ ការរស់,0.92,0.95,true,pending,includes punctuation khan
+W001_P001_0015,crops_raw/W001_P001_0015.png,page_001.png,W001,80,431,210,463,នៅដោយមាន,នៅដោយមាន,0.93,0.95,true,pending,
+W001_P001_0016,crops_raw/W001_P001_0016.png,page_001.png,W001,198,435,275,462,ការចេះ,ការចេះ,0.95,0.95,true,pending,
+W001_P001_0017,crops_raw/W001_P001_0017.png,page_001.png,W001,263,412,386,472,អធ្យាស្រ័យឱ្យគ្នា,អធ្យាស្រ័យឱ្យគ្នា,0.92,0.95,true,pending,compound phrase
+W001_P001_0018,crops_raw/W001_P001_0018.png,page_001.png,W001,375,430,514,473,ទៅវិញទៅមក,ទៅវិញទៅមក,0.94,0.95,true,pending,
+W001_P001_0019,crops_raw/W001_P001_0019.png,page_001.png,W001,525,430,688,464,រស់នៅដោយមាន,រស់នៅដោយមាន,0.92,0.95,true,pending,compound phrase
+W001_P001_0020,crops_raw/W001_P001_0020.png,page_001.png,W001,80,456,272,504,ភាពសមរម្យស្រប,ភាពសមរម្យស្រប,0.92,0.95,true,pending,
+W001_P001_0021,crops_raw/W001_P001_0021.png,page_001.png,W001,275,456,348,499,រួមគំនិត,រួមគំនិត,0.95,0.85,true,pending,
+W001_P001_0022,crops_raw/W001_P001_0022.png,page_001.png,W001,335,456,394,499,យកភាពជាបងប្អូន,យកភាពជាបងប្អូន,0.91,0.85,true,pending,compound phrase
+W001_P001_0023,crops_raw/W001_P001_0023.png,page_001.png,W001,381,456,497,499,រៀងៗខ្លួន,រៀងៗខ្លួន,0.95,0.85,true,pending,
+W001_P001_0024,crops_raw/W001_P001_0024.png,page_001.png,W001,486,456,560,502,គឺ,គឺ,0.96,0.95,true,pending,
+W001_P001_0025,crops_raw/W001_P001_0025.png,page_001.png,W001,552,464,596,496,ជា,ជា,0.96,0.95,true,pending,
+W001_P001_0026,crops_raw/W001_P001_0026.png,page_001.png,W001,595,453,647,489,បំណង,បំណង,0.95,0.95,true,pending,
+W001_P001_0027,crops_raw/W001_P001_0027.png,page_001.png,W001,636,458,688,487,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P001_0028,crops_raw/W001_P001_0028.png,page_001.png,W001,78,481,211,521,របស់ប្រជាជន,របស់ប្រជាជន,0.93,0.85,true,pending,
+W001_P001_0029,crops_raw/W001_P001_0029.png,page_001.png,W001,198,481,289,521,ទាំងមូល,ទាំងមូល,0.95,0.85,true,pending,
+W001_P001_0030,crops_raw/W001_P001_0030.png,page_001.png,W001,281,480,471,527,ដើម្បីរស់នៅ,ដើម្បីរស់នៅ,0.92,0.95,true,pending,
+W001_P001_0031,crops_raw/W001_P001_0031.png,page_001.png,W001,503,489,531,514,ប្រកបដោយ,ប្រកបដោយ,0.94,0.80,true,pending,narrow component
+W001_P001_0032,crops_raw/W001_P001_0032.png,page_001.png,W001,533,482,686,524,សេចក្តីសុខ,សេចក្តីសុខ,0.95,0.95,true,pending,
+W001_P001_0033,crops_raw/W001_P001_0033.png,page_001.png,W001,78,503,300,564,មនុស្សធម៌,មនុស្សធម៌,0.95,0.95,true,pending,
+W001_P001_0034,crops_raw/W001_P001_0034.png,page_001.png,W001,292,514,337,541,នៃការរស់នៅ,នៃការរស់នៅ,0.93,0.95,true,pending,
+W001_P001_0035,crops_raw/W001_P001_0035.png,page_001.png,W001,325,488,510,550,បានសម្រេចជាកុសលផលល្អ,បានសម្រេចជាកុសលផលល្អ,0.90,0.95,true,pending,compound phrase
+W001_P001_0036,crops_raw/W001_P001_0036.png,page_001.png,W001,516,504,688,565,ការព្រមព្រៀងគ្នា,ការព្រមព្រៀងគ្នា,0.92,0.95,true,pending,
+W001_P001_0037,crops_raw/W001_P001_0037.png,page_001.png,W001,78,540,107,574,ស្រឡាញ់រាប់អានគ្នា,ស្រឡាញ់រាប់អានគ្នា,0.92,0.80,true,pending,narrow component
+W001_P001_0038,crops_raw/W001_P001_0038.png,page_001.png,W001,133,533,226,577,ទៅវិញទៅមក,ទៅវិញទៅមក,0.94,0.95,true,pending,
+W001_P001_0039,crops_raw/W001_P001_0039.png,page_001.png,W001,215,530,357,576,។,។,0.97,0.95,true,pending,
+W001_P001_0040,crops_raw/W001_P001_0040.png,page_001.png,W001,363,539,389,563,ដូចនេះ,ដូចនេះ,0.95,0.80,true,pending,narrow component
+W001_P001_0041,crops_raw/W001_P001_0041.png,page_001.png,W001,386,527,544,579,ពុទ្ធសាសនាក៏មាន,ពុទ្ធសាសនាក៏មាន,0.91,0.95,true,pending,
+W001_P001_0042,crops_raw/W001_P001_0042.png,page_001.png,W001,548,527,637,567,ការទាក់ទង,ការទាក់ទង,0.94,0.95,true,pending,
+W001_P001_0043,crops_raw/W001_P001_0043.png,page_001.png,W001,663,539,688,564,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P001_0044,crops_raw/W001_P001_0044.png,page_001.png,W001,79,558,157,591,ខាងផ្នែក,ខាងផ្នែក,0.95,0.95,true,pending,
+W001_P001_0045,crops_raw/W001_P001_0045.png,page_001.png,W001,155,557,306,608,សម្រាប់ប្រជាជន,សម្រាប់ប្រជាជន,0.93,0.95,true,pending,
+W001_P001_0046,crops_raw/W001_P001_0046.png,page_001.png,W001,301,559,357,591,ក៏ដូចជា,ក៏ដូចជា,0.94,0.95,true,pending,
+W001_P001_0047,crops_raw/W001_P001_0047.png,page_001.png,W001,347,565,412,606,សង្គមជាតិ,សង្គមជាតិ,0.95,0.95,true,pending,
+W001_P001_0048,crops_raw/W001_P001_0048.png,page_001.png,W001,400,557,477,591,ដែលជា,ដែលជា,0.95,0.95,true,pending,
+W001_P001_0049,crops_raw/W001_P001_0049.png,page_001.png,W001,470,560,550,590,គុណកាល,គុណកាល,0.93,0.95,true,pending,
+W001_P001_0050,crops_raw/W001_P001_0050.png,page_001.png,W001,539,556,688,616,និងជីវិត ។,និងជីវិត ។,0.92,0.95,true,pending,
+W001_P001_0051,crops_raw/W001_P001_0051.png,page_001.png,W001,94,604,124,626,ពុទ្ធសាសនា,ពុទ្ធសាសនា,0.95,0.80,true,pending,narrow component
+W001_P001_0052,crops_raw/W001_P001_0052.png,page_001.png,W001,178,589,246,626,បានដើរតួ,បានដើរតួ,0.94,0.95,true,pending,
+W001_P001_0053,crops_raw/W001_P001_0053.png,page_001.png,W001,234,584,322,618,យ៉ាង,យ៉ាង,0.96,0.95,true,pending,
+W001_P001_0054,crops_raw/W001_P001_0054.png,page_001.png,W001,315,580,444,644,សំខាន់,សំខាន់,0.96,0.95,true,pending,
+W001_P001_0055,crops_raw/W001_P001_0055.png,page_001.png,W001,432,582,567,616,ក្នុង,ក្នុង,0.96,0.95,true,pending,
+W001_P001_0056,crops_raw/W001_P001_0056.png,page_001.png,W001,583,583,626,626,ការចាត់ចែង,ការចាត់ចែង,0.94,0.95,true,pending,
+W001_P001_0057,crops_raw/W001_P001_0057.png,page_001.png,W001,615,584,688,626,សីលធម៌,សីលធម៌,0.95,0.95,true,pending,
+W001_P001_0058,crops_raw/W001_P001_0058.png,page_001.png,W001,79,590,329,669,មនុស្សដែល,មនុស្សដែល,0.94,0.95,true,pending,
+W001_P001_0059,crops_raw/W001_P001_0059.png,page_001.png,W001,317,612,381,654,ប្រតិបត្តិ,ប្រតិបត្តិ,0.95,0.95,true,pending,
+W001_P001_0060,crops_raw/W001_P001_0060.png,page_001.png,W001,383,616,412,642,តាមគន្លងធម៌,តាមគន្លងធម៌,0.93,0.80,true,pending,narrow component
+W001_P001_0061,crops_raw/W001_P001_0061.png,page_001.png,W001,404,604,540,660,របស់ព្រះពុទ្ធ,របស់ព្រះពុទ្ធ,0.94,0.95,true,pending,
+W001_P001_0062,crops_raw/W001_P001_0062.png,page_001.png,W001,534,613,586,641,ដ៏ល្អ... ហេតុនេះ,ដ៏ល្អ... ហេតុនេះ,0.90,0.95,true,pending,informal ellipses
+W001_P001_0063,crops_raw/W001_P001_0063.png,page_001.png,W001,577,611,613,643,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P001_0064,crops_raw/W001_P001_0064.png,page_001.png,W001,607,616,688,668,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P001_0065,crops_raw/W001_P001_0065.png,page_001.png,W001,81,642,107,665,ហើយទើបបានជា,ហើយទើបបានជា,0.92,0.80,true,pending,narrow component
+W001_P001_0066,crops_raw/W001_P001_0066.png,page_001.png,W001,139,633,297,677,មានទស្សនៈ,មានទស្សនៈ,0.94,0.95,true,pending,
+W001_P001_0067,crops_raw/W001_P001_0067.png,page_001.png,W001,289,630,491,678,មួយបានលើកឡើងថា,មួយបានលើកឡើងថា,0.91,0.95,true,pending,
+W001_P001_0068,crops_raw/W001_P001_0068.png,page_001.png,W001,482,640,508,660,“,“,0.96,0.80,true,pending,narrow component
+W001_P001_0069,crops_raw/W001_P001_0069.png,page_001.png,W001,510,633,650,679,ទ្រព្យសម្បត្តិ,ទ្រព្យសម្បត្តិ,0.95,0.95,true,pending,
+W001_P001_0070,crops_raw/W001_P001_0070.png,page_001.png,W001,645,656,668,682,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.80,true,pending,narrow component
+W001_P001_0071,crops_raw/W001_P001_0071.png,page_001.png,W001,660,643,688,677,សាសនា,សាសនា,0.95,0.80,true,pending,narrow component
+W001_P001_0072,crops_raw/W001_P001_0072.png,page_001.png,W001,80,665,158,694,សាសនា,សាសនា,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P001_0073,crops_raw/W001_P001_0073.png,page_001.png,W001,145,658,455,718,បានធ្វើឱ្យមានវិទ្យាសាស្ត្រ,បានធ្វើឱ្យមានវិទ្យាសាស្ត្រ,0.91,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P001_0074,crops_raw/W001_P001_0074.png,page_001.png,W001,173,683,223,717,តើ,តើ,0.97,0.95,true,pending,
+W001_P001_0075,crops_raw/W001_P001_0075.png,page_001.png,W001,320,694,343,718,ទស្សនៈ,ទស្សនៈ,0.96,0.80,true,pending,narrow component
+W001_P001_0076,crops_raw/W001_P001_0076.png,page_001.png,W001,334,692,380,720,ខាងលើនេះ,ខាងលើនេះ,0.94,0.95,true,pending,
+W001_P001_0077,crops_raw/W001_P001_0077.png,page_001.png,W001,372,692,462,726,មាន,មាន,0.96,0.95,true,pending,
+W001_P001_0078,crops_raw/W001_P001_0078.png,page_001.png,W001,453,684,658,731,អត្ថន័យ,អត្ថន័យ,0.95,0.95,true,pending,
+W001_P001_0079,crops_raw/W001_P001_0079.png,page_001.png,W001,651,691,678,725,និង,និង,0.96,0.80,true,pending,narrow component
+W001_P001_0080,crops_raw/W001_P001_0080.png,page_001.png,W001,143,693,512,754,ដើម្បីជាត្រីវិស័យ,ដើម្បីជាត្រីវិស័យ,0.91,0.95,true,pending,
+W001_P001_0081,crops_raw/W001_P001_0081.png,page_001.png,W001,501,715,561,754,ឈានទៅបកស្រាយ,ឈានទៅបកស្រាយ,0.92,0.85,true,pending,
+W001_P001_0082,crops_raw/W001_P001_0082.png,page_001.png,W001,548,714,646,754,ន័យនៃទស្សនៈ ប្រធាន,ន័យនៃទស្សនៈ ប្រធាន,0.90,0.85,true,pending,
+W001_P001_0083,crops_raw/W001_P001_0083.png,page_001.png,W001,636,721,688,756,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P001_0084,crops_raw/W001_P001_0084.png,page_001.png,W001,78,735,211,793,ខាងលើ,ខាងលើ,0.95,0.85,true,pending,
+W001_P001_0085,crops_raw/W001_P001_0085.png,page_001.png,W001,245,743,327,777,ឱ្យ បាន,ឱ្យ បាន,0.94,0.85,true,pending,
+W001_P001_0086,crops_raw/W001_P001_0086.png,page_001.png,W001,329,737,425,803,ក្បោះក្បាយ,ក្បោះក្បាយ,0.95,0.85,true,pending,
+W001_P001_0087,crops_raw/W001_P001_0087.png,page_001.png,W001,430,738,688,781,ស៊ីជម្រៅ មានន័យទូលំទូលាយស្តាប់បាន,ស៊ីជម្រៅ មានន័យទូលំទូលាយស្តាប់បាន,0.88,0.85,true,pending,continuous handwritten clause
+W001_P001_0088,crops_raw/W001_P001_0088.png,page_001.png,W001,78,768,160,806,ទទូលយក,ទទូលយក,0.94,0.95,true,pending,original spelling ទទូល
+W001_P001_0089,crops_raw/W001_P001_0089.png,page_001.png,W001,158,743,344,804,គ្រប់បណ្តាជន,គ្រប់បណ្តាជន,0.93,0.95,true,pending,
+W001_P001_0090,crops_raw/W001_P001_0090.png,page_001.png,W001,346,768,378,794,ទាំងឡាយ,ទាំងឡាយ,0.95,0.80,true,pending,narrow component
+W001_P001_0091,crops_raw/W001_P001_0091.png,page_001.png,W001,391,767,423,805,យើង គប្បី,យើង គប្បី,0.93,0.80,true,pending,narrow component
+W001_P001_0092,crops_raw/W001_P001_0092.png,page_001.png,W001,412,762,635,802,ត្រូវស្វែងយល់,ត្រូវស្វែងយល់,0.93,0.95,true,pending,
+W001_P001_0093,crops_raw/W001_P001_0093.png,page_001.png,W001,624,770,664,794,នូវគន្លឹះនៃពាក្យ,នូវគន្លឹះនៃពាក្យ,0.91,0.95,true,pending,
+W001_P001_0094,crops_raw/W001_P001_0094.png,page_001.png,W001,652,768,688,803,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P001_0095,crops_raw/W001_P001_0095.png,page_001.png,W001,78,793,119,825,គន្លឹះ,គន្លឹះ,0.96,0.95,true,pending,
+W001_P001_0096,crops_raw/W001_P001_0096.png,page_001.png,W001,107,794,130,819,មួយចំនួន,មួយចំនួន,0.95,0.80,true,pending,narrow component
+W001_P001_0097,crops_raw/W001_P001_0097.png,page_001.png,W001,126,789,321,833,សិន ។,សិន ។,0.95,0.95,true,pending,
+W001_P001_0098,crops_raw/W001_P001_0098.png,page_001.png,W001,316,793,341,815,“,“,0.96,0.80,true,pending,narrow component
+W001_P001_0099,crops_raw/W001_P001_0099.png,page_001.png,W001,341,792,369,811,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.80,true,pending,narrow component
+W001_P001_0100,crops_raw/W001_P001_0100.png,page_001.png,W001,364,784,445,844,សាសនា,សាសនា,0.96,0.85,true,pending,
+W001_P001_0101,crops_raw/W001_P001_0101.png,page_001.png,W001,432,784,508,844,”,”,0.96,0.85,true,pending,
+W001_P001_0102,crops_raw/W001_P001_0102.png,page_001.png,W001,502,792,530,815,មានន័យថា,មានន័យថា,0.94,0.80,true,pending,narrow component
+W001_P001_0103,crops_raw/W001_P001_0103.png,page_001.png,W001,524,790,624,823,សាសនា,សាសនា,0.95,0.95,true,pending,
+W001_P001_0104,crops_raw/W001_P001_0104.png,page_001.png,W001,621,795,688,822,អារ្យ,អារ្យ,0.93,0.95,true,pending,
+W001_P001_0105,crops_raw/W001_P001_0105.png,page_001.png,W001,78,811,257,870,អារ្យរបស់ពុទ្ធសាសនិក,អារ្យរបស់ពុទ្ធសាសនិក,0.91,0.95,true,pending,
+W001_P001_0106,crops_raw/W001_P001_0106.png,page_001.png,W001,247,818,291,851,ទាំងពួង,ទាំងពួង,0.95,0.95,true,pending,
+W001_P001_0107,crops_raw/W001_P001_0107.png,page_001.png,W001,280,808,366,845,មានជំនឿ,មានជំនឿ,0.95,0.95,true,pending,
+W001_P001_0108,crops_raw/W001_P001_0108.png,page_001.png,W001,355,818,388,843,មុតមាំ,មុតមាំ,0.95,0.80,true,pending,narrow component
+W001_P001_0109,crops_raw/W001_P001_0109.png,page_001.png,W001,436,809,567,854,និង,និង,0.96,0.95,true,pending,
+W001_P001_0110,crops_raw/W001_P001_0110.png,page_001.png,W001,567,812,688,853,ជាសាសនា,ជាសាសនា,0.94,0.95,true,pending,
+W001_P001_0111,crops_raw/W001_P001_0111.png,page_001.png,W001,79,832,237,881,ដែលបង្កើតឡើង,ដែលបង្កើតឡើង,0.93,0.95,true,pending,
+W001_P001_0112,crops_raw/W001_P001_0112.png,page_001.png,W001,236,832,342,876,ដោយព្រះបរមគ្រូ,ដោយព្រះបរមគ្រូ,0.92,0.95,true,pending,
+W001_P001_0113,crops_raw/W001_P001_0113.png,page_001.png,W001,330,844,414,877,នៃយើង ។,នៃយើង ។,0.94,0.85,true,pending,
+W001_P001_0114,crops_raw/W001_P001_0114.png,page_001.png,W001,401,837,489,877,ឯពាក្យ,ឯពាក្យ,0.95,0.85,true,pending,
+W001_P001_0115,crops_raw/W001_P001_0115.png,page_001.png,W001,480,846,507,870,“,“,0.96,0.80,true,pending,narrow component
+W001_P001_0116,crops_raw/W001_P001_0116.png,page_001.png,W001,513,837,554,870,វិទ្យា,វិទ្យា,0.95,0.95,true,pending,
+W001_P001_0117,crops_raw/W001_P001_0117.png,page_001.png,W001,546,840,574,868,សាស្ត្រ,សាស្ត្រ,0.95,0.80,true,pending,narrow component
+W001_P001_0118,crops_raw/W001_P001_0118.png,page_001.png,W001,566,838,655,877,”,”,0.96,0.95,true,pending,
+W001_P001_0119,crops_raw/W001_P001_0119.png,page_001.png,W001,647,843,676,864,គឺ,គឺ,0.96,0.80,true,pending,narrow component
+W001_P001_0120,crops_raw/W001_P001_0120.png,page_001.png,W001,666,843,688,869,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P001_0121,crops_raw/W001_P001_0121.png,page_001.png,W001,78,864,259,906,ជាការ,ជាការ,0.95,0.95,true,pending,
+W001_P001_0122,crops_raw/W001_P001_0122.png,page_001.png,W001,247,865,327,895,សិក្សាស្រាវជ្រាវ,សិក្សាស្រាវជ្រាវ,0.93,0.95,true,pending,
+W001_P001_0123,crops_raw/W001_P001_0123.png,page_001.png,W001,315,861,357,894,នូវ,នូវ,0.96,0.95,true,pending,
+W001_P001_0124,crops_raw/W001_P001_0124.png,page_001.png,W001,351,870,378,894,ចំណេះដឹង,ចំណេះដឹង,0.95,0.80,true,pending,narrow component
+W001_P001_0125,crops_raw/W001_P001_0125.png,page_001.png,W001,389,858,466,895,។,។,0.97,0.95,true,pending,
+W001_P001_0126,crops_raw/W001_P001_0126.png,page_001.png,W001,459,868,488,887,ចំណែក,ចំណែក,0.95,0.80,true,pending,narrow component
+W001_P001_0127,crops_raw/W001_P001_0127.png,page_001.png,W001,482,863,567,905,“,“,0.96,0.95,true,pending,
+W001_P001_0128,crops_raw/W001_P001_0128.png,page_001.png,W001,555,866,581,888,សន្តិភាព,សន្តិភាព,0.95,0.80,true,pending,narrow component
+W001_P001_0129,crops_raw/W001_P001_0129.png,page_001.png,W001,574,869,688,903,”,”,0.96,0.95,true,pending,
+W001_P001_0130,crops_raw/W001_P001_0130.png,page_001.png,W001,78,886,331,932,ដែលមានលក្ខណៈ,ដែលមានលក្ខណៈ,0.92,0.95,true,pending,
+W001_P001_0131,crops_raw/W001_P001_0131.png,page_001.png,W001,335,894,463,932,ស្ងប់ស្ងាត់,ស្ងប់ស្ងាត់,0.95,0.95,true,pending,
+W001_P001_0132,crops_raw/W001_P001_0132.png,page_001.png,W001,479,894,634,947,សុខសាន្ត...,សុខសាន្ត...,0.92,0.95,true,pending,
+W001_P001_0133,crops_raw/W001_P001_0133.png,page_001.png,W001,633,893,688,932,ភាពគ្មានសង្គ្រាម...,ភាពគ្មានសង្គ្រាម...,0.91,0.95,true,pending,
+W001_P001_0134,crops_raw/W001_P001_0134.png,page_001.png,W001,78,918,158,955,ទស្សនៈ,ទស្សនៈ,0.96,0.85,true,pending,
+W001_P001_0135,crops_raw/W001_P001_0135.png,page_001.png,W001,145,919,249,955,ប្រធានខាងលើ,ប្រធានខាងលើ,0.93,0.85,true,pending,
+W001_P001_0136,crops_raw/W001_P001_0136.png,page_001.png,W001,238,912,314,945,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P001_0137,crops_raw/W001_P001_0137.png,page_001.png,W001,308,913,358,945,លើកឡើងថា,លើកឡើងថា,0.94,0.95,true,pending,
+W001_P001_0138,crops_raw/W001_P001_0138.png,page_001.png,W001,346,913,450,957,ទ្រព្យសម្បត្តិ,ទ្រព្យសម្បត្តិ,0.95,0.95,true,pending,
+W001_P001_0139,crops_raw/W001_P001_0139.png,page_001.png,W001,445,911,511,958,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.95,true,pending,
+W001_P001_0140,crops_raw/W001_P001_0140.png,page_001.png,W001,516,909,546,944,សាសនា,សាសនា,0.95,0.80,true,pending,narrow component
+W001_P001_0141,crops_raw/W001_P001_0141.png,page_001.png,W001,600,922,654,957,ដែល,ដែល,0.95,0.95,true,pending,
+W001_P001_0142,crops_raw/W001_P001_0142.png,page_001.png,W001,660,921,688,946,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P001_0143,crops_raw/W001_P001_0143.png,page_001.png,W001,78,944,157,971,សាសនា,សាសនា,0.95,0.95,true,pending,
+W001_P001_0144,crops_raw/W001_P001_0144.png,page_001.png,W001,152,937,372,995,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P001_0145,crops_raw/W001_P001_0145.png,page_001.png,W001,360,938,467,987,កើតមកដោយ,កើតមកដោយ,0.93,0.95,true,pending,
+W001_P001_0146,crops_raw/W001_P001_0146.png,page_001.png,W001,455,938,530,971,ព្រះបរមគ្រូននៃយើង,ព្រះបរមគ្រូននៃយើង,0.90,0.95,true,pending,original spelling contains extra ន
+W001_P001_0147,crops_raw/W001_P001_0147.png,page_001.png,W001,518,948,566,971,នេះ,នេះ,0.96,0.80,true,pending,narrow component
+W001_P001_0148,crops_raw/W001_P001_0148.png,page_001.png,W001,559,922,688,983,បានធ្វើឱ្យមាន,បានធ្វើឱ្យមាន,0.92,0.95,true,pending,
+W001_P001_0149,crops_raw/W001_P001_0149.png,page_001.png,W001,78,968,217,1001,ការលូតលាស់,ការលូតលាស់,0.94,0.85,true,pending,
+W001_P001_0150,crops_raw/W001_P001_0150.png,page_001.png,W001,215,964,338,1001,នូវចំណេះដឹង,នូវចំណេះដឹង,0.93,0.85,true,pending,
+W001_P001_0151,crops_raw/W001_P001_0151.png,page_001.png,W001,341,970,411,1001,ផ្សេងៗ,ផ្សេងៗ,0.96,0.85,true,pending,
+W001_P001_0152,crops_raw/W001_P001_0152.png,page_001.png,W001,409,971,445,1001,ដែលជាហេតុ,ដែលជាហេតុ,0.94,0.85,true,pending,
+W001_P001_0153,crops_raw/W001_P001_0153.png,page_001.png,W001,446,967,510,997,នាំឱ្យ,នាំឱ្យ,0.95,0.85,true,pending,
+W001_P001_0154,crops_raw/W001_P001_0154.png,page_001.png,W001,498,960,608,1001,មាន,មាន,0.96,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P001_0155,crops_raw/W001_P001_0155.png,page_001.png,W001,595,960,681,1001,,,0.50,0.75,true,pending,Unmatched candidate — human transcription required
+W001_P002_0001,crops_raw/W001_P002_0001.png,page_002.png,W001,87,237,140,277,សុខសន្តិភាព,សុខសន្តិភាព,0.95,0.95,true,pending,
+W001_P002_0002,crops_raw/W001_P002_0002.png,page_002.png,W001,128,228,177,272,ពេលនោះ,ពេលនោះ,0.96,0.95,true,pending,
+W001_P002_0003,crops_raw/W001_P002_0003.png,page_002.png,W001,165,237,217,262,គឺជា,គឺជា,0.96,0.95,true,pending,
+W001_P002_0004,crops_raw/W001_P002_0004.png,page_002.png,W001,211,237,265,273,ភាពសុខសាន្ត...,ភាពសុខសាន្ត...,0.92,0.95,true,pending,informal ellipses
+W001_P002_0005,crops_raw/W001_P002_0005.png,page_002.png,W001,253,225,387,275,។,។,0.97,0.85,true,pending,
+W001_P002_0006,crops_raw/W001_P002_0006.png,page_002.png,W001,374,238,427,274,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P002_0007,crops_raw/W001_P002_0007.png,page_002.png,W001,436,239,462,261,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P002_0008,crops_raw/W001_P002_0008.png,page_002.png,W001,155,256,302,288,ជាការពិតណាស់,ជាការពិតណាស់,0.94,0.85,true,pending,
+W001_P002_0009,crops_raw/W001_P002_0009.png,page_002.png,W001,290,256,439,301,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0010,crops_raw/W001_P002_0010.png,page_002.png,W001,426,256,596,301,ដើរតួយ៉ាងសំខាន់ ណាស់ចំពោះ...,ដើរតួយ៉ាងសំខាន់ ណាស់ចំពោះ...,0.91,0.75,true,pending,compound clause; tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0011,crops_raw/W001_P002_0011.png,page_002.png,W001,583,256,688,289,,,0.50,0.75,true,pending,Unmatched candidate — human transcription required
+W001_P002_0012,crops_raw/W001_P002_0012.png,page_002.png,W001,84,284,182,328,សង្គមជាតិ...,សង្គមជាតិ...,0.94,0.95,true,pending,
+W001_P002_0013,crops_raw/W001_P002_0013.png,page_002.png,W001,172,283,336,321,ដែលជាជាតិមួយ...,ដែលជាជាតិមួយ...,0.93,0.95,true,pending,
+W001_P002_0014,crops_raw/W001_P002_0014.png,page_002.png,W001,327,284,495,339,ទៅរកភាពសុខសាន្ត...,ទៅរកភាពសុខសាន្ត...,0.92,0.95,true,pending,
+W001_P002_0015,crops_raw/W001_P002_0015.png,page_002.png,W001,488,291,518,314,។,។,0.97,0.80,true,pending,narrow component
+W001_P002_0016,crops_raw/W001_P002_0016.png,page_002.png,W001,507,281,645,323,បើយើងងាក,បើយើងងាក,0.94,0.95,true,pending,
+W001_P002_0017,crops_raw/W001_P002_0017.png,page_002.png,W001,649,289,688,314,ត្រឡប់ទៅមើល,ត្រឡប់ទៅមើល,0.93,0.95,true,pending,
+W001_P002_0018,crops_raw/W001_P002_0018.png,page_002.png,W001,84,310,178,350,វត្តមាន,វត្តមាន,0.96,0.95,true,pending,
+W001_P002_0019,crops_raw/W001_P002_0019.png,page_002.png,W001,168,305,395,351,របស់ព្រះពុទ្ធសាសនាក្នុងសង្គមនេះ...,របស់ព្រះពុទ្ធសាសនាក្នុងសង្គមនេះ...,0.90,0.95,true,pending,compound phrase
+W001_P002_0020,crops_raw/W001_P002_0020.png,page_002.png,W001,399,328,425,349,ពោលគឺមានវត្តមានជាច្រើន,ពោលគឺមានវត្តមានជាច្រើន,0.91,0.80,true,pending,narrow component
+W001_P002_0021,crops_raw/W001_P002_0021.png,page_002.png,W001,428,308,474,353,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0022,crops_raw/W001_P002_0022.png,page_002.png,W001,474,305,595,339,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0023,crops_raw/W001_P002_0023.png,page_002.png,W001,583,290,688,352,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0024,crops_raw/W001_P002_0024.png,page_002.png,W001,84,332,170,377,ដែលមនុស្ស,ដែលមនុស្ស,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0025,crops_raw/W001_P002_0025.png,page_002.png,W001,157,340,205,377,ត្រូវប្រព្រឹត្ត,ត្រូវប្រព្រឹត្ត,0.94,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0026,crops_raw/W001_P002_0026.png,page_002.png,W001,192,332,367,377,តែអំពើល្អ,តែអំពើល្អ,0.94,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0027,crops_raw/W001_P002_0027.png,page_002.png,W001,356,330,431,364,ត្រូវតែខិតខំ,ត្រូវតែខិតខំ,0.94,0.85,true,pending,
+W001_P002_0028,crops_raw/W001_P002_0028.png,page_002.png,W001,419,336,457,364,ត្រូវតែធ្វើការ,ត្រូវតែធ្វើការ,0.93,0.85,true,pending,
+W001_P002_0029,crops_raw/W001_P002_0029.png,page_002.png,W001,447,331,647,377,ប្រតិបត្តិតាម...,ប្រតិបត្តិតាម...,0.91,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P002_0030,crops_raw/W001_P002_0030.png,page_002.png,W001,634,331,688,377,,,0.50,0.75,true,pending,Unmatched candidate — human transcription required
+W001_P002_0031,crops_raw/W001_P002_0031.png,page_002.png,W001,85,357,249,402,ជាក់ស្តែង,ជាក់ស្តែង,0.95,0.95,true,pending,
+W001_P002_0032,crops_raw/W001_P002_0032.png,page_002.png,W001,264,364,314,400,សាសនា,សាសនា,0.96,0.95,true,pending,
+W001_P002_0033,crops_raw/W001_P002_0033.png,page_002.png,W001,304,358,391,399,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.95,true,pending,
+W001_P002_0034,crops_raw/W001_P002_0034.png,page_002.png,W001,379,360,407,388,បានអប់រំ,បានអប់រំ,0.94,0.80,true,pending,narrow component
+W001_P002_0035,crops_raw/W001_P002_0035.png,page_002.png,W001,437,367,465,398,មនុស្ស,មនុស្ស,0.96,0.80,true,pending,narrow component
+W001_P002_0036,crops_raw/W001_P002_0036.png,page_002.png,W001,457,364,493,399,ឱ្យស្គាល់នូវ,ឱ្យស្គាល់នូវ,0.94,0.95,true,pending,
+W001_P002_0037,crops_raw/W001_P002_0037.png,page_002.png,W001,481,355,563,401,គុណ,គុណ,0.96,0.95,true,pending,
+W001_P002_0038,crops_raw/W001_P002_0038.png,page_002.png,W001,558,365,620,395,ទោស,ទោស,0.96,0.95,true,pending,
+W001_P002_0039,crops_raw/W001_P002_0039.png,page_002.png,W001,610,361,660,397,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P002_0040,crops_raw/W001_P002_0040.png,page_002.png,W001,650,359,688,389,...,...,0.95,0.95,true,pending,
+W001_P002_0041,crops_raw/W001_P002_0041.png,page_002.png,W001,85,389,160,427,ជាបញ្ញត្តិដ៏ល្អ...,ជាបញ្ញត្តិដ៏ល្អ...,0.92,0.85,true,pending,
+W001_P002_0042,crops_raw/W001_P002_0042.png,page_002.png,W001,227,365,317,426,សង្គមមាន,សង្គមមាន,0.94,0.85,true,pending,
+W001_P002_0043,crops_raw/W001_P002_0043.png,page_002.png,W001,306,365,457,429,មនុស្សល្អរាប់ពាន់នាក់,មនុស្សល្អរាប់ពាន់នាក់,0.92,0.85,true,pending,
+W001_P002_0044,crops_raw/W001_P002_0044.png,page_002.png,W001,470,383,688,439,...,...,0.95,0.85,true,pending,
+W001_P002_0045,crops_raw/W001_P002_0045.png,page_002.png,W001,83,389,291,452,នូវសីលធម៌...,នូវសីលធម៌...,0.93,0.95,true,pending,
+W001_P002_0046,crops_raw/W001_P002_0046.png,page_002.png,W001,284,413,410,453,សន្តិភាព,សន្តិភាព,0.96,0.95,true,pending,
+W001_P002_0047,crops_raw/W001_P002_0047.png,page_002.png,W001,407,409,451,441,គ្មានសង្គ្រាម...,គ្មានសង្គ្រាម...,0.93,0.95,true,pending,
+W001_P002_0048,crops_raw/W001_P002_0048.png,page_002.png,W001,440,415,516,448,និងមានការ,និងមានការ,0.94,0.95,true,pending,
+W001_P002_0049,crops_raw/W001_P002_0049.png,page_002.png,W001,574,412,688,451,សម្រេចសម្រួលរវាង...,សម្រេចសម្រួលរវាង...,0.90,0.95,true,pending,
+W001_P002_0050,crops_raw/W001_P002_0050.png,page_002.png,W001,81,440,175,477,ស្រឡាញ់គ្នា...,ស្រឡាញ់គ្នា...,0.93,0.95,true,pending,
+W001_P002_0051,crops_raw/W001_P002_0051.png,page_002.png,W001,188,441,217,464,។,។,0.97,0.80,true,pending,narrow component
+W001_P002_0052,crops_raw/W001_P002_0052.png,page_002.png,W001,227,435,400,477,អ្វីដែលជាលក្ខណៈ,អ្វីដែលជាលក្ខណៈ,0.92,0.95,true,pending,
+W001_P002_0053,crops_raw/W001_P002_0053.png,page_002.png,W001,391,416,609,479,កាន់តែពិសេស,កាន់តែពិសេស,0.94,0.95,true,pending,
+W001_P002_0054,crops_raw/W001_P002_0054.png,page_002.png,W001,598,431,688,478,ទៀតនោះ,ទៀតនោះ,0.94,0.95,true,pending,
+W001_P002_0055,crops_raw/W001_P002_0055.png,page_002.png,W001,83,466,166,491,សាសនា,សាសនា,0.96,0.85,true,pending,
+W001_P002_0056,crops_raw/W001_P002_0056.png,page_002.png,W001,160,455,403,503,បានគោរពទៅលើចិត្តគំនិតមនុស្ស,បានគោរពទៅលើចិត្តគំនិតមនុស្ស,0.90,0.85,true,pending,
+W001_P002_0057,crops_raw/W001_P002_0057.png,page_002.png,W001,425,465,468,493,ទូលាយ...,ទូលាយ...,0.94,0.85,true,pending,
+W001_P002_0058,crops_raw/W001_P002_0058.png,page_002.png,W001,464,458,688,504,បានចាត់ទុកឱ្យធ្វើជាមនុស្សមាន,បានចាត់ទុកឱ្យធ្វើជាមនុស្សមាន,0.91,0.85,true,pending,
+W001_P002_0059,crops_raw/W001_P002_0059.png,page_002.png,W001,83,492,117,525,ឬការធ្វើ,ឬការធ្វើ,0.94,0.95,true,pending,
+W001_P002_0060,crops_raw/W001_P002_0060.png,page_002.png,W001,108,485,178,524,អំពើអាក្រក់...,អំពើអាក្រក់...,0.93,0.95,true,pending,
+W001_P002_0061,crops_raw/W001_P002_0061.png,page_002.png,W001,169,487,227,517,ការរស់នៅឱ្យធ្វើ,ការរស់នៅឱ្យធ្វើ,0.92,0.95,true,pending,
+W001_P002_0062,crops_raw/W001_P002_0062.png,page_002.png,W001,220,484,295,525,តែអំពើល្អ...,តែអំពើល្អ...,0.92,0.95,true,pending,
+W001_P002_0063,crops_raw/W001_P002_0063.png,page_002.png,W001,303,467,515,551,ដោយការ,ដោយការ,0.95,0.95,true,pending,
+W001_P002_0064,crops_raw/W001_P002_0064.png,page_002.png,W001,514,486,671,527,ឱ្យមាន,ឱ្យមាន,0.95,0.95,true,pending,
+W001_P002_0065,crops_raw/W001_P002_0065.png,page_002.png,W001,663,494,688,517,ឬ...,ឬ...,0.95,0.80,true,pending,narrow component
+W001_P002_0066,crops_raw/W001_P002_0066.png,page_002.png,W001,82,509,186,566,ការផ្តល់នូវអំពើ,ការផ្តល់នូវអំពើ,0.92,0.95,true,pending,
+W001_P002_0067,crops_raw/W001_P002_0067.png,page_002.png,W001,176,509,353,552,ដោយសច្ចធម៌...,ដោយសច្ចធម៌...,0.92,0.95,true,pending,
+W001_P002_0068,crops_raw/W001_P002_0068.png,page_002.png,W001,355,516,400,552,គ្មានធ្វើចិត្ត,គ្មានធ្វើចិត្ត,0.93,0.95,true,pending,
+W001_P002_0069,crops_raw/W001_P002_0069.png,page_002.png,W001,441,509,534,568,ឱ្យបានល្អ,ឱ្យបានល្អ,0.94,0.95,true,pending,
+W001_P002_0070,crops_raw/W001_P002_0070.png,page_002.png,W001,526,509,688,552,ប្រាសចាកអំពីអំពើ...,ប្រាសចាកអំពីអំពើ...,0.91,0.95,true,pending,
+W001_P002_0071,crops_raw/W001_P002_0071.png,page_002.png,W001,81,542,110,565,ទោស...,ទោស...,0.95,0.80,true,pending,narrow component
+W001_P002_0072,crops_raw/W001_P002_0072.png,page_002.png,W001,119,529,171,590,មិនបែងចែក,មិនបែងចែក,0.93,0.95,true,pending,
+W001_P002_0073,crops_raw/W001_P002_0073.png,page_002.png,W001,175,534,306,592,ចិត្ត...,ចិត្ត...,0.94,0.95,true,pending,
+W001_P002_0074,crops_raw/W001_P002_0074.png,page_002.png,W001,314,535,398,577,សភាវធម៌,សភាវធម៌,0.94,0.95,true,pending,
+W001_P002_0075,crops_raw/W001_P002_0075.png,page_002.png,W001,386,537,464,578,ល្អៗ,ល្អៗ,0.96,0.95,true,pending,
+W001_P002_0076,crops_raw/W001_P002_0076.png,page_002.png,W001,453,541,513,578,ក្នុងចិត្ត,ក្នុងចិត្ត,0.95,0.95,true,pending,
+W001_P002_0077,crops_raw/W001_P002_0077.png,page_002.png,W001,512,542,542,569,ឱ្យ,ឱ្យ,0.96,0.80,true,pending,narrow component
+W001_P002_0078,crops_raw/W001_P002_0078.png,page_002.png,W001,534,538,571,579,រីកលូតលាស់,រីកលូតលាស់,0.94,0.95,true,pending,
+W001_P002_0079,crops_raw/W001_P002_0079.png,page_002.png,W001,560,539,651,568,ឡើងៗ,ឡើងៗ,0.96,0.95,true,pending,
+W001_P002_0080,crops_raw/W001_P002_0080.png,page_002.png,W001,639,535,688,568,...,...,0.95,0.95,true,pending,
+W001_P002_0081,crops_raw/W001_P002_0081.png,page_002.png,W001,84,561,138,602,ទាំងនេះ,ទាំងនេះ,0.96,0.95,true,pending,
+W001_P002_0082,crops_raw/W001_P002_0082.png,page_002.png,W001,147,567,169,590,គឺ,គឺ,0.97,0.80,true,pending,narrow component
+W001_P002_0083,crops_raw/W001_P002_0083.png,page_002.png,W001,160,557,271,602,ជាគោលដៅ,ជាគោលដៅ,0.94,0.95,true,pending,
+W001_P002_0084,crops_raw/W001_P002_0084.png,page_002.png,W001,295,557,555,617,នៃការពិត,នៃការពិត,0.95,0.95,true,pending,
+W001_P002_0085,crops_raw/W001_P002_0085.png,page_002.png,W001,545,567,637,595,របស់,របស់,0.96,0.95,true,pending,
+W001_P002_0086,crops_raw/W001_P002_0086.png,page_002.png,W001,636,567,688,604,ព្រះពុទ្ធសាសនា...,ព្រះពុទ្ធសាសនា...,0.93,0.95,true,pending,
+W001_P002_0087,crops_raw/W001_P002_0087.png,page_002.png,W001,83,584,178,616,បើ,បើ,0.96,0.95,true,pending,
+W001_P002_0088,crops_raw/W001_P002_0088.png,page_002.png,W001,168,583,238,631,យើង,យើង,0.96,0.95,true,pending,
+W001_P002_0089,crops_raw/W001_P002_0089.png,page_002.png,W001,228,586,306,630,ពិនិត្យ,ពិនិត្យ,0.95,0.85,true,pending,
+W001_P002_0090,crops_raw/W001_P002_0090.png,page_002.png,W001,293,591,371,630,ក៏ដូចជា,ក៏ដូចជា,0.94,0.85,true,pending,
+W001_P002_0091,crops_raw/W001_P002_0091.png,page_002.png,W001,363,586,408,629,សង្កេត,សង្កេត,0.95,0.95,true,pending,
+W001_P002_0092,crops_raw/W001_P002_0092.png,page_002.png,W001,409,592,453,617,នូវ,នូវ,0.96,0.95,true,pending,
+W001_P002_0093,crops_raw/W001_P002_0093.png,page_002.png,W001,441,594,474,617,ការរស់នៅ,ការរស់នៅ,0.95,0.80,true,pending,narrow component
+W001_P002_0094,crops_raw/W001_P002_0094.png,page_002.png,W001,480,589,510,617,ជាក់ស្តែង,ជាក់ស្តែង,0.95,0.80,true,pending,narrow component
+W001_P002_0095,crops_raw/W001_P002_0095.png,page_002.png,W001,501,590,554,618,នៅ,នៅ,0.96,0.95,true,pending,
+W001_P002_0096,crops_raw/W001_P002_0096.png,page_002.png,W001,542,588,585,626,ជុំវិញ,ជុំវិញ,0.95,0.95,true,pending,
+W001_P002_0097,crops_raw/W001_P002_0097.png,page_002.png,W001,577,587,653,619,បញ្ហា,បញ្ហា,0.95,0.95,true,pending,
+W001_P002_0098,crops_raw/W001_P002_0098.png,page_002.png,W001,646,595,688,619,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0099,crops_raw/W001_P002_0099.png,page_002.png,W001,83,608,147,642,សីលធម៌,សីលធម៌,0.95,0.95,true,pending,
+W001_P002_0100,crops_raw/W001_P002_0100.png,page_002.png,W001,142,612,227,667,ក្នុង,ក្នុង,0.96,0.95,true,pending,
+W001_P002_0101,crops_raw/W001_P002_0101.png,page_002.png,W001,215,616,331,658,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.95,true,pending,
+W001_P002_0102,crops_raw/W001_P002_0102.png,page_002.png,W001,329,607,367,642,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P002_0103,crops_raw/W001_P002_0103.png,page_002.png,W001,366,618,421,653,បានអប់រំ,បានអប់រំ,0.94,0.95,true,pending,
+W001_P002_0104,crops_raw/W001_P002_0104.png,page_002.png,W001,412,611,630,658,ទូន្មានមនុស្សឱ្យ,ទូន្មានមនុស្សឱ្យ,0.92,0.95,true,pending,
+W001_P002_0105,crops_raw/W001_P002_0105.png,page_002.png,W001,619,612,688,652,ស្គាល់ច្បាស់,ស្គាល់ច្បាស់,0.95,0.95,true,pending,
+W001_P002_0106,crops_raw/W001_P002_0106.png,page_002.png,W001,82,630,185,678,នូវសេចក្តីល្អ,នូវសេចក្តីល្អ,0.94,0.95,true,pending,
+W001_P002_0107,crops_raw/W001_P002_0107.png,page_002.png,W001,188,644,226,668,សេចក្តីសុខ,សេចក្តីសុខ,0.95,0.95,true,pending,
+W001_P002_0108,crops_raw/W001_P002_0108.png,page_002.png,W001,233,636,350,686,និង,និង,0.96,0.95,true,pending,
+W001_P002_0109,crops_raw/W001_P002_0109.png,page_002.png,W001,345,636,498,681,សេចក្តីសប្បាយ,សេចក្តីសប្បាយ,0.94,0.95,true,pending,
+W001_P002_0110,crops_raw/W001_P002_0110.png,page_002.png,W001,497,645,526,679,។,។,0.97,0.80,true,pending,narrow component
+W001_P002_0111,crops_raw/W001_P002_0111.png,page_002.png,W001,524,637,614,677,សីលប្រាំ,សីលប្រាំ,0.95,0.95,true,pending,
+W001_P002_0112,crops_raw/W001_P002_0112.png,page_002.png,W001,607,636,688,680,គឺជួយ,គឺជួយ,0.95,0.95,true,pending,
+W001_P002_0113,crops_raw/W001_P002_0113.png,page_002.png,W001,81,656,199,703,ឱ្យមាន,ឱ្យមាន,0.95,0.95,true,pending,
+W001_P002_0114,crops_raw/W001_P002_0114.png,page_002.png,W001,193,667,316,695,តុល្យភាព,តុល្យភាព,0.95,0.95,true,pending,
+W001_P002_0115,crops_raw/W001_P002_0115.png,page_002.png,W001,354,662,436,701,ជាចេតនា,ជាចេតនា,0.94,0.95,true,pending,
+W001_P002_0116,crops_raw/W001_P002_0116.png,page_002.png,W001,426,660,645,718,ជាហេតុនាំឱ្យបាករំលាយ,ជាហេតុនាំឱ្យបាករំលាយ,0.90,0.95,true,pending,
+W001_P002_0117,crops_raw/W001_P002_0117.png,page_002.png,W001,635,662,688,705,នូវលក្ខណៈ,នូវលក្ខណៈ,0.93,0.95,true,pending,
+W001_P002_0118,crops_raw/W001_P002_0118.png,page_002.png,W001,81,691,160,742,ចុះក្នុងផ្លូវ,ចុះក្នុងផ្លូវ,0.93,0.95,true,pending,
+W001_P002_0119,crops_raw/W001_P002_0119.png,page_002.png,W001,226,693,278,728,ដ៏មហន្តរាយ...,ដ៏មហន្តរាយ...,0.92,0.95,true,pending,
+W001_P002_0120,crops_raw/W001_P002_0120.png,page_002.png,W001,294,685,342,717,អវត្តមានភាព,អវត្តមានភាព,0.94,0.95,true,pending,
+W001_P002_0121,crops_raw/W001_P002_0121.png,page_002.png,W001,346,693,398,718,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P002_0122,crops_raw/W001_P002_0122.png,page_002.png,W001,393,684,430,719,ការយកចិត្ត,ការយកចិត្ត,0.94,0.95,true,pending,
+W001_P002_0123,crops_raw/W001_P002_0123.png,page_002.png,W001,420,687,549,732,ទុកដាក់,ទុកដាក់,0.95,0.95,true,pending,
+W001_P002_0124,crops_raw/W001_P002_0124.png,page_002.png,W001,555,686,616,719,របស់,របស់,0.96,0.95,true,pending,
+W001_P002_0125,crops_raw/W001_P002_0125.png,page_002.png,W001,604,697,627,719,មនុស្ស,មនុស្ស,0.96,0.80,true,pending,narrow component
+W001_P002_0126,crops_raw/W001_P002_0126.png,page_002.png,W001,620,690,688,720,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0127,crops_raw/W001_P002_0127.png,page_002.png,W001,127,711,194,754,ដែលគេ,ដែលគេ,0.95,0.95,true,pending,
+W001_P002_0128,crops_raw/W001_P002_0128.png,page_002.png,W001,207,714,332,744,តែងឱ្យ,តែងឱ្យ,0.94,0.95,true,pending,
+W001_P002_0129,crops_raw/W001_P002_0129.png,page_002.png,W001,339,715,430,745,ដោយកាល,ដោយកាល,0.94,0.95,true,pending,
+W001_P002_0130,crops_raw/W001_P002_0130.png,page_002.png,W001,420,718,458,745,។,។,0.97,0.95,true,pending,
+W001_P002_0131,crops_raw/W001_P002_0131.png,page_002.png,W001,449,719,475,743,ដោយសារភាព,ដោយសារភាព,0.93,0.80,true,pending,narrow component
+W001_P002_0132,crops_raw/W001_P002_0132.png,page_002.png,W001,464,714,494,743,នៃការស្រឡាញ់គ្នា,នៃការស្រឡាញ់គ្នា,0.92,0.80,true,pending,narrow component
+W001_P002_0133,crops_raw/W001_P002_0133.png,page_002.png,W001,487,696,645,758,ការជួយ,ការជួយ,0.95,0.95,true,pending,
+W001_P002_0134,crops_raw/W001_P002_0134.png,page_002.png,W001,639,719,688,744,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0135,crops_raw/W001_P002_0135.png,page_002.png,W001,81,735,159,776,ទ្រទ្រង់គ្នា,ទ្រទ្រង់គ្នា,0.94,0.95,true,pending,
+W001_P002_0136,crops_raw/W001_P002_0136.png,page_002.png,W001,147,743,199,781,ក្នុងកាលទាំងឡាយ...,ក្នុងកាលទាំងឡាយ...,0.92,0.95,true,pending,
+W001_P002_0137,crops_raw/W001_P002_0137.png,page_002.png,W001,265,738,354,775,។,។,0.97,0.95,true,pending,
+W001_P002_0138,crops_raw/W001_P002_0138.png,page_002.png,W001,382,736,426,767,វិន័យ,វិន័យ,0.96,0.95,true,pending,
+W001_P002_0139,crops_raw/W001_P002_0139.png,page_002.png,W001,416,744,481,792,បាននាំមកនូវ,បាននាំមកនូវ,0.93,0.95,true,pending,
+W001_P002_0140,crops_raw/W001_P002_0140.png,page_002.png,W001,469,738,532,777,ការមិនពោលពាក្យ,ការមិនពោលពាក្យ,0.93,0.95,true,pending,
+W001_P002_0141,crops_raw/W001_P002_0141.png,page_002.png,W001,520,743,566,768,អាក្រក់,អាក្រក់,0.95,0.95,true,pending,
+W001_P002_0142,crops_raw/W001_P002_0142.png,page_002.png,W001,556,738,688,779,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0143,crops_raw/W001_P002_0143.png,page_002.png,W001,81,765,145,816,កុហក...,កុហក...,0.94,0.95,true,pending,
+W001_P002_0144,crops_raw/W001_P002_0144.png,page_002.png,W001,155,759,196,792,និង...,និង...,0.95,0.95,true,pending,
+W001_P002_0145,crops_raw/W001_P002_0145.png,page_002.png,W001,203,764,430,816,ការងារ,ការងារ,0.95,0.95,true,pending,
+W001_P002_0146,crops_raw/W001_P002_0146.png,page_002.png,W001,459,760,610,804,ដោយរដ្ឋបាលផ្ទាល់ខ្លួន...,ដោយរដ្ឋបាលផ្ទាល់ខ្លួន...,0.90,0.95,true,pending,
+W001_P002_0147,crops_raw/W001_P002_0147.png,page_002.png,W001,600,768,647,794,ការរស់នៅ,ការរស់នៅ,0.94,0.95,true,pending,
+W001_P002_0148,crops_raw/W001_P002_0148.png,page_002.png,W001,636,769,688,818,ប្រព្រឹត្តត្រឹម,ប្រព្រឹត្តត្រឹម,0.93,0.95,true,pending,
+W001_P002_0149,crops_raw/W001_P002_0149.png,page_002.png,W001,134,784,206,834,ត្រូវ...,ត្រូវ...,0.94,0.95,true,pending,
+W001_P002_0150,crops_raw/W001_P002_0150.png,page_002.png,W001,242,785,329,817,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P002_0151,crops_raw/W001_P002_0151.png,page_002.png,W001,324,786,408,818,សច្ចា,សច្ចា,0.95,0.95,true,pending,
+W001_P002_0152,crops_raw/W001_P002_0152.png,page_002.png,W001,399,782,498,817,និងសេចក្តីរាបសារជាដើម,និងសេចក្តីរាបសារជាដើម,0.92,0.95,true,pending,
+W001_P002_0153,crops_raw/W001_P002_0153.png,page_002.png,W001,492,784,526,817,។,។,0.97,0.95,true,pending,
+W001_P002_0154,crops_raw/W001_P002_0154.png,page_002.png,W001,516,793,552,818,ទាំងអស់នេះ,ទាំងអស់នេះ,0.95,0.95,true,pending,
+W001_P002_0155,crops_raw/W001_P002_0155.png,page_002.png,W001,546,786,651,832,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P002_0156,crops_raw/W001_P002_0156.png,page_002.png,W001,662,794,688,817,ជាបញ្ញត្តិសីលធម៌,ជាបញ្ញត្តិសីលធម៌,0.92,0.80,true,pending,narrow component
+W001_P002_0157,crops_raw/W001_P002_0157.png,page_002.png,W001,81,811,169,873,បានអប់រំឱ្យ,បានអប់រំឱ្យ,0.93,0.95,true,pending,
+W001_P002_0158,crops_raw/W001_P002_0158.png,page_002.png,W001,163,807,413,868,មនុស្សមានសេចក្តីសុខ,មនុស្សមានសេចក្តីសុខ,0.92,0.95,true,pending,
+W001_P002_0159,crops_raw/W001_P002_0159.png,page_002.png,W001,409,817,436,842,។,។,0.97,0.80,true,pending,narrow component
+W001_P002_0160,crops_raw/W001_P002_0160.png,page_002.png,W001,435,818,514,853,ក្នុងនោះដែល,ក្នុងនោះដែល,0.93,0.95,true,pending,
+W001_P002_0161,crops_raw/W001_P002_0161.png,page_002.png,W001,503,814,568,843,មាន,មាន,0.96,0.95,true,pending,
+W001_P002_0162,crops_raw/W001_P002_0162.png,page_002.png,W001,562,821,608,844,ពុំពោលពាក្យ,ពុំពោលពាក្យ,0.93,0.80,true,pending,narrow component
+W001_P002_0163,crops_raw/W001_P002_0163.png,page_002.png,W001,601,815,688,854,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P002_0164,crops_raw/W001_P002_0164.png,page_002.png,W001,105,837,244,867,បានទំនាក់ទំនង,បានទំនាក់ទំនង,0.94,0.95,true,pending,
+W001_P002_0165,crops_raw/W001_P002_0165.png,page_002.png,W001,234,841,317,878,និងសច្ចា...,និងសច្ចា...,0.93,0.95,true,pending,
+W001_P002_0166,crops_raw/W001_P002_0166.png,page_002.png,W001,307,843,372,868,លោភសោភានិងសន្តិភាព,លោភសោភានិងសន្តិភាព,0.90,0.95,true,pending,
+W001_P002_0167,crops_raw/W001_P002_0167.png,page_002.png,W001,395,842,435,867,អប់រំ,អប់រំ,0.95,0.95,true,pending,
+W001_P002_0168,crops_raw/W001_P002_0168.png,page_002.png,W001,423,835,517,875,ឱ្យ,ឱ្យ,0.96,0.95,true,pending,
+W001_P002_0169,crops_raw/W001_P002_0169.png,page_002.png,W001,517,838,598,875,ស្គាល់,ស្គាល់,0.96,0.95,true,pending,
+W001_P002_0170,crops_raw/W001_P002_0170.png,page_002.png,W001,611,844,688,884,សច្ចា,សច្ចា,0.95,0.95,true,pending,
+W001_P002_0171,crops_raw/W001_P002_0171.png,page_002.png,W001,81,860,208,893,ជាដើមនោះថា,ជាដើមនោះថា,0.93,0.95,true,pending,
+W001_P002_0172,crops_raw/W001_P002_0172.png,page_002.png,W001,197,865,224,886,“,“,0.97,0.80,true,pending,narrow component
+W001_P002_0173,crops_raw/W001_P002_0173.png,page_002.png,W001,212,859,261,906,និរន្តរ៍,និរន្តរ៍,0.95,0.95,true,pending,
+W001_P002_0174,crops_raw/W001_P002_0174.png,page_002.png,W001,264,862,346,892,រស់នៅ,រស់នៅ,0.95,0.95,true,pending,
+W001_P002_0175,crops_raw/W001_P002_0175.png,page_002.png,W001,342,863,403,916,សុខ,សុខ,0.96,0.95,true,pending,"Claude cross-check: crop is narrow (61px) and compact, visually plausible for a short word; guess looks reasonable but not independently verified against full cursive detail."
+W001_P002_0176,crops_raw/W001_P002_0176.png,page_002.png,W001,403,865,435,903,”,”,0.97,0.80,true,pending,narrow component
+W001_P002_0177,crops_raw/W001_P002_0177.png,page_002.png,W001,431,863,581,895,ដែលបានន័យថា,ដែលបានន័យថា,0.93,0.95,true,pending,
+W001_P002_0178,crops_raw/W001_P002_0178.png,page_002.png,W001,572,867,624,905,គ្មាន,គ្មាន,0.96,0.95,true,pending,
+W001_P002_0179,crops_raw/W001_P002_0179.png,page_002.png,W001,627,868,688,893,សេចក្តី,សេចក្តី,0.95,0.95,true,pending,
+W001_P002_0180,crops_raw/W001_P002_0180.png,page_002.png,W001,81,892,162,941,ស្មោកគ្រោក,ស្មោកគ្រោក,0.94,0.95,true,pending,
+W001_P002_0181,crops_raw/W001_P002_0181.png,page_002.png,W001,159,885,283,941,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P002_0182,crops_raw/W001_P002_0182.png,page_002.png,W001,273,883,360,941,ស្មើនឹង,ស្មើនឹង,0.95,0.95,true,pending,
+W001_P002_0183,crops_raw/W001_P002_0183.png,page_002.png,W001,351,883,465,927,សេចក្តីស្ងប់,សេចក្តីស្ងប់,0.94,0.95,true,pending,
+W001_P002_0184,crops_raw/W001_P002_0184.png,page_002.png,W001,475,893,504,918,ឡើយ...,ឡើយ...,0.94,0.80,true,pending,narrow component
+W001_P002_0185,crops_raw/W001_P002_0185.png,page_002.png,W001,499,887,606,927,។,។,0.97,0.95,true,pending,
+W001_P002_0186,crops_raw/W001_P002_0186.png,page_002.png,W001,601,889,688,928,ក្រៅពីនេះទៀតនោះ...,ក្រៅពីនេះទៀតនោះ...,0.91,0.95,true,pending,
+W001_P002_0187,crops_raw/W001_P002_0187.png,page_002.png,W001,107,909,171,941,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P002_0188,crops_raw/W001_P002_0188.png,page_002.png,W001,162,911,191,940,យើង,យើង,0.96,0.80,true,pending,narrow component
+W001_P002_0189,crops_raw/W001_P002_0189.png,page_002.png,W001,235,909,271,941,និយាយពី,និយាយពី,0.95,0.95,true,pending,
+W001_P002_0190,crops_raw/W001_P002_0190.png,page_002.png,W001,262,915,327,941,គោលដៅ,គោលដៅ,0.95,0.95,true,pending,
+W001_P002_0191,crops_raw/W001_P002_0191.png,page_002.png,W001,354,912,406,951,ធំៗ,ធំៗ,0.96,0.95,true,pending,
+W001_P002_0192,crops_raw/W001_P002_0192.png,page_002.png,W001,403,908,492,947,របស់,របស់,0.96,0.95,true,pending,
+W001_P002_0193,crops_raw/W001_P002_0193.png,page_002.png,W001,496,918,524,949,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.80,true,pending,narrow component
+W001_P002_0194,crops_raw/W001_P002_0194.png,page_002.png,W001,514,919,592,946,វិញម្តង...,វិញម្តង...,0.94,0.95,true,pending,
+W001_P002_0195,crops_raw/W001_P002_0195.png,page_002.png,W001,586,911,668,951,។,។,0.97,0.95,true,pending,
+W001_P002_0196,crops_raw/W001_P002_0196.png,page_002.png,W001,81,932,222,978,ការធានាថា,ការធានាថា,0.94,0.95,true,pending,
+W001_P002_0197,crops_raw/W001_P002_0197.png,page_002.png,W001,212,933,293,974,នឹងធ្វើឱ្យ,នឹងធ្វើឱ្យ,0.94,0.95,true,pending,
+W001_P002_0198,crops_raw/W001_P002_0198.png,page_002.png,W001,281,934,361,976,មនុស្ស,មនុស្ស,0.96,0.95,true,pending,
+W001_P002_0199,crops_raw/W001_P002_0199.png,page_002.png,W001,366,938,472,968,មានន័យថា,មានន័យថា,0.95,0.95,true,pending,
+W001_P002_0200,crops_raw/W001_P002_0200.png,page_002.png,W001,467,918,536,975,នៅក្នុង,នៅក្នុង,0.95,0.95,true,pending,
+W001_P002_0201,crops_raw/W001_P002_0201.png,page_002.png,W001,524,936,627,969,ការរស់នៅ,ការរស់នៅ,0.94,0.95,true,pending,
+W001_P002_0202,crops_raw/W001_P002_0202.png,page_002.png,W001,619,943,688,968,សាសនា,សាសនា,0.96,0.95,true,pending,
+W001_P002_0203,crops_raw/W001_P002_0203.png,page_002.png,W001,81,957,209,996,បានដាស់តឿន,បានដាស់តឿន,0.94,0.95,true,pending,
+W001_P002_0204,crops_raw/W001_P002_0204.png,page_002.png,W001,212,959,283,1001,ឱ្យរៀនគិតគូរ,ឱ្យរៀនគិតគូរ,0.93,0.95,true,pending,
+W001_P002_0205,crops_raw/W001_P002_0205.png,page_002.png,W001,278,961,407,1001,ជាមួយគ្នាក្នុងសង្គម,ជាមួយគ្នាក្នុងសង្គម,0.92,0.95,true,pending,
+W001_P002_0206,crops_raw/W001_P002_0206.png,page_002.png,W001,405,960,542,1001,ឡើយ...,ឡើយ...,0.94,0.85,true,pending,
+W001_P002_0207,crops_raw/W001_P002_0207.png,page_002.png,W001,529,960,640,1001,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P002_0208,crops_raw/W001_P002_0208.png,page_002.png,W001,645,971,688,1001,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0001,crops_raw/W001_P003_0001.png,page_003.png,W001,81,234,436,281,តែការលោភលន់,តែការលោភលន់,0.94,0.95,true,pending,
+W001_P003_0002,crops_raw/W001_P003_0002.png,page_003.png,W001,424,239,464,276,ក្នុងការធ្វើបាបគ្នា,ក្នុងការធ្វើបាបគ្នា,0.92,0.95,true,pending,
+W001_P003_0003,crops_raw/W001_P003_0003.png,page_003.png,W001,457,233,589,266,នោះវាសាងនូវ,នោះវាសាងនូវ,0.93,0.95,true,pending,
+W001_P003_0004,crops_raw/W001_P003_0004.png,page_003.png,W001,585,234,688,278,ភាពចលាចល,ភាពចលាចល,0.95,0.95,true,pending,
+W001_P003_0005,crops_raw/W001_P003_0005.png,page_003.png,W001,100,262,144,294,គ្នារស់នៅដោយមាន,គ្នារស់នៅដោយមាន,0.92,0.85,true,pending,
+W001_P003_0006,crops_raw/W001_P003_0006.png,page_003.png,W001,131,262,264,294,ការភ័យខ្លាច,ការភ័យខ្លាច,0.95,0.85,true,pending,
+W001_P003_0007,crops_raw/W001_P003_0007.png,page_003.png,W001,252,268,381,299,បាត់បង់នូវ,បាត់បង់នូវ,0.95,0.95,true,pending,
+W001_P003_0008,crops_raw/W001_P003_0008.png,page_003.png,W001,420,258,495,317,សុភមង្គល,សុភមង្គល,0.95,0.95,true,pending,
+W001_P003_0009,crops_raw/W001_P003_0009.png,page_003.png,W001,490,258,604,307,ជាដើម,ជាដើម,0.96,0.95,true,pending,
+W001_P003_0010,crops_raw/W001_P003_0010.png,page_003.png,W001,595,258,677,291,។,។,0.97,0.95,true,pending,
+W001_P003_0011,crops_raw/W001_P003_0011.png,page_003.png,W001,124,294,168,318,ហេតុនេះ,ហេតុនេះ,0.96,0.85,true,pending,
+W001_P003_0012,crops_raw/W001_P003_0012.png,page_003.png,W001,161,295,207,328,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.85,true,pending,
+W001_P003_0013,crops_raw/W001_P003_0013.png,page_003.png,W001,196,285,282,328,ទ្រង់,ទ្រង់,0.96,0.85,true,pending,
+W001_P003_0014,crops_raw/W001_P003_0014.png,page_003.png,W001,272,293,316,329,បានអប់រំ,បានអប់រំ,0.94,0.85,true,pending,
+W001_P003_0015,crops_raw/W001_P003_0015.png,page_003.png,W001,312,288,364,318,ឱ្យ,ឱ្យ,0.96,0.85,true,pending,
+W001_P003_0016,crops_raw/W001_P003_0016.png,page_003.png,W001,352,288,385,318,មិនគួរ,មិនគួរ,0.95,0.70,true,pending,narrow component; compound word or continuous phrase
+W001_P003_0017,crops_raw/W001_P003_0017.png,page_003.png,W001,404,285,447,320,ធ្វើ,ធ្វើ,0.96,0.85,true,pending,
+W001_P003_0018,crops_raw/W001_P003_0018.png,page_003.png,W001,437,294,476,328,ចៅអាក្រក់,ចៅអាក្រក់,0.93,0.85,true,pending,
+W001_P003_0019,crops_raw/W001_P003_0019.png,page_003.png,W001,472,288,508,318,ដែលជាហេតុ,ដែលជាហេតុ,0.94,0.85,true,pending,
+W001_P003_0020,crops_raw/W001_P003_0020.png,page_003.png,W001,502,284,688,325,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P003_0021,crops_raw/W001_P003_0021.png,page_003.png,W001,81,317,117,347,នាំឱ្យកើតមាន,នាំឱ្យកើតមាន,0.93,0.95,true,pending,
+W001_P003_0022,crops_raw/W001_P003_0022.png,page_003.png,W001,124,309,374,370,សេចក្តីទុក្ខទោស,សេចក្តីទុក្ខទោស,0.93,0.95,true,pending,
+W001_P003_0023,crops_raw/W001_P003_0023.png,page_003.png,W001,381,312,450,349,ដល់ខ្លួន,ដល់ខ្លួន,0.95,0.95,true,pending,
+W001_P003_0024,crops_raw/W001_P003_0024.png,page_003.png,W001,454,310,496,342,និងក្រុមក្មេងៗ...,និងក្រុមក្មេងៗ...,0.92,0.95,true,pending,
+W001_P003_0025,crops_raw/W001_P003_0025.png,page_003.png,W001,506,317,590,369,រួមជាមួយ,រួមជាមួយ,0.94,0.95,true,pending,
+W001_P003_0026,crops_raw/W001_P003_0026.png,page_003.png,W001,586,316,688,357,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0027,crops_raw/W001_P003_0027.png,page_003.png,W001,81,341,168,371,អ្នកដែលនៅជុំវិញខ្លួន,អ្នកដែលនៅជុំវិញខ្លួន,0.91,0.95,true,pending,
+W001_P003_0028,crops_raw/W001_P003_0028.png,page_003.png,W001,204,344,274,395,យើង,យើង,0.96,0.95,true,pending,
+W001_P003_0029,crops_raw/W001_P003_0029.png,page_003.png,W001,297,344,354,369,ផងដែរ...,ផងដែរ...,0.94,0.95,true,pending,
+W001_P003_0030,crops_raw/W001_P003_0030.png,page_003.png,W001,344,340,409,369,ម្យ៉ាងទៀត,ម្យ៉ាងទៀត,0.95,0.95,true,pending,
+W001_P003_0031,crops_raw/W001_P003_0031.png,page_003.png,W001,411,317,523,380,ជាតិជា,ជាតិជា,0.94,0.95,true,pending,
+W001_P003_0032,crops_raw/W001_P003_0032.png,page_003.png,W001,513,341,547,368,អំពើអាក្រក់,អំពើអាក្រក់,0.94,0.95,true,pending,
+W001_P003_0033,crops_raw/W001_P003_0033.png,page_003.png,W001,549,343,585,368,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0034,crops_raw/W001_P003_0034.png,page_003.png,W001,578,337,644,368,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0035,crops_raw/W001_P003_0035.png,page_003.png,W001,632,342,688,392,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0036,crops_raw/W001_P003_0036.png,page_003.png,W001,81,360,213,407,មួយទៀតនោះ,មួយទៀតនោះ,0.94,0.95,true,pending,
+W001_P003_0037,crops_raw/W001_P003_0037.png,page_003.png,W001,259,363,353,395,គេហៅថា,គេហៅថា,0.95,0.95,true,pending,
+W001_P003_0038,crops_raw/W001_P003_0038.png,page_003.png,W001,355,360,391,394,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P003_0039,crops_raw/W001_P003_0039.png,page_003.png,W001,392,369,457,403,ការធ្វើអំពើល្អ,ការធ្វើអំពើល្អ,0.93,0.95,true,pending,
+W001_P003_0040,crops_raw/W001_P003_0040.png,page_003.png,W001,447,362,534,404,លើអ្នកដទៃ,លើអ្នកដទៃ,0.94,0.95,true,pending,
+W001_P003_0041,crops_raw/W001_P003_0041.png,page_003.png,W001,525,359,645,418,គឺសេច,គឺសេច,0.94,0.95,true,pending,
+W001_P003_0042,crops_raw/W001_P003_0042.png,page_003.png,W001,664,369,688,393,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P003_0043,crops_raw/W001_P003_0043.png,page_003.png,W001,81,385,185,423,ក្ដីយល់ថា...,ក្ដីយល់ថា...,0.93,0.95,true,pending,
+W001_P003_0044,crops_raw/W001_P003_0044.png,page_003.png,W001,194,387,380,432,ការធ្វើអំពើល្អមួយ,ការធ្វើអំពើល្អមួយ,0.92,0.95,true,pending,
+W001_P003_0045,crops_raw/W001_P003_0045.png,page_003.png,W001,375,389,461,420,ដែលជាអំពើល្អ...,ដែលជាអំពើល្អ...,0.92,0.95,true,pending,
+W001_P003_0046,crops_raw/W001_P003_0046.png,page_003.png,W001,450,388,542,430,ពោលគឺ,ពោលគឺ,0.95,0.95,true,pending,
+W001_P003_0047,crops_raw/W001_P003_0047.png,page_003.png,W001,582,395,622,418,ដូចជា...,ដូចជា...,0.94,0.80,true,pending,narrow component
+W001_P003_0048,crops_raw/W001_P003_0048.png,page_003.png,W001,614,384,688,430,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0049,crops_raw/W001_P003_0049.png,page_003.png,W001,81,421,171,458,ការជួយ,ការជួយ,0.95,0.95,true,pending,
+W001_P003_0050,crops_raw/W001_P003_0050.png,page_003.png,W001,165,422,199,456,ឬ,ឬ,0.96,0.95,true,pending,
+W001_P003_0051,crops_raw/W001_P003_0051.png,page_003.png,W001,190,415,302,459,ការផ្តល់នូវ,ការផ្តល់នូវ,0.94,0.95,true,pending,
+W001_P003_0052,crops_raw/W001_P003_0052.png,page_003.png,W001,294,417,402,447,កម្លាំងកាយ...,កម្លាំងកាយ...,0.93,0.95,true,pending,
+W001_P003_0053,crops_raw/W001_P003_0053.png,page_003.png,W001,403,418,494,457,សម្ភារៈ,សម្ភារៈ,0.95,0.95,true,pending,
+W001_P003_0054,crops_raw/W001_P003_0054.png,page_003.png,W001,494,420,571,456,ឬ,ឬ,0.96,0.95,true,pending,
+W001_P003_0055,crops_raw/W001_P003_0055.png,page_003.png,W001,566,418,642,445,សេចក្តីស្រឡាញ់...,សេចក្តីស្រឡាញ់...,0.92,0.95,true,pending,
+W001_P003_0056,crops_raw/W001_P003_0056.png,page_003.png,W001,648,421,688,455,ដោយ,ដោយ,0.96,0.95,true,pending,
+W001_P003_0057,crops_raw/W001_P003_0057.png,page_003.png,W001,81,443,124,472,ក្ដី...,ក្ដី...,0.94,0.95,true,pending,
+W001_P003_0058,crops_raw/W001_P003_0058.png,page_003.png,W001,127,440,174,473,និង,និង,0.96,0.95,true,pending,
+W001_P003_0059,crops_raw/W001_P003_0059.png,page_003.png,W001,176,448,222,473,មានការជួយ,មានការជួយ,0.94,0.95,true,pending,
+W001_P003_0060,crops_raw/W001_P003_0060.png,page_003.png,W001,212,445,270,485,នូវ,នូវ,0.96,0.95,true,pending,
+W001_P003_0061,crops_raw/W001_P003_0061.png,page_003.png,W001,260,441,329,497,កម្លាំង,កម្លាំង,0.95,0.95,true,pending,
+W001_P003_0062,crops_raw/W001_P003_0062.png,page_003.png,W001,325,442,390,477,កាយចិត្ត...,កាយចិត្ត...,0.93,0.95,true,pending,
+W001_P003_0063,crops_raw/W001_P003_0063.png,page_003.png,W001,380,446,444,471,ជាដើម,ជាដើម,0.96,0.95,true,pending,
+W001_P003_0064,crops_raw/W001_P003_0064.png,page_003.png,W001,434,445,481,470,។,។,0.97,0.95,true,pending,
+W001_P003_0065,crops_raw/W001_P003_0065.png,page_003.png,W001,480,435,569,470,ត្រង់,ត្រង់,0.96,0.95,true,pending,
+W001_P003_0066,crops_raw/W001_P003_0066.png,page_003.png,W001,563,446,590,469,ចំណុច,ចំណុច,0.95,0.80,true,pending,narrow component
+W001_P003_0067,crops_raw/W001_P003_0067.png,page_003.png,W001,592,434,649,477,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0068,crops_raw/W001_P003_0068.png,page_003.png,W001,640,441,688,482,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0069,crops_raw/W001_P003_0069.png,page_003.png,W001,81,472,124,498,នេះ,នេះ,0.96,0.95,true,pending,
+W001_P003_0070,crops_raw/W001_P003_0070.png,page_003.png,W001,117,463,153,498,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P003_0071,crops_raw/W001_P003_0071.png,page_003.png,W001,182,472,228,506,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.95,true,pending,
+W001_P003_0072,crops_raw/W001_P003_0072.png,page_003.png,W001,216,474,261,507,បាន,បាន,0.96,0.95,true,pending,
+W001_P003_0073,crops_raw/W001_P003_0073.png,page_003.png,W001,256,475,290,499,អប់រំឱ្យ,អប់រំឱ្យ,0.94,0.95,true,pending,
+W001_P003_0074,crops_raw/W001_P003_0074.png,page_003.png,W001,302,467,378,522,មនុស្ស,មនុស្ស,0.96,0.95,true,pending,
+W001_P003_0075,crops_raw/W001_P003_0075.png,page_003.png,W001,367,461,524,522,គ្រប់គ្នា,គ្រប់គ្នា,0.95,0.95,true,pending,
+W001_P003_0076,crops_raw/W001_P003_0076.png,page_003.png,W001,538,472,589,496,ចេះ,ចេះ,0.96,0.95,true,pending,
+W001_P003_0077,crops_raw/W001_P003_0077.png,page_003.png,W001,588,470,620,507,ជួយគ្នាទៅ,ជួយគ្នាទៅ,0.93,0.80,true,pending,narrow component
+W001_P003_0078,crops_raw/W001_P003_0078.png,page_003.png,W001,609,469,688,521,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0079,crops_raw/W001_P003_0079.png,page_003.png,W001,81,474,193,535,វិញទៅមក,វិញទៅមក,0.94,0.95,true,pending,
+W001_P003_0080,crops_raw/W001_P003_0080.png,page_003.png,W001,183,491,321,534,ដោយផ្អែកទៅលើ,ដោយផ្អែកទៅលើ,0.92,0.95,true,pending,
+W001_P003_0081,crops_raw/W001_P003_0081.png,page_003.png,W001,342,490,423,523,ជីវិតការរស់នៅ,ជីវិតការរស់នៅ,0.93,0.95,true,pending,
+W001_P003_0082,crops_raw/W001_P003_0082.png,page_003.png,W001,538,496,606,522,របស់ពួកគេ,របស់ពួកគេ,0.94,0.95,true,pending,
+W001_P003_0083,crops_raw/W001_P003_0083.png,page_003.png,W001,605,491,656,522,។,។,0.97,0.95,true,pending,
+W001_P003_0084,crops_raw/W001_P003_0084.png,page_003.png,W001,81,518,164,558,ការជួយ,ការជួយ,0.95,0.85,true,pending,
+W001_P003_0085,crops_raw/W001_P003_0085.png,page_003.png,W001,151,518,294,558,បានផ្អែកទៅលើ,បានផ្អែកទៅលើ,0.92,0.85,true,pending,
+W001_P003_0086,crops_raw/W001_P003_0086.png,page_003.png,W001,282,512,425,556,ចំណុចធំៗ,ចំណុចធំៗ,0.95,0.95,true,pending,
+W001_P003_0087,crops_raw/W001_P003_0087.png,page_003.png,W001,414,514,447,548,គឺ...,គឺ...,0.95,0.80,true,pending,narrow component
+W001_P003_0088,crops_raw/W001_P003_0088.png,page_003.png,W001,442,521,547,557,ការជួយដោយផ្លូវកាយផ្លូវ...,ការជួយដោយផ្លូវកាយផ្លូវ...,0.90,0.95,true,pending,
+W001_P003_0089,crops_raw/W001_P003_0089.png,page_003.png,W001,544,518,616,553,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P003_0090,crops_raw/W001_P003_0090.png,page_003.png,W001,603,519,688,553,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P003_0091,crops_raw/W001_P003_0091.png,page_003.png,W001,81,538,276,584,ចិត្ត,ចិត្ត,0.96,0.85,true,pending,"Claude cross-check: crop is 195px wide, much wider than other short-word crops (~45-60px) -- likely contains more than just chett alone; probable segmentation issue, worth a close look before trusting this label."
+W001_P003_0092,crops_raw/W001_P003_0092.png,page_003.png,W001,268,548,341,583,និងការជួយដោយ,និងការជួយដោយ,0.93,0.85,true,pending,
+W001_P003_0093,crops_raw/W001_P003_0093.png,page_003.png,W001,348,547,411,584,សម្ភារៈ...,សម្ភារៈ...,0.95,0.85,true,pending,
+W001_P003_0094,crops_raw/W001_P003_0094.png,page_003.png,W001,400,535,688,598,ដូចជាការជួយផ្តល់សេចក្តីស្រឡាញ់,ដូចជាការជួយផ្តល់សេចក្តីស្រឡាញ់,0.90,0.85,true,pending,
+W001_P003_0095,crops_raw/W001_P003_0095.png,page_003.png,W001,81,565,179,602,ជាដើម,ជាដើម,0.96,0.95,true,pending,
+W001_P003_0096,crops_raw/W001_P003_0096.png,page_003.png,W001,175,577,201,599,។,។,0.97,0.80,true,pending,narrow component
+W001_P003_0097,crops_raw/W001_P003_0097.png,page_003.png,W001,210,571,304,611,ការជួយ,ការជួយ,0.95,0.95,true,pending,
+W001_P003_0098,crops_raw/W001_P003_0098.png,page_003.png,W001,305,574,393,611,និង,និង,0.96,0.95,true,pending,
+W001_P003_0099,crops_raw/W001_P003_0099.png,page_003.png,W001,383,571,475,599,ការដឹងគុណ,ការដឹងគុណ,0.94,0.95,true,pending,
+W001_P003_0100,crops_raw/W001_P003_0100.png,page_003.png,W001,463,568,494,598,បែបនោះគឺ...,បែបនោះគឺ...,0.93,0.80,true,pending,narrow component
+W001_P003_0101,crops_raw/W001_P003_0101.png,page_003.png,W001,492,576,530,601,ជាអំពើមួយ...,ជាអំពើមួយ...,0.92,0.95,true,pending,
+W001_P003_0102,crops_raw/W001_P003_0102.png,page_003.png,W001,561,575,619,607,ដែលមនុ,ដែលមនុ,0.93,0.95,true,pending,
+W001_P003_0103,crops_raw/W001_P003_0103.png,page_003.png,W001,618,572,688,598,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0104,crops_raw/W001_P003_0104.png,page_003.png,W001,81,602,125,633,ស្សក្នុងសកលលោកគិត,ស្សក្នុងសកលលោកគិត,0.90,0.95,true,pending,
+W001_P003_0105,crops_raw/W001_P003_0105.png,page_003.png,W001,125,600,271,625,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P003_0106,crops_raw/W001_P003_0106.png,page_003.png,W001,264,575,425,633,ជា,ជា,0.96,0.95,true,pending,
+W001_P003_0107,crops_raw/W001_P003_0107.png,page_003.png,W001,413,593,482,630,វិញ្ញាសា,វិញ្ញាសា,0.95,0.95,true,pending,
+W001_P003_0108,crops_raw/W001_P003_0108.png,page_003.png,W001,470,595,535,623,ដ៏ធំមួយ,ដ៏ធំមួយ,0.94,0.95,true,pending,
+W001_P003_0109,crops_raw/W001_P003_0109.png,page_003.png,W001,526,595,589,632,ដែលនាំឆ្ពោះ,ដែលនាំឆ្ពោះ,0.93,0.95,true,pending,
+W001_P003_0110,crops_raw/W001_P003_0110.png,page_003.png,W001,577,599,599,623,ទៅរកភាព...,ទៅរកភាព...,0.93,0.80,true,pending,narrow component
+W001_P003_0111,crops_raw/W001_P003_0111.png,page_003.png,W001,590,591,635,624,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0112,crops_raw/W001_P003_0112.png,page_003.png,W001,627,599,663,624,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0113,crops_raw/W001_P003_0113.png,page_003.png,W001,652,599,688,623,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0114,crops_raw/W001_P003_0114.png,page_003.png,W001,81,627,122,671,សុខសាន្ត...,សុខសាន្ត...,0.93,0.95,true,pending,
+W001_P003_0115,crops_raw/W001_P003_0115.png,page_003.png,W001,112,601,166,652,និងជាការប្រព្រឹត្ត,និងជាការប្រព្រឹត្ត,0.92,0.95,true,pending,
+W001_P003_0116,crops_raw/W001_P003_0116.png,page_003.png,W001,189,619,233,650,អំពើល្អ,អំពើល្អ,0.95,0.95,true,pending,
+W001_P003_0117,crops_raw/W001_P003_0117.png,page_003.png,W001,222,619,341,662,ប្រពៃមួយ...,ប្រពៃមួយ...,0.93,0.95,true,pending,
+W001_P003_0118,crops_raw/W001_P003_0118.png,page_003.png,W001,331,615,540,660,។,។,0.97,0.95,true,pending,
+W001_P003_0119,crops_raw/W001_P003_0119.png,page_003.png,W001,528,627,554,648,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.80,true,pending,narrow component
+W001_P003_0120,crops_raw/W001_P003_0120.png,page_003.png,W001,586,626,608,648,ជាព្រះ,ជាព្រះ,0.95,0.80,true,pending,narrow component
+W001_P003_0121,crops_raw/W001_P003_0121.png,page_003.png,W001,597,625,645,663,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0122,crops_raw/W001_P003_0122.png,page_003.png,W001,637,624,688,656,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0123,crops_raw/W001_P003_0123.png,page_003.png,W001,81,641,166,688,បរមគ្រូ,បរមគ្រូ,0.95,0.95,true,pending,
+W001_P003_0124,crops_raw/W001_P003_0124.png,page_003.png,W001,159,650,202,684,បានអប់រំដាស់តឿន,បានអប់រំដាស់តឿន,0.92,0.95,true,pending,
+W001_P003_0125,crops_raw/W001_P003_0125.png,page_003.png,W001,194,645,419,685,ដល់ពុទ្ធសាសនិក,ដល់ពុទ្ធសាសនិក,0.93,0.95,true,pending,
+W001_P003_0126,crops_raw/W001_P003_0126.png,page_003.png,W001,414,644,545,700,ឱ្យស្គាល់នូវអំពើ...,ឱ្យស្គាល់នូវអំពើ...,0.91,0.95,true,pending,
+W001_P003_0127,crops_raw/W001_P003_0127.png,page_003.png,W001,536,627,688,686,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0128,crops_raw/W001_P003_0128.png,page_003.png,W001,81,676,188,715,អបាយមុខ,អបាយមុខ,0.95,0.95,true,pending,
+W001_P003_0129,crops_raw/W001_P003_0129.png,page_003.png,W001,188,674,297,711,ទាំងឡាយ...,ទាំងឡាយ...,0.94,0.95,true,pending,
+W001_P003_0130,crops_raw/W001_P003_0130.png,page_003.png,W001,300,676,378,701,ដោយសារតែ,ដោយសារតែ,0.94,0.95,true,pending,
+W001_P003_0131,crops_raw/W001_P003_0131.png,page_003.png,W001,366,678,401,710,ការធ្វើ,ការធ្វើ,0.95,0.95,true,pending,
+W001_P003_0132,crops_raw/W001_P003_0132.png,page_003.png,W001,389,677,413,700,អាជីវកម្ម,អាជីវកម្ម,0.95,0.80,true,pending,narrow component
+W001_P003_0133,crops_raw/W001_P003_0133.png,page_003.png,W001,402,678,432,700,ផ្សេងៗ...,ផ្សេងៗ...,0.95,0.80,true,pending,narrow component
+W001_P003_0134,crops_raw/W001_P003_0134.png,page_003.png,W001,447,669,580,708,។,។,0.97,0.95,true,pending,
+W001_P003_0135,crops_raw/W001_P003_0135.png,page_003.png,W001,576,671,669,725,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0136,crops_raw/W001_P003_0136.png,page_003.png,W001,81,697,155,728,ចំណែក,ចំណែក,0.95,0.95,true,pending,
+W001_P003_0137,crops_raw/W001_P003_0137.png,page_003.png,W001,146,695,288,727,ឯគោលដៅ,ឯគោលដៅ,0.94,0.95,true,pending,
+W001_P003_0138,crops_raw/W001_P003_0138.png,page_003.png,W001,277,693,370,736,របស់ព្រះពុទ្ធសាសនា,របស់ព្រះពុទ្ធសាសនា,0.94,0.95,true,pending,
+W001_P003_0139,crops_raw/W001_P003_0139.png,page_003.png,W001,363,696,411,734,ទី២,ទី២,0.95,0.95,true,pending,
+W001_P003_0140,crops_raw/W001_P003_0140.png,page_003.png,W001,401,691,570,727,នោះគឺ...,នោះគឺ...,0.94,0.95,true,pending,
+W001_P003_0141,crops_raw/W001_P003_0141.png,page_003.png,W001,562,690,596,724,សេចក្តីឱ្យ,សេចក្តីឱ្យ,0.94,0.95,true,pending,
+W001_P003_0142,crops_raw/W001_P003_0142.png,page_003.png,W001,632,693,677,740,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0143,crops_raw/W001_P003_0143.png,page_003.png,W001,665,701,688,724,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P003_0144,crops_raw/W001_P003_0144.png,page_003.png,W001,81,726,239,762,បានស្អាតស្អំ,បានស្អាតស្អំ,0.93,0.95,true,pending,
+W001_P003_0145,crops_raw/W001_P003_0145.png,page_003.png,W001,228,721,325,752,ស្រស់បវរ...,ស្រស់បវរ...,0.93,0.85,true,pending,
+W001_P003_0146,crops_raw/W001_P003_0146.png,page_003.png,W001,312,721,402,752,លើអំពើល្អទាំងឡាយ...,លើអំពើល្អទាំងឡាយ...,0.91,0.85,true,pending,
+W001_P003_0147,crops_raw/W001_P003_0147.png,page_003.png,W001,392,723,550,760,មានន័យថា,មានន័យថា,0.94,0.95,true,pending,
+W001_P003_0148,crops_raw/W001_P003_0148.png,page_003.png,W001,553,718,659,751,ការ,ការ,0.96,0.95,true,pending,
+W001_P003_0149,crops_raw/W001_P003_0149.png,page_003.png,W001,652,717,688,750,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0150,crops_raw/W001_P003_0150.png,page_003.png,W001,81,742,192,790,រៀបចំឱ្យស្គាល់នូវ,រៀបចំឱ្យស្គាល់នូវ,0.92,0.95,true,pending,
+W001_P003_0151,crops_raw/W001_P003_0151.png,page_003.png,W001,187,748,353,791,អំពើអបាយមុខ,អំពើអបាយមុខ,0.93,0.95,true,pending,
+W001_P003_0152,crops_raw/W001_P003_0152.png,page_003.png,W001,347,742,394,776,ទាំងនេះគឺ...,ទាំងនេះគឺ...,0.93,0.95,true,pending,
+W001_P003_0153,crops_raw/W001_P003_0153.png,page_003.png,W001,388,746,428,777,ល្បែងស៊ីសង,ល្បែងស៊ីសង,0.94,0.95,true,pending,
+W001_P003_0154,crops_raw/W001_P003_0154.png,page_003.png,W001,419,742,456,777,និង,និង,0.96,0.95,true,pending,
+W001_P003_0155,crops_raw/W001_P003_0155.png,page_003.png,W001,456,745,543,790,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0156,crops_raw/W001_P003_0156.png,page_003.png,W001,535,742,641,787,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0157,crops_raw/W001_P003_0157.png,page_003.png,W001,633,745,681,776,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0158,crops_raw/W001_P003_0158.png,page_003.png,W001,81,772,149,810,ផ្សេងៗ,ផ្សេងៗ,0.96,0.95,true,pending,
+W001_P003_0159,crops_raw/W001_P003_0159.png,page_003.png,W001,159,768,240,803,ជាដើម...,ជាដើម...,0.94,0.95,true,pending,
+W001_P003_0160,crops_raw/W001_P003_0160.png,page_003.png,W001,242,772,318,813,ផងដែរ,ផងដែរ,0.95,0.95,true,pending,
+W001_P003_0161,crops_raw/W001_P003_0161.png,page_003.png,W001,314,771,433,826,ន័យថា,ន័យថា,0.95,0.95,true,pending,
+W001_P003_0162,crops_raw/W001_P003_0162.png,page_003.png,W001,429,776,483,812,ត្រូវបោះបង់ចោល...,ត្រូវបោះបង់ចោល...,0.92,0.95,true,pending,
+W001_P003_0163,crops_raw/W001_P003_0163.png,page_003.png,W001,472,777,516,801,នូវគំនិត,នូវគំនិត,0.94,0.95,true,pending,
+W001_P003_0164,crops_raw/W001_P003_0164.png,page_003.png,W001,509,776,577,801,ទុច្ចរិត,ទុច្ចរិត,0.94,0.95,true,pending,
+W001_P003_0165,crops_raw/W001_P003_0165.png,page_003.png,W001,579,775,620,811,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0166,crops_raw/W001_P003_0166.png,page_003.png,W001,612,770,688,810,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0167,crops_raw/W001_P003_0167.png,page_003.png,W001,81,795,152,828,ការផឹកស៊ី...,ការផឹកស៊ី...,0.93,0.95,true,pending,
+W001_P003_0168,crops_raw/W001_P003_0168.png,page_003.png,W001,140,803,199,828,និង,និង,0.96,0.95,true,pending,
+W001_P003_0169,crops_raw/W001_P003_0169.png,page_003.png,W001,201,795,248,827,ការលេងល្បែង...,ការលេងល្បែង...,0.93,0.95,true,pending,
+W001_P003_0170,crops_raw/W001_P003_0170.png,page_003.png,W001,244,793,390,832,អាបាយមុខ...,អាបាយមុខ...,0.93,0.95,true,pending,
+W001_P003_0171,crops_raw/W001_P003_0171.png,page_003.png,W001,408,804,448,827,ជាដើមនោះ...,ជាដើមនោះ...,0.93,0.80,true,pending,narrow component
+W001_P003_0172,crops_raw/W001_P003_0172.png,page_003.png,W001,449,803,486,827,វាជា,វាជា,0.95,0.95,true,pending,
+W001_P003_0173,crops_raw/W001_P003_0173.png,page_003.png,W001,479,796,547,825,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0174,crops_raw/W001_P003_0174.png,page_003.png,W001,535,793,597,826,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0175,crops_raw/W001_P003_0175.png,page_003.png,W001,585,801,651,826,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0176,crops_raw/W001_P003_0176.png,page_003.png,W001,652,801,688,826,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0177,crops_raw/W001_P003_0177.png,page_003.png,W001,81,824,142,855,អំពើអសីលធម៌មួយ,អំពើអសីលធម៌មួយ,0.92,0.85,true,pending,
+W001_P003_0178,crops_raw/W001_P003_0178.png,page_003.png,W001,129,817,225,855,បើសិនណា,បើសិនណា,0.94,0.85,true,pending,
+W001_P003_0179,crops_raw/W001_P003_0179.png,page_003.png,W001,249,819,377,853,យើងប្រព្រឹត្តនូវ...,យើងប្រព្រឹត្តនូវ...,0.92,0.95,true,pending,
+W001_P003_0180,crops_raw/W001_P003_0180.png,page_003.png,W001,367,820,510,858,អំពើបែបនោះ...,អំពើបែបនោះ...,0.92,0.95,true,pending,
+W001_P003_0181,crops_raw/W001_P003_0181.png,page_003.png,W001,498,817,536,851,។,។,0.97,0.95,true,pending,
+W001_P003_0182,crops_raw/W001_P003_0182.png,page_003.png,W001,529,814,688,852,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0183,crops_raw/W001_P003_0183.png,page_003.png,W001,81,851,124,878,ការគ្មានចិត្ត,ការគ្មានចិត្ត,0.94,0.95,true,pending,
+W001_P003_0184,crops_raw/W001_P003_0184.png,page_003.png,W001,173,828,261,889,ចង់បំផ្លាញ,ចង់បំផ្លាញ,0.94,0.95,true,pending,
+W001_P003_0185,crops_raw/W001_P003_0185.png,page_003.png,W001,258,846,345,877,អ្នកដទៃឱ្យកើត,អ្នកដទៃឱ្យកើត,0.92,0.95,true,pending,
+W001_P003_0186,crops_raw/W001_P003_0186.png,page_003.png,W001,365,845,434,878,ទុក្ខសោកនោះ,ទុក្ខសោកនោះ,0.93,0.95,true,pending,
+W001_P003_0187,crops_raw/W001_P003_0187.png,page_003.png,W001,430,850,527,889,នឹងនាំឆ្ពោះ,នឹងនាំឆ្ពោះ,0.93,0.95,true,pending,
+W001_P003_0188,crops_raw/W001_P003_0188.png,page_003.png,W001,525,851,578,877,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0189,crops_raw/W001_P003_0189.png,page_003.png,W001,573,842,617,875,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0190,crops_raw/W001_P003_0190.png,page_003.png,W001,605,847,685,884,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0191,crops_raw/W001_P003_0191.png,page_003.png,W001,81,853,268,904,ទៅរកសេចក្តីស្ងប់...,ទៅរកសេចក្តីស្ងប់...,0.92,0.95,true,pending,
+W001_P003_0192,crops_raw/W001_P003_0192.png,page_003.png,W001,260,866,288,892,។,។,0.97,0.80,true,pending,narrow component
+W001_P003_0193,crops_raw/W001_P003_0193.png,page_003.png,W001,289,878,314,902,ម្យ៉ាងទៀត,ម្យ៉ាងទៀត,0.95,0.80,true,pending,narrow component
+W001_P003_0194,crops_raw/W001_P003_0194.png,page_003.png,W001,346,880,376,901,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.80,true,pending,narrow component
+W001_P003_0195,crops_raw/W001_P003_0195.png,page_003.png,W001,372,869,514,912,ដែលប,ដែលប,0.93,0.95,true,pending,
+W001_P003_0196,crops_raw/W001_P003_0196.png,page_003.png,W001,502,876,549,915,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0197,crops_raw/W001_P003_0197.png,page_003.png,W001,539,875,623,902,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0198,crops_raw/W001_P003_0198.png,page_003.png,W001,617,873,688,900,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0199,crops_raw/W001_P003_0199.png,page_003.png,W001,81,893,224,937,ង្កើតដោយ,ង្កើតដោយ,0.94,0.95,true,pending,
+W001_P003_0200,crops_raw/W001_P003_0200.png,page_003.png,W001,224,892,318,932,ព្រះបរមគ្រូនៃយើង...,ព្រះបរមគ្រូនៃយើង...,0.92,0.95,true,pending,
+W001_P003_0201,crops_raw/W001_P003_0201.png,page_003.png,W001,309,897,350,926,បានបញ្ញត្តិឱ្យ,បានបញ្ញត្តិឱ្យ,0.93,0.95,true,pending,
+W001_P003_0202,crops_raw/W001_P003_0202.png,page_003.png,W001,339,896,408,926,បុគ្គលគ្រប់រូប,បុគ្គលគ្រប់រូប,0.94,0.95,true,pending,
+W001_P003_0203,crops_raw/W001_P003_0203.png,page_003.png,W001,411,900,456,934,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0204,crops_raw/W001_P003_0204.png,page_003.png,W001,444,895,515,939,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0205,crops_raw/W001_P003_0205.png,page_003.png,W001,534,896,688,951,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0206,crops_raw/W001_P003_0206.png,page_003.png,W001,81,916,176,953,ត្រូវតែរៀនរស់,ត្រូវតែរៀនរស់,0.93,0.95,true,pending,
+W001_P003_0207,crops_raw/W001_P003_0207.png,page_003.png,W001,172,928,202,964,រៀនសន្សំបុណ្យ,រៀនសន្សំបុណ្យ,0.93,0.80,true,pending,narrow component
+W001_P003_0208,crops_raw/W001_P003_0208.png,page_003.png,W001,191,923,217,951,ឱ្យបានច្រើន...,ឱ្យបានច្រើន...,0.93,0.80,true,pending,narrow component
+W001_P003_0209,crops_raw/W001_P003_0209.png,page_003.png,W001,225,915,386,966,ពោលគឺ,ពោលគឺ,0.95,0.95,true,pending,
+W001_P003_0210,crops_raw/W001_P003_0210.png,page_003.png,W001,399,915,502,951,ត្រូវតែប្រព្រឹត្តអំពើ...,ត្រូវតែប្រព្រឹត្តអំពើ...,0.91,0.95,true,pending,
+W001_P003_0211,crops_raw/W001_P003_0211.png,page_003.png,W001,569,920,651,962,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0212,crops_raw/W001_P003_0212.png,page_003.png,W001,642,922,688,949,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0213,crops_raw/W001_P003_0213.png,page_003.png,W001,81,942,113,988,ល្អ,ល្អ,0.96,0.80,true,pending,narrow component
+W001_P003_0214,crops_raw/W001_P003_0214.png,page_003.png,W001,119,949,202,980,ដែលជា,ដែលជា,0.96,0.95,true,pending,
+W001_P003_0215,crops_raw/W001_P003_0215.png,page_003.png,W001,190,928,317,992,អំពើកុសល...,អំពើកុសល...,0.93,0.95,true,pending,
+W001_P003_0216,crops_raw/W001_P003_0216.png,page_003.png,W001,310,954,336,976,។,។,0.97,0.80,true,pending,narrow component
+W001_P003_0217,crops_raw/W001_P003_0217.png,page_003.png,W001,343,946,388,976,និង,និង,0.96,0.95,true,pending,
+W001_P003_0218,crops_raw/W001_P003_0218.png,page_003.png,W001,383,947,455,988,ការធ្វើអំពើអាក្រក់,ការធ្វើអំពើអាក្រក់,0.92,0.95,true,pending,
+W001_P003_0219,crops_raw/W001_P003_0219.png,page_003.png,W001,448,950,502,976,ឬ,ឬ,0.96,0.95,true,pending,
+W001_P003_0220,crops_raw/W001_P003_0220.png,page_003.png,W001,503,944,570,976,អំពើ,អំពើ,0.95,0.95,true,pending,
+W001_P003_0221,crops_raw/W001_P003_0221.png,page_003.png,W001,562,946,634,981,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0222,crops_raw/W001_P003_0222.png,page_003.png,W001,629,952,665,983,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0223,crops_raw/W001_P003_0223.png,page_003.png,W001,658,948,688,975,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P003_0224,crops_raw/W001_P003_0224.png,page_003.png,W001,81,976,133,1013,បាប,បាប,0.96,0.95,true,pending,
+W001_P003_0225,crops_raw/W001_P003_0225.png,page_003.png,W001,127,973,339,1012,ដោយប្រការណាមួយ,ដោយប្រការណាមួយ,0.92,0.95,true,pending,
+W001_P003_0226,crops_raw/W001_P003_0226.png,page_003.png,W001,332,978,366,1010,ឬទាំងស្រុងនោះគឺ,ឬទាំងស្រុងនោះគឺ,0.91,0.95,true,pending,
+W001_P003_0227,crops_raw/W001_P003_0227.png,page_003.png,W001,354,974,401,1002,មិនត្រូវធ្វើ,មិនត្រូវធ្វើ,0.94,0.95,true,pending,
+W001_P003_0228,crops_raw/W001_P003_0228.png,page_003.png,W001,389,974,451,1001,ឡើយ,ឡើយ,0.96,0.95,true,pending,
+W001_P003_0229,crops_raw/W001_P003_0229.png,page_003.png,W001,439,977,513,1002,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0230,crops_raw/W001_P003_0230.png,page_003.png,W001,505,965,542,1000,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0231,crops_raw/W001_P003_0231.png,page_003.png,W001,533,967,583,1001,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0232,crops_raw/W001_P003_0232.png,page_003.png,W001,577,969,620,1001,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P003_0233,crops_raw/W001_P003_0233.png,page_003.png,W001,611,973,661,1014,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0001,crops_raw/W001_P004_0001.png,page_004.png,W001,81,231,183,288,ព្រឹត្តិអំពើអាក្រក់នោះ,ព្រឹត្តិអំពើអាក្រក់នោះ,0.93,0.95,true,pending,
+W001_P004_0002,crops_raw/W001_P004_0002.png,page_004.png,W001,174,231,290,271,គឺវាស្មើនឹង,គឺវាស្មើនឹង,0.94,0.95,true,pending,
+W001_P004_0003,crops_raw/W001_P004_0003.png,page_004.png,W001,281,230,384,270,ការបាត់បង់នូវ,ការបាត់បង់នូវ,0.94,0.95,true,pending,
+W001_P004_0004,crops_raw/W001_P004_0004.png,page_004.png,W001,373,230,597,285,ភាពចលាចល...,ភាពចលាចល...,0.93,0.95,true,pending,
+W001_P004_0005,crops_raw/W001_P004_0005.png,page_004.png,W001,601,239,629,264,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0006,crops_raw/W001_P004_0006.png,page_004.png,W001,626,234,688,268,បន្ថែម,បន្ថែម,0.95,0.95,true,pending,
+W001_P004_0007,crops_raw/W001_P004_0007.png,page_004.png,W001,124,265,146,288,ពីនេះ,ពីនេះ,0.96,0.70,true,pending,narrow component; compound word or continuous phrase
+W001_P004_0008,crops_raw/W001_P004_0008.png,page_004.png,W001,144,263,227,313,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.85,true,pending,
+W001_P004_0009,crops_raw/W001_P004_0009.png,page_004.png,W001,215,264,294,290,បាន,បាន,0.96,0.85,true,pending,
+W001_P004_0010,crops_raw/W001_P004_0010.png,page_004.png,W001,291,261,383,295,រួមចំណែក,រួមចំណែក,0.95,0.85,true,pending,
+W001_P004_0011,crops_raw/W001_P004_0011.png,page_004.png,W001,383,258,503,304,ធ្វើឱ្យ,ធ្វើឱ្យ,0.95,0.85,true,pending,
+W001_P004_0012,crops_raw/W001_P004_0012.png,page_004.png,W001,498,258,596,301,អ្នកដឹកនាំ,អ្នកដឹកនាំ,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P004_0013,crops_raw/W001_P004_0013.png,page_004.png,W001,583,263,688,301,ប្រកប,ប្រកប,0.95,0.75,true,pending,tight spacing with neighbor; compound word or continuous phrase
+W001_P004_0014,crops_raw/W001_P004_0014.png,page_004.png,W001,81,284,199,315,ទសពិធរាជធម៌,ទសពិធរាជធម៌,0.93,0.95,true,pending,
+W001_P004_0015,crops_raw/W001_P004_0015.png,page_004.png,W001,217,291,267,324,ឬ,ឬ,0.96,0.95,true,pending,
+W001_P004_0016,crops_raw/W001_P004_0016.png,page_004.png,W001,257,290,305,314,ឧបាយ,ឧបាយ,0.95,0.95,true,pending,
+W001_P004_0017,crops_raw/W001_P004_0017.png,page_004.png,W001,313,277,357,314,ទាំង,ទាំង,0.96,0.95,true,pending,
+W001_P004_0018,crops_raw/W001_P004_0018.png,page_004.png,W001,357,282,454,321,ការធ្វើទាន...,ការធ្វើទាន...,0.93,0.95,true,pending,
+W001_P004_0019,crops_raw/W001_P004_0019.png,page_004.png,W001,472,283,536,314,និង,និង,0.96,0.95,true,pending,
+W001_P004_0020,crops_raw/W001_P004_0020.png,page_004.png,W001,524,288,567,314,ការរក្សាសីល,ការរក្សាសីល,0.94,0.95,true,pending,
+W001_P004_0021,crops_raw/W001_P004_0021.png,page_004.png,W001,629,281,688,314,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P004_0022,crops_raw/W001_P004_0022.png,page_004.png,W001,82,307,159,339,សរជាតិការផ្តល់អោយ,សរជាតិការផ្តល់អោយ,0.92,0.95,true,pending,
+W001_P004_0023,crops_raw/W001_P004_0023.png,page_004.png,W001,152,310,284,348,ការធ្វើទាន...,ការធ្វើទាន...,0.93,0.95,true,pending,
+W001_P004_0024,crops_raw/W001_P004_0024.png,page_004.png,W001,275,308,374,348,កិត្តិយស...,កិត្តិយស...,0.94,0.95,true,pending,
+W001_P004_0025,crops_raw/W001_P004_0025.png,page_004.png,W001,383,310,446,365,មានការស្ងប់ក្នុងចិត្ត...,មានការស្ងប់ក្នុងចិត្ត...,0.92,0.95,true,pending,
+W001_P004_0026,crops_raw/W001_P004_0026.png,page_004.png,W001,442,287,662,348,ជីវិត,ជីវិត,0.96,0.95,true,pending,
+W001_P004_0027,crops_raw/W001_P004_0027.png,page_004.png,W001,661,310,688,339,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0028,crops_raw/W001_P004_0028.png,page_004.png,W001,81,329,145,373,មនុស្សគឺមានតម្លៃ,មនុស្សគឺមានតម្លៃ,0.93,0.95,true,pending,
+W001_P004_0029,crops_raw/W001_P004_0029.png,page_004.png,W001,143,331,262,371,ចំណែកសីល,ចំណែកសីល,0.94,0.95,true,pending,
+W001_P004_0030,crops_raw/W001_P004_0030.png,page_004.png,W001,262,337,341,366,គឺការទុកដាក់,គឺការទុកដាក់,0.93,0.95,true,pending,
+W001_P004_0031,crops_raw/W001_P004_0031.png,page_004.png,W001,334,339,392,365,ការដើរផ្លូវអាក្រក់,ការដើរផ្លូវអាក្រក់,0.93,0.95,true,pending,
+W001_P004_0032,crops_raw/W001_P004_0032.png,page_004.png,W001,399,336,516,378,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0033,crops_raw/W001_P004_0033.png,page_004.png,W001,513,334,688,392,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0034,crops_raw/W001_P004_0034.png,page_004.png,W001,81,362,175,391,ចំណែកការកត្តា,ចំណែកការកត្តា,0.93,0.95,true,pending,
+W001_P004_0035,crops_raw/W001_P004_0035.png,page_004.png,W001,178,365,267,402,គឺភាពស្មោះត្រង់,គឺភាពស្មោះត្រង់,0.94,0.95,true,pending,
+W001_P004_0036,crops_raw/W001_P004_0036.png,page_004.png,W001,271,356,466,402,ហើយការបរិច្ចាគ,ហើយការបរិច្ចាគ,0.93,0.95,true,pending,
+W001_P004_0037,crops_raw/W001_P004_0037.png,page_004.png,W001,464,359,538,391,ការមិន...,ការមិន...,0.94,0.95,true,pending,
+W001_P004_0038,crops_raw/W001_P004_0038.png,page_004.png,W001,537,367,563,390,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0039,crops_raw/W001_P004_0039.png,page_004.png,W001,616,366,654,391,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0040,crops_raw/W001_P004_0040.png,page_004.png,W001,664,368,688,390,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0041,crops_raw/W001_P004_0041.png,page_004.png,W001,81,384,196,432,កេងប្រវ័ញ្ចអ្នកដទៃ,កេងប្រវ័ញ្ចអ្នកដទៃ,0.92,0.95,true,pending,
+W001_P004_0042,crops_raw/W001_P004_0042.png,page_004.png,W001,186,389,273,430,បន្ទាប់មកទៀត,បន្ទាប់មកទៀត,0.94,0.95,true,pending,
+W001_P004_0043,crops_raw/W001_P004_0043.png,page_004.png,W001,282,385,386,429,ការមានសេចក្តីអត់ធ្មត់,ការមានសេចក្តីអត់ធ្មត់,0.93,0.95,true,pending,
+W001_P004_0044,crops_raw/W001_P004_0044.png,page_004.png,W001,391,384,437,429,និងមិន,និងមិន,0.95,0.95,true,pending,
+W001_P004_0045,crops_raw/W001_P004_0045.png,page_004.png,W001,429,384,632,428,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0046,crops_raw/W001_P004_0046.png,page_004.png,W001,630,386,688,416,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0047,crops_raw/W001_P004_0047.png,page_004.png,W001,81,416,148,450,ត្រូវបានគឺអំពើពាល,ត្រូវបានគឺអំពើពាល,0.92,0.95,true,pending,
+W001_P004_0048,crops_raw/W001_P004_0048.png,page_004.png,W001,139,421,169,441,មានន័យថាការចេះបត់បែន...,មានន័យថាការចេះបត់បែន...,0.91,0.80,true,pending,narrow component
+W001_P004_0049,crops_raw/W001_P004_0049.png,page_004.png,W001,185,409,278,442,និងអំពើ,និងអំពើ,0.95,0.95,true,pending,
+W001_P004_0050,crops_raw/W001_P004_0050.png,page_004.png,W001,287,409,543,467,បុគ្គល,បុគ្គល,0.95,0.95,true,pending,
+W001_P004_0051,crops_raw/W001_P004_0051.png,page_004.png,W001,531,419,557,441,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0052,crops_raw/W001_P004_0052.png,page_004.png,W001,556,407,688,468,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0053,crops_raw/W001_P004_0053.png,page_004.png,W001,81,442,141,468,គ្រួសារនៅលើ,គ្រួសារនៅលើ,0.94,0.95,true,pending,
+W001_P004_0054,crops_raw/W001_P004_0054.png,page_004.png,W001,136,436,276,478,ទុក្ខវេទនា,ទុក្ខវេទនា,0.95,0.95,true,pending,
+W001_P004_0055,crops_raw/W001_P004_0055.png,page_004.png,W001,265,442,326,480,សង្គម,សង្គម,0.96,0.95,true,pending,
+W001_P004_0056,crops_raw/W001_P004_0056.png,page_004.png,W001,333,437,377,468,និងសីលធម៌,និងសីលធម៌,0.94,0.95,true,pending,
+W001_P004_0057,crops_raw/W001_P004_0057.png,page_004.png,W001,368,437,473,468,ជាដើម,ជាដើម,0.96,0.95,true,pending,
+W001_P004_0058,crops_raw/W001_P004_0058.png,page_004.png,W001,525,443,552,466,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0059,crops_raw/W001_P004_0059.png,page_004.png,W001,563,441,640,466,ភាពនេះ,ភាពនេះ,0.95,0.95,true,pending,
+W001_P004_0060,crops_raw/W001_P004_0060.png,page_004.png,W001,666,444,688,466,ទៅទៀត,ទៅទៀត,0.95,0.80,true,pending,narrow component
+W001_P004_0061,crops_raw/W001_P004_0061.png,page_004.png,W001,81,456,124,517,នោះគឺការពារឱ្យស្រុកទេស,នោះគឺការពារឱ្យស្រុកទេស,0.92,0.95,true,pending,
+W001_P004_0062,crops_raw/W001_P004_0062.png,page_004.png,W001,113,464,164,518,ប្រកបដោយសន្តិភាព,ប្រកបដោយសន្តិភាព,0.93,0.85,true,pending,
+W001_P004_0063,crops_raw/W001_P004_0063.png,page_004.png,W001,151,461,262,518,ក្នុងន័យ,ក្នុងន័យ,0.95,0.85,true,pending,
+W001_P004_0064,crops_raw/W001_P004_0064.png,page_004.png,W001,253,463,323,500,កិត្តិយសនេះមាន,កិត្តិយសនេះមាន,0.93,0.85,true,pending,
+W001_P004_0065,crops_raw/W001_P004_0065.png,page_004.png,W001,310,463,457,501,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P004_0066,crops_raw/W001_P004_0066.png,page_004.png,W001,500,462,558,492,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0067,crops_raw/W001_P004_0067.png,page_004.png,W001,552,465,645,499,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0068,crops_raw/W001_P004_0068.png,page_004.png,W001,647,469,688,495,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0069,crops_raw/W001_P004_0069.png,page_004.png,W001,96,491,188,543,ន័យថាត្រូវមាន,ន័យថាត្រូវមាន,0.94,0.95,true,pending,
+W001_P004_0070,crops_raw/W001_P004_0070.png,page_004.png,W001,191,493,282,531,មេត្តាករុណា,មេត្តាករុណា,0.95,0.95,true,pending,
+W001_P004_0071,crops_raw/W001_P004_0071.png,page_004.png,W001,285,492,320,518,មុទិតា,មុទិតា,0.96,0.95,true,pending,
+W001_P004_0072,crops_raw/W001_P004_0072.png,page_004.png,W001,360,488,431,532,និង,និង,0.96,0.95,true,pending,
+W001_P004_0073,crops_raw/W001_P004_0073.png,page_004.png,W001,428,490,474,520,ឧបេក្ខា,ឧបេក្ខា,0.96,0.95,true,pending,
+W001_P004_0074,crops_raw/W001_P004_0074.png,page_004.png,W001,511,498,536,521,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0075,crops_raw/W001_P004_0075.png,page_004.png,W001,546,495,613,527,ព្រោះព្រះពុទ្ធសាសនា,ព្រោះព្រះពុទ្ធសាសនា,0.94,0.95,true,pending,
+W001_P004_0076,crops_raw/W001_P004_0076.png,page_004.png,W001,603,494,688,530,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0077,crops_raw/W001_P004_0077.png,page_004.png,W001,83,513,136,553,ក៏បានអប់រំមនុស្ស,ក៏បានអប់រំមនុស្ស,0.93,0.95,true,pending,
+W001_P004_0078,crops_raw/W001_P004_0078.png,page_004.png,W001,173,514,264,556,រាល់គ្នារួបរួមគ្នា,រាល់គ្នារួបរួមគ្នា,0.93,0.95,true,pending,
+W001_P004_0079,crops_raw/W001_P004_0079.png,page_004.png,W001,252,495,379,550,ទ្រទ្រង់បានសេចក្តីសុខ...,ទ្រទ្រង់បានសេចក្តីសុខ...,0.92,0.95,true,pending,
+W001_P004_0080,crops_raw/W001_P004_0080.png,page_004.png,W001,374,512,473,552,នេះហើយ...,នេះហើយ...,0.93,0.95,true,pending,
+W001_P004_0081,crops_raw/W001_P004_0081.png,page_004.png,W001,502,517,553,545,។,។,0.97,0.95,true,pending,
+W001_P004_0082,crops_raw/W001_P004_0082.png,page_004.png,W001,542,521,590,550,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0083,crops_raw/W001_P004_0083.png,page_004.png,W001,580,517,664,544,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0084,crops_raw/W001_P004_0084.png,page_004.png,W001,82,537,273,571,បើយើងនិយាយពី,បើយើងនិយាយពី,0.94,0.95,true,pending,
+W001_P004_0085,crops_raw/W001_P004_0085.png,page_004.png,W001,263,538,364,578,« ផ្នែកនៃការលូតលាស់,« ផ្នែកនៃការលូតលាស់,0.92,0.95,true,pending,
+W001_P004_0086,crops_raw/W001_P004_0086.png,page_004.png,W001,352,544,450,577,ខាងវិទ្យាសាស្ត្រ »,ខាងវិទ្យាសាស្ត្រ »,0.93,0.85,true,pending,
+W001_P004_0087,crops_raw/W001_P004_0087.png,page_004.png,W001,437,540,577,577,វិញនោះ...,វិញនោះ...,0.94,0.85,true,pending,
+W001_P004_0088,crops_raw/W001_P004_0088.png,page_004.png,W001,578,541,658,577,ព្រះ,ព្រះ,0.96,0.95,true,pending,
+W001_P004_0089,crops_raw/W001_P004_0089.png,page_004.png,W001,649,545,688,570,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0090,crops_raw/W001_P004_0090.png,page_004.png,W001,127,563,165,610,ពុទ្ធឱ្យយើងយល់ដឹង,ពុទ្ធឱ្យយើងយល់ដឹង,0.93,0.95,true,pending,
+W001_P004_0091,crops_raw/W001_P004_0091.png,page_004.png,W001,155,564,300,604,គឺយើងត្រូវ,គឺយើងត្រូវ,0.95,0.95,true,pending,
+W001_P004_0092,crops_raw/W001_P004_0092.png,page_004.png,W001,298,559,413,621,ស្គាល់អំពើអាក្រក់,ស្គាល់អំពើអាក្រក់,0.93,0.95,true,pending,
+W001_P004_0093,crops_raw/W001_P004_0093.png,page_004.png,W001,403,564,465,620,ដោយការ,ដោយការ,0.95,0.95,true,pending,
+W001_P004_0094,crops_raw/W001_P004_0094.png,page_004.png,W001,453,565,586,602,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0095,crops_raw/W001_P004_0095.png,page_004.png,W001,575,569,647,596,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0096,crops_raw/W001_P004_0096.png,page_004.png,W001,640,571,688,602,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0097,crops_raw/W001_P004_0097.png,page_004.png,W001,107,596,135,631,ត្រិះរិះពិចារណា,ត្រិះរិះពិចារណា,0.94,0.80,true,pending,narrow component
+W001_P004_0098,crops_raw/W001_P004_0098.png,page_004.png,W001,124,597,156,619,ការគិតឱ្យជ្រៅ,ការគិតឱ្យជ្រៅ,0.93,0.80,true,pending,narrow component
+W001_P004_0099,crops_raw/W001_P004_0099.png,page_004.png,W001,144,589,211,629,ដោយអំពើល្អ,ដោយអំពើល្អ,0.94,0.95,true,pending,
+W001_P004_0100,crops_raw/W001_P004_0100.png,page_004.png,W001,207,588,332,635,របស់ដែល,របស់ដែល,0.95,0.95,true,pending,
+W001_P004_0101,crops_raw/W001_P004_0101.png,page_004.png,W001,322,593,360,620,ប្រជាជន,ប្រជាជន,0.96,0.95,true,pending,
+W001_P004_0102,crops_raw/W001_P004_0102.png,page_004.png,W001,388,594,420,621,ត្រូវការ,ត្រូវការ,0.95,0.80,true,pending,narrow component
+W001_P004_0103,crops_raw/W001_P004_0103.png,page_004.png,W001,442,596,543,626,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0104,crops_raw/W001_P004_0104.png,page_004.png,W001,536,592,688,634,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0105,crops_raw/W001_P004_0105.png,page_004.png,W001,117,634,147,654,សរុបមកគឺ,សរុបមកគឺ,0.94,0.80,true,pending,narrow component
+W001_P004_0106,crops_raw/W001_P004_0106.png,page_004.png,W001,154,611,206,645,« កតញ្ញូកត្តវេទី,« កតញ្ញូកត្តវេទី,0.93,0.95,true,pending,
+W001_P004_0107,crops_raw/W001_P004_0107.png,page_004.png,W001,197,608,484,657,របស់មនុស្សកាលណាធ្វើ »,របស់មនុស្សកាលណាធ្វើ »,0.92,0.95,true,pending,
+W001_P004_0108,crops_raw/W001_P004_0108.png,page_004.png,W001,480,620,507,641,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0109,crops_raw/W001_P004_0109.png,page_004.png,W001,523,616,688,653,អ្វីដែលពិសេសជាង,អ្វីដែលពិសេសជាង,0.93,0.95,true,pending,
+W001_P004_0110,crops_raw/W001_P004_0110.png,page_004.png,W001,81,646,128,670,នោះគឺ,នោះគឺ,0.95,0.95,true,pending,
+W001_P004_0111,crops_raw/W001_P004_0111.png,page_004.png,W001,128,637,203,679,ព្រះបរមគ្រូ,ព្រះបរមគ្រូ,0.95,0.95,true,pending,
+W001_P004_0112,crops_raw/W001_P004_0112.png,page_004.png,W001,193,638,332,696,នៃយើង,នៃយើង,0.96,0.95,true,pending,
+W001_P004_0113,crops_raw/W001_P004_0113.png,page_004.png,W001,320,641,392,680,បង្រៀនអប់រំមនុស្ស,បង្រៀនអប់រំមនុស្ស,0.93,0.95,true,pending,
+W001_P004_0114,crops_raw/W001_P004_0114.png,page_004.png,W001,395,641,523,685,ឱ្យចេះឱ្យមាន,ឱ្យចេះឱ្យមាន,0.93,0.95,true,pending,
+W001_P004_0115,crops_raw/W001_P004_0115.png,page_004.png,W001,513,643,556,686,គំនិតទៅ,គំនិតទៅ,0.94,0.95,true,pending,
+W001_P004_0116,crops_raw/W001_P004_0116.png,page_004.png,W001,544,642,623,703,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0117,crops_raw/W001_P004_0117.png,page_004.png,W001,612,643,668,681,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0118,crops_raw/W001_P004_0118.png,page_004.png,W001,659,648,688,670,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0119,crops_raw/W001_P004_0119.png,page_004.png,W001,81,664,131,695,លើទស្សនៈ,លើទស្សនៈ,0.95,0.95,true,pending,
+W001_P004_0120,crops_raw/W001_P004_0120.png,page_004.png,W001,121,672,200,706,កម្មផល,កម្មផល,0.95,0.95,true,pending,
+W001_P004_0121,crops_raw/W001_P004_0121.png,page_004.png,W001,189,670,241,708,ពោលគឺ,ពោលគឺ,0.95,0.95,true,pending,
+W001_P004_0122,crops_raw/W001_P004_0122.png,page_004.png,W001,273,666,361,697,អ្នកធ្វើល្អបានល្អ,អ្នកធ្វើល្អបានល្អ,0.93,0.95,true,pending,
+W001_P004_0123,crops_raw/W001_P004_0123.png,page_004.png,W001,375,665,477,709,អ្នកធ្វើអាក្រក់បាន,អ្នកធ្វើអាក្រក់បាន,0.93,0.95,true,pending,
+W001_P004_0124,crops_raw/W001_P004_0124.png,page_004.png,W001,467,673,534,704,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0125,crops_raw/W001_P004_0125.png,page_004.png,W001,541,673,573,710,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0126,crops_raw/W001_P004_0126.png,page_004.png,W001,600,667,688,706,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0127,crops_raw/W001_P004_0127.png,page_004.png,W001,81,691,182,727,ផលអាក្រក់,ផលអាក្រក់,0.95,0.95,true,pending,
+W001_P004_0128,crops_raw/W001_P004_0128.png,page_004.png,W001,188,697,274,745,អ្នកពោលប្រព្រឹត្ត,អ្នកពោលប្រព្រឹត្ត,0.93,0.95,true,pending,
+W001_P004_0129,crops_raw/W001_P004_0129.png,page_004.png,W001,271,692,336,728,ដែលនាំឱ្យលោភលន់,ដែលនាំឱ្យលោភលន់,0.92,0.95,true,pending,
+W001_P004_0130,crops_raw/W001_P004_0130.png,page_004.png,W001,334,688,523,735,វាជាផល...,វាជាផល...,0.93,0.95,true,pending,
+W001_P004_0131,crops_raw/W001_P004_0131.png,page_004.png,W001,515,697,629,724,វាពិត,វាពិត,0.95,0.95,true,pending,
+W001_P004_0132,crops_raw/W001_P004_0132.png,page_004.png,W001,624,694,688,723,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0133,crops_raw/W001_P004_0133.png,page_004.png,W001,81,718,144,756,ណាស់,ណាស់,0.96,0.95,true,pending,
+W001_P004_0134,crops_raw/W001_P004_0134.png,page_004.png,W001,136,720,164,744,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0135,crops_raw/W001_P004_0135.png,page_004.png,W001,174,723,201,747,រាល់អំពើអាក្រក់,រាល់អំពើអាក្រក់,0.93,0.80,true,pending,narrow component
+W001_P004_0136,crops_raw/W001_P004_0136.png,page_004.png,W001,215,695,391,754,ដែលអ្នកណាបានប្រព្រឹត្ត,ដែលអ្នកណាបានប្រព្រឹត្ត,0.92,0.95,true,pending,
+W001_P004_0137,crops_raw/W001_P004_0137.png,page_004.png,W001,398,723,464,748,ហើយនោះគឺ,ហើយនោះគឺ,0.94,0.95,true,pending,
+W001_P004_0138,crops_raw/W001_P004_0138.png,page_004.png,W001,454,719,566,775,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0139,crops_raw/W001_P004_0139.png,page_004.png,W001,564,716,672,748,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0140,crops_raw/W001_P004_0140.png,page_004.png,W001,660,724,688,759,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0141,crops_raw/W001_P004_0141.png,page_004.png,W001,81,740,262,798,អាបាយមុខ,អាបាយមុខ,0.95,0.95,true,pending,
+W001_P004_0142,crops_raw/W001_P004_0142.png,page_004.png,W001,251,742,318,771,សន្តិសុខ,សន្តិសុខ,0.95,0.95,true,pending,
+W001_P004_0143,crops_raw/W001_P004_0143.png,page_004.png,W001,307,748,344,781,និង,និង,0.96,0.95,true,pending,
+W001_P004_0144,crops_raw/W001_P004_0144.png,page_004.png,W001,334,723,451,779,អំពើល្អ,អំពើល្អ,0.95,0.95,true,pending,
+W001_P004_0145,crops_raw/W001_P004_0145.png,page_004.png,W001,453,747,507,795,បានឡើយ,បានឡើយ,0.95,0.95,true,pending,
+W001_P004_0146,crops_raw/W001_P004_0146.png,page_004.png,W001,514,745,588,796,។,។,0.97,0.95,true,pending,
+W001_P004_0147,crops_raw/W001_P004_0147.png,page_004.png,W001,578,741,688,773,ក្នុងចំណុចនេះដែល,ក្នុងចំណុចនេះដែល,0.93,0.95,true,pending,
+W001_P004_0148,crops_raw/W001_P004_0148.png,page_004.png,W001,81,770,167,821,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.95,true,pending,
+W001_P004_0149,crops_raw/W001_P004_0149.png,page_004.png,W001,235,771,275,795,បានអប់រំឱ្យ,បានអប់រំឱ្យ,0.94,0.95,true,pending,
+W001_P004_0150,crops_raw/W001_P004_0150.png,page_004.png,W001,264,764,457,821,មនុស្សរៀនពី,មនុស្សរៀនពី,0.94,0.95,true,pending,
+W001_P004_0151,crops_raw/W001_P004_0151.png,page_004.png,W001,467,761,551,820,អំពើល្អ,អំពើល្អ,0.95,0.95,true,pending,
+W001_P004_0152,crops_raw/W001_P004_0152.png,page_004.png,W001,577,769,688,821,កាត់បន្ថយកាល,កាត់បន្ថយកាល,0.93,0.95,true,pending,
+W001_P004_0153,crops_raw/W001_P004_0153.png,page_004.png,W001,81,792,123,829,ទុច្ចរិត,ទុច្ចរិត,0.95,0.95,true,pending,
+W001_P004_0154,crops_raw/W001_P004_0154.png,page_004.png,W001,147,776,259,847,និង,និង,0.96,0.95,true,pending,
+W001_P004_0155,crops_raw/W001_P004_0155.png,page_004.png,W001,264,788,319,821,ទុច្ចរិតចិត្ត,ទុច្ចរិតចិត្ត,0.94,0.95,true,pending,
+W001_P004_0156,crops_raw/W001_P004_0156.png,page_004.png,W001,332,796,395,824,ហើយ,ហើយ,0.96,0.95,true,pending,
+W001_P004_0157,crops_raw/W001_P004_0157.png,page_004.png,W001,387,790,475,830,ចំណែក,ចំណែក,0.95,0.95,true,pending,
+W001_P004_0158,crops_raw/W001_P004_0158.png,page_004.png,W001,466,792,504,822,ការរស់នៅល្អ,ការរស់នៅល្អ,0.93,0.95,true,pending,
+W001_P004_0159,crops_raw/W001_P004_0159.png,page_004.png,W001,520,797,560,827,ការធ្វើកុសល...,ការធ្វើកុសល...,0.93,0.95,true,pending,
+W001_P004_0160,crops_raw/W001_P004_0160.png,page_004.png,W001,553,793,612,824,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0161,crops_raw/W001_P004_0161.png,page_004.png,W001,628,797,688,835,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0162,crops_raw/W001_P004_0162.png,page_004.png,W001,81,815,172,877,ចំណែកនោះគឺ,ចំណែកនោះគឺ,0.94,0.95,true,pending,
+W001_P004_0163,crops_raw/W001_P004_0163.png,page_004.png,W001,194,815,287,847,លោកពិត,លោកពិត,0.95,0.95,true,pending,
+W001_P004_0164,crops_raw/W001_P004_0164.png,page_004.png,W001,280,813,343,854,គឺធ្វើកុសល,គឺធ្វើកុសល,0.93,0.95,true,pending,
+W001_P004_0165,crops_raw/W001_P004_0165.png,page_004.png,W001,331,820,417,859,គឺបានន័យថា,គឺបានន័យថា,0.94,0.95,true,pending,
+W001_P004_0166,crops_raw/W001_P004_0166.png,page_004.png,W001,413,811,545,848,ស៊ីល្អបានល្អ,ស៊ីល្អបានល្អ,0.93,0.95,true,pending,
+W001_P004_0167,crops_raw/W001_P004_0167.png,page_004.png,W001,548,816,614,856,ស៊ី,ស៊ី,0.96,0.95,true,pending,
+W001_P004_0168,crops_raw/W001_P004_0168.png,page_004.png,W001,602,822,669,855,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0169,crops_raw/W001_P004_0169.png,page_004.png,W001,658,824,688,854,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0170,crops_raw/W001_P004_0170.png,page_004.png,W001,113,835,246,879,អាក្រក់បានអាក្រក់,អាក្រក់បានអាក្រក់,0.93,0.95,true,pending,
+W001_P004_0171,crops_raw/W001_P004_0171.png,page_004.png,W001,237,839,304,880,អ្វីទាំងឡាយ,អ្វីទាំងឡាយ,0.95,0.95,true,pending,
+W001_P004_0172,crops_raw/W001_P004_0172.png,page_004.png,W001,293,839,436,878,កើតឡើងដោយការ,កើតឡើងដោយការ,0.93,0.95,true,pending,
+W001_P004_0173,crops_raw/W001_P004_0173.png,page_004.png,W001,424,843,497,872,ស្វែងរកកុសល,ស្វែងរកកុសល,0.94,0.95,true,pending,
+W001_P004_0174,crops_raw/W001_P004_0174.png,page_004.png,W001,488,842,582,880,សាង,សាង,0.96,0.95,true,pending,
+W001_P004_0175,crops_raw/W001_P004_0175.png,page_004.png,W001,570,846,660,885,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0176,crops_raw/W001_P004_0176.png,page_004.png,W001,651,846,688,873,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0177,crops_raw/W001_P004_0177.png,page_004.png,W001,81,865,199,920,បុគ្គលម្នាក់ៗ,បុគ្គលម្នាក់ៗ,0.95,0.95,true,pending,
+W001_P004_0178,crops_raw/W001_P004_0178.png,page_004.png,W001,191,865,300,905,សាសនិកជន,សាសនិកជន,0.95,0.95,true,pending,
+W001_P004_0179,crops_raw/W001_P004_0179.png,page_004.png,W001,317,871,343,895,។,។,0.97,0.80,true,pending,narrow component
+W001_P004_0180,crops_raw/W001_P004_0180.png,page_004.png,W001,353,866,459,908,ក្រៅពីនេះ,ក្រៅពីនេះ,0.95,0.95,true,pending,
+W001_P004_0181,crops_raw/W001_P004_0181.png,page_004.png,W001,463,872,515,906,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.95,true,pending,
+W001_P004_0182,crops_raw/W001_P004_0182.png,page_004.png,W001,504,872,551,908,បានឱ្យរៀន,បានឱ្យរៀន,0.94,0.95,true,pending,
+W001_P004_0183,crops_raw/W001_P004_0183.png,page_004.png,W001,542,871,616,899,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0184,crops_raw/W001_P004_0184.png,page_004.png,W001,613,872,688,921,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0185,crops_raw/W001_P004_0185.png,page_004.png,W001,88,895,168,921,សរសេរ,សរសេរ,0.95,0.95,true,pending,
+W001_P004_0186,crops_raw/W001_P004_0186.png,page_004.png,W001,156,887,377,934,ប្រជាជន,ប្រជាជន,0.96,0.95,true,pending,
+W001_P004_0187,crops_raw/W001_P004_0187.png,page_004.png,W001,376,891,466,922,ត្រូវរៀនចេះអាន,ត្រូវរៀនចេះអាន,0.93,0.95,true,pending,
+W001_P004_0188,crops_raw/W001_P004_0188.png,page_004.png,W001,454,893,511,920,គិត,គិត,0.96,0.95,true,pending,
+W001_P004_0189,crops_raw/W001_P004_0189.png,page_004.png,W001,500,896,569,928,លើសលប់,លើសលប់,0.94,0.95,true,pending,
+W001_P004_0190,crops_raw/W001_P004_0190.png,page_004.png,W001,559,896,610,923,ភាពស្គាល់,ភាពស្គាល់,0.94,0.95,true,pending,
+W001_P004_0191,crops_raw/W001_P004_0191.png,page_004.png,W001,599,897,644,928,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P004_0192,crops_raw/W001_P004_0192.png,page_004.png,W001,81,917,186,947,ដោយសារការគិត,ដោយសារការគិត,0.93,0.95,true,pending,
+W001_P004_0193,crops_raw/W001_P004_0193.png,page_004.png,W001,181,916,263,957,ព្យាយាមបំពេញ,ព្យាយាមបំពេញ,0.94,0.95,true,pending,
+W001_P004_0194,crops_raw/W001_P004_0194.png,page_004.png,W001,279,921,372,954,ការងារនោះ,ការងារនោះ,0.95,0.95,true,pending,
+W001_P004_0195,crops_raw/W001_P004_0195.png,page_004.png,W001,360,917,485,971,មិនចោលកាល...,មិនចោលកាល...,0.93,0.95,true,pending,
+W001_P004_0196,crops_raw/W001_P004_0196.png,page_004.png,W001,515,915,565,946,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P004_0197,crops_raw/W001_P004_0197.png,page_004.png,W001,552,915,688,947,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P004_0198,crops_raw/W001_P004_0198.png,page_004.png,W001,81,943,191,980,កាយកម្លាំង,កាយកម្លាំង,0.94,0.85,true,pending,
+W001_P004_0199,crops_raw/W001_P004_0199.png,page_004.png,W001,178,939,241,980,ចិត្តកម្លាំង,ចិត្តកម្លាំង,0.94,0.85,true,pending,
+W001_P004_0200,crops_raw/W001_P004_0200.png,page_004.png,W001,253,944,411,984,ប្រាជ្ញាកើតឡើង,ប្រាជ្ញាកើតឡើង,0.93,0.95,true,pending,
+W001_P004_0201,crops_raw/W001_P004_0201.png,page_004.png,W001,467,940,555,984,ឱ្យស័ក្តិសម,ឱ្យស័ក្តិសម,0.94,0.95,true,pending,
+W001_P004_0202,crops_raw/W001_P004_0202.png,page_004.png,W001,544,943,617,973,និងគុណតម្លៃ,និងគុណតម្លៃ,0.94,0.95,true,pending,
+W001_P004_0203,crops_raw/W001_P004_0203.png,page_004.png,W001,605,941,667,980,ការ,ការ,0.96,0.95,true,pending,
+W001_P004_0204,crops_raw/W001_P004_0204.png,page_004.png,W001,658,948,688,973,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P004_0205,crops_raw/W001_P004_0205.png,page_004.png,W001,83,965,204,1001,រលត់បាត់បង់,រលត់បាត់បង់,0.94,0.95,true,pending,
+W001_P004_0206,crops_raw/W001_P004_0206.png,page_004.png,W001,193,960,247,996,។,។,0.97,0.95,true,pending,
+W001_P004_0207,crops_raw/W001_P004_0207.png,page_004.png,W001,243,971,270,997,ក្នុងការស្ថាបនា,ក្នុងការស្ថាបនា,0.94,0.80,true,pending,narrow component
+W001_P004_0208,crops_raw/W001_P004_0208.png,page_004.png,W001,266,960,457,1003,ទស្សនៈ,ទស្សនៈ,0.96,0.95,true,pending,
+W001_P004_0209,crops_raw/W001_P004_0209.png,page_004.png,W001,445,971,524,997,នៃការយល់ដឹងនេះ,នៃការយល់ដឹងនេះ,0.93,0.95,true,pending,
+W001_P004_0210,crops_raw/W001_P004_0210.png,page_004.png,W001,512,971,663,998,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0001,crops_raw/W001_P005_0001.png,page_005.png,W001,105,227,267,261,ឱ្យតែជាការស្វែងរក,ឱ្យតែជាការស្វែងរក,0.93,0.95,true,pending,
+W001_P005_0002,crops_raw/W001_P005_0002.png,page_005.png,W001,257,223,324,265,ចំណេះដឹង,ចំណេះដឹង,0.95,0.95,true,pending,
+W001_P005_0003,crops_raw/W001_P005_0003.png,page_005.png,W001,312,232,373,254,ដែលចេញពី,ដែលចេញពី,0.94,0.80,true,pending,narrow component
+W001_P005_0004,crops_raw/W001_P005_0004.png,page_005.png,W001,377,226,449,264,គំនិត,គំនិត,0.95,0.85,true,pending,
+W001_P005_0005,crops_raw/W001_P005_0005.png,page_005.png,W001,436,221,577,264,របស់,របស់,0.96,0.85,true,pending,
+W001_P005_0006,crops_raw/W001_P005_0006.png,page_005.png,W001,570,222,688,272,មនុស្ស,មនុស្ស,0.96,0.95,true,pending,
+W001_P005_0007,crops_raw/W001_P005_0007.png,page_005.png,W001,83,226,138,289,ត្រូវជួយ,ត្រូវជួយ,0.94,0.95,true,pending,
+W001_P005_0008,crops_raw/W001_P005_0008.png,page_005.png,W001,127,260,160,282,សង្គ្រោះ,សង្គ្រោះ,0.95,0.80,true,pending,narrow component
+W001_P005_0009,crops_raw/W001_P005_0009.png,page_005.png,W001,148,257,234,294,មនុស្សជាតិ,មនុស្សជាតិ,0.95,0.95,true,pending,
+W001_P005_0010,crops_raw/W001_P005_0010.png,page_005.png,W001,224,251,327,293,គ្រប់ៗគ្នា...,គ្រប់ៗគ្នា...,0.94,0.95,true,pending,
+W001_P005_0011,crops_raw/W001_P005_0011.png,page_005.png,W001,315,249,363,287,អត្ថន័យ,អត្ថន័យ,0.95,0.95,true,pending,
+W001_P005_0012,crops_raw/W001_P005_0012.png,page_005.png,W001,351,249,435,286,ជាដើម...,ជាដើម...,0.94,0.95,true,pending,
+W001_P005_0013,crops_raw/W001_P005_0013.png,page_005.png,W001,426,249,520,288,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0014,crops_raw/W001_P005_0014.png,page_005.png,W001,520,253,600,286,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0015,crops_raw/W001_P005_0015.png,page_005.png,W001,593,253,655,278,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0016,crops_raw/W001_P005_0016.png,page_005.png,W001,84,260,164,308,ជាដើម,ជាដើម,0.96,0.95,true,pending,
+W001_P005_0017,crops_raw/W001_P005_0017.png,page_005.png,W001,155,283,181,306,។,។,0.97,0.80,true,pending,narrow component
+W001_P005_0018,crops_raw/W001_P005_0018.png,page_005.png,W001,186,278,273,319,អ្វីដែលសបញ្ជាក់,អ្វីដែលសបញ្ជាក់,0.93,0.95,true,pending,
+W001_P005_0019,crops_raw/W001_P005_0019.png,page_005.png,W001,263,283,318,306,បន្ថែមគឺ,បន្ថែមគឺ,0.94,0.80,true,pending,narrow component
+W001_P005_0020,crops_raw/W001_P005_0020.png,page_005.png,W001,324,282,345,304,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.80,true,pending,narrow component
+W001_P005_0021,crops_raw/W001_P005_0021.png,page_005.png,W001,341,280,422,331,បានអប់រំឱ្យ,បានអប់រំឱ្យ,0.94,0.95,true,pending,
+W001_P005_0022,crops_raw/W001_P005_0022.png,page_005.png,W001,418,272,518,315,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0023,crops_raw/W001_P005_0023.png,page_005.png,W001,511,280,590,306,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0024,crops_raw/W001_P005_0024.png,page_005.png,W001,585,274,688,315,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0025,crops_raw/W001_P005_0025.png,page_005.png,W001,82,302,253,349,ដើរតាម,ដើរតាម,0.95,0.95,true,pending,
+W001_P005_0026,crops_raw/W001_P005_0026.png,page_005.png,W001,247,298,299,333,ផ្លូវកណ្តាល,ផ្លូវកណ្តាល,0.94,0.95,true,pending,
+W001_P005_0027,crops_raw/W001_P005_0027.png,page_005.png,W001,290,283,392,343,គឺសច្ចធម៌,គឺសច្ចធម៌,0.93,0.95,true,pending,
+W001_P005_0028,crops_raw/W001_P005_0028.png,page_005.png,W001,394,299,475,330,មិនលំអៀង,មិនលំអៀង,0.94,0.95,true,pending,
+W001_P005_0029,crops_raw/W001_P005_0029.png,page_005.png,W001,486,294,561,328,និងការប្រកាន់យក,និងការប្រកាន់យក,0.93,0.95,true,pending,
+W001_P005_0030,crops_raw/W001_P005_0030.png,page_005.png,W001,550,298,622,337,អត្ត,អត្ត,0.95,0.95,true,pending,
+W001_P005_0031,crops_raw/W001_P005_0031.png,page_005.png,W001,610,303,688,337,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0032,crops_raw/W001_P005_0032.png,page_005.png,W001,84,330,163,367,មានច្រើនដូចជា,មានច្រើនដូចជា,0.93,0.95,true,pending,
+W001_P005_0033,crops_raw/W001_P005_0033.png,page_005.png,W001,156,326,260,367,សម្បទាទាំង៤...,សម្បទាទាំង៤...,0.93,0.95,true,pending,
+W001_P005_0034,crops_raw/W001_P005_0034.png,page_005.png,W001,264,333,325,370,សម្បទាទី១...,សម្បទាទី១...,0.94,0.95,true,pending,
+W001_P005_0035,crops_raw/W001_P005_0035.png,page_005.png,W001,313,327,354,365,សម្បទាទី២...,សម្បទាទី២...,0.94,0.95,true,pending,
+W001_P005_0036,crops_raw/W001_P005_0036.png,page_005.png,W001,375,329,505,367,សម្បទាទី៣,សម្បទាទី៣,0.94,0.95,true,pending,
+W001_P005_0037,crops_raw/W001_P005_0037.png,page_005.png,W001,516,328,607,356,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0038,crops_raw/W001_P005_0038.png,page_005.png,W001,613,329,688,367,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0039,crops_raw/W001_P005_0039.png,page_005.png,W001,83,352,189,397,សម្បទាទី៤...,សម្បទាទី៤...,0.94,0.95,true,pending,
+W001_P005_0040,crops_raw/W001_P005_0040.png,page_005.png,W001,201,356,317,394,សម្បទាដោយសីលធម៌,សម្បទាដោយសីលធម៌,0.92,0.95,true,pending,
+W001_P005_0041,crops_raw/W001_P005_0041.png,page_005.png,W001,331,352,425,382,សម្បទាដែល,សម្បទាដែល,0.94,0.95,true,pending,
+W001_P005_0042,crops_raw/W001_P005_0042.png,page_005.png,W001,441,349,553,383,និយាយអំពី,និយាយអំពី,0.94,0.95,true,pending,
+W001_P005_0043,crops_raw/W001_P005_0043.png,page_005.png,W001,557,351,688,387,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0044,crops_raw/W001_P005_0044.png,page_005.png,W001,83,385,128,420,ក្នុងការធ្វើសកម្មភាព,ក្នុងការធ្វើសកម្មភាព,0.92,0.95,true,pending,
+W001_P005_0045,crops_raw/W001_P005_0045.png,page_005.png,W001,118,378,249,417,ក្នុងការរស់នៅ,ក្នុងការរស់នៅ,0.93,0.95,true,pending,
+W001_P005_0046,crops_raw/W001_P005_0046.png,page_005.png,W001,237,377,445,425,បានល្អ,បានល្អ,0.95,0.95,true,pending,
+W001_P005_0047,crops_raw/W001_P005_0047.png,page_005.png,W001,438,374,477,405,។,។,0.97,0.95,true,pending,
+W001_P005_0048,crops_raw/W001_P005_0048.png,page_005.png,W001,469,382,494,405,លើសពីនេះទៀត,លើសពីនេះទៀត,0.93,0.80,true,pending,narrow component
+W001_P005_0049,crops_raw/W001_P005_0049.png,page_005.png,W001,496,373,627,406,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0050,crops_raw/W001_P005_0050.png,page_005.png,W001,617,376,688,418,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0051,crops_raw/W001_P005_0051.png,page_005.png,W001,82,411,130,444,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.96,0.85,true,pending,
+W001_P005_0052,crops_raw/W001_P005_0052.png,page_005.png,W001,117,409,232,444,គឺ,គឺ,0.97,0.85,true,pending,
+W001_P005_0053,crops_raw/W001_P005_0053.png,page_005.png,W001,230,403,288,434,ជា,ជា,0.96,0.95,true,pending,
+W001_P005_0054,crops_raw/W001_P005_0054.png,page_005.png,W001,290,401,380,433,ទីពឹងដ៏ជ្រក,ទីពឹងដ៏ជ្រក,0.93,0.95,true,pending,
+W001_P005_0055,crops_raw/W001_P005_0055.png,page_005.png,W001,375,408,441,433,នៃមនុស្ស,នៃមនុស្ស,0.95,0.95,true,pending,
+W001_P005_0056,crops_raw/W001_P005_0056.png,page_005.png,W001,432,402,535,443,អាច,អាច,0.96,0.95,true,pending,
+W001_P005_0057,crops_raw/W001_P005_0057.png,page_005.png,W001,523,398,568,432,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0058,crops_raw/W001_P005_0058.png,page_005.png,W001,558,398,655,438,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0059,crops_raw/W001_P005_0059.png,page_005.png,W001,651,406,688,445,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0060,crops_raw/W001_P005_0060.png,page_005.png,W001,84,420,199,469,ព្យាបាលផ្លូវចិត្ត,ព្យាបាលផ្លូវចិត្ត,0.93,0.95,true,pending,
+W001_P005_0061,crops_raw/W001_P005_0061.png,page_005.png,W001,190,429,235,471,កម្ចាត់សេចក្តីស្មុគស្មាញ...,កម្ចាត់សេចក្តីស្មុគស្មាញ...,0.91,0.95,true,pending,
+W001_P005_0062,crops_raw/W001_P005_0062.png,page_005.png,W001,227,422,382,460,វប្បធម៌ប្រពៃណី,វប្បធម៌ប្រពៃណី,0.93,0.95,true,pending,
+W001_P005_0063,crops_raw/W001_P005_0063.png,page_005.png,W001,379,419,641,482,និងសីលធម៌,និងសីលធម៌,0.94,0.95,true,pending,
+W001_P005_0064,crops_raw/W001_P005_0064.png,page_005.png,W001,629,424,657,454,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0065,crops_raw/W001_P005_0065.png,page_005.png,W001,645,430,677,463,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0066,crops_raw/W001_P005_0066.png,page_005.png,W001,82,447,187,502,ដើម្បីឱ្យមនុស្ស,ដើម្បីឱ្យមនុស្ស,0.93,0.95,true,pending,
+W001_P005_0067,crops_raw/W001_P005_0067.png,page_005.png,W001,177,456,259,486,មានសេចក្តីសុខសាន្ត...,មានសេចក្តីសុខសាន្ត...,0.92,0.95,true,pending,
+W001_P005_0068,crops_raw/W001_P005_0068.png,page_005.png,W001,247,448,271,474,ពោលគឺ,ពោលគឺ,0.95,0.80,true,pending,narrow component
+W001_P005_0069,crops_raw/W001_P005_0069.png,page_005.png,W001,261,447,380,485,លុបបំបាត់,លុបបំបាត់,0.95,0.95,true,pending,
+W001_P005_0070,crops_raw/W001_P005_0070.png,page_005.png,W001,368,457,412,491,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0071,crops_raw/W001_P005_0071.png,page_005.png,W001,415,459,470,483,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0072,crops_raw/W001_P005_0072.png,page_005.png,W001,500,458,580,482,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0073,crops_raw/W001_P005_0073.png,page_005.png,W001,584,451,688,492,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0074,crops_raw/W001_P005_0074.png,page_005.png,W001,85,487,139,511,លុបបំបាត់,លុបបំបាត់,0.95,0.95,true,pending,
+W001_P005_0075,crops_raw/W001_P005_0075.png,page_005.png,W001,146,479,339,524,ការរើសអើងសង្គម,ការរើសអើងសង្គម,0.93,0.95,true,pending,
+W001_P005_0076,crops_raw/W001_P005_0076.png,page_005.png,W001,330,472,457,515,រវាងមនុស្សជាតិ,រវាងមនុស្សជាតិ,0.94,0.95,true,pending,
+W001_P005_0077,crops_raw/W001_P005_0077.png,page_005.png,W001,446,482,470,507,។,។,0.97,0.80,true,pending,narrow component
+W001_P005_0078,crops_raw/W001_P005_0078.png,page_005.png,W001,485,477,573,507,ពេលនោះហើយ,ពេលនោះហើយ,0.93,0.85,true,pending,
+W001_P005_0079,crops_raw/W001_P005_0079.png,page_005.png,W001,560,477,637,507,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P005_0080,crops_raw/W001_P005_0080.png,page_005.png,W001,635,476,688,505,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0081,crops_raw/W001_P005_0081.png,page_005.png,W001,85,507,143,546,ទៀត,ទៀត,0.95,0.95,true,pending,
+W001_P005_0082,crops_raw/W001_P005_0082.png,page_005.png,W001,145,503,238,541,ត្រូវរក្សាចិត្ត,ត្រូវរក្សាចិត្ត,0.94,0.95,true,pending,
+W001_P005_0083,crops_raw/W001_P005_0083.png,page_005.png,W001,237,504,269,535,ឱ្យស្អាតបរិសុទ្ធ,ឱ្យស្អាតបរិសុទ្ធ,0.93,0.80,true,pending,narrow component
+W001_P005_0084,crops_raw/W001_P005_0084.png,page_005.png,W001,267,503,350,563,យើងត្រូវ,យើងត្រូវ,0.95,0.95,true,pending,
+W001_P005_0085,crops_raw/W001_P005_0085.png,page_005.png,W001,338,505,381,535,ប្រកាន់យកនូវ,ប្រកាន់យកនូវ,0.93,0.95,true,pending,
+W001_P005_0086,crops_raw/W001_P005_0086.png,page_005.png,W001,384,501,453,533,សាមគ្គី,សាមគ្គី,0.95,0.95,true,pending,
+W001_P005_0087,crops_raw/W001_P005_0087.png,page_005.png,W001,466,504,495,532,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0088,crops_raw/W001_P005_0088.png,page_005.png,W001,542,503,633,543,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0089,crops_raw/W001_P005_0089.png,page_005.png,W001,625,502,688,546,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0090,crops_raw/W001_P005_0090.png,page_005.png,W001,87,511,281,577,ពោលគឺរាល់ការគិត,ពោលគឺរាល់ការគិត,0.92,0.95,true,pending,
+W001_P005_0091,crops_raw/W001_P005_0091.png,page_005.png,W001,296,534,382,562,និងការគិតដ៏ខ្ពង់ខ្ពស់,និងការគិតដ៏ខ្ពង់ខ្ពស់,0.92,0.95,true,pending,
+W001_P005_0092,crops_raw/W001_P005_0092.png,page_005.png,W001,395,536,426,568,ជួយសង្គមជាតិ,ជួយសង្គមជាតិ,0.94,0.80,true,pending,narrow component
+W001_P005_0093,crops_raw/W001_P005_0093.png,page_005.png,W001,499,530,553,559,។,។,0.97,0.95,true,pending,
+W001_P005_0094,crops_raw/W001_P005_0094.png,page_005.png,W001,555,535,583,561,រាល់បញ្ហា,រាល់បញ្ហា,0.94,0.80,true,pending,narrow component
+W001_P005_0095,crops_raw/W001_P005_0095.png,page_005.png,W001,581,527,683,558,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0096,crops_raw/W001_P005_0096.png,page_005.png,W001,90,560,124,588,ទាំងអស់,ទាំងអស់,0.95,0.95,true,pending,
+W001_P005_0097,crops_raw/W001_P005_0097.png,page_005.png,W001,128,556,193,588,រវាង,រវាង,0.96,0.95,true,pending,
+W001_P005_0098,crops_raw/W001_P005_0098.png,page_005.png,W001,182,563,216,586,មនុស្សនេះ,មនុស្សនេះ,0.95,0.80,true,pending,narrow component
+W001_P005_0099,crops_raw/W001_P005_0099.png,page_005.png,W001,204,551,301,588,គឺ,គឺ,0.97,0.95,true,pending,
+W001_P005_0100,crops_raw/W001_P005_0100.png,page_005.png,W001,297,555,347,589,ជាទ្រឹស្តី,ជាទ្រឹស្តី,0.94,0.95,true,pending,
+W001_P005_0101,crops_raw/W001_P005_0101.png,page_005.png,W001,342,556,371,585,ដ៏ធំនៃការពិត,ដ៏ធំនៃការពិត,0.93,0.80,true,pending,narrow component
+W001_P005_0102,crops_raw/W001_P005_0102.png,page_005.png,W001,394,555,447,596,នៃជីវិត,នៃជីវិត,0.95,0.95,true,pending,
+W001_P005_0103,crops_raw/W001_P005_0103.png,page_005.png,W001,436,557,472,587,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0104,crops_raw/W001_P005_0104.png,page_005.png,W001,466,560,495,584,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0105,crops_raw/W001_P005_0105.png,page_005.png,W001,553,552,591,583,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0106,crops_raw/W001_P005_0106.png,page_005.png,W001,581,554,658,583,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0107,crops_raw/W001_P005_0107.png,page_005.png,W001,652,546,688,583,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0108,crops_raw/W001_P005_0108.png,page_005.png,W001,89,567,263,624,ព្រះសមណគោតម,ព្រះសមណគោតម,0.93,0.95,true,pending,
+W001_P005_0109,crops_raw/W001_P005_0109.png,page_005.png,W001,267,560,364,620,សម្រេច,សម្រេច,0.95,0.95,true,pending,
+W001_P005_0110,crops_raw/W001_P005_0110.png,page_005.png,W001,381,580,474,611,ពុទ្ធសាសនិក,ពុទ្ធសាសនិក,0.95,0.95,true,pending,
+W001_P005_0111,crops_raw/W001_P005_0111.png,page_005.png,W001,468,587,495,613,។,។,0.97,0.80,true,pending,narrow component
+W001_P005_0112,crops_raw/W001_P005_0112.png,page_005.png,W001,489,576,631,609,បើយើងនិយាយពី,បើយើងនិយាយពី,0.94,0.95,true,pending,
+W001_P005_0113,crops_raw/W001_P005_0113.png,page_005.png,W001,619,579,684,611,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0114,crops_raw/W001_P005_0114.png,page_005.png,W001,88,606,163,640,លក្ខខណ្ឌ,លក្ខខណ្ឌ,0.95,0.95,true,pending,
+W001_P005_0115,crops_raw/W001_P005_0115.png,page_005.png,W001,151,605,324,648,ការរស់នៅនោះគឺ,ការរស់នៅនោះគឺ,0.92,0.95,true,pending,
+W001_P005_0116,crops_raw/W001_P005_0116.png,page_005.png,W001,313,602,351,636,ធ្វើឱ្យមនុស្ស,ធ្វើឱ្យមនុស្ស,0.94,0.95,true,pending,
+W001_P005_0117,crops_raw/W001_P005_0117.png,page_005.png,W001,382,605,423,660,មានចិត្តស្ងប់,មានចិត្តស្ងប់,0.94,0.95,true,pending,
+W001_P005_0118,crops_raw/W001_P005_0118.png,page_005.png,W001,414,610,458,647,មានសេច,មានសេច,0.94,0.95,true,pending,
+W001_P005_0119,crops_raw/W001_P005_0119.png,page_005.png,W001,480,612,528,637,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0120,crops_raw/W001_P005_0120.png,page_005.png,W001,518,602,616,646,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0121,crops_raw/W001_P005_0121.png,page_005.png,W001,629,611,665,636,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0122,crops_raw/W001_P005_0122.png,page_005.png,W001,654,604,688,637,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0123,crops_raw/W001_P005_0123.png,page_005.png,W001,161,637,243,675,ក្តីសុខ,ក្តីសុខ,0.95,0.95,true,pending,
+W001_P005_0124,crops_raw/W001_P005_0124.png,page_005.png,W001,231,637,312,663,ព្យាយាមស្វែងរកចំណេះដឹង,ព្យាយាមស្វែងរកចំណេះដឹង,0.92,0.95,true,pending,
+W001_P005_0125,crops_raw/W001_P005_0125.png,page_005.png,W001,314,638,363,664,ស្រឡាញ់សន្តិភាព,ស្រឡាញ់សន្តិភាព,0.94,0.95,true,pending,
+W001_P005_0126,crops_raw/W001_P005_0126.png,page_005.png,W001,355,636,396,661,លុបបំបាត់,លុបបំបាត់,0.95,0.95,true,pending,
+W001_P005_0127,crops_raw/W001_P005_0127.png,page_005.png,W001,401,628,433,670,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0128,crops_raw/W001_P005_0128.png,page_005.png,W001,440,611,613,672,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0129,crops_raw/W001_P005_0129.png,page_005.png,W001,624,628,688,669,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0130,crops_raw/W001_P005_0130.png,page_005.png,W001,87,639,210,696,ភាពរើសអើង...,ភាពរើសអើង...,0.93,0.95,true,pending,
+W001_P005_0131,crops_raw/W001_P005_0131.png,page_005.png,W001,209,658,280,688,កសាងសង្គមមួយ,កសាងសង្គមមួយ,0.93,0.95,true,pending,
+W001_P005_0132,crops_raw/W001_P005_0132.png,page_005.png,W001,272,662,343,695,ពោរពេញដោយការចែករំលែក...,ពោរពេញដោយការចែករំលែក...,0.90,0.95,true,pending,
+W001_P005_0133,crops_raw/W001_P005_0133.png,page_005.png,W001,331,662,441,686,ប្រជាជនរស់នៅ,ប្រជាជនរស់នៅ,0.93,0.95,true,pending,
+W001_P005_0134,crops_raw/W001_P005_0134.png,page_005.png,W001,432,655,581,692,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0135,crops_raw/W001_P005_0135.png,page_005.png,W001,570,654,688,693,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0136,crops_raw/W001_P005_0136.png,page_005.png,W001,86,687,174,722,ប្រកបដោយ,ប្រកបដោយ,0.94,0.95,true,pending,
+W001_P005_0137,crops_raw/W001_P005_0137.png,page_005.png,W001,162,682,236,713,សេចក្តីសុខ...,សេចក្តីសុខ...,0.93,0.95,true,pending,
+W001_P005_0138,crops_raw/W001_P005_0138.png,page_005.png,W001,227,686,307,714,ស្មើគ្នា,ស្មើគ្នា,0.95,0.95,true,pending,
+W001_P005_0139,crops_raw/W001_P005_0139.png,page_005.png,W001,297,684,438,735,។,។,0.97,0.95,true,pending,
+W001_P005_0140,crops_raw/W001_P005_0140.png,page_005.png,W001,447,684,475,709,ចំណែកក្នុងការជ្រើស,ចំណែកក្នុងការជ្រើស,0.92,0.80,true,pending,narrow component
+W001_P005_0141,crops_raw/W001_P005_0141.png,page_005.png,W001,472,682,561,711,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0142,crops_raw/W001_P005_0142.png,page_005.png,W001,559,682,688,735,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0143,crops_raw/W001_P005_0143.png,page_005.png,W001,90,711,198,739,រើសយក,រើសយក,0.95,0.95,true,pending,
+W001_P005_0144,crops_raw/W001_P005_0144.png,page_005.png,W001,206,704,318,750,គឺមានន័យថា,គឺមានន័យថា,0.93,0.95,true,pending,
+W001_P005_0145,crops_raw/W001_P005_0145.png,page_005.png,W001,353,706,410,759,ក៏ដូចជាការធ្វើទាន...,ក៏ដូចជាការធ្វើទាន...,0.92,0.95,true,pending,
+W001_P005_0146,crops_raw/W001_P005_0146.png,page_005.png,W001,401,705,518,746,ក្នុងបំណងស្វែងរក,ក្នុងបំណងស្វែងរក,0.92,0.95,true,pending,
+W001_P005_0147,crops_raw/W001_P005_0147.png,page_005.png,W001,508,710,573,762,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0148,crops_raw/W001_P005_0148.png,page_005.png,W001,607,706,688,739,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0149,crops_raw/W001_P005_0149.png,page_005.png,W001,86,731,183,770,ការសប្បាយ,ការសប្បាយ,0.94,0.95,true,pending,
+W001_P005_0150,crops_raw/W001_P005_0150.png,page_005.png,W001,195,729,335,763,អ្វីដែលសំខាន់,អ្វីដែលសំខាន់,0.93,0.95,true,pending,
+W001_P005_0151,crops_raw/W001_P005_0151.png,page_005.png,W001,325,733,391,761,នាំឆ្ពោះទៅរកសន្តិភាព...,នាំឆ្ពោះទៅរកសន្តិភាព...,0.91,0.95,true,pending,
+W001_P005_0152,crops_raw/W001_P005_0152.png,page_005.png,W001,399,729,471,761,ក៏ប៉ុន្តែដើម្បី,ក៏ប៉ុន្តែដើម្បី,0.93,0.95,true,pending,
+W001_P005_0153,crops_raw/W001_P005_0153.png,page_005.png,W001,467,728,524,767,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0154,crops_raw/W001_P005_0154.png,page_005.png,W001,551,737,576,759,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0155,crops_raw/W001_P005_0155.png,page_005.png,W001,576,728,641,786,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0156,crops_raw/W001_P005_0156.png,page_005.png,W001,639,729,688,758,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0157,crops_raw/W001_P005_0157.png,page_005.png,W001,87,752,229,796,ផលប្រយោជន៍,ផលប្រយោជន៍,0.94,0.95,true,pending,
+W001_P005_0158,crops_raw/W001_P005_0158.png,page_005.png,W001,219,757,267,787,ទាំងអស់នេះ,ទាំងអស់នេះ,0.95,0.95,true,pending,
+W001_P005_0159,crops_raw/W001_P005_0159.png,page_005.png,W001,258,754,313,787,នោះត្រូវតែមាន,នោះត្រូវតែមាន,0.93,0.95,true,pending,
+W001_P005_0160,crops_raw/W001_P005_0160.png,page_005.png,W001,301,759,348,786,វិស័យ,វិស័យ,0.95,0.95,true,pending,
+W001_P005_0161,crops_raw/W001_P005_0161.png,page_005.png,W001,339,749,421,786,ក្នុងការ,ក្នុងការ,0.95,0.95,true,pending,
+W001_P005_0162,crops_raw/W001_P005_0162.png,page_005.png,W001,419,761,467,811,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P005_0163,crops_raw/W001_P005_0163.png,page_005.png,W001,454,757,563,811,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P005_0164,crops_raw/W001_P005_0164.png,page_005.png,W001,561,755,595,784,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0165,crops_raw/W001_P005_0165.png,page_005.png,W001,620,736,688,797,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0166,crops_raw/W001_P005_0166.png,page_005.png,W001,86,778,187,824,បង្ហាត់បង្រៀន,បង្ហាត់បង្រៀន,0.94,0.85,true,pending,
+W001_P005_0167,crops_raw/W001_P005_0167.png,page_005.png,W001,174,778,362,824,ឱ្យមានចំណេះដឹង...,ឱ្យមានចំណេះដឹង...,0.92,0.85,true,pending,
+W001_P005_0168,crops_raw/W001_P005_0168.png,page_005.png,W001,349,780,415,824,នោះគឺវត្តអារាម,នោះគឺវត្តអារាម,0.93,0.85,true,pending,
+W001_P005_0169,crops_raw/W001_P005_0169.png,page_005.png,W001,414,786,467,813,ដែលជាទី,ដែលជាទី,0.94,0.95,true,pending,
+W001_P005_0170,crops_raw/W001_P005_0170.png,page_005.png,W001,485,784,584,836,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0171,crops_raw/W001_P005_0171.png,page_005.png,W001,588,781,675,809,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0172,crops_raw/W001_P005_0172.png,page_005.png,W001,664,777,688,807,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0173,crops_raw/W001_P005_0173.png,page_005.png,W001,86,813,169,845,អាស្រ័យ,អាស្រ័យ,0.95,0.85,true,pending,
+W001_P005_0174,crops_raw/W001_P005_0174.png,page_005.png,W001,156,813,242,845,បណ្តុះចំណេះដឹង...,បណ្តុះចំណេះដឹង...,0.92,0.85,true,pending,
+W001_P005_0175,crops_raw/W001_P005_0175.png,page_005.png,W001,235,808,319,848,ព្រោះកាលពីសម័យបុរាណ,ព្រោះកាលពីសម័យបុរាណ,0.92,0.95,true,pending,
+W001_P005_0176,crops_raw/W001_P005_0176.png,page_005.png,W001,401,803,450,835,វត្តអារាម,វត្តអារាម,0.95,0.95,true,pending,
+W001_P005_0177,crops_raw/W001_P005_0177.png,page_005.png,W001,446,805,492,834,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0178,crops_raw/W001_P005_0178.png,page_005.png,W001,508,802,580,835,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0179,crops_raw/W001_P005_0179.png,page_005.png,W001,572,801,635,847,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0180,crops_raw/W001_P005_0180.png,page_005.png,W001,623,805,688,837,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0181,crops_raw/W001_P005_0181.png,page_005.png,W001,90,831,146,863,របស់សង្គមលោក,របស់សង្គមលោក,0.93,0.95,true,pending,
+W001_P005_0182,crops_raw/W001_P005_0182.png,page_005.png,W001,177,824,242,862,គឺជាផ្នែកមួយ,គឺជាផ្នែកមួយ,0.93,0.95,true,pending,
+W001_P005_0183,crops_raw/W001_P005_0183.png,page_005.png,W001,243,836,282,862,រៀនសូត្រ,រៀនសូត្រ,0.94,0.95,true,pending,
+W001_P005_0184,crops_raw/W001_P005_0184.png,page_005.png,W001,273,833,349,885,របស់កូនចៅខ្មែរ,របស់កូនចៅខ្មែរ,0.93,0.95,true,pending,
+W001_P005_0185,crops_raw/W001_P005_0185.png,page_005.png,W001,337,811,403,861,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0186,crops_raw/W001_P005_0186.png,page_005.png,W001,392,828,453,872,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0187,crops_raw/W001_P005_0187.png,page_005.png,W001,449,834,509,871,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0188,crops_raw/W001_P005_0188.png,page_005.png,W001,499,827,557,859,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0189,crops_raw/W001_P005_0189.png,page_005.png,W001,548,832,590,871,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0190,crops_raw/W001_P005_0190.png,page_005.png,W001,588,827,688,882,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0191,crops_raw/W001_P005_0191.png,page_005.png,W001,89,863,128,891,ជាកន្លែង,ជាកន្លែង,0.95,0.95,true,pending,
+W001_P005_0192,crops_raw/W001_P005_0192.png,page_005.png,W001,118,838,189,888,បណ្តុះបណ្តាល,បណ្តុះបណ្តាល,0.94,0.95,true,pending,
+W001_P005_0193,crops_raw/W001_P005_0193.png,page_005.png,W001,177,860,259,897,ជាបណ្ណាល័យ,ជាបណ្ណាល័យ,0.94,0.95,true,pending,
+W001_P005_0194,crops_raw/W001_P005_0194.png,page_005.png,W001,264,861,302,889,ជាមន្ទីរពេទ្យ,ជាមន្ទីរពេទ្យ,0.94,0.95,true,pending,
+W001_P005_0195,crops_raw/W001_P005_0195.png,page_005.png,W001,318,862,379,888,ព្យាបាលជំងឺ,ព្យាបាលជំងឺ,0.94,0.95,true,pending,
+W001_P005_0196,crops_raw/W001_P005_0196.png,page_005.png,W001,369,861,420,896,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0197,crops_raw/W001_P005_0197.png,page_005.png,W001,436,861,474,888,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0198,crops_raw/W001_P005_0198.png,page_005.png,W001,471,852,518,884,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0199,crops_raw/W001_P005_0199.png,page_005.png,W001,509,860,575,894,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0200,crops_raw/W001_P005_0200.png,page_005.png,W001,574,856,629,884,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0201,crops_raw/W001_P005_0201.png,page_005.png,W001,617,854,688,908,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0202,crops_raw/W001_P005_0202.png,page_005.png,W001,90,880,161,912,សីលធម៌,សីលធម៌,0.95,0.95,true,pending,
+W001_P005_0203,crops_raw/W001_P005_0203.png,page_005.png,W001,153,880,199,910,ពិនិត្យវត្តអារាម,ពិនិត្យវត្តអារាម,0.93,0.95,true,pending,
+W001_P005_0204,crops_raw/W001_P005_0204.png,page_005.png,W001,231,884,258,912,ជាមណ្ឌល,ជាមណ្ឌល,0.95,0.80,true,pending,narrow component
+W001_P005_0205,crops_raw/W001_P005_0205.png,page_005.png,W001,267,885,357,911,វិទ្យាសាស្ត្រ,វិទ្យាសាស្ត្រ,0.95,0.95,true,pending,
+W001_P005_0206,crops_raw/W001_P005_0206.png,page_005.png,W001,346,881,448,933,និងវប្បធម៌ខ្មែរ,និងវប្បធម៌ខ្មែរ,0.93,0.95,true,pending,
+W001_P005_0207,crops_raw/W001_P005_0207.png,page_005.png,W001,436,872,511,914,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0208,crops_raw/W001_P005_0208.png,page_005.png,W001,512,877,565,910,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0209,crops_raw/W001_P005_0209.png,page_005.png,W001,555,884,632,917,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0210,crops_raw/W001_P005_0210.png,page_005.png,W001,658,880,688,915,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0211,crops_raw/W001_P005_0211.png,page_005.png,W001,90,885,218,939,ដោយសារ,ដោយសារ,0.95,0.95,true,pending,
+W001_P005_0212,crops_raw/W001_P005_0212.png,page_005.png,W001,207,911,236,943,វត្តអារាម,វត្តអារាម,0.95,0.80,true,pending,narrow component
+W001_P005_0213,crops_raw/W001_P005_0213.png,page_005.png,W001,234,886,274,938,ពោរពេញដោយ,ពោរពេញដោយ,0.93,0.95,true,pending,
+W001_P005_0214,crops_raw/W001_P005_0214.png,page_005.png,W001,262,909,321,936,ទីកន្លែងស្រាវជ្រាវ,ទីកន្លែងស្រាវជ្រាវ,0.93,0.95,true,pending,
+W001_P005_0215,crops_raw/W001_P005_0215.png,page_005.png,W001,315,909,391,937,ការរៀនសូត្រ,ការរៀនសូត្រ,0.94,0.95,true,pending,
+W001_P005_0216,crops_raw/W001_P005_0216.png,page_005.png,W001,416,906,507,938,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0217,crops_raw/W001_P005_0217.png,page_005.png,W001,498,906,555,958,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0218,crops_raw/W001_P005_0218.png,page_005.png,W001,550,906,670,958,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0219,crops_raw/W001_P005_0219.png,page_005.png,W001,88,935,140,970,អក្សរសាស្ត្រជាដើម,អក្សរសាស្ត្រជាដើម,0.93,0.95,true,pending,
+W001_P005_0220,crops_raw/W001_P005_0220.png,page_005.png,W001,151,911,246,974,។,។,0.97,0.95,true,pending,
+W001_P005_0221,crops_raw/W001_P005_0221.png,page_005.png,W001,244,929,335,962,ធាតុផ្សំទាំងមូល,ធាតុផ្សំទាំងមូល,0.93,0.95,true,pending,
+W001_P005_0222,crops_raw/W001_P005_0222.png,page_005.png,W001,341,934,497,973,កសាងសីលធម៌,កសាងសីលធម៌,0.94,0.95,true,pending,
+W001_P005_0223,crops_raw/W001_P005_0223.png,page_005.png,W001,487,935,519,959,កុសល,កុសល,0.95,0.80,true,pending,narrow component
+W001_P005_0224,crops_raw/W001_P005_0224.png,page_005.png,W001,539,927,579,958,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0225,crops_raw/W001_P005_0225.png,page_005.png,W001,590,935,636,960,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0226,crops_raw/W001_P005_0226.png,page_005.png,W001,640,933,688,973,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0227,crops_raw/W001_P005_0227.png,page_005.png,W001,86,960,160,997,ផ្សេងៗ,ផ្សេងៗ,0.96,0.95,true,pending,
+W001_P005_0228,crops_raw/W001_P005_0228.png,page_005.png,W001,169,960,230,995,ព្រោះកាលពី,ព្រោះកាលពី,0.94,0.95,true,pending,
+W001_P005_0229,crops_raw/W001_P005_0229.png,page_005.png,W001,223,955,271,985,សម័យសកលលោក...,សម័យសកលលោក...,0.92,0.95,true,pending,
+W001_P005_0230,crops_raw/W001_P005_0230.png,page_005.png,W001,263,956,313,985,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.96,0.95,true,pending,
+W001_P005_0231,crops_raw/W001_P005_0231.png,page_005.png,W001,302,952,365,990,ព្រះធម៌,ព្រះធម៌,0.96,0.95,true,pending,
+W001_P005_0232,crops_raw/W001_P005_0232.png,page_005.png,W001,354,958,467,986,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0233,crops_raw/W001_P005_0233.png,page_005.png,W001,483,957,511,976,,,0.50,0.80,true,pending,Unmatched candidate — human transcription required
+W001_P005_0234,crops_raw/W001_P005_0234.png,page_005.png,W001,499,958,548,990,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0235,crops_raw/W001_P005_0235.png,page_005.png,W001,538,960,583,998,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0236,crops_raw/W001_P005_0236.png,page_005.png,W001,585,959,637,993,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P005_0237,crops_raw/W001_P005_0237.png,page_005.png,W001,647,958,688,983,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P006_0001,crops_raw/W001_P006_0001.png,page_006.png,W001,81,232,167,265,ព្រះសង្ឃ,ព្រះសង្ឃ,0.96,0.95,true,pending,
+W001_P006_0002,crops_raw/W001_P006_0002.png,page_006.png,W001,166,227,194,248,»,»,0.96,0.80,true,pending,narrow component
+W001_P006_0003,crops_raw/W001_P006_0003.png,page_006.png,W001,190,224,295,281,ជាទីសក្ការៈ,ជាទីសក្ការៈ,0.94,0.95,true,pending,
+W001_P006_0004,crops_raw/W001_P006_0004.png,page_006.png,W001,283,228,370,268,និងប្រាថ្នា,និងប្រាថ្នា,0.94,0.95,true,pending,
+W001_P006_0005,crops_raw/W001_P006_0005.png,page_006.png,W001,358,223,382,255,ចង់បាន,ចង់បាន,0.95,0.80,true,pending,narrow component
+W001_P006_0006,crops_raw/W001_P006_0006.png,page_006.png,W001,370,230,457,257,ជាដើម,ជាដើម,0.95,0.95,true,pending,
+W001_P006_0007,crops_raw/W001_P006_0007.png,page_006.png,W001,457,224,540,258,។,។,0.97,0.95,true,pending,
+W001_P006_0008,crops_raw/W001_P006_0008.png,page_006.png,W001,537,228,567,256,ទាំងនេះ,ទាំងនេះ,0.95,0.80,true,pending,narrow component
+W001_P006_0009,crops_raw/W001_P006_0009.png,page_006.png,W001,570,225,633,256,គឺជាទីតាំង,គឺជាទីតាំង,0.94,0.95,true,pending,
+W001_P006_0010,crops_raw/W001_P006_0010.png,page_006.png,W001,622,221,688,260,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P006_0011,crops_raw/W001_P006_0011.png,page_006.png,W001,81,251,166,289,សម្រាប់,សម្រាប់,0.95,0.95,true,pending,
+W001_P006_0012,crops_raw/W001_P006_0012.png,page_006.png,W001,157,251,198,282,សិក្សា,សិក្សា,0.94,0.95,true,pending,
+W001_P006_0013,crops_raw/W001_P006_0013.png,page_006.png,W001,240,257,325,291,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.95,true,pending,
+W001_P006_0014,crops_raw/W001_P006_0014.png,page_006.png,W001,314,256,399,284,សាសនា,សាសនា,0.95,0.95,true,pending,
+W001_P006_0015,crops_raw/W001_P006_0015.png,page_006.png,W001,388,258,415,283,។,។,0.97,0.80,true,pending,narrow component
+W001_P006_0016,crops_raw/W001_P006_0016.png,page_006.png,W001,150,257,243,316,ជាក់ស្តែង,ជាក់ស្តែង,0.94,0.95,true,pending,
+W001_P006_0017,crops_raw/W001_P006_0017.png,page_006.png,W001,234,270,336,307,បើយើង,បើយើង,0.95,0.95,true,pending,
+W001_P006_0018,crops_raw/W001_P006_0018.png,page_006.png,W001,328,283,405,314,ក្រឡេកមើលទៅ,ក្រឡេកមើលទៅ,0.93,0.95,true,pending,
+W001_P006_0019,crops_raw/W001_P006_0019.png,page_006.png,W001,393,275,547,333,ស្ថានីយ,ស្ថានីយ,0.94,0.95,true,pending,
+W001_P006_0020,crops_raw/W001_P006_0020.png,page_006.png,W001,539,278,663,319,អភិរក្សសិល្បៈ,អភិរក្សសិល្បៈ,0.93,0.95,true,pending,
+W001_P006_0021,crops_raw/W001_P006_0021.png,page_006.png,W001,652,278,688,318,វប្បធម៌,វប្បធម៌,0.94,0.95,true,pending,
+W001_P006_0022,crops_raw/W001_P006_0022.png,page_006.png,W001,81,306,186,344,ព្រះបាទជ័យវរ្ម័ន,ព្រះបាទជ័យវរ្ម័ន,0.94,0.95,true,pending,
+W001_P006_0023,crops_raw/W001_P006_0023.png,page_006.png,W001,180,303,257,343,ទី៧...,ទី៧...,0.92,0.95,true,pending,
+W001_P006_0024,crops_raw/W001_P006_0024.png,page_006.png,W001,261,302,349,342,ទាំងអស់នេះ,ទាំងអស់នេះ,0.95,0.95,true,pending,
+W001_P006_0025,crops_raw/W001_P006_0025.png,page_006.png,W001,340,300,487,344,គឺជាស្ថានីយ,គឺជាស្ថានីយ,0.94,0.95,true,pending,
+W001_P006_0026,crops_raw/W001_P006_0026.png,page_006.png,W001,502,303,630,346,អភិរក្សសិល្បៈ,អភិរក្សសិល្បៈ,0.94,0.95,true,pending,
+W001_P006_0027,crops_raw/W001_P006_0027.png,page_006.png,W001,620,304,688,334,ដែលជាពុទ្ធ,ដែលជាពុទ្ធ,0.93,0.95,true,pending,
+W001_P006_0028,crops_raw/W001_P006_0028.png,page_006.png,W001,81,333,208,368,ដែលបានបង្ហាញ,ដែលបានបង្ហាញ,0.93,0.95,true,pending,
+W001_P006_0029,crops_raw/W001_P006_0029.png,page_006.png,W001,198,330,312,368,ញ,ញ,0.90,0.95,true,pending,
+W001_P006_0030,crops_raw/W001_P006_0030.png,page_006.png,W001,300,336,346,359,អំពីការធ្វើ,អំពីការធ្វើ,0.93,0.80,true,pending,narrow component
+W001_P006_0031,crops_raw/W001_P006_0031.png,page_006.png,W001,340,330,505,386,ទាន,ទាន,0.96,0.95,true,pending,
+W001_P006_0032,crops_raw/W001_P006_0032.png,page_006.png,W001,510,333,540,361,របស់ព្រះបាទជ័យវរ្ម័ន,របស់ព្រះបាទជ័យវរ្ម័ន,0.92,0.80,true,pending,narrow component
+W001_P006_0033,crops_raw/W001_P006_0033.png,page_006.png,W001,536,328,688,371,។,។,0.97,0.95,true,pending,
+W001_P006_0034,crops_raw/W001_P006_0034.png,page_006.png,W001,81,353,211,387,នោះហើយបើយើង,នោះហើយបើយើង,0.93,0.95,true,pending,
+W001_P006_0035,crops_raw/W001_P006_0035.png,page_006.png,W001,199,363,248,387,ងាក,ងាក,0.96,0.95,true,pending,
+W001_P006_0036,crops_raw/W001_P006_0036.png,page_006.png,W001,239,356,374,395,និយាយបានថា...,និយាយបានថា...,0.92,0.95,true,pending,
+W001_P006_0037,crops_raw/W001_P006_0037.png,page_006.png,W001,378,358,442,398,វត្តអារាម,វត្តអារាម,0.95,0.95,true,pending,
+W001_P006_0038,crops_raw/W001_P006_0038.png,page_006.png,W001,431,362,484,397,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.94,0.95,true,pending,
+W001_P006_0039,crops_raw/W001_P006_0039.png,page_006.png,W001,555,360,688,397,បានកសាងកុសល...,បានកសាងកុសល...,0.92,0.95,true,pending,
+W001_P006_0040,crops_raw/W001_P006_0040.png,page_006.png,W001,83,379,172,412,ពោលគឺ,ពោលគឺ,0.95,0.95,true,pending,
+W001_P006_0041,crops_raw/W001_P006_0041.png,page_006.png,W001,160,383,260,420,ការធ្វើទាន...,ការធ្វើទាន...,0.93,0.95,true,pending,
+W001_P006_0042,crops_raw/W001_P006_0042.png,page_006.png,W001,265,381,324,411,សីល,សីល,0.95,0.95,true,pending,
+W001_P006_0043,crops_raw/W001_P006_0043.png,page_006.png,W001,313,386,414,423,ដែលឈ្មោះ,ដែលឈ្មោះ,0.94,0.95,true,pending,
+W001_P006_0044,crops_raw/W001_P006_0044.png,page_006.png,W001,405,386,441,412,ថា,ថា,0.96,0.95,true,pending,
+W001_P006_0045,crops_raw/W001_P006_0045.png,page_006.png,W001,440,386,466,406,«,«,0.96,0.80,true,pending,narrow component
+W001_P006_0046,crops_raw/W001_P006_0046.png,page_006.png,W001,545,386,571,410,»,»,0.96,0.80,true,pending,narrow component
+W001_P006_0047,crops_raw/W001_P006_0047.png,page_006.png,W001,577,382,688,413,ពោលពលករ...,ពោលពលករ...,0.92,0.95,true,pending,
+W001_P006_0048,crops_raw/W001_P006_0048.png,page_006.png,W001,82,411,126,437,មាន,មាន,0.96,0.95,true,pending,
+W001_P006_0049,crops_raw/W001_P006_0049.png,page_006.png,W001,115,408,160,448,ចិត្ត,ចិត្ត,0.96,0.95,true,pending,"Claude cross-check: crop is narrow (45px) and compact, visually plausible for a short 2-syllable word; guess looks reasonable but not independently verified against full cursive detail."
+W001_P006_0050,crops_raw/W001_P006_0050.png,page_006.png,W001,229,410,304,451,មេត្តា,មេត្តា,0.95,0.95,true,pending,
+W001_P006_0051,crops_raw/W001_P006_0051.png,page_006.png,W001,329,407,380,438,ករុណា...,ករុណា...,0.93,0.95,true,pending,
+W001_P006_0052,crops_raw/W001_P006_0052.png,page_006.png,W001,388,411,468,446,មុទិតា,មុទិតា,0.94,0.95,true,pending,
+W001_P006_0053,crops_raw/W001_P006_0053.png,page_006.png,W001,533,407,578,445,ឧបេក្ខា...,ឧបេក្ខា...,0.93,0.95,true,pending,
+W001_P006_0054,crops_raw/W001_P006_0054.png,page_006.png,W001,577,410,627,449,រួមជាមួយ,រួមជាមួយ,0.93,0.95,true,pending,
+W001_P006_0055,crops_raw/W001_P006_0055.png,page_006.png,W001,620,407,688,453,កាយ,កាយ,0.95,0.95,true,pending,
+W001_P006_0056,crops_raw/W001_P006_0056.png,page_006.png,W001,81,411,249,477,របស់មនុស្សទៀតផង,របស់មនុស្សទៀតផង,0.92,0.95,true,pending,
+W001_P006_0057,crops_raw/W001_P006_0057.png,page_006.png,W001,240,441,266,464,។,។,0.97,0.80,true,pending,narrow component
+W001_P006_0058,crops_raw/W001_P006_0058.png,page_006.png,W001,270,439,321,469,ព្រះ,ព្រះ,0.96,0.95,true,pending,
+W001_P006_0059,crops_raw/W001_P006_0059.png,page_006.png,W001,309,414,387,470,ពុទ្ធបាន,ពុទ្ធបាន,0.95,0.95,true,pending,
+W001_P006_0060,crops_raw/W001_P006_0060.png,page_006.png,W001,382,430,457,470,ធ្វើការ,ធ្វើការ,0.95,0.95,true,pending,
+W001_P006_0061,crops_raw/W001_P006_0061.png,page_006.png,W001,451,415,548,472,អប់រំដាស់,អប់រំដាស់,0.94,0.95,true,pending,
+W001_P006_0062,crops_raw/W001_P006_0062.png,page_006.png,W001,536,440,613,474,តឿនការ,តឿនការ,0.94,0.95,true,pending,
+W001_P006_0063,crops_raw/W001_P006_0063.png,page_006.png,W001,617,437,687,464,ដឹក,ដឹក,0.96,0.95,true,pending,
+W001_P006_0064,crops_raw/W001_P006_0064.png,page_006.png,W001,81,459,258,502,នាំនេះឱ្យល្អប្រសើរឡើង...,នាំនេះឱ្យល្អប្រសើរឡើង...,0.92,0.95,true,pending,
+W001_P006_0065,crops_raw/W001_P006_0065.png,page_006.png,W001,264,459,376,490,ការកាត់បន្ថយ,ការកាត់បន្ថយ,0.94,0.95,true,pending,
+W001_P006_0066,crops_raw/W001_P006_0066.png,page_006.png,W001,364,458,436,503,ជម្លោះ,ជម្លោះ,0.95,0.95,true,pending,
+W001_P006_0067,crops_raw/W001_P006_0067.png,page_006.png,W001,430,464,630,515,រវាងមនុស្សជាតិ... ឱ្យបានច្រើនៗ,រវាងមនុស្សជាតិ... ឱ្យបានច្រើនៗ,0.90,0.95,true,pending,
+W001_P006_0068,crops_raw/W001_P006_0068.png,page_006.png,W001,619,460,688,496,ក្រៅពីនោះ...,ក្រៅពីនោះ...,0.93,0.95,true,pending,
+W001_P006_0069,crops_raw/W001_P006_0069.png,page_006.png,W001,83,484,170,526,យល់ដឹង,យល់ដឹង,0.95,0.95,true,pending,
+W001_P006_0070,crops_raw/W001_P006_0070.png,page_006.png,W001,176,483,294,516,ការកាត់បន្ថយ,ការកាត់បន្ថយ,0.94,0.95,true,pending,
+W001_P006_0071,crops_raw/W001_P006_0071.png,page_006.png,W001,287,487,339,528,ជម្លោះ...,ជម្លោះ...,0.94,0.95,true,pending,
+W001_P006_0072,crops_raw/W001_P006_0072.png,page_006.png,W001,353,488,411,515,ការកាត់,ការកាត់,0.95,0.95,true,pending,
+W001_P006_0073,crops_raw/W001_P006_0073.png,page_006.png,W001,400,481,470,518,បន្ថយ,បន្ថយ,0.95,0.95,true,pending,
+W001_P006_0074,crops_raw/W001_P006_0074.png,page_006.png,W001,587,486,688,517,និងការសិក្សាស្វែង,និងការសិក្សាស្វែង,0.93,0.95,true,pending,
+W001_P006_0075,crops_raw/W001_P006_0075.png,page_006.png,W001,83,510,168,549,យល់ច្រើន,យល់ច្រើន,0.94,0.95,true,pending,
+W001_P006_0076,crops_raw/W001_P006_0076.png,page_006.png,W001,159,509,237,550,ទៀត...,ទៀត...,0.93,0.95,true,pending,
+W001_P006_0077,crops_raw/W001_P006_0077.png,page_006.png,W001,231,515,285,550,ព្រះ,ព្រះ,0.96,0.95,true,pending,
+W001_P006_0078,crops_raw/W001_P006_0078.png,page_006.png,W001,273,511,401,574,ពុទ្ធបាន,ពុទ្ធបាន,0.95,0.95,true,pending,
+W001_P006_0079,crops_raw/W001_P006_0079.png,page_006.png,W001,390,512,471,552,បង្រៀន,បង្រៀន,0.94,0.95,true,pending,
+W001_P006_0080,crops_raw/W001_P006_0080.png,page_006.png,W001,459,516,508,541,ឱ្យ,ឱ្យ,0.95,0.95,true,pending,
+W001_P006_0081,crops_raw/W001_P006_0081.png,page_006.png,W001,506,510,571,541,ចេះអត់ធ្មត់,ចេះអត់ធ្មត់,0.93,0.95,true,pending,
+W001_P006_0082,crops_raw/W001_P006_0082.png,page_006.png,W001,560,514,651,550,និង,និង,0.96,0.95,true,pending,
+W001_P006_0083,crops_raw/W001_P006_0083.png,page_006.png,W001,649,518,688,541,ស្វែងរក,ស្វែងរក,0.95,0.80,true,pending,narrow component
+W001_P006_0084,crops_raw/W001_P006_0084.png,page_006.png,W001,81,531,248,567,គឺនៅពេលដែល...,គឺនៅពេលដែល...,0.93,0.85,true,pending,
+W001_P006_0085,crops_raw/W001_P006_0085.png,page_006.png,W001,258,542,285,565,អ្នករងទុក្ខលំបាកស្វែងរកទីពឹង... ព្រះពុទ្ធជាអ្នកចេញ,អ្នករងទុក្ខលំបាកស្វែងរកទីពឹង... ព្រះពុទ្ធជាអ្នកចេញ,0.90,0.70,true,pending,narrow component; compound word or continuous phrase
+W001_P006_0086,crops_raw/W001_P006_0086.png,page_006.png,W001,278,541,342,592,មុខ...,មុខ...,0.94,0.85,true,pending,
+W001_P006_0087,crops_raw/W001_P006_0087.png,page_006.png,W001,371,534,688,592,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P006_0088,crops_raw/W001_P006_0088.png,page_006.png,W001,81,566,135,592,ដោះស្រាយ...,ដោះស្រាយ...,0.93,0.95,true,pending,
+W001_P006_0089,crops_raw/W001_P006_0089.png,page_006.png,W001,141,561,177,591,ក៏,ក៏,0.96,0.95,true,pending,
+W001_P006_0090,crops_raw/W001_P006_0090.png,page_006.png,W001,194,543,294,600,ព្រះពុទ្ធបាន,ព្រះពុទ្ធបាន,0.94,0.95,true,pending,
+W001_P006_0091,crops_raw/W001_P006_0091.png,page_006.png,W001,335,562,422,592,ចាត់,ចាត់,0.96,0.95,true,pending,
+W001_P006_0092,crops_raw/W001_P006_0092.png,page_006.png,W001,434,570,459,592,តាំងសិល្បៈនេះ...,តាំងសិល្បៈនេះ...,0.93,0.80,true,pending,narrow component
+W001_P006_0093,crops_raw/W001_P006_0093.png,page_006.png,W001,521,567,567,600,ដោយ,ដោយ,0.96,0.95,true,pending,
+W001_P006_0094,crops_raw/W001_P006_0094.png,page_006.png,W001,557,560,637,594,មាន,មាន,0.96,0.95,true,pending,
+W001_P006_0095,crops_raw/W001_P006_0095.png,page_006.png,W001,629,564,688,602,ការពិនិត្យ,ការពិនិត្យ,0.94,0.95,true,pending,
+W001_P006_0096,crops_raw/W001_P006_0096.png,page_006.png,W001,81,566,328,630,នោះទៅហើយព្រះពុទ្ធបាន,នោះទៅហើយព្រះពុទ្ធបាន,0.92,0.95,true,pending,
+W001_P006_0097,crops_raw/W001_P006_0097.png,page_006.png,W001,324,588,472,629,ផ្តល់,ផ្តល់,0.95,0.95,true,pending,
+W001_P006_0098,crops_raw/W001_P006_0098.png,page_006.png,W001,460,593,515,617,ការស្រឡាញ់,ការស្រឡាញ់,0.94,0.95,true,pending,
+W001_P006_0099,crops_raw/W001_P006_0099.png,page_006.png,W001,503,589,617,623,ដល់អ្នកដទៃ...,ដល់អ្នកដទៃ...,0.93,0.95,true,pending,
+W001_P006_0100,crops_raw/W001_P006_0100.png,page_006.png,W001,612,588,688,629,សេចក្តី,សេចក្តី,0.95,0.95,true,pending,
+W001_P006_0101,crops_raw/W001_P006_0101.png,page_006.png,W001,81,613,155,648,ឱ្យមានសិទ្ធិ...,ឱ្យមានសិទ្ធិ...,0.93,0.95,true,pending,
+W001_P006_0102,crops_raw/W001_P006_0102.png,page_006.png,W001,177,610,251,653,ដូចដែល,ដូចដែល,0.95,0.95,true,pending,
+W001_P006_0103,crops_raw/W001_P006_0103.png,page_006.png,W001,242,612,344,648,ទ្រឹស្តីព្រះពុទ្ធ...,ទ្រឹស្តីព្រះពុទ្ធ...,0.93,0.95,true,pending,
+W001_P006_0104,crops_raw/W001_P006_0104.png,page_006.png,W001,337,612,445,645,ចំណេះដឹង,ចំណេះដឹង,0.94,0.95,true,pending,
+W001_P006_0105,crops_raw/W001_P006_0105.png,page_006.png,W001,447,614,585,655,ប្រព្រឹត្តមនុស្សឱ្យស្រឡាញ់,ប្រព្រឹត្តមនុស្សឱ្យស្រឡាញ់,0.92,0.95,true,pending,
+W001_P006_0106,crops_raw/W001_P006_0106.png,page_006.png,W001,582,616,688,651,ដោយស្មោះស្ម័គ្រ...,ដោយស្មោះស្ម័គ្រ...,0.92,0.95,true,pending,
+W001_P006_0107,crops_raw/W001_P006_0107.png,page_006.png,W001,81,635,128,693,សន្តិភាព,សន្តិភាព,0.95,0.95,true,pending,
+W001_P006_0108,crops_raw/W001_P006_0108.png,page_006.png,W001,117,618,250,678,របស់ព្រះពុទ្ធ...,របស់ព្រះពុទ្ធ...,0.93,0.95,true,pending,
+W001_P006_0109,crops_raw/W001_P006_0109.png,page_006.png,W001,256,638,326,683,ក៏ដើម្បី,ក៏ដើម្បី,0.94,0.95,true,pending,
+W001_P006_0110,crops_raw/W001_P006_0110.png,page_006.png,W001,316,639,546,681,ព្រះពុទ្ធចាត់ចែងជីវិតសង្គម,ព្រះពុទ្ធចាត់ចែងជីវិតសង្គម,0.91,0.95,true,pending,
+W001_P006_0111,crops_raw/W001_P006_0111.png,page_006.png,W001,534,643,588,679,ជាតិ,ជាតិ,0.95,0.95,true,pending,
+W001_P006_0112,crops_raw/W001_P006_0112.png,page_006.png,W001,593,644,621,670,។,។,0.97,0.80,true,pending,narrow component
+W001_P006_0113,crops_raw/W001_P006_0113.png,page_006.png,W001,626,647,688,671,ដោយ,ដោយ,0.96,0.95,true,pending,
+W001_P006_0114,crops_raw/W001_P006_0114.png,page_006.png,W001,91,682,115,704,ផ្អែក,ផ្អែក,0.93,0.70,true,pending,narrow component; compound word or continuous phrase
+W001_P006_0115,crops_raw/W001_P006_0115.png,page_006.png,W001,103,669,131,693,លើទស្សនៈ,លើទស្សនៈ,0.94,0.70,true,pending,narrow component; compound word or continuous phrase
+W001_P006_0116,crops_raw/W001_P006_0116.png,page_006.png,W001,120,663,237,702,កម្មផល...,កម្មផល...,0.94,0.85,true,pending,
+W001_P006_0117,crops_raw/W001_P006_0117.png,page_006.png,W001,235,667,285,704,ធ្វើល្អបាន,ធ្វើល្អបាន,0.94,0.85,true,pending,
+W001_P006_0118,crops_raw/W001_P006_0118.png,page_006.png,W001,279,671,336,696,ល្អ...,ល្អ...,0.95,0.85,true,pending,
+W001_P006_0119,crops_raw/W001_P006_0119.png,page_006.png,W001,335,666,380,701,ធ្វើអាក្រក់បានអាក្រក់នោះ...,ធ្វើអាក្រក់បានអាក្រក់នោះ...,0.92,0.85,true,pending,
+W001_P006_0120,crops_raw/W001_P006_0120.png,page_006.png,W001,368,672,410,706,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P006_0121,crops_raw/W001_P006_0121.png,page_006.png,W001,431,671,472,704,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P006_0122,crops_raw/W001_P006_0122.png,page_006.png,W001,468,665,688,704,,,0.50,0.85,true,pending,Unmatched candidate — human transcription required
+W001_P006_0123,crops_raw/W001_P006_0123.png,page_006.png,W001,81,693,193,744,ដូចក្រោយ,ដូចក្រោយ,0.94,0.95,true,pending,
+W001_P006_0124,crops_raw/W001_P006_0124.png,page_006.png,W001,181,696,233,728,ព្រះពុទ្ធបាន,ព្រះពុទ្ធបាន,0.95,0.95,true,pending,
+W001_P006_0125,crops_raw/W001_P006_0125.png,page_006.png,W001,221,691,386,747,ជួយ,ជួយ,0.96,0.95,true,pending,
+W001_P006_0126,crops_raw/W001_P006_0126.png,page_006.png,W001,374,668,469,731,សង្គ្រោះ...,សង្គ្រោះ...,0.94,0.95,true,pending,
+W001_P006_0127,crops_raw/W001_P006_0127.png,page_006.png,W001,462,689,664,730,ឱ្យស្គាល់សីលធម៌និងគុណធម៌...,ឱ្យស្គាល់សីលធម៌និងគុណធម៌...,0.92,0.95,true,pending,
+W001_P006_0128,crops_raw/W001_P006_0128.png,page_006.png,W001,653,698,688,723,នោះ...,នោះ...,0.94,0.95,true,pending,
+W001_P006_0129,crops_raw/W001_P006_0129.png,page_006.png,W001,133,715,263,755,ដោយសារការប្រព្រឹត្ត,ដោយសារការប្រព្រឹត្ត,0.93,0.95,true,pending,
+W001_P006_0130,crops_raw/W001_P006_0130.png,page_006.png,W001,303,723,344,758,អំពើល្អ,អំពើល្អ,0.94,0.95,true,pending,
+W001_P006_0131,crops_raw/W001_P006_0131.png,page_006.png,W001,337,709,430,750,នេះឯង,នេះឯង,0.95,0.95,true,pending,
+W001_P006_0132,crops_raw/W001_P006_0132.png,page_006.png,W001,422,722,452,745,។,។,0.97,0.80,true,pending,narrow component
+W001_P006_0133,crops_raw/W001_P006_0133.png,page_006.png,W001,448,716,510,770,ម្យ៉ាង,ម្យ៉ាង,0.95,0.95,true,pending,
+W001_P006_0134,crops_raw/W001_P006_0134.png,page_006.png,W001,498,713,587,755,វិញទៀត...,វិញទៀត...,0.94,0.95,true,pending,
+W001_P006_0135,crops_raw/W001_P006_0135.png,page_006.png,W001,584,719,652,764,ក្នុងការ,ក្នុងការ,0.95,0.95,true,pending,
+W001_P006_0136,crops_raw/W001_P006_0136.png,page_006.png,W001,640,714,686,746,...,...,0.85,0.95,true,pending,
+W001_P006_0137,crops_raw/W001_P006_0137.png,page_006.png,W001,81,738,225,783,អភិរក្សសិល្បៈវប្បធម៌ខ្មែរយើង...,អភិរក្សសិល្បៈវប្បធម៌ខ្មែរយើង...,0.91,0.85,true,pending,
+W001_P006_0138,crops_raw/W001_P006_0138.png,page_006.png,W001,212,738,286,783,គឺ,គឺ,0.96,0.85,true,pending,
+W001_P006_0139,crops_raw/W001_P006_0139.png,page_006.png,W001,273,738,344,783,ស្ថិតក្នុង,ស្ថិតក្នុង,0.95,0.85,true,pending,
+W001_P006_0140,crops_raw/W001_P006_0140.png,page_006.png,W001,346,736,407,795,វត្តអារាម,វត្តអារាម,0.95,0.95,true,pending,
+W001_P006_0141,crops_raw/W001_P006_0141.png,page_006.png,W001,417,746,447,772,ព្រះពុទ្ធសាសនា...,ព្រះពុទ្ធសាសនា...,0.94,0.80,true,pending,narrow component
+W001_P006_0142,crops_raw/W001_P006_0142.png,page_006.png,W001,471,741,503,770,ទាំងអស់នេះហើយ,ទាំងអស់នេះហើយ,0.93,0.80,true,pending,narrow component
+W001_P006_0143,crops_raw/W001_P006_0143.png,page_006.png,W001,491,745,584,773,...,...,0.85,0.95,true,pending,
+W001_P006_0144,crops_raw/W001_P006_0144.png,page_006.png,W001,593,739,661,783,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P006_0145,crops_raw/W001_P006_0145.png,page_006.png,W001,650,746,688,771,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P006_0146,crops_raw/W001_P006_0146.png,page_006.png,W001,81,763,190,807,គឺបានបង្ហាញ,គឺបានបង្ហាញ,0.94,0.95,true,pending,
+W001_P006_0147,crops_raw/W001_P006_0147.png,page_006.png,W001,178,766,303,806,នូវសច្ចភាព,នូវសច្ចភាព,0.93,0.95,true,pending,
+W001_P006_0148,crops_raw/W001_P006_0148.png,page_006.png,W001,292,764,377,806,ពន្លឺសន្តិភាព...,ពន្លឺសន្តិភាព...,0.93,0.95,true,pending,
+W001_P006_0149,crops_raw/W001_P006_0149.png,page_006.png,W001,367,785,396,805,...,...,0.85,0.80,true,pending,narrow component
+W001_P006_0150,crops_raw/W001_P006_0150.png,page_006.png,W001,391,746,476,801,សន្តិភាព...,សន្តិភាព...,0.93,0.95,true,pending,
+W001_P006_0151,crops_raw/W001_P006_0151.png,page_006.png,W001,471,764,550,800,វិទ្យាសាស្ត្រ...,វិទ្យាសាស្ត្រ...,0.94,0.95,true,pending,
+W001_P006_0152,crops_raw/W001_P006_0152.png,page_006.png,W001,553,770,688,808,ដោយគ្មានសង្គ្រាម...,ដោយគ្មានសង្គ្រាម...,0.92,0.95,true,pending,
+W001_P006_0153,crops_raw/W001_P006_0153.png,page_006.png,W001,81,791,149,826,រវាងមនុស្ស...,រវាងមនុស្ស...,0.94,0.95,true,pending,
+W001_P006_0154,crops_raw/W001_P006_0154.png,page_006.png,W001,157,789,313,833,គ្មានការកេងប្រវ័ញ្ច,គ្មានការកេងប្រវ័ញ្ច,0.93,0.95,true,pending,
+W001_P006_0155,crops_raw/W001_P006_0155.png,page_006.png,W001,330,788,404,828,ផងដែរ...,ផងដែរ...,0.94,0.95,true,pending,
+W001_P006_0156,crops_raw/W001_P006_0156.png,page_006.png,W001,413,793,493,821,ទាំងអស់នេះ,ទាំងអស់នេះ,0.94,0.95,true,pending,
+W001_P006_0157,crops_raw/W001_P006_0157.png,page_006.png,W001,496,798,529,831,គឺ,គឺ,0.96,0.80,true,pending,narrow component
+W001_P006_0158,crops_raw/W001_P006_0158.png,page_006.png,W001,526,794,622,831,ការរស់នៅ,ការរស់នៅ,0.94,0.95,true,pending,
+W001_P006_0159,crops_raw/W001_P006_0159.png,page_006.png,W001,614,790,688,829,ល្អឡើយ...,ល្អឡើយ...,0.93,0.95,true,pending,
+W001_P006_0160,crops_raw/W001_P006_0160.png,page_006.png,W001,81,814,210,860,ត្រង់ចំណុចនេះ,ត្រង់ចំណុចនេះ,0.94,0.95,true,pending,
+W001_P006_0161,crops_raw/W001_P006_0161.png,page_006.png,W001,211,813,278,847,គឺយោង,គឺយោង,0.94,0.95,true,pending,
+W001_P006_0162,crops_raw/W001_P006_0162.png,page_006.png,W001,278,818,362,846,តាមការចាត់,តាមការចាត់,0.94,0.95,true,pending,
+W001_P006_0163,crops_raw/W001_P006_0163.png,page_006.png,W001,352,816,396,854,តាំង,តាំង,0.96,0.95,true,pending,
+W001_P006_0164,crops_raw/W001_P006_0164.png,page_006.png,W001,396,814,512,849,របស់ព្រះពុទ្ធ,របស់ព្រះពុទ្ធ,0.94,0.95,true,pending,
+W001_P006_0165,crops_raw/W001_P006_0165.png,page_006.png,W001,509,813,548,847,នៃការ,នៃការ,0.95,0.95,true,pending,
+W001_P006_0166,crops_raw/W001_P006_0166.png,page_006.png,W001,546,821,594,847,រស់,រស់,0.96,0.95,true,pending,
+W001_P006_0167,crops_raw/W001_P006_0167.png,page_006.png,W001,593,817,662,847,នៅរបស់,នៅរបស់,0.94,0.95,true,pending,
+W001_P006_0168,crops_raw/W001_P006_0168.png,page_006.png,W001,651,824,688,847,...,...,0.85,0.80,true,pending,narrow component
+W001_P006_0169,crops_raw/W001_P006_0169.png,page_006.png,W001,81,840,220,885,ព្រះបរមគ្រូនៃ,ព្រះបរមគ្រូនៃ,0.93,0.95,true,pending,
+W001_P006_0170,crops_raw/W001_P006_0170.png,page_006.png,W001,214,838,283,872,យើង...,យើង...,0.95,0.95,true,pending,
+W001_P006_0171,crops_raw/W001_P006_0171.png,page_006.png,W001,293,844,355,873,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P006_0172,crops_raw/W001_P006_0172.png,page_006.png,W001,353,840,450,873,អប់រំឱ្យ,អប់រំឱ្យ,0.94,0.95,true,pending,
+W001_P006_0173,crops_raw/W001_P006_0173.png,page_006.png,W001,442,840,610,898,មនុស្សមាន,មនុស្សមាន,0.94,0.95,true,pending,
+W001_P006_0174,crops_raw/W001_P006_0174.png,page_006.png,W001,598,846,651,874,ភាព,ភាព,0.96,0.95,true,pending,
+W001_P006_0175,crops_raw/W001_P006_0175.png,page_006.png,W001,644,847,688,874,ស្ងប់...,ស្ងប់...,0.94,0.95,true,pending,
+W001_P006_0176,crops_raw/W001_P006_0176.png,page_006.png,W001,81,863,165,921,កុំឱ្យមាន,កុំឱ្យមាន,0.94,0.95,true,pending,
+W001_P006_0177,crops_raw/W001_P006_0177.png,page_006.png,W001,153,868,306,898,ភាពលោភលន់,ភាពលោភលន់,0.93,0.95,true,pending,
+W001_P006_0178,crops_raw/W001_P006_0178.png,page_006.png,W001,320,867,445,905,ភាពច្រណែន,ភាពច្រណែន,0.94,0.95,true,pending,
+W001_P006_0179,crops_raw/W001_P006_0179.png,page_006.png,W001,535,862,688,924,ជាដើម,ជាដើម,0.95,0.95,true,pending,
+W001_P006_0180,crops_raw/W001_P006_0180.png,page_006.png,W001,119,899,172,922,រៀន,រៀន,0.96,0.80,true,pending,narrow component
+W001_P006_0181,crops_raw/W001_P006_0181.png,page_006.png,W001,161,890,235,934,លះបង់,លះបង់,0.95,0.95,true,pending,
+W001_P006_0182,crops_raw/W001_P006_0182.png,page_006.png,W001,227,894,376,934,នូវការលោភលន់!,នូវការលោភលន់!,0.93,0.95,true,pending,
+W001_P006_0183,crops_raw/W001_P006_0183.png,page_006.png,W001,375,898,441,923,ចោល,ចោល,0.95,0.95,true,pending,
+W001_P006_0184,crops_raw/W001_P006_0184.png,page_006.png,W001,455,892,536,923,លុះដល់,លុះដល់,0.94,0.95,true,pending,
+W001_P006_0185,crops_raw/W001_P006_0185.png,page_006.png,W001,524,892,585,923,គំនិត,គំនិត,0.95,0.95,true,pending,
+W001_P006_0186,crops_raw/W001_P006_0186.png,page_006.png,W001,582,890,628,923,គិត,គិត,0.96,0.95,true,pending,
+W001_P006_0187,crops_raw/W001_P006_0187.png,page_006.png,W001,632,900,688,933,...,...,0.85,0.95,true,pending,
+W001_P006_0188,crops_raw/W001_P006_0188.png,page_006.png,W001,81,914,274,973,លោភលន់ស្វែងរក,លោភលន់ស្វែងរក,0.93,0.85,true,pending,
+W001_P006_0189,crops_raw/W001_P006_0189.png,page_006.png,W001,297,923,368,947,អ្វីៗ,អ្វីៗ,0.95,0.85,true,pending,
+W001_P006_0190,crops_raw/W001_P006_0190.png,page_006.png,W001,357,920,433,953,ដោយ,ដោយ,0.96,0.85,true,pending,
+W001_P006_0191,crops_raw/W001_P006_0191.png,page_006.png,W001,427,923,493,949,ខ្នះខ្នែង,ខ្នះខ្នែង,0.93,0.85,true,pending,
+W001_P006_0192,crops_raw/W001_P006_0192.png,page_006.png,W001,487,915,688,957,ជាការ,ជាការ,0.95,0.85,true,pending,
+W001_P006_0193,crops_raw/W001_P006_0193.png,page_006.png,W001,81,937,215,980,ប្រជាជនទាំងអស់ភាពកណ្តាល...,ប្រជាជនទាំងអស់ភាពកណ្តាល...,0.91,0.95,true,pending,
+W001_P006_0194,crops_raw/W001_P006_0194.png,page_006.png,W001,228,936,317,983,នោះ,នោះ,0.96,0.95,true,pending,
+W001_P006_0195,crops_raw/W001_P006_0195.png,page_006.png,W001,316,948,359,973,គឺជាកិត្តិយស...,គឺជាកិត្តិយស...,0.93,0.95,true,pending,
+W001_P006_0196,crops_raw/W001_P006_0196.png,page_006.png,W001,354,940,481,983,នោះ,នោះ,0.96,0.95,true,pending,
+W001_P006_0197,crops_raw/W001_P006_0197.png,page_006.png,W001,483,949,527,982,ដោយសារ,ដោយសារ,0.94,0.95,true,pending,
+W001_P006_0198,crops_raw/W001_P006_0198.png,page_006.png,W001,522,949,612,974,ការគិត,ការគិត,0.94,0.95,true,pending,
+W001_P006_0199,crops_raw/W001_P006_0199.png,page_006.png,W001,603,943,688,984,,,0.50,0.95,true,pending,Unmatched candidate — human transcription required
+W001_P006_0200,crops_raw/W001_P006_0200.png,page_006.png,W001,81,968,136,1010,អន្តរ,អន្តរ,0.94,0.95,true,pending,
+W001_P006_0201,crops_raw/W001_P006_0201.png,page_006.png,W001,127,973,182,1001,នោះ,នោះ,0.96,0.95,true,pending,
+W001_P006_0202,crops_raw/W001_P006_0202.png,page_006.png,W001,195,971,261,1000,ដែល,ដែល,0.96,0.95,true,pending,
+W001_P006_0203,crops_raw/W001_P006_0203.png,page_006.png,W001,252,973,292,1001,ជា,ជា,0.96,0.95,true,pending,
+W001_P006_0204,crops_raw/W001_P006_0204.png,page_006.png,W001,284,967,422,1011,ដុះពន្លកនៃ,ដុះពន្លកនៃ,0.93,0.85,true,pending,
+W001_P006_0205,crops_raw/W001_P006_0205.png,page_006.png,W001,409,967,474,1000,សេច,សេច,0.95,0.85,true,pending,
+W001_P006_0206,crops_raw/W001_P006_0206.png,page_006.png,W001,463,967,531,1011,ក្តីទុក្ខ,ក្តីទុក្ខ,0.94,0.95,true,pending,
+W001_P006_0207,crops_raw/W001_P006_0207.png,page_006.png,W001,523,968,631,1011,ដោយត្រូវ,ដោយត្រូវ,0.94,0.95,true,pending,
+W001_P006_0208,crops_raw/W001_P006_0208.png,page_006.png,W001,623,977,688,1012,ប្រកាន់...,ប្រកាន់...,0.93,0.95,true,pending,
+W001_P007_0001,crops_raw/W001_P007_0001.png,page_007.png,W001,81,232,248,274,យកផ្លូវកណ្តាល,យកផ្លូវកណ្តាល,0.94,0.95,false,pending,
+W001_P007_0002,crops_raw/W001_P007_0002.png,page_007.png,W001,283,232,314,261,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0003,crops_raw/W001_P007_0003.png,page_007.png,W001,303,231,451,287,ម្យ៉ាងវិញទៀត,ម្យ៉ាងវិញទៀត,0.94,0.95,false,pending,
+W001_P007_0004,crops_raw/W001_P007_0004.png,page_007.png,W001,440,234,523,272,នៅក្នុង,នៅក្នុង,0.95,0.95,false,pending,
+W001_P007_0005,crops_raw/W001_P007_0005.png,page_007.png,W001,512,237,565,271,វិញ្ញាសា,វិញ្ញាសា,0.93,0.85,false,pending,
+W001_P007_0006,crops_raw/W001_P007_0006.png,page_007.png,W001,552,228,677,271,អក្សរសិល្ប៍បែប...,អក្សរសិល្ប៍បែប...,0.92,0.85,false,pending,
+W001_P007_0007,crops_raw/W001_P007_0007.png,page_007.png,W001,81,257,206,295,ប្រឡោមលោកវិញ,ប្រឡោមលោកវិញ,0.93,0.95,false,pending,
+W001_P007_0008,crops_raw/W001_P007_0008.png,page_007.png,W001,204,258,250,297,គឺរឿង,គឺរឿង,0.95,0.95,false,pending,
+W001_P007_0009,crops_raw/W001_P007_0009.png,page_007.png,W001,256,238,314,299,កុលាបប៉ៃលិន,កុលាបប៉ៃលិន,0.94,0.95,false,pending,
+W001_P007_0010,crops_raw/W001_P007_0010.png,page_007.png,W001,416,256,464,286,ដែល,ដែល,0.96,0.95,false,pending,
+W001_P007_0011,crops_raw/W001_P007_0011.png,page_007.png,W001,472,258,531,285,ជាស្នាដៃ,ជាស្នាដៃ,0.94,0.95,false,pending,
+W001_P007_0012,crops_raw/W001_P007_0012.png,page_007.png,W001,521,256,595,299,របស់,របស់,0.96,0.95,false,pending,
+W001_P007_0013,crops_raw/W001_P007_0013.png,page_007.png,W001,584,254,647,285,លោក,លោក,0.96,0.95,false,pending,
+W001_P007_0014,crops_raw/W001_P007_0014.png,page_007.png,W001,636,260,688,285,...,...,0.85,0.95,false,pending,
+W001_P007_0015,crops_raw/W001_P007_0015.png,page_007.png,W001,81,283,130,340,ញ៉ុក,ញ៉ុក,0.95,0.95,false,pending,
+W001_P007_0016,crops_raw/W001_P007_0016.png,page_007.png,W001,121,285,176,313,ថែម,ថែម,0.95,0.95,false,pending,
+W001_P007_0017,crops_raw/W001_P007_0017.png,page_007.png,W001,190,292,216,315,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0018,crops_raw/W001_P007_0018.png,page_007.png,W001,230,282,285,323,រឿងនោះ,រឿងនោះ,0.94,0.95,false,pending,
+W001_P007_0019,crops_raw/W001_P007_0019.png,page_007.png,W001,284,289,327,313,បានបង្ហាញ,បានបង្ហាញ,0.94,0.95,false,pending,
+W001_P007_0020,crops_raw/W001_P007_0020.png,page_007.png,W001,322,262,424,322,អំពីទំនាក់ទំនងរវាង,អំពីទំនាក់ទំនងរវាង,0.92,0.95,false,pending,
+W001_P007_0021,crops_raw/W001_P007_0021.png,page_007.png,W001,421,279,616,323,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.85,false,pending,
+W001_P007_0022,crops_raw/W001_P007_0022.png,page_007.png,W001,603,286,647,322,សាសនា,សាសនា,0.95,0.85,false,pending,
+W001_P007_0023,crops_raw/W001_P007_0023.png,page_007.png,W001,636,285,688,309,...,...,0.85,0.95,false,pending,
+W001_P007_0024,crops_raw/W001_P007_0024.png,page_007.png,W001,103,310,142,339,ទៅនឹង,ទៅនឹង,0.95,0.95,false,pending,
+W001_P007_0025,crops_raw/W001_P007_0025.png,page_007.png,W001,132,303,284,348,វប្បធម៌សន្តិភាព,វប្បធម៌សន្តិភាព,0.93,0.95,false,pending,
+W001_P007_0026,crops_raw/W001_P007_0026.png,page_007.png,W001,294,306,369,344,នៅត្រង់,នៅត្រង់,0.94,0.95,false,pending,
+W001_P007_0027,crops_raw/W001_P007_0027.png,page_007.png,W001,361,310,430,351,ចំណុច,ចំណុច,0.95,0.95,false,pending,
+W001_P007_0028,crops_raw/W001_P007_0028.png,page_007.png,W001,430,308,493,338,ដែល,ដែល,0.96,0.95,false,pending,
+W001_P007_0029,crops_raw/W001_P007_0029.png,page_007.png,W001,489,306,614,336,តាផែន,តាផែន,0.94,0.95,false,pending,
+W001_P007_0030,crops_raw/W001_P007_0030.png,page_007.png,W001,603,306,652,336,នៅ,នៅ,0.96,0.95,false,pending,
+W001_P007_0031,crops_raw/W001_P007_0031.png,page_007.png,W001,645,312,688,336,ពេល...,ពេល...,0.93,0.95,false,pending,
+W001_P007_0032,crops_raw/W001_P007_0032.png,page_007.png,W001,81,331,162,366,គាត់ជិត,គាត់ជិត,0.94,0.95,false,pending,
+W001_P007_0033,crops_raw/W001_P007_0033.png,page_007.png,W001,151,333,227,374,ផុតដង្ហើម,ផុតដង្ហើម,0.93,0.95,false,pending,
+W001_P007_0034,crops_raw/W001_P007_0034.png,page_007.png,W001,215,332,275,365,ជីវិត,ជីវិត,0.95,0.95,false,pending,
+W001_P007_0035,crops_raw/W001_P007_0035.png,page_007.png,W001,264,331,342,371,គាត់បាន,គាត់បាន,0.94,0.95,false,pending,
+W001_P007_0036,crops_raw/W001_P007_0036.png,page_007.png,W001,332,329,389,364,ពោល,ពោល,0.95,0.95,false,pending,
+W001_P007_0037,crops_raw/W001_P007_0037.png,page_007.png,W001,385,332,436,363,ពាក្យ,ពាក្យ,0.95,0.95,false,pending,
+W001_P007_0038,crops_raw/W001_P007_0038.png,page_007.png,W001,424,333,513,372,ផ្ញើមក,ផ្ញើមក,0.93,0.95,false,pending,
+W001_P007_0039,crops_raw/W001_P007_0039.png,page_007.png,W001,504,334,549,373,ផ្ទះ,ផ្ទះ,0.95,0.95,false,pending,
+W001_P007_0040,crops_raw/W001_P007_0040.png,page_007.png,W001,542,333,674,370,ជាបណ្តាំចុង...,ជាបណ្តាំចុង...,0.92,0.95,false,pending,
+W001_P007_0041,crops_raw/W001_P007_0041.png,page_007.png,W001,81,366,162,401,ក្រោយ,ក្រោយ,0.95,0.95,false,pending,
+W001_P007_0042,crops_raw/W001_P007_0042.png,page_007.png,W001,152,364,180,385,“,“,0.96,0.80,true,pending,narrow component
+W001_P007_0043,crops_raw/W001_P007_0043.png,page_007.png,W001,173,361,248,404,អត្តាហិ,អត្តាហិ,0.94,0.95,false,pending,
+W001_P007_0044,crops_raw/W001_P007_0044.png,page_007.png,W001,257,364,388,390,អត្តនោ នាថោ,អត្តនោ នាថោ,0.93,0.95,false,pending,
+W001_P007_0045,crops_raw/W001_P007_0045.png,page_007.png,W001,379,360,407,382,”,”,0.96,0.80,true,pending,narrow component
+W001_P007_0046,crops_raw/W001_P007_0046.png,page_007.png,W001,409,361,471,395,ពាក្យ,ពាក្យ,0.95,0.95,false,pending,
+W001_P007_0047,crops_raw/W001_P007_0047.png,page_007.png,W001,459,363,580,395,មួយឃ្លានេះ,មួយឃ្លានេះ,0.94,0.95,false,pending,
+W001_P007_0048,crops_raw/W001_P007_0048.png,page_007.png,W001,568,349,666,389,ជាទិសដៅ,ជាទិសដៅ,0.94,0.95,false,pending,
+W001_P007_0049,crops_raw/W001_P007_0049.png,page_007.png,W001,658,363,688,386,ឱ្យ...,ឱ្យ...,0.93,0.80,true,pending,narrow component
+W001_P007_0050,crops_raw/W001_P007_0050.png,page_007.png,W001,96,386,188,422,កូនចៅកែខ្លួន...,កូនចៅកែខ្លួន...,0.92,0.95,false,pending,
+W001_P007_0051,crops_raw/W001_P007_0051.png,page_007.png,W001,215,393,242,416,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0052,crops_raw/W001_P007_0052.png,page_007.png,W001,240,389,330,422,ពាក្យនេះ,ពាក្យនេះ,0.94,0.95,false,pending,
+W001_P007_0053,crops_raw/W001_P007_0053.png,page_007.png,W001,322,381,455,422,គឺជាកន្លែងចិត្ត,គឺជាកន្លែងចិត្ត,0.92,0.95,false,pending,
+W001_P007_0054,crops_raw/W001_P007_0054.png,page_007.png,W001,452,380,513,412,របស់,របស់,0.96,0.95,false,pending,
+W001_P007_0055,crops_raw/W001_P007_0055.png,page_007.png,W001,503,383,583,416,ចៅចិត្រ,ចៅចិត្រ,0.94,0.95,false,pending,
+W001_P007_0056,crops_raw/W001_P007_0056.png,page_007.png,W001,588,374,688,412,ដែលគាត់...,ដែលគាត់...,0.92,0.95,false,pending,
+W001_P007_0057,crops_raw/W001_P007_0057.png,page_007.png,W001,81,392,158,449,វត្តមាន,វត្តមាន,0.94,0.95,false,pending,
+W001_P007_0058,crops_raw/W001_P007_0058.png,page_007.png,W001,148,410,285,443,តែងតែមានសិទ្ធិ,តែងតែមានសិទ្ធិ,0.92,0.95,false,pending,
+W001_P007_0059,crops_raw/W001_P007_0059.png,page_007.png,W001,301,408,434,448,ដោយប្រកាន់យក,ដោយប្រកាន់យក,0.93,0.95,false,pending,
+W001_P007_0060,crops_raw/W001_P007_0060.png,page_007.png,W001,427,413,507,445,លក្ខណៈ,លក្ខណៈ,0.94,0.95,false,pending,
+W001_P007_0061,crops_raw/W001_P007_0061.png,page_007.png,W001,495,414,525,437,ជា,ជា,0.96,0.80,true,pending,narrow component
+W001_P007_0062,crops_raw/W001_P007_0062.png,page_007.png,W001,515,406,631,469,វិជ្ជាជីវៈជាដើម,វិជ្ជាជីវៈជាដើម,0.93,0.95,false,pending,
+W001_P007_0063,crops_raw/W001_P007_0063.png,page_007.png,W001,635,413,663,439,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0064,crops_raw/W001_P007_0064.png,page_007.png,W001,651,413,688,437,បើយើង,បើយើង,0.95,0.95,false,pending,
+W001_P007_0065,crops_raw/W001_P007_0065.png,page_007.png,W001,81,439,121,473,ចិត្ត,ចិត្ត,0.96,0.95,false,pending,
+W001_P007_0066,crops_raw/W001_P007_0066.png,page_007.png,W001,116,436,202,470,មានការខិតខំ,មានការខិតខំ,0.94,0.95,false,pending,
+W001_P007_0067,crops_raw/W001_P007_0067.png,page_007.png,W001,193,438,236,466,តស៊ូ,តស៊ូ,0.95,0.95,false,pending,
+W001_P007_0068,crops_raw/W001_P007_0068.png,page_007.png,W001,226,417,311,473,ព្យាយាម,ព្យាយាម,0.94,0.95,false,pending,
+W001_P007_0069,crops_raw/W001_P007_0069.png,page_007.png,W001,312,436,401,473,ធ្វើការងារ,ធ្វើការងារ,0.94,0.95,false,pending,
+W001_P007_0070,crops_raw/W001_P007_0070.png,page_007.png,W001,391,440,474,465,ដោយ,ដោយ,0.96,0.95,false,pending,
+W001_P007_0071,crops_raw/W001_P007_0071.png,page_007.png,W001,462,434,534,464,យកចិត្ត,យកចិត្ត,0.95,0.95,false,pending,
+W001_P007_0072,crops_raw/W001_P007_0072.png,page_007.png,W001,542,439,586,473,ទុកដាក់,ទុកដាក់,0.95,0.95,false,pending,
+W001_P007_0073,crops_raw/W001_P007_0073.png,page_007.png,W001,623,434,688,462,និងមាន...,និងមាន...,0.93,0.95,false,pending,
+W001_P007_0074,crops_raw/W001_P007_0074.png,page_007.png,W001,81,463,201,503,ប្រុងប្រយ័ត្ន,ប្រុងប្រយ័ត្ន,0.94,0.95,false,pending,
+W001_P007_0075,crops_raw/W001_P007_0075.png,page_007.png,W001,194,461,254,493,ជានិច្ច,ជានិច្ច,0.95,0.95,false,pending,
+W001_P007_0076,crops_raw/W001_P007_0076.png,page_007.png,W001,264,464,291,490,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0077,crops_raw/W001_P007_0077.png,page_007.png,W001,305,459,380,497,ចៅចិត្រ,ចៅចិត្រ,0.95,0.95,false,pending,
+W001_P007_0078,crops_raw/W001_P007_0078.png,page_007.png,W001,374,460,445,498,បានធ្វើ,បានធ្វើ,0.95,0.95,false,pending,
+W001_P007_0079,crops_raw/W001_P007_0079.png,page_007.png,W001,434,458,524,497,អំពើល្អ,អំពើល្អ,0.94,0.95,false,pending,
+W001_P007_0080,crops_raw/W001_P007_0080.png,page_007.png,W001,531,457,624,502,ជាច្រើន,ជាច្រើន,0.94,0.95,false,pending,
+W001_P007_0081,crops_raw/W001_P007_0081.png,page_007.png,W001,612,462,680,496,ដូចជា...,ដូចជា...,0.93,0.95,false,pending,
+W001_P007_0082,crops_raw/W001_P007_0082.png,page_007.png,W001,81,492,152,528,ក្នុងការ,ក្នុងការ,0.95,0.95,false,pending,
+W001_P007_0083,crops_raw/W001_P007_0083.png,page_007.png,W001,142,490,200,527,ជួយជីដូន,ជួយជីដូន,0.94,0.95,false,pending,
+W001_P007_0084,crops_raw/W001_P007_0084.png,page_007.png,W001,188,484,251,517,ចាស់ៗ,ចាស់ៗ,0.95,0.95,false,pending,
+W001_P007_0085,crops_raw/W001_P007_0085.png,page_007.png,W001,241,486,365,525,ការចេះប្រកាន់,ការចេះប្រកាន់,0.93,0.95,false,pending,
+W001_P007_0086,crops_raw/W001_P007_0086.png,page_007.png,W001,360,485,439,516,ទស្សនៈ,ទស្សនៈ,0.95,0.95,false,pending,
+W001_P007_0087,crops_raw/W001_P007_0087.png,page_007.png,W001,432,487,484,527,ឱ្យមាន,ឱ្យមាន,0.95,0.95,false,pending,
+W001_P007_0088,crops_raw/W001_P007_0088.png,page_007.png,W001,478,483,546,514,សីលធម៌,សីលធម៌,0.94,0.95,false,pending,
+W001_P007_0089,crops_raw/W001_P007_0089.png,page_007.png,W001,535,480,684,524,បានរៀនដឹងឮ...,បានរៀនដឹងឮ...,0.92,0.95,false,pending,
+W001_P007_0090,crops_raw/W001_P007_0090.png,page_007.png,W001,81,518,148,543,លោកហ្លួង,លោកហ្លួង,0.94,0.95,false,pending,
+W001_P007_0091,crops_raw/W001_P007_0091.png,page_007.png,W001,172,516,229,543,រតនៈ,រតនៈ,0.95,0.95,false,pending,
+W001_P007_0092,crops_raw/W001_P007_0092.png,page_007.png,W001,218,512,298,549,សម្បត្តិ,សម្បត្តិ,0.95,0.95,false,pending,
+W001_P007_0093,crops_raw/W001_P007_0093.png,page_007.png,W001,294,508,366,553,ក៏ដូចជា,ក៏ដូចជា,0.94,0.85,false,pending,
+W001_P007_0094,crops_raw/W001_P007_0094.png,page_007.png,W001,353,508,441,541,ការការពារ,ការការពារ,0.94,0.85,false,pending,
+W001_P007_0095,crops_raw/W001_P007_0095.png,page_007.png,W001,429,515,481,541,នាង,នាង,0.96,0.95,false,pending,
+W001_P007_0096,crops_raw/W001_P007_0096.png,page_007.png,W001,469,508,554,557,ឃុននារី...,ឃុននារី...,0.93,0.95,false,pending,
+W001_P007_0097,crops_raw/W001_P007_0097.png,page_007.png,W001,544,516,568,539,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0098,crops_raw/W001_P007_0098.png,page_007.png,W001,577,512,628,539,ចៅ,ចៅ,0.96,0.95,false,pending,
+W001_P007_0099,crops_raw/W001_P007_0099.png,page_007.png,W001,648,515,688,545,ចិត្របាន...,ចិត្របាន...,0.93,0.95,false,pending,
+W001_P007_0100,crops_raw/W001_P007_0100.png,page_007.png,W001,81,542,135,579,ចេញខ្លួន,ចេញខ្លួន,0.94,0.95,false,pending,
+W001_P007_0101,crops_raw/W001_P007_0101.png,page_007.png,W001,153,532,366,576,ទៅជួយជំនួសនាង,ទៅជួយជំនួសនាង,0.92,0.95,false,pending,
+W001_P007_0102,crops_raw/W001_P007_0102.png,page_007.png,W001,371,535,481,567,ដោយមិន,ដោយមិន,0.95,0.95,false,pending,
+W001_P007_0103,crops_raw/W001_P007_0103.png,page_007.png,W001,474,540,521,566,គិត,គិត,0.96,0.95,false,pending,
+W001_P007_0104,crops_raw/W001_P007_0104.png,page_007.png,W001,509,534,611,580,ពីជីវិតខ្លួន,ពីជីវិតខ្លួន,0.94,0.95,false,pending,
+W001_P007_0105,crops_raw/W001_P007_0105.png,page_007.png,W001,600,541,641,564,ឡើយ,ឡើយ,0.95,0.80,true,pending,narrow component
+W001_P007_0106,crops_raw/W001_P007_0106.png,page_007.png,W001,635,540,673,563,នោះ...,នោះ...,0.93,0.80,true,pending,narrow component
+W001_P007_0107,crops_raw/W001_P007_0107.png,page_007.png,W001,666,540,688,565,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0108,crops_raw/W001_P007_0108.png,page_007.png,W001,81,570,122,594,នេះ,នេះ,0.96,0.95,false,pending,
+W001_P007_0109,crops_raw/W001_P007_0109.png,page_007.png,W001,128,558,557,603,គឺជាការបង្ហាញចេញនូវអំពើល្អ...,គឺជាការបង្ហាញចេញនូវអំពើល្អ...,0.91,0.95,false,pending,
+W001_P007_0110,crops_raw/W001_P007_0110.png,page_007.png,W001,546,559,581,590,ដែលចេញ,ដែលចេញ,0.94,0.95,false,pending,
+W001_P007_0111,crops_raw/W001_P007_0111.png,page_007.png,W001,577,566,608,590,ពី,ពី,0.96,0.80,true,pending,narrow component
+W001_P007_0112,crops_raw/W001_P007_0112.png,page_007.png,W001,640,564,687,609,ចិត្ត...,ចិត្ត...,0.93,0.95,false,pending,
+W001_P007_0113,crops_raw/W001_P007_0113.png,page_007.png,W001,81,594,137,630,ការជួយអ្នកដទៃ...,ការជួយអ្នកដទៃ...,0.93,0.95,false,pending,
+W001_P007_0114,crops_raw/W001_P007_0114.png,page_007.png,W001,127,588,252,631,។,។,0.97,0.95,false,pending,
+W001_P007_0115,crops_raw/W001_P007_0115.png,page_007.png,W001,259,595,285,619,មួយវិញទៀត,មួយវិញទៀត,0.94,0.80,true,pending,narrow component
+W001_P007_0116,crops_raw/W001_P007_0116.png,page_007.png,W001,289,588,396,632,គឺមានការត្រួតត្រា,គឺមានការត្រួតត្រា,0.92,0.95,false,pending,
+W001_P007_0117,crops_raw/W001_P007_0117.png,page_007.png,W001,385,586,432,623,ក្នុងសីលធម៌,ក្នុងសីលធម៌,0.94,0.95,false,pending,
+W001_P007_0118,crops_raw/W001_P007_0118.png,page_007.png,W001,420,583,598,626,...,...,0.85,0.95,false,pending,
+W001_P007_0119,crops_raw/W001_P007_0119.png,page_007.png,W001,592,590,639,627,...,...,0.85,0.95,false,pending,
+W001_P007_0120,crops_raw/W001_P007_0120.png,page_007.png,W001,651,592,682,617,...,...,0.85,0.80,true,pending,narrow component
+W001_P007_0121,crops_raw/W001_P007_0121.png,page_007.png,W001,81,610,340,658,ក្លាយជាអ្នក...,ក្លាយជាអ្នក...,0.92,0.95,false,pending,
+W001_P007_0122,crops_raw/W001_P007_0122.png,page_007.png,W001,332,609,414,643,ដែលជាបន្ទុកលោកហ្លួង,ដែលជាបន្ទុកលោកហ្លួង,0.92,0.95,false,pending,
+W001_P007_0123,crops_raw/W001_P007_0123.png,page_007.png,W001,404,618,448,651,រតនៈ,រតនៈ,0.95,0.95,false,pending,
+W001_P007_0124,crops_raw/W001_P007_0124.png,page_007.png,W001,436,611,556,670,សម្បត្តិ...,សម្បត្តិ...,0.94,0.95,false,pending,
+W001_P007_0125,crops_raw/W001_P007_0125.png,page_007.png,W001,551,608,687,652,។,។,0.97,0.95,false,pending,
+W001_P007_0126,crops_raw/W001_P007_0126.png,page_007.png,W001,81,646,124,669,ការធ្វើ,ការធ្វើ,0.95,0.80,true,pending,narrow component
+W001_P007_0127,crops_raw/W001_P007_0127.png,page_007.png,W001,112,640,154,670,អំពើល្អ,អំពើល្អ,0.95,0.95,false,pending,
+W001_P007_0128,crops_raw/W001_P007_0128.png,page_007.png,W001,148,640,234,678,នាំបង្កើត,នាំបង្កើត,0.94,0.95,false,pending,
+W001_P007_0129,crops_raw/W001_P007_0129.png,page_007.png,W001,229,643,365,681,សីលធម៌...,សីលធម៌...,0.93,0.95,false,pending,
+W001_P007_0130,crops_raw/W001_P007_0130.png,page_007.png,W001,354,645,394,679,ការងារល្អ,ការងារល្អ,0.94,0.95,false,pending,
+W001_P007_0131,crops_raw/W001_P007_0131.png,page_007.png,W001,398,644,447,670,ជីវិត,ជីវិត,0.95,0.95,false,pending,
+W001_P007_0132,crops_raw/W001_P007_0132.png,page_007.png,W001,435,636,518,693,ជោគជ័យ,ជោគជ័យ,0.94,0.95,false,pending,
+W001_P007_0133,crops_raw/W001_P007_0133.png,page_007.png,W001,543,638,612,683,...,...,0.85,0.95,false,pending,
+W001_P007_0134,crops_raw/W001_P007_0134.png,page_007.png,W001,602,643,628,669,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0135,crops_raw/W001_P007_0135.png,page_007.png,W001,121,660,149,682,សរុបសេចក្តីមក,សរុបសេចក្តីមក,0.93,0.80,true,pending,narrow component
+W001_P007_0136,crops_raw/W001_P007_0136.png,page_007.png,W001,148,673,186,695,យើង,យើង,0.96,0.80,true,pending,narrow component
+W001_P007_0137,crops_raw/W001_P007_0137.png,page_007.png,W001,181,663,312,707,អាចដឹងបានថា,អាចដឹងបានថា,0.93,0.95,false,pending,
+W001_P007_0138,crops_raw/W001_P007_0138.png,page_007.png,W001,305,663,373,695,ទ្រឹស្តី,ទ្រឹស្តី,0.95,0.95,false,pending,
+W001_P007_0139,crops_raw/W001_P007_0139.png,page_007.png,W001,362,661,499,702,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.95,false,pending,
+W001_P007_0140,crops_raw/W001_P007_0140.png,page_007.png,W001,502,660,609,704,សាសនា,សាសនា,0.95,0.95,false,pending,
+W001_P007_0141,crops_raw/W001_P007_0141.png,page_007.png,W001,598,667,688,707,...,...,0.85,0.95,false,pending,
+W001_P007_0142,crops_raw/W001_P007_0142.png,page_007.png,W001,81,673,204,721,ដែលកាលពី,ដែលកាលពី,0.94,0.85,false,pending,
+W001_P007_0143,crops_raw/W001_P007_0143.png,page_007.png,W001,263,689,422,745,បុព្វបុរស,បុព្វបុរស,0.94,0.85,false,pending,
+W001_P007_0144,crops_raw/W001_P007_0144.png,page_007.png,W001,413,683,467,718,បានធ្វើឱ្យមានវប្បធម៌,បានធ្វើឱ្យមានវប្បធម៌,0.92,0.85,false,pending,
+W001_P007_0145,crops_raw/W001_P007_0145.png,page_007.png,W001,456,686,688,742,សន្តិភាព...,សន្តិភាព...,0.93,0.85,false,pending,
+W001_P007_0146,crops_raw/W001_P007_0146.png,page_007.png,W001,81,712,162,756,ឡើយ,ឡើយ,0.95,0.95,false,pending,
+W001_P007_0147,crops_raw/W001_P007_0147.png,page_007.png,W001,164,695,323,755,ដោយសារ,ដោយសារ,0.95,0.95,false,pending,
+W001_P007_0148,crops_raw/W001_P007_0148.png,page_007.png,W001,322,714,381,755,តែពុទ្ធសាសនា,តែពុទ្ធសាសនា,0.93,0.95,false,pending,
+W001_P007_0149,crops_raw/W001_P007_0149.png,page_007.png,W001,373,696,453,756,បានធ្វើឱ្យ,បានធ្វើឱ្យ,0.94,0.95,false,pending,
+W001_P007_0150,crops_raw/W001_P007_0150.png,page_007.png,W001,441,719,467,742,ជាតិខ្មែរ,ជាតិខ្មែរ,0.94,0.80,true,pending,narrow component
+W001_P007_0151,crops_raw/W001_P007_0151.png,page_007.png,W001,459,718,506,744,មានសេចក្តីសុខ...,មានសេចក្តីសុខ...,0.92,0.95,false,pending,
+W001_P007_0152,crops_raw/W001_P007_0152.png,page_007.png,W001,556,712,636,755,ជីវិត,ជីវិត,0.95,0.95,false,pending,
+W001_P007_0153,crops_raw/W001_P007_0153.png,page_007.png,W001,632,717,687,757,...,...,0.85,0.95,false,pending,
+W001_P007_0154,crops_raw/W001_P007_0154.png,page_007.png,W001,82,746,132,773,មានការរីកចម្រើន...,មានការរីកចម្រើន...,0.92,0.95,false,pending,
+W001_P007_0155,crops_raw/W001_P007_0155.png,page_007.png,W001,122,739,253,778,ដែលកាលពី,ដែលកាលពី,0.94,0.95,false,pending,
+W001_P007_0156,crops_raw/W001_P007_0156.png,page_007.png,W001,266,736,356,769,សម័យសិល្បៈ...,សម័យសិល្បៈ...,0.93,0.95,false,pending,
+W001_P007_0157,crops_raw/W001_P007_0157.png,page_007.png,W001,345,739,397,768,ដោយព្រះពុទ្ធ...,ដោយព្រះពុទ្ធ...,0.93,0.95,false,pending,
+W001_P007_0158,crops_raw/W001_P007_0158.png,page_007.png,W001,416,736,521,770,បាន,បាន,0.96,0.95,false,pending,
+W001_P007_0159,crops_raw/W001_P007_0159.png,page_007.png,W001,519,740,591,768,កសាង,កសាង,0.95,0.95,false,pending,
+W001_P007_0160,crops_raw/W001_P007_0160.png,page_007.png,W001,579,743,644,777,...,...,0.85,0.95,false,pending,
+W001_P007_0161,crops_raw/W001_P007_0161.png,page_007.png,W001,645,738,688,768,...,...,0.85,0.95,false,pending,
+W001_P007_0162,crops_raw/W001_P007_0162.png,page_007.png,W001,81,772,113,794,កសាងសិល្បៈ,កសាងសិល្បៈ,0.93,0.80,true,pending,narrow component
+W001_P007_0163,crops_raw/W001_P007_0163.png,page_007.png,W001,102,761,263,803,ព្រះពុទ្ធ...,ព្រះពុទ្ធ...,0.94,0.95,false,pending,
+W001_P007_0164,crops_raw/W001_P007_0164.png,page_007.png,W001,252,772,300,807,ជាច្រើន...,ជាច្រើន...,0.93,0.95,false,pending,
+W001_P007_0165,crops_raw/W001_P007_0165.png,page_007.png,W001,306,766,360,805,ឱ្យមនុស្សមាន,ឱ្យមនុស្សមាន,0.93,0.95,false,pending,
+W001_P007_0166,crops_raw/W001_P007_0166.png,page_007.png,W001,348,744,548,808,សេចក្តី,សេចក្តី,0.95,0.95,false,pending,
+W001_P007_0167,crops_raw/W001_P007_0167.png,page_007.png,W001,545,762,622,802,សុខសាន្ត,សុខសាន្ត,0.94,0.95,false,pending,
+W001_P007_0168,crops_raw/W001_P007_0168.png,page_007.png,W001,611,762,688,803,...,...,0.85,0.95,false,pending,
+W001_P007_0169,crops_raw/W001_P007_0169.png,page_007.png,W001,81,784,197,828,បានច្រើន...,បានច្រើន...,0.93,0.95,false,pending,
+W001_P007_0170,crops_raw/W001_P007_0170.png,page_007.png,W001,186,798,217,823,។,។,0.97,0.80,true,pending,narrow component
+W001_P007_0171,crops_raw/W001_P007_0171.png,page_007.png,W001,151,817,354,852,ដូចគ្នាតាមការបកស្រាយ,ដូចគ្នាតាមការបកស្រាយ,0.92,0.95,false,pending,
+W001_P007_0172,crops_raw/W001_P007_0172.png,page_007.png,W001,343,819,423,868,ខាងលើ,ខាងលើ,0.95,0.95,false,pending,
+W001_P007_0173,crops_raw/W001_P007_0173.png,page_007.png,W001,415,817,489,852,ប្រធានខាងលើ,ប្រធានខាងលើ,0.93,0.95,false,pending,
+W001_P007_0174,crops_raw/W001_P007_0174.png,page_007.png,W001,477,810,568,853,ដូចនេះ,ដូចនេះ,0.95,0.95,false,pending,
+W001_P007_0175,crops_raw/W001_P007_0175.png,page_007.png,W001,556,818,637,851,យើង,យើង,0.96,0.95,false,pending,
+W001_P007_0176,crops_raw/W001_P007_0176.png,page_007.png,W001,632,811,688,842,...,...,0.85,0.95,false,pending,
+W001_P007_0177,crops_raw/W001_P007_0177.png,page_007.png,W001,81,839,256,881,អាចសន្និដ្ឋានបានថា,អាចសន្និដ្ឋានបានថា,0.92,0.95,false,pending,
+W001_P007_0178,crops_raw/W001_P007_0178.png,page_007.png,W001,256,843,365,881,ប្រធានខាងលើ,ប្រធានខាងលើ,0.93,0.95,false,pending,
+W001_P007_0179,crops_raw/W001_P007_0179.png,page_007.png,W001,398,839,466,868,ពិតជាមានតម្លៃ,ពិតជាមានតម្លៃ,0.93,0.95,false,pending,
+W001_P007_0180,crops_raw/W001_P007_0180.png,page_007.png,W001,454,843,503,869,យ៉ាង,យ៉ាង,0.96,0.95,false,pending,
+W001_P007_0181,crops_raw/W001_P007_0181.png,page_007.png,W001,493,843,558,875,ធំធេង...,ធំធេង...,0.93,0.95,false,pending,
+W001_P007_0182,crops_raw/W001_P007_0182.png,page_007.png,W001,548,844,619,878,ព្រោះ,ព្រោះ,0.95,0.95,false,pending,
+W001_P007_0183,crops_raw/W001_P007_0183.png,page_007.png,W001,622,844,652,865,...,...,0.85,0.80,true,pending,narrow component
+W001_P007_0184,crops_raw/W001_P007_0184.png,page_007.png,W001,642,843,688,874,...,...,0.85,0.95,false,pending,
+W001_P007_0185,crops_raw/W001_P007_0185.png,page_007.png,W001,81,868,119,905,បានបង្ហាញ,បានបង្ហាញ,0.94,0.95,false,pending,
+W001_P007_0186,crops_raw/W001_P007_0186.png,page_007.png,W001,108,859,164,902,ពីទំនាក់ទំនង,ពីទំនាក់ទំនង,0.93,0.95,false,pending,
+W001_P007_0187,crops_raw/W001_P007_0187.png,page_007.png,W001,154,870,191,902,រវាង,រវាង,0.95,0.95,false,pending,
+W001_P007_0188,crops_raw/W001_P007_0188.png,page_007.png,W001,184,863,235,893,ព្រះពុទ្ធ,ព្រះពុទ្ធ,0.95,0.95,false,pending,
+W001_P007_0189,crops_raw/W001_P007_0189.png,page_007.png,W001,223,865,318,894,សាសនា,សាសនា,0.95,0.95,false,pending,
+W001_P007_0190,crops_raw/W001_P007_0190.png,page_007.png,W001,318,866,410,901,និង,និង,0.96,0.95,false,pending,
+W001_P007_0191,crops_raw/W001_P007_0191.png,page_007.png,W001,401,869,447,904,វប្បធម៌,វប្បធម៌,0.95,0.95,false,pending,
+W001_P007_0192,crops_raw/W001_P007_0192.png,page_007.png,W001,437,867,524,896,សន្តិ,សន្តិ,0.94,0.95,false,pending,
+W001_P007_0193,crops_raw/W001_P007_0193.png,page_007.png,W001,523,860,572,894,...,...,0.85,0.95,false,pending,
+W001_P007_0194,crops_raw/W001_P007_0194.png,page_007.png,W001,571,864,688,902,...,...,0.85,0.95,false,pending,
+W001_P007_0195,crops_raw/W001_P007_0195.png,page_007.png,W001,81,894,128,920,ភាព...,ភាព...,0.93,0.95,false,pending,
+W001_P007_0196,crops_raw/W001_P007_0196.png,page_007.png,W001,142,888,328,930,ពិសេសទៀតនោះ,ពិសេសទៀតនោះ,0.93,0.95,false,pending,
+W001_P007_0197,crops_raw/W001_P007_0197.png,page_007.png,W001,324,884,359,918,គឺបានបង្ហាញ,គឺបានបង្ហាញ,0.93,0.95,false,pending,
+W001_P007_0198,crops_raw/W001_P007_0198.png,page_007.png,W001,349,887,457,927,ពី,ពី,0.96,0.95,false,pending,
+W001_P007_0199,crops_raw/W001_P007_0199.png,page_007.png,W001,457,887,493,917,តួនាទី,តួនាទី,0.94,0.95,false,pending,
+W001_P007_0200,crops_raw/W001_P007_0200.png,page_007.png,W001,503,885,554,918,ក៏ដូចជាតម្លៃ,ក៏ដូចជាតម្លៃ,0.93,0.95,false,pending,
+W001_P007_0201,crops_raw/W001_P007_0201.png,page_007.png,W001,549,888,683,928,...,...,0.85,0.95,false,pending,
+W001_P007_0202,crops_raw/W001_P007_0202.png,page_007.png,W001,81,916,157,953,នៃ,នៃ,0.96,0.95,false,pending,
+W001_P007_0203,crops_raw/W001_P007_0203.png,page_007.png,W001,148,920,196,953,ព្រះពុទ្ធសាសនា,ព្រះពុទ្ធសាសនា,0.94,0.95,false,pending,
+W001_P007_0204,crops_raw/W001_P007_0204.png,page_007.png,W001,184,919,264,946,ដែលជា,ដែលជា,0.95,0.95,false,pending,
+W001_P007_0205,crops_raw/W001_P007_0205.png,page_007.png,W001,267,916,331,943,សាសនា,សាសនា,0.95,0.95,false,pending,
+W001_P007_0206,crops_raw/W001_P007_0206.png,page_007.png,W001,322,916,361,942,របស់,របស់,0.96,0.95,false,pending,
+W001_P007_0207,crops_raw/W001_P007_0207.png,page_007.png,W001,351,917,434,943,រដ្ឋ,រដ្ឋ,0.96,0.95,false,pending,
+W001_P007_0208,crops_raw/W001_P007_0208.png,page_007.png,W001,426,912,487,942,មួយ,មួយ,0.96,0.95,false,pending,
+W001_P007_0209,crops_raw/W001_P007_0209.png,page_007.png,W001,475,892,572,953,នោះ...,នោះ...,0.94,0.95,false,pending,
+W001_P007_0210,crops_raw/W001_P007_0210.png,page_007.png,W001,565,917,616,942,។,។,0.97,0.95,false,pending,
+W001_P007_0211,crops_raw/W001_P007_0211.png,page_007.png,W001,619,918,648,945,...,...,0.85,0.80,true,pending,narrow component
+W001_P007_0212,crops_raw/W001_P007_0212.png,page_007.png,W001,81,941,154,978,ដូចនេះ,ដូចនេះ,0.95,0.95,false,pending,
+W001_P007_0213,crops_raw/W001_P007_0213.png,page_007.png,W001,152,932,239,987,ក្នុងនាម,ក្នុងនាម,0.94,0.95,false,pending,
+W001_P007_0214,crops_raw/W001_P007_0214.png,page_007.png,W001,243,935,318,978,យើង,យើង,0.96,0.95,false,pending,
+W001_P007_0215,crops_raw/W001_P007_0215.png,page_007.png,W001,315,942,374,991,ជាកូនសិស្ស,ជាកូនសិស្ស,0.93,0.95,false,pending,
+W001_P007_0216,crops_raw/W001_P007_0216.png,page_007.png,W001,364,935,448,978,យើង,យើង,0.96,0.95,false,pending,
+W001_P007_0217,crops_raw/W001_P007_0217.png,page_007.png,W001,462,934,534,967,ត្រូវ,ត្រូវ,0.96,0.95,false,pending,
+W001_P007_0218,crops_raw/W001_P007_0218.png,page_007.png,W001,526,934,585,978,ចេះ,ចេះ,0.96,0.95,false,pending,
+W001_P007_0219,crops_raw/W001_P007_0219.png,page_007.png,W001,584,943,632,969,មើល,មើល,0.96,0.95,false,pending,
+W001_P007_0220,crops_raw/W001_P007_0220.png,page_007.png,W001,629,935,688,968,...,...,0.85,0.95,false,pending,
+W001_P007_0221,crops_raw/W001_P007_0221.png,page_007.png,W001,81,964,164,1007,ថែរក្សា,ថែរក្សា,0.94,0.95,false,pending,
+W001_P007_0222,crops_raw/W001_P007_0222.png,page_007.png,W001,168,963,281,994,គោរពគំនិត,គោរពគំនិត,0.94,0.95,false,pending,
+W001_P007_0223,crops_raw/W001_P007_0223.png,page_007.png,W001,292,961,352,991,រៀនសូត្រតាម,រៀនសូត្រតាម,0.93,0.95,false,pending,
+W001_P007_0224,crops_raw/W001_P007_0224.png,page_007.png,W001,351,965,453,993,សាសនានេះឱ្យ...,សាសនានេះឱ្យ...,0.92,0.95,false,pending,
+W001_P007_0225,crops_raw/W001_P007_0225.png,page_007.png,W001,449,959,617,1007,ទាំងអស់គ្នា,ទាំងអស់គ្នា,0.93,0.95,false,pending,
+W001_P007_0226,crops_raw/W001_P007_0226.png,page_007.png,W001,621,963,686,991,...,...,0.85,0.95,false,pending,

@@ -1,0 +1,40 @@
+{
+  "automated_pass_only": true,
+  "max_label_length": 120,
+  "total_records": 1089,
+  "writer_or_source_groups": 11,
+  "writers": [
+    "W001",
+    "W0010",
+    "W0011",
+    "W002",
+    "W003",
+    "W004",
+    "W005",
+    "W006",
+    "W007",
+    "W008",
+    "W009"
+  ],
+  "source_pages": 47,
+  "non_empty_labels": 277,
+  "unique_labels": 270,
+  "singleton_labels": 269,
+  "unique_codepoints": 86,
+  "decision_counts": {
+    "reject": 30,
+    "review": 1059
+  },
+  "reason_counts": {
+    "source_marked_rejected": 28,
+    "contains_whitespace": 234,
+    "transcription_required": 782,
+    "long_text_segment": 1,
+    "transcription_not_human_verified": 42,
+    "empty_label": 2
+  },
+  "human_verified_candidates": 0,
+  "minimum_group_count_met": true,
+  "ready_for_final_split": false,
+  "warning": "Minimum group count is met, but verified transcriptions are still required before splitting."
+}

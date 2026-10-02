@@ -1,0 +1,1 @@
+crop_id,image_path,source_page,writer_id,x_min,y_min,x_max,y_max,label_raw,label_normalized,label_confidence,segmentation_confidence,review_required,review_status,notes,reviewer_notes,metadata_file,metadata_row,resolved_image_path,label,label_codepoints,image_exists,image_width,image_height,pixel_std,ink_ratio,auto_decision,auto_reason,group_id
