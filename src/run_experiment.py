@@ -106,6 +106,11 @@ def run(args: argparse.Namespace) -> dict:
     model, model_config = build_model(args.approach, tokenizer.vocab_size, args.freeze_backbone)
     checkpoint_prefix = args.checkpoint_prefix or APPROACH_CHECKPOINT_PREFIX[args.approach]
 
+    if args.init_weights:
+        print(f"Loading pretrained weights from {args.init_weights} ...")
+        load_checkpoint(args.init_weights, model, map_location=device)
+        print("✓ Pretrained weights successfully loaded!")
+
     train_config = TrainConfig(
         learning_rate=args.lr,
         max_epochs=args.max_epochs,
@@ -176,6 +181,7 @@ def parse_args(argv=None) -> argparse.Namespace:
     parser.add_argument("--checkpoint-prefix", default=None, help="override the default a1_baseline/a2_transfer/a3_transformer prefix")
 
     parser.add_argument("--freeze-backbone", action="store_true", help="A2 only: freeze the pretrained backbone (linear probe)")
+    parser.add_argument("--init-weights", default=None, help="path to a pretrained .pt checkpoint to initialize model weights before training")
     parser.add_argument("--image-height", type=int, default=48)
     parser.add_argument("--max-width", type=int, default=1024)
     parser.add_argument("--batch-size", type=int, default=32)
