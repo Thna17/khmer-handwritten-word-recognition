@@ -46,6 +46,7 @@ from src.metrics import character_error_rate, word_error_rate
 from src.model_baseline import BaselineCRNN
 from src.model_transfer import TransferCRNN
 from src.model_transformer import TransformerCRNN
+from src.postprocessor import clean_khmer_orthography
 from src.tokenizer import KhmerTokenizer
 from src.utils import get_device, load_checkpoint
 
@@ -186,6 +187,7 @@ def main():
     parser.add_argument("--compare-checkpoint", default=None, help="Optional second checkpoint for comparison")
     parser.add_argument("--compare-approach", default="baseline", choices=["baseline", "transfer", "transformer"])
     parser.add_argument("--output-viz", default=None, help="Optional path to save annotated visual PNG")
+    parser.add_argument("--no-postprocess", action="store_true", help="Disable Khmer orthographic rule post-processing")
 
     args = parser.parse_args()
 
@@ -204,6 +206,8 @@ def main():
     print(f"\nLoading primary model: {args.checkpoint} ({args.approach}) ...")
     model = load_model_from_checkpoint(args.checkpoint, tokenizer.vocab_size, args.approach, device)
     pred_primary = predict_image(model, tensor, new_w, tokenizer, device)
+    if not args.no_postprocess:
+        pred_primary = clean_khmer_orthography(pred_primary)
 
     # Comparison model inference (if requested)
     pred_secondary = None
@@ -211,6 +215,8 @@ def main():
         print(f"Loading comparison model: {args.compare_checkpoint} ({args.compare_approach}) ...")
         model2 = load_model_from_checkpoint(args.compare_checkpoint, tokenizer.vocab_size, args.compare_approach, device)
         pred_secondary = predict_image(model2, tensor, new_w, tokenizer, device)
+        if not args.no_postprocess:
+            pred_secondary = clean_khmer_orthography(pred_secondary)
 
     # Display results
     print("\n" + "=" * 65)
