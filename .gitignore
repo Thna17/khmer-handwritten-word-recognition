@@ -26,6 +26,9 @@ data/handwritten_external/**/*.jpeg
 # Results & Logs
 results/*
 !results/.gitkeep
+!results/*.json
+!results/*.png
+!results/*.csv
 *.log
 scratch/
 
