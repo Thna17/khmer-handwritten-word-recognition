@@ -1,0 +1,4 @@
+Architecture,Target Words,Word Recall %,Word Precision %,Word F1 %,Positional Acc %
+A1 Baseline CRNN,69,13.04,10.47,11.61,13.04
+A2 Transfer ResNet-18,69,8.7,6.67,7.55,8.7
+A3 Transformer Encoder,69,1.45,1.35,1.4,1.45
