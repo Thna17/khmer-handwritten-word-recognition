@@ -67,14 +67,18 @@ class KhmerWordDataset(Dataset):
         self.tokenizer = tokenizer
         self.image_height = image_height
         self.max_width = max_width
-        self.transform = transform  # optional PIL-image -> PIL-image augmentation hook
+        # Optional PIL-image -> PIL-image augmentation hook. It runs at the
+        # image's NATIVE resolution, before the resize to `image_height`:
+        # rotation, shear and resolution-degradation all behave differently
+        # once every sample has been forced to a common height, and the
+        # scale variation between writers is precisely what augmentation
+        # needs to see. Train split only — never val or test.
+        self.transform = transform
 
     def __len__(self) -> int:
         return len(self.samples)
 
-    def _load_and_resize(self, image_path: str) -> Image.Image:
-        image = Image.open(image_path).convert("L")  # grayscale, 1 channel
-
+    def _resize(self, image: Image.Image, image_path: str) -> Image.Image:
         orig_w, orig_h = image.size
         if orig_h == 0 or orig_w == 0:
             raise ValueError(f"Image {image_path!r} has a zero dimension: {image.size}")
@@ -92,9 +96,10 @@ class KhmerWordDataset(Dataset):
         if not sample.label:
             raise ValueError(f"Empty label for image {sample.image_path!r} — fix the metadata, don't skip it silently.")
 
-        image = self._load_and_resize(sample.image_path)
+        image = Image.open(sample.image_path).convert("L")  # grayscale, 1 channel
         if self.transform is not None:
             image = self.transform(image)
+        image = self._resize(image, sample.image_path)
 
         # PIL 'L' image [H, W] in [0, 255] -> tensor [1, H, W] in [0.0, 1.0]
         image_array = np.array(image, dtype=np.uint8)  # [H, W]

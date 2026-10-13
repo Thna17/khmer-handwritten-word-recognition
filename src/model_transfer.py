@@ -119,11 +119,27 @@ class TransferCRNN(nn.Module):
         backbone can't be wrong by construction, so that's what this
         does — cached per width, since the same widths recur across many
         batches over a training run.
+
+        The probe runs with the backbone forced into eval mode. `no_grad`
+        alone is NOT enough: a BatchNorm layer in training mode updates its
+        running mean/variance on every forward pass regardless of gradient
+        tracking, so probing with an all-zeros image used to fold "the image
+        is uniformly black" into the statistics that eval-mode inference
+        later depends on. Because the probe fires once per previously unseen
+        width and line widths are nearly all distinct, that happened
+        hundreds of times in the first epochs — which is why A2's first
+        validation pass reported loss 11.99 / CER 91.9% while its training
+        loss was a healthy 3.62.
         """
         if input_width not in self._sequence_length_cache:
             device = next(self.parameters()).device
-            with torch.no_grad():
-                dummy = torch.zeros(1, 1, self.INPUT_HEIGHT, input_width, device=device)
-                features = self.cnn(dummy)
+            was_training = self.cnn.training
+            self.cnn.eval()
+            try:
+                with torch.no_grad():
+                    dummy = torch.zeros(1, 1, self.INPUT_HEIGHT, input_width, device=device)
+                    features = self.cnn(dummy)
+            finally:
+                self.cnn.train(was_training)
             self._sequence_length_cache[input_width] = features.shape[-1]
         return self._sequence_length_cache[input_width]

@@ -73,9 +73,19 @@ def test_train_one_epoch_and_evaluate_run_without_error(tmp_path):
     assert loss_epoch_1 > 0 and loss_epoch_2 > 0
 
     metrics = evaluate(model, loader, tokenizer, criterion, device)
-    assert set(metrics.keys()) == {"cer", "wer", "word_accuracy", "loss"}
+    assert set(metrics.keys()) == {
+        "cer", "wer", "loss",
+        # Exact-whole-sequence match. On the single words this tiny fixture
+        # uses it is a sensible headline number; on the real multi-word LINE
+        # dataset it reads 0.00% even for a usable model, which is why
+        # word-level accuracy is reported alongside it.
+        "word_accuracy",
+        "word_level_accuracy", "word_precision", "word_recall", "word_f1",
+        "reference_word_count", "hypothesis_word_count",
+    }
     assert 0.0 <= metrics["cer"]
     assert 0.0 <= metrics["word_accuracy"] <= 1.0
+    assert 0.0 <= metrics["word_level_accuracy"] <= 1.0
 
 
 def test_fit_saves_loadable_checkpoints_with_required_fields(tmp_path):

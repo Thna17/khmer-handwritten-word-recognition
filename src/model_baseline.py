@@ -62,14 +62,30 @@ class VGGFeatureExtractor(nn.Module):
             nn.ReLU(inplace=True),
             nn.BatchNorm2d(512),
         )
+        # At the design height of 48 the (3,1) convolution above already
+        # lands on H=1 and this pool is an identity. It exists so taller
+        # inputs work too: at H=64 block5 outputs H=2, which this averages
+        # down to the single row the sequence model expects. It holds NO
+        # parameters, so a checkpoint trained at one height still loads
+        # into a model built for another.
+        self.collapse_height = nn.AdaptiveAvgPool2d((1, None))
+
+    MIN_HEIGHT = 40  # 40 -> 20 -> 10 -> 5 -> 2 after block4, the last height block5's 3-row kernel fits
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
+        height = x.shape[-2]
+        if height < self.MIN_HEIGHT:
+            raise ValueError(
+                f"input height {height} is too small for this CNN: four halvings leave "
+                f"{height // 16} rows, and block5's 3-row kernel needs at least 3. "
+                f"Use image_height >= {self.MIN_HEIGHT}."
+            )
         x = self.block1(x)
         x = self.block2(x)
         x = self.block3(x)
         x = self.block4(x)
         x = self.block5(x)
-        return x  # [B, 512, 1, T]
+        return self.collapse_height(x)  # [B, 512, 1, T]
 
 
 class BaselineCRNN(nn.Module):

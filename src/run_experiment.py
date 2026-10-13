@@ -29,17 +29,20 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 from pathlib import Path
 
 import torch
 from torch.utils.data import DataLoader
 
+from src.augment import build_augmentor
 from src.dataset import KhmerWordDataset, collate_fn, load_metadata_csv
 from src.decoder import greedy_decode
 from src.metrics import evaluate_predictions
 from src.model_baseline import BaselineCRNN
 from src.model_transfer import TransferCRNN
 from src.model_transformer import TransformerCRNN
+from src.postprocessor import clean_khmer_orthography
 from src.split import apply_split, get_or_create_split
 from src.tokenizer import KhmerTokenizer
 from src.train import TrainConfig, fit
@@ -65,6 +68,77 @@ def build_model(approach: str, num_classes: int, freeze_backbone: bool) -> tuple
     else:
         raise ValueError(f"unknown approach {approach!r}; expected one of {list(APPROACH_CHECKPOINT_PREFIX)}")
     return model, config
+
+
+def seed_augmentation_per_worker(worker_id: int) -> None:
+    """Give each DataLoader worker its own augmentation random stream.
+
+    Workers are forked, so without this they inherit one identical
+    `random.Random` state and draw the SAME sequence of transforms —
+    verified: two generators restored from one state produce identical
+    draws indefinitely. With `--num-workers 2` that halves the effective
+    variety of augmented images, which is the opposite of the point.
+    """
+    worker_info = torch.utils.data.get_worker_info()
+    if worker_info is None:
+        return
+    transform = getattr(worker_info.dataset, "transform", None)
+    if transform is not None and hasattr(transform, "rng"):
+        transform.rng = random.Random(worker_info.seed + worker_id)
+
+
+def build_training_pool(train_samples: list, args: argparse.Namespace, tokenizer: KhmerTokenizer) -> list:
+    """Assemble the list of samples one training epoch iterates over.
+
+    Two knobs, both aimed at the same failure: fine-tuning on 177 real lines
+    drove training loss to 0.14 while validation loss stayed at 1.42, i.e.
+    the model memorized seven writers rather than learning the script, and
+    it also forgot most of what 10,000 synthetic samples had taught it.
+
+      --mix-csv / --mix-size   keep a slice of the synthetic data in the
+                               fine-tuning mixture, so the gradient still
+                               contains Khmer orthography that the real
+                               images alone cannot cover.
+      --real-oversample        repeat the real samples within one epoch, so
+                               mixing in synthetic data does not reduce how
+                               often the model actually sees real ink.
+
+    The mixed-in samples join the TRAINING pool only. They are never added
+    to validation or test, and they bypass the writer split entirely —
+    their synthetic writer ids are not in it, and routing them through
+    apply_split() would (correctly) refuse them.
+    """
+    pool = list(train_samples) * max(1, args.real_oversample)
+    if args.real_oversample > 1:
+        print(f"Real samples oversampled x{args.real_oversample} -> {len(pool)} per epoch.")
+
+    if not args.mix_csv:
+        return pool
+
+    if not args.mix_images_dir:
+        raise ValueError("--mix-csv requires --mix-images-dir (the root the mix CSV's image paths are relative to).")
+
+    mix_samples = load_metadata_csv(args.mix_csv, args.mix_images_dir)
+    if not mix_samples:
+        raise ValueError(f"--mix-csv {args.mix_csv!r} produced no samples.")
+
+    # Fail loudly here rather than thousands of steps later: an unknown
+    # character means the mix corpus does not match the vocabulary this run
+    # is training against.
+    unknown = {ch for sample in mix_samples for ch in tokenizer.normalize(sample.label)
+               if ch not in tokenizer.char_to_idx}
+    if unknown:
+        raise ValueError(
+            f"--mix-csv contains {len(unknown)} character(s) absent from the vocabulary "
+            f"(e.g. {sorted(unknown)[:5]}). Rebuild the vocabulary over both corpora, or use a mix corpus "
+            "that shares this one's character set."
+        )
+
+    if 0 < args.mix_size < len(mix_samples):
+        mix_samples = random.Random(args.seed).sample(mix_samples, args.mix_size)
+
+    print(f"Mixing in {len(mix_samples)} samples from {args.mix_csv}")
+    return pool + mix_samples
 
 
 def get_or_create_tokenizer(vocab_path: str | Path, all_labels: list[str]) -> KhmerTokenizer:
@@ -95,13 +169,29 @@ def run(args: argparse.Namespace) -> dict:
     print(f"Writers -> train:{len(split.train_writers)} val:{len(split.val_writers)} test:{len(split.test_writers)}")
     print(f"Samples -> train:{len(train_samples)} val:{len(val_samples)} test:{len(test_samples)}")
 
-    train_dataset = KhmerWordDataset(train_samples, tokenizer, image_height=args.image_height, max_width=args.max_width)
+    training_pool = build_training_pool(train_samples, args, tokenizer)
+
+    # Augmentation is applied to the TRAINING pool only. Validation and test
+    # must measure the model on the images as they actually are.
+    augmentor = build_augmentor(args.augment_strength, seed=args.seed)
+    if augmentor is not None:
+        print(f"Augmentation ON (strength={args.augment_strength}) for {len(training_pool)} training images.")
+
+    train_dataset = KhmerWordDataset(training_pool, tokenizer, image_height=args.image_height,
+                                     max_width=args.max_width, transform=augmentor)
     val_dataset = KhmerWordDataset(val_samples, tokenizer, image_height=args.image_height, max_width=args.max_width)
     test_dataset = KhmerWordDataset(test_samples, tokenizer, image_height=args.image_height, max_width=args.max_width)
 
-    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn)
-    val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
-    test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
+    loader_kwargs = {"num_workers": args.num_workers, "collate_fn": collate_fn}
+    if args.num_workers > 0:
+        loader_kwargs["persistent_workers"] = True
+    train_loader = DataLoader(
+        train_dataset, batch_size=args.batch_size, shuffle=True,
+        worker_init_fn=seed_augmentation_per_worker if augmentor is not None else None,
+        **loader_kwargs,
+    )
+    val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, **loader_kwargs)
+    test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, **loader_kwargs)
 
     model, model_config = build_model(args.approach, tokenizer.vocab_size, args.freeze_backbone)
     checkpoint_prefix = args.checkpoint_prefix or APPROACH_CHECKPOINT_PREFIX[args.approach]
@@ -117,6 +207,12 @@ def run(args: argparse.Namespace) -> dict:
         patience=args.patience,
         checkpoint_dir=args.checkpoint_dir,
         checkpoint_prefix=checkpoint_prefix,
+        weight_decay=args.weight_decay,
+        scheduler=args.scheduler,
+        warmup_epochs=args.warmup_epochs,
+        backbone_lr_mult=args.backbone_lr_mult,
+        freeze_backbone_epochs=args.freeze_backbone_epochs,
+        ema_decay=args.ema_decay,
     )
     history = fit(model, train_loader, val_loader, tokenizer, model_config, config=train_config, device=device)
 
@@ -127,7 +223,12 @@ def run(args: argparse.Namespace) -> dict:
     model.to(device)
 
     test_metrics, example_predictions = evaluate_on_test_set(model, test_loader, tokenizer, device)
-    print(f"TEST -> CER={test_metrics['cer']*100:.2f}% WER={test_metrics['wer']*100:.2f}% WordAcc={test_metrics['word_accuracy']*100:.2f}%")
+    print(
+        f"TEST -> Character Accuracy = {(1.0 - test_metrics['cer'])*100:.2f}% (CER={test_metrics['cer']*100:.2f}%) | WER={test_metrics['wer']*100:.2f}%\n"
+        f"        Word-Level Accuracy = {test_metrics['word_level_accuracy']*100:.2f}% "
+        f"(Word F1={test_metrics['word_f1']*100:.2f}%, over {test_metrics['reference_word_count']:.0f} words)\n"
+        f"        Exact Whole-Line Match = {test_metrics['word_accuracy']*100:.2f}%"
+    )
 
     results_dir = Path(args.results_dir)
     results_dir.mkdir(parents=True, exist_ok=True)
@@ -138,7 +239,10 @@ def run(args: argparse.Namespace) -> dict:
             "num_trainable_params": sum(p.numel() for p in model.parameters() if p.requires_grad),
             "history": history,
             "test_metrics": test_metrics,
-            "example_predictions": example_predictions[:20],
+            # Every test prediction, not a 20-row sample: word-level scoring
+            # and per-writer error analysis both need the full set, and 50
+            # short strings cost nothing to store.
+            "example_predictions": example_predictions,
         }, f, ensure_ascii=False, indent=2)
     print(f"Saved results to {results_path}")
 
@@ -157,6 +261,7 @@ def evaluate_on_test_set(model, loader, tokenizer, device) -> tuple[dict, list[d
             [model.compute_sequence_length(w.item()) for w in batch["image_widths"]], dtype=torch.long,
         )
         predictions = greedy_decode(log_probs, tokenizer, input_lengths=input_lengths)
+        predictions = [clean_khmer_orthography(p) for p in predictions]
         all_predictions.extend(predictions)
         all_targets.extend(batch["labels"])
         all_writer_ids.extend(batch["writer_ids"])
@@ -188,6 +293,30 @@ def parse_args(argv=None) -> argparse.Namespace:
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--max-epochs", type=int, default=100)
     parser.add_argument("--patience", type=int, default=10)
+    augmentation = parser.add_argument_group("augmentation and data mixing")
+    augmentation.add_argument("--augment-strength", type=float, default=0.0,
+                              help="handwriting augmentation magnitude; 0 disables it (default), 1.0 is the tested setting")
+    augmentation.add_argument("--mix-csv", default=None,
+                              help="extra metadata CSV (e.g. synthetic) to blend into TRAINING only")
+    augmentation.add_argument("--mix-images-dir", default=None, help="images root for --mix-csv")
+    augmentation.add_argument("--mix-size", type=int, default=0,
+                              help="how many rows to draw from --mix-csv; 0 uses all of them")
+    augmentation.add_argument("--real-oversample", type=int, default=1,
+                              help="repeat the real training samples this many times per epoch")
+
+    optimization = parser.add_argument_group("optimization")
+    optimization.add_argument("--weight-decay", type=float, default=1e-4)
+    optimization.add_argument("--scheduler", choices=["plateau", "cosine"], default="plateau")
+    optimization.add_argument("--warmup-epochs", type=int, default=0, help="cosine schedule only")
+    optimization.add_argument("--backbone-lr-mult", type=float, default=1.0,
+                              help="CNN learning rate as a multiple of --lr (e.g. 0.1 to fine-tune it gently)")
+    optimization.add_argument("--freeze-backbone-epochs", type=int, default=0,
+                              help="train the sequence model and head only for this many epochs first")
+    optimization.add_argument("--ema-decay", type=float, default=0.0,
+                              help="exponential moving average of weights; 0 disables, 0.999 suits small datasets")
+    optimization.add_argument("--num-workers", type=int, default=0,
+                              help="DataLoader worker processes; use 2-4 when augmentation is on")
+
     parser.add_argument("--val-fraction", type=float, default=0.15)
     parser.add_argument("--test-fraction", type=float, default=0.15)
     parser.add_argument("--seed", type=int, default=42)

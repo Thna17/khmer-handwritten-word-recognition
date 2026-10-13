@@ -11,6 +11,7 @@ Key improvements for domain adaptation:
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import os
@@ -188,13 +189,47 @@ def apply_handwriting_physics(img: Image.Image) -> Image.Image:
     return pil_img
 
 
-def build_text_corpus(metadata_csv: str = "data/metadata/labels.csv") -> list[str]:
+def build_text_corpus(
+    metadata_csv: str = "data/metadata/labels.csv",
+    split_path: str | None = "data/metadata/writer_split.json",
+    allow_heldout_text: bool = False,
+) -> list[str]:
     """Builds a rich Khmer text corpus containing:
     1. Authentic line sentences from the real dataset.
     2. Multi-word phrases & clauses (15-40 chars).
     3. Individual words and rare-character guarantee items.
+
+    TEST-TEXT LEAKAGE
+    -----------------
+    The word pool below is mined from the real labels, and the models are
+    PRE-TRAINED on the result before ever being fine-tuned. Reading the full
+    labels.csv therefore puts the held-out writers' sentences into
+    pre-training: measured over the current split, 80.9% of the word types
+    in the W007/W0011 test lines appear in the synthetic corpus, versus
+    14.2% of them appearing in the train+val text. A test score obtained
+    that way is not a measurement of generalization to unseen text.
+
+    So writers in the val and test splits are excluded by default. Pass
+    `allow_heldout_text=True` only to reproduce an older contaminated run,
+    and label any number it produces as such.
     """
     df = pd.read_csv(metadata_csv)
+
+    if allow_heldout_text or not split_path or not Path(split_path).exists():
+        if allow_heldout_text:
+            print("!! WARNING: building the corpus from ALL writers, held-out ones included.")
+            print("!! Test scores from models pre-trained on this corpus are contaminated.")
+        elif split_path:
+            print(f"!! WARNING: no split file at {split_path}; cannot exclude held-out writers' text.")
+    else:
+        with open(split_path, encoding="utf-8") as f:
+            split = json.load(f)
+        heldout = set(split.get("val_writers", [])) | set(split.get("test_writers", []))
+        before = len(df)
+        df = df[~df["writer_id"].isin(heldout)]
+        print(f"Excluded {before - len(df)} line(s) from held-out writers "
+              f"{sorted(heldout)} so their text cannot leak into pre-training.")
+
     raw_labels = df["label"].dropna().tolist()
 
     # Extract all distinct words (2 to 25 chars)
@@ -275,12 +310,27 @@ def build_text_corpus(metadata_csv: str = "data/metadata/labels.csv") -> list[st
     return samples[:10000]
 
 
+def parse_args(argv=None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--metadata-csv", default="data/metadata/labels.csv")
+    parser.add_argument("--split-path", default="data/metadata/writer_split.json",
+                        help="writer split whose val/test writers' text is kept OUT of the corpus")
+    parser.add_argument("--allow-heldout-text", action="store_true",
+                        help="reproduce the older contaminated corpus that mined text from every writer")
+    return parser.parse_args(argv)
+
+
 def main():
     print("=" * 65)
     print("        SYNTHETIC 2.0: KHMER REALISTIC LINE GENERATOR")
     print("=" * 65)
 
-    corpus = build_text_corpus()
+    args = parse_args()
+    corpus = build_text_corpus(
+        metadata_csv=args.metadata_csv,
+        split_path=args.split_path,
+        allow_heldout_text=args.allow_heldout_text,
+    )
     print(f"Generated {len(corpus)} text targets (45% full lines, 40% phrases, 15% words).")
 
     records = []
