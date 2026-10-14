@@ -29,16 +29,27 @@ WORDS = [
 ]
 WRITER_IDS = ["W001", "W002", "W003"]  # pretend these came from 3 different writers
 
-# A standard macOS system font with full Khmer coverage. This is a PRINTED
-# font, standing in only for pixels — not a claim about handwriting style.
-FONT_PATH = "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf"
+def _get_font(font_size: int = 28):
+    candidates = [
+        "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf",
+        "/System/Library/Fonts/Khmer Sangam MN.ttc",
+        "/usr/share/fonts/truetype/noto/NotoSansKhmer-Regular.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    ]
+    for c in candidates:
+        if Path(c).exists():
+            try:
+                return ImageFont.truetype(c, font_size)
+            except Exception:
+                pass
+    return ImageFont.load_default()
 
 
 def _render_word_image(word: str, font_size: int, out_path: Path) -> None:
     """Render one word at a given font size onto a white canvas, sized to
     fit — this naturally produces DIFFERENT pixel widths per word/size,
     which is exactly the variability the real handwriting will have."""
-    font = ImageFont.truetype(FONT_PATH, font_size)
+    font = _get_font(font_size)
     dummy = Image.new("L", (10, 10), color=255)
     bbox = ImageDraw.Draw(dummy).textbbox((0, 0), word, font=font)
     text_w, text_h = bbox[2] - bbox[0], bbox[3] - bbox[1]

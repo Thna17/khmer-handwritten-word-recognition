@@ -21,7 +21,23 @@ from src.scan_pipeline import (
     visualize_calibration,
 )
 
-FONT_PATH = "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf"
+from pathlib import Path
+
+
+def _get_font(font_size: int = 26):
+    candidates = [
+        "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf",
+        "/System/Library/Fonts/Khmer Sangam MN.ttc",
+        "/usr/share/fonts/truetype/noto/NotoSansKhmer-Regular.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    ]
+    for c in candidates:
+        if Path(c).exists():
+            try:
+                return ImageFont.truetype(c, font_size)
+            except Exception:
+                pass
+    return ImageFont.load_default()
 
 
 # ---------------------------------------------------------------------
@@ -115,7 +131,7 @@ def test_crop_word_boxes_rejects_more_word_ids_than_grid_has_boxes():
 # ---------------------------------------------------------------------
 
 def _draw_khmer_word(draw: ImageDraw.ImageDraw, word: str, center: tuple[float, float], font_size: int = 26):
-    font = ImageFont.truetype(FONT_PATH, font_size)
+    font = _get_font(font_size)
     bbox = draw.textbbox((0, 0), word, font=font)
     w, h = bbox[2] - bbox[0], bbox[3] - bbox[1]
     draw.text((center[0] - w / 2 - bbox[0], center[1] - h / 2 - bbox[1]), word, font=font, fill=0)
