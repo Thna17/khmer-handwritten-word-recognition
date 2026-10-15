@@ -343,21 +343,48 @@ def build_consolidated_manifests(
         print(f"  ✓ Master Pre-training Manifest: {len(df_pre):,} samples -> {out_pre}")
 
     # 2. Extended Stage 2 Fine-tuning:
-    # 177 Real Lines (W001-W008, held-out test W007/W0011 preserved) + SoyVitou 4.2k
+    # Clean Real Lines (no filler dots, no sliced vowels/subscripts) + SoyVitou 4.2k
     finetune_rows = []
-    real_csv = REPO_ROOT / "data" / "metadata" / "line_dataset_manifest.csv"
-    real_images_dir = REPO_ROOT / "data" / "handwritten_external"
+    clean_csv = METADATA_DIR / "labels_clean.csv"
+    raw_labels_csv = METADATA_DIR / "labels.csv"
 
-    if real_csv.exists():
+    if clean_csv.exists():
+        real_csv = clean_csv
+    elif raw_labels_csv.exists():
+        real_csv = raw_labels_csv
+    else:
+        real_csv = None
+
+    if real_csv is not None:
         df_real = pd.read_csv(real_csv)
+        clean_count = 0
         for _, r in df_real.iterrows():
+            img_rel = str(r["image"])
+            img_full = REPO_ROOT / img_rel
+            label_text = unicodedata.normalize("NFC", str(r["label"])).strip()
             wid = str(r["writer_id"])
+
+            # Skip dot fillers or very short cramped crops
+            if re.search(r"\.{3,}", label_text) or label_text.count(".") > 4:
+                continue
+
+            if img_full.exists():
+                try:
+                    with Image.open(img_full) as im:
+                        if im.height < 34:
+                            continue
+                except Exception:
+                    continue
+
+
             finetune_rows.append({
-                "image": str((real_images_dir / r["image"]).relative_to(REPO_ROOT)),
-                "label": unicodedata.normalize("NFC", str(r["label"])),
+                "image": img_rel,
+                "label": label_text,
                 "writer_id": wid,
             })
-        print(f"  Loaded {len(df_real):,} real line crops.")
+            clean_count += 1
+        print(f"  Loaded {clean_count:,} pristine, verified real line crops (purged defective/clipped crops).")
+
 
     if soyvitou_csv and soyvitou_csv.exists():
         df_sv = pd.read_csv(soyvitou_csv)

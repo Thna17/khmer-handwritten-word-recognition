@@ -1,0 +1,453 @@
+{
+  "input_samples": 277,
+  "clean_samples_retained": 227,
+  "defective_crops_removed": 50,
+  "retained_by_writer": {
+    "W0011": 25,
+    "W003": 25,
+    "W005": 25,
+    "W006": 25,
+    "W007": 25,
+    "W008": 25,
+    "W009": 25,
+    "W002": 24,
+    "W004": 24,
+    "W0010": 4
+  },
+  "reasons_breakdown": {
+    "crop_height_30px_too_small_truncates_vowels_and_subscripts": 13,
+    "crop_height_29px_too_small_truncates_vowels_and_subscripts": 12,
+    "filler_dots_artifact": 46,
+    "anomalous_crop_dimensions_374x29_for_41_chars": 1,
+    "crop_height_28px_too_small_truncates_vowels_and_subscripts": 1,
+    "crop_height_32px_too_small_truncates_vowels_and_subscripts": 1,
+    "anomalous_crop_dimensions_359x43_for_33_chars": 1
+  },
+  "removed_details": [
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L002.png",
+      "writer_id": "W001",
+      "label": "នៅលើសកលលោកយើងនេះ គ្រប់បណ្តាមនុស្ស ជាច្រើនរមែង",
+      "reasons": [
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L003.png",
+      "writer_id": "W001",
+      "label": "តែងតែប្រាថ្នាចង់បាននូវសុខសន្តិភាព សុភមង្គលគ្រប់ៗគ្នា",
+      "reasons": [
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L004.png",
+      "writer_id": "W001",
+      "label": "នៅដោយមានការចេះអធ្យាស្រ័យគ្នា ទៅវិញទៅមក...... រស់នៅដោយមាន",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L005.png",
+      "writer_id": "W001",
+      "label": "ភាពសមរម្យស្របប្រកប...... ប្រកាន់យកភាពជាបងប្អូន រៀងៗ ខ្លួន...... គឺ ជា បំណង",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L006.png",
+      "writer_id": "W001",
+      "label": "របស់ប្រជាជន ទាំងមូល ដើម្បីរស់នៅបានសុខសាន្ត ។... ដោយហេតុថាគ្រប់",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L007.png",
+      "writer_id": "W001",
+      "label": "មនុស្សទាំងអស់ គឺរស់នៅ មាន លក្ខណៈជាកុសលលក្ខណ៍...... ជាក្រុមៗដើម្បី ប្រា",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L008.png",
+      "writer_id": "W001",
+      "label": "ស្រ័យទាក់ទងគ្នា ទៅវិញទៅមក...... ។...... ឯព្រះពុទ្ធសាសនាក៏មាន នាទី យ៉ាងសំខាន់ ដើរ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L009.png",
+      "writer_id": "W001",
+      "label": "ខាងផ្នែក សម្រាប់ប្រជាជន... ក៏ដូច ជាពុទ្ធបរិស័ទ... ដែលជាពុទ្ធសាសនិកដែរ...",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L010.png",
+      "writer_id": "W001",
+      "label": "ពុទ្ធសាសនា បានដើរតួយ៉ាង សំខាន់... ក្នុងការអប់រំផ្លូវកាយ និងផ្លូវ ចិត្តរបស់",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L011.png",
+      "writer_id": "W001",
+      "label": "ណាស់ដែល ប្រតិបត្តិ តាមគន្លង ធម៌ របស់ព្រះពុទ្ធ ដែរ ។... ហេតុនេះ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L012.png",
+      "writer_id": "W001",
+      "label": "ហើយទើបបានជាទស្សនៈ មួយបានលើកឡើងថា “ ទ្រព្យសម្បត្តិ ដ៏ល្អ...",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L013.png",
+      "writer_id": "W001",
+      "label": "សាសនា... បានធ្វើឱ្យមានវិទ្យាសាស្ត្រ សន្តិភាព... » ។",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts",
+        "anomalous_crop_dimensions_374x29_for_41_chars"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L014.png",
+      "writer_id": "W001",
+      "label": "តើ ទស្សនៈ ខាងលើនេះ មាន អត្ថន័យ និងខ្លឹមសារដូចម្តេចខ្លះ... ?",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L015.png",
+      "writer_id": "W001",
+      "label": "ដើម្បីជាស្ពានឈាន ទៅដល់ ការបកស្រាយ ន័យនៃទស្សនៈ... ប្រធាន",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L016.png",
+      "writer_id": "W001",
+      "label": "ខាងលើឱ្យ បាន... ក្បោះក្បាយ... ស៊ីជម្រៅ... មានន័យទូលំទូលាយស្តាប់បាន",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L017.png",
+      "writer_id": "W001",
+      "label": "ទៅទទួលយកប្រធានបទនោះ យើង... គប្បី ត្រូវស្វែងយល់ នូវអត្ថន័យនៃពាក្យ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L018.png",
+      "writer_id": "W001",
+      "label": "គន្លឹះ មួយចំនួន សិន ។... « ព្រះពុទ្ធសាសនា » មានន័យថា... ជាសាសនា",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L019.png",
+      "writer_id": "W001",
+      "label": "ដ៏ខ្ពង់ខ្ពស់ដែលធ្វើឱ្យ ពុទ្ធសាសនិក ទាំងអស់ មានជំនឿសប់... និង ជឿសាសនា",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_28px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L020.png",
+      "writer_id": "W001",
+      "label": "ដែលបង្កើត ឡើងដោយព្រះបរមគ្រូ នៃយើង ។... ឯពាក្យ « វិទ្យាសាស្ត្រ » គឺ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L021.png",
+      "writer_id": "W001",
+      "label": "ជាការសាបព្រោះ នូវ ចំណេះដឹង ។... ចំណែក « សន្តិភាព » ជាភាពស្ងប់",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L022.png",
+      "writer_id": "W001",
+      "label": "ដែល មានលក្ខណៈ ស្ងប់ស្ងាត់... សុខសាន្ត... ភាពគ្មានសង្គ្រាម... ដូចនេះ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L023.png",
+      "writer_id": "W001",
+      "label": "ទស្សនៈ ប្រធាន ខាងលើដែល... លើកឡើងថា... ទ្រព្យ... សម្បត្តិ ព្រះពុទ្ធ",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L024.png",
+      "writer_id": "W001",
+      "label": "សាសនា ដែល កើតមកដោយ ព្រះបរមគ្រូននៃយើង នេះ... បានធ្វើឱ្យមាន",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P001_L025.png",
+      "writer_id": "W001",
+      "label": "ការសាបព្រោះ... នូវចំណេះដឹង ផ្សេងៗ ដែលជាហេតុនាំឱ្យ មាន",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_32px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P002_L001.png",
+      "writer_id": "W001",
+      "label": "សុខសន្តិភាព... ពេលនោះ គឺជា ភាពសុខសាន្ត... ។",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P002_L002.png",
+      "writer_id": "W001",
+      "label": "ជាការពិតណាស់... ព្រះពុទ្ធសាសនា ដើរតួយ៉ាងសំខាន់ ណាស់ចំពោះ...",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W001/lines_raw/W001_P002_L003.png",
+      "writer_id": "W001",
+      "label": "សង្គមខ្មែរ... ដែលជា នាវានាំឆ្ពោះ... ទៅរកភាពសុខសាន្ត... ។ បើយើងងាក ត្រឡប់",
+      "reasons": [
+        "filler_dots_artifact",
+        "crop_height_29px_too_small_truncates_vowels_and_subscripts"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L001.png",
+      "writer_id": "W0010",
+      "label": ".........................................................................សេចក្តីអធិប្បាយ..........................................................",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L002.png",
+      "writer_id": "W0010",
+      "label": "...........កម្ពុជាទេស..គឺជាប្រទេសមួយដែលមានប្រវត្តិសាស្ត្រដ៏យូរលង់.និងជាទឹកដីសម្បូរ..",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L004.png",
+      "writer_id": "W0010",
+      "label": "ដូនតា...។..ឈរលើមូលដ្ឋានដ៏សម្បូរបែបនេះ.បុព្វបុរសខ្មែរបានសម្រិតសម្រាំងបង្កើតនូវ",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L007.png",
+      "writer_id": "W0010",
+      "label": "រូបរូបវន្តនៃសិល្បៈដ៏មានតម្លៃ...។..ក្នុងចំណោមស្នាដៃទាំងនោះ..«..ច្បាប់ព្រះរាជសម្ភារ..ជាស្នា...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L008.png",
+      "writer_id": "W0010",
+      "label": "ព្រះហស្តរបស់ព្រះរាជសម្ភារ.ឬចៅពញាតូច.១៦២៩..មានពាក្យពេចន៍លួងលោមជាដំបូន្មាន.",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L009.png",
+      "writer_id": "W0010",
+      "label": "សម្រាប់ជនប្រុសស្រី..»..។...វិភាគមួយនេះ.គឺជាស្នូលពុម្ពនៃអក្សរសិល្ប៍..ដែលត្រូវ..",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L010.png",
+      "writer_id": "W0010",
+      "label": "បានរៀបចំឡើងក្នុងគោលបំណងអប់រំ..តម្រង់ទិស...កែច្នៃនូវកាយ.វាចា..ចិត្ត..របស់ជន...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L011.png",
+      "writer_id": "W0010",
+      "label": "ទាំងប្រុសស្រីនៅក្នុងសង្គមជាតិ។..........................................................................",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L012.png",
+      "writer_id": "W0010",
+      "label": "..............ជាការពិតណាស់.ការបង្កើតច្បាប់ទូន្មានទាំងនេះ.មិនត្រឹមតែផ្តល់នូវចំណេះដឹង.មួយ.",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L013.png",
+      "writer_id": "W0010",
+      "label": "មុខនោះទេ..ប៉ុន្តែគឺជាការលាបព្រោះ..បណ្តុះនូវពូជនៃសីលធម៌..គុណធម៌...ចរិយាធម៌....",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L014.png",
+      "writer_id": "W0010",
+      "label": "ដើម្បីឱ្យមនុស្សរស់នៅក្នុងសង្គមមានតម្លៃថ្លៃថ្នូរ...និងមានប្រយោជន៍សម្រាប់ខ្លួនឯង.គ្រួសារ",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L015.png",
+      "writer_id": "W0010",
+      "label": "ជនទាំងប្រុសស្រីឱ្យមានស្មារតីប្រុងប្រយ័ត្នខ្ពស់ចំពោះការសម្រេចចិត្ត...។..មនុស្សយើង..",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L016.png",
+      "writer_id": "W0010",
+      "label": "ទោះបីមានភាពស្និទ្ធស្នាលនឹងគ្នាខ្លាំងប៉ុណ្ណាក៏ដោយ.ក៏មិនត្រូវទុកចិត្តគ្នាពេកនោះដែរ...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L017.png",
+      "writer_id": "W0010",
+      "label": "តែយើងត្រូវព្យាយាមអប់រំខ្លួនយើងឱ្យស្ថិតនៅក្នុងអំពើល្អ..បរិសុទ្ធដោយកាយ.វាចា..ចិត្ត",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L018.png",
+      "writer_id": "W0010",
+      "label": "ទើបហៅថា ជាមនុស្សល្អ..។..ជាក់ស្តែងត្រង់ល្បះទី១..ទំព័រទី១..បានផ្តល់ដំបូន្មានថា «កុំទុក",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L019.png",
+      "writer_id": "W0010",
+      "label": "ចិត្តបរទេស..កុំទុកចិត្តអភិជនស្រី...កុំទុកចិត្តអភិប្រាយ...ក្រែងនាំទ្រព្យខុស..រំពឹងឱ្យក្លាយ",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L020.png",
+      "writer_id": "W0010",
+      "label": "ផ្តល់ដំបូន្មានឱ្យយើងប្រុងប្រយ័ត្នចំពោះពាក្យសម្តី..ចំពោះការសេពគប់មិត្តភក្តិ..ជាសម្ព័ន្ធ.",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P001_L021.png",
+      "writer_id": "W0010",
+      "label": "នឹងស្រី..ព្រោះអាចនាំឱ្យមានក្តីវិនាសណាមួយកើតឡើង..។..មិនតែប៉ុណ្ណោះ..ច្បាប់...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P002_L001.png",
+      "writer_id": "W0010",
+      "label": "សមដូចច្បាប់បញ្ជាក់ត្រង់ល្បះទី៤..ទំព័រទី១...«កុំចងក្តីដោយខ្យល់..កុំខ្វិនពាក្យពោល.កុំខ្វល់",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P002_L002.png",
+      "writer_id": "W0010",
+      "label": "ដោយស្ម័គ្រ...កុំកាន់ពិលយង់...កុំបង់រស្មី..កុំឈ្លីសោភាជនដី..កុំឱ្យក្តីត្រង់»..។..ជាងនេះទៅទៀត...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W0010/lines_raw/W0010_P002_L003.png",
+      "writer_id": "W0010",
+      "label": "ច្បាប់នេះបានផ្តល់ដំបូន្មានបន្ថែមថា..ជនទាំងពួងរស់នៅត្រូវមានចិត្តមេត្តា.ករុណា.មុទិតា...",
+      "reasons": [
+        "filler_dots_artifact"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W002/lines_raw/W002_P001_L002.png",
+      "writer_id": "W002",
+      "label": "ដោយលើកឧទាហរណ៍ក្នុងជីវិត មកបញ្ជាក់ ។",
+      "reasons": [
+        "anomalous_crop_dimensions_359x43_for_33_chars"
+      ]
+    },
+    {
+      "image": "data/handwritten_external/W004/lines_raw/W004_P001_L015.png",
+      "writer_id": "W004",
+      "label": "បានភោគផលរបស់ខ្លួន។ សូម្បីតែរវាងភេទនិងភេទ ក៏មានការបែង",
+      "reasons": [
+        "crop_height_30px_too_small_truncates_vowels_and_subscripts"
+      ]
+    }
+  ]
+}
