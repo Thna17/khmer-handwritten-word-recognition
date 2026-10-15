@@ -96,10 +96,21 @@ def get_or_create_split(
     remember to pass identical arguments by hand every time."""
     split_path = Path(split_path)
     if split_path.exists():
-        return WriterSplit.load(split_path)
+        split = WriterSplit.load(split_path)
+        known = split.train_writers | split.val_writers | split.test_writers
+        current_unique = set(writer_ids)
+        # If the existing split has zero overlap with current writers (e.g. real vs synthetic),
+        # rebuild the split for this dataset rather than failing with unassigned writers.
+        if len(known & current_unique) == 0:
+            print(f"Note: {split_path.name} contains writers from a different dataset. Building split for {len(current_unique)} writers.")
+            split = split_writers(writer_ids, val_fraction=val_fraction, test_fraction=test_fraction, seed=seed)
+            split.save(split_path)
+            return split
+        return split
     split = split_writers(writer_ids, val_fraction=val_fraction, test_fraction=test_fraction, seed=seed)
     split.save(split_path)
     return split
+
 
 
 def apply_split(samples: list, split: WriterSplit) -> tuple[list, list, list]:
