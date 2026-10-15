@@ -263,6 +263,44 @@ def run_model_inference(
     return raw_text, clean_text, conf, latency_ms
 
 
+def get_khmer_pil_font(size: int = 22) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    """Finds or auto-downloads a Khmer Unicode font for PIL Image rendering.
+    Ensures Khmer characters never render as missing boxes (tofu) in Colab or Linux.
+    """
+    font_candidates = [
+        REPO_ROOT / "assets" / "fonts" / "KhmerOS.ttf",
+        REPO_ROOT / "assets" / "fonts" / "NotoSansKhmer-Regular.ttf",
+        Path("/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Khmer MN.ttc"),
+        Path("/Library/Fonts/KhmerOS.ttf"),
+        Path("/Library/Fonts/NotoSansKhmer-Regular.ttf"),
+        Path("/usr/share/fonts/truetype/khmeros/KhmerOS.ttf"),
+        Path("/usr/share/fonts/truetype/noto/NotoSansKhmer-Regular.ttf"),
+    ]
+    for p in font_candidates:
+        if p.is_file():
+            try:
+                return ImageFont.truetype(str(p), size=size)
+            except Exception:
+                continue
+
+    # Auto-download NotoSansKhmer from Google Fonts if running in a fresh Linux/Colab container
+    try:
+        font_dir = REPO_ROOT / "assets" / "fonts"
+        font_dir.mkdir(parents=True, exist_ok=True)
+        download_path = font_dir / "NotoSansKhmer-Regular.ttf"
+        if not download_path.exists():
+            import urllib.request
+            url = "https://raw.githubusercontent.com/googlefonts/noto-fonts/main/hinted/ttf/NotoSansKhmer/NotoSansKhmer-Regular.ttf"
+            urllib.request.urlretrieve(url, str(download_path))
+        if download_path.is_file():
+            return ImageFont.truetype(str(download_path), size=size)
+    except Exception:
+        pass
+
+    return ImageFont.load_default()
+
+
 def create_annotated_preview(
     orig_img: Image.Image,
     results: list[dict[str, Any]],
@@ -284,28 +322,8 @@ def create_annotated_preview(
     draw = ImageDraw.Draw(canvas)
     draw.line([(0, oh), (canvas_w, oh)], fill=(210, 215, 225), width=2)
 
-    # Search for Khmer-compatible fonts
-    khmer_fonts = [
-        "/System/Library/Fonts/Khmer Sangam MN.ttc",
-        "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttc",
-        "/Library/Fonts/KhmerOS.ttf",
-        "/usr/share/fonts/truetype/khmeros/KhmerOS.ttf",
-        "/usr/share/fonts/truetype/noto/NotoSansKhmer-Regular.ttf",
-    ]
-    font_bold = None
-    font_reg = None
-    for f in khmer_fonts:
-        if Path(f).exists():
-            try:
-                font_bold = ImageFont.truetype(f, size=22)
-                font_reg = ImageFont.truetype(f, size=20)
-                break
-            except Exception:
-                continue
-
-    if font_reg is None:
-        font_bold = ImageFont.load_default()
-        font_reg = font_bold
+    font_bold = get_khmer_pil_font(size=22)
+    font_reg = get_khmer_pil_font(size=20)
 
     y = oh + 15
     if ground_truth:

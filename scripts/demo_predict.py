@@ -145,19 +145,38 @@ def render_visual_output(
 
     # Try loading a Khmer font, fallback to default
     khmer_font_candidates = [
-        "/System/Library/Fonts/Khmer Sangam MN.ttc",
-        "/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttc",
-        "/Library/Fonts/KhmerOS.ttf",
-        "/usr/share/fonts/truetype/khmeros/KhmerOS.ttf",
+        REPO_ROOT / "assets" / "fonts" / "KhmerOS.ttf",
+        REPO_ROOT / "assets" / "fonts" / "NotoSansKhmer-Regular.ttf",
+        Path("/System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Khmer MN.ttc"),
+        Path("/Library/Fonts/KhmerOS.ttf"),
+        Path("/Library/Fonts/NotoSansKhmer-Regular.ttf"),
+        Path("/usr/share/fonts/truetype/khmeros/KhmerOS.ttf"),
+        Path("/usr/share/fonts/truetype/noto/NotoSansKhmer-Regular.ttf"),
     ]
     font = None
     for fpath in khmer_font_candidates:
-        if Path(fpath).exists():
+        p = Path(fpath)
+        if p.exists():
             try:
-                font = ImageFont.truetype(fpath, size=24)
+                font = ImageFont.truetype(str(p), size=24)
                 break
             except Exception:
                 continue
+
+    if font is None:
+        try:
+            font_dir = REPO_ROOT / "assets" / "fonts"
+            font_dir.mkdir(parents=True, exist_ok=True)
+            download_path = font_dir / "NotoSansKhmer-Regular.ttf"
+            if not download_path.exists():
+                import urllib.request
+                url = "https://raw.githubusercontent.com/googlefonts/noto-fonts/main/hinted/ttf/NotoSansKhmer/NotoSansKhmer-Regular.ttf"
+                urllib.request.urlretrieve(url, str(download_path))
+            if download_path.is_file():
+                font = ImageFont.truetype(str(download_path), size=24)
+        except Exception:
+            pass
 
     if font is None:
         font = ImageFont.load_default()
