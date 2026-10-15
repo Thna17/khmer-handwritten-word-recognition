@@ -39,7 +39,19 @@ UPPER_VOWEL_RE = re.compile(r"[\u17B7-\u17BA\u17BE-\u17C0\u17C6\u17C7\u17C8\u17C
 LOWER_SUB_RE = re.compile(r"[\u17BB-\u17BD\u17D2]")
 
 
-def evaluate_crop(img_path: str, label: str, min_height: int = 34) -> tuple[bool, list[str]]:
+def resolve_image_path(img_path: str, candidates: list[Path]) -> Path | None:
+    """Finds image file across possible root directories (local, Colab, Drive)."""
+    p = Path(img_path)
+    if p.is_file():
+        return p
+    for root in candidates:
+        cand = root / img_path
+        if cand.is_file():
+            return cand
+    return None
+
+
+def evaluate_crop(img_path: str, label: str, candidates: list[Path], min_height: int = 34) -> tuple[bool, list[str]]:
     """Evaluates whether an image crop is clean, well-framed, and properly transcribed."""
     reasons = []
 
@@ -47,10 +59,11 @@ def evaluate_crop(img_path: str, label: str, min_height: int = 34) -> tuple[bool
     if re.search(r"\.{3,}", label) or label.count(".") > 4:
         reasons.append("filler_dots_artifact")
 
-    if not os.path.exists(img_path):
+    resolved_path = resolve_image_path(img_path, candidates)
+    if resolved_path is None:
         return False, ["missing_image_file"]
 
-    img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread(str(resolved_path), cv2.IMREAD_GRAYSCALE)
     if img is None or img.size == 0:
         return False, ["corrupt_or_unreadable_image"]
 
@@ -79,6 +92,7 @@ def run_cleaner(
     audit_path: Path = AUDIT_JSON,
     in_place: bool = False,
     min_height: int = 34,
+    images_dir: str | Path | None = None,
 ):
     print("=" * 65)
     print("      HANDWRITTEN CROP QUALITY CLEANER & AUDIT TOOL")
@@ -89,6 +103,19 @@ def run_cleaner(
     initial_count = len(df)
     print(f"Initial raw handwritten lines: {initial_count}")
 
+    # Build search candidates for image files
+    candidates = []
+    if images_dir:
+        candidates.append(Path(images_dir))
+    candidates.extend([
+        Path("/content/real-data"),
+        Path("/content/real-data/data/handwritten_external"),
+        REPO_ROOT,
+        REPO_ROOT / "data" / "handwritten_external",
+        Path("."),
+        Path("data/handwritten_external"),
+    ])
+
     clean_records = []
     removed_records = []
 
@@ -97,7 +124,7 @@ def run_cleaner(
         label = str(row["label"]).strip()
         wid = str(row["writer_id"])
 
-        is_valid, reasons = evaluate_crop(img_path, label, min_height=min_height)
+        is_valid, reasons = evaluate_crop(img_path, label, candidates, min_height=min_height)
 
         if is_valid:
             clean_records.append({
@@ -113,7 +140,7 @@ def run_cleaner(
                 "reasons": reasons,
             })
 
-    df_clean = pd.DataFrame(clean_records)
+    df_clean = pd.DataFrame(clean_records, columns=["image", "label", "writer_id"])
     
     # Save clean dataset
     target_out = input_csv if in_place else output_csv
@@ -126,14 +153,16 @@ def run_cleaner(
     print(f"✓ Clean dataset saved to: {target_out} ({len(df_clean)} samples)")
 
     # Generate audit report
+    retained_counts = df_clean["writer_id"].value_counts().to_dict() if len(df_clean) > 0 else {}
     audit_summary = {
         "input_samples": initial_count,
         "clean_samples_retained": len(df_clean),
         "defective_crops_removed": len(removed_records),
-        "retained_by_writer": df_clean["writer_id"].value_counts().to_dict(),
+        "retained_by_writer": retained_counts,
         "reasons_breakdown": {},
         "removed_details": removed_records,
     }
+
 
     for item in removed_records:
         for r in item["reasons"]:
@@ -166,6 +195,7 @@ def main():
     parser.add_argument("--audit-json", type=Path, default=AUDIT_JSON, help="Path for audit report JSON")
     parser.add_argument("--in-place", action="store_true", help="Overwrite input_csv directly (creates backup)")
     parser.add_argument("--min-height", type=int, default=34, help="Minimum crop height in px (default: 34)")
+    parser.add_argument("--images-dir", type=str, default=None, help="Root folder containing line crop images")
 
     args = parser.parse_args()
     run_cleaner(
@@ -174,8 +204,10 @@ def main():
         audit_path=args.audit_json,
         in_place=args.in_place,
         min_height=args.min_height,
+        images_dir=args.images_dir,
     )
 
 
 if __name__ == "__main__":
     main()
+

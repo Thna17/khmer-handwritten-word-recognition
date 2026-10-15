@@ -300,6 +300,19 @@ def prepare_synthetic_1m(output_dir: Path, approved_vocab: set[str], max_samples
 
 
 
+def make_repo_relative(p: Path | str) -> str:
+    """Safely converts a path to be relative to REPO_ROOT without raising ValueError."""
+    path = Path(p)
+    if not path.is_absolute():
+        path = (REPO_ROOT / path).resolve()
+    else:
+        path = path.resolve()
+    try:
+        return str(path.relative_to(REPO_ROOT.resolve()))
+    except ValueError:
+        return str(p)
+
+
 def build_consolidated_manifests(
     soyvitou_csv: Path | None,
     synthetic_1m_csv: Path | None,
@@ -320,7 +333,7 @@ def build_consolidated_manifests(
         print(f"  Loaded {len(df_hb):,} HarfBuzz synthetic line samples.")
         for _, r in df_hb.iterrows():
             pretrain_rows.append({
-                "image": str((harfbuzz_images_dir / r["image"]).relative_to(REPO_ROOT)),
+                "image": make_repo_relative(harfbuzz_images_dir / r["image"]),
                 "label": unicodedata.normalize("NFC", str(r["label"])),
                 "writer_id": str(r["writer_id"]),
             })
@@ -331,10 +344,11 @@ def build_consolidated_manifests(
         print(f"  Loaded {len(df_s1m):,} KhmerSynthetic1M samples.")
         for _, r in df_s1m.iterrows():
             pretrain_rows.append({
-                "image": str((s1m_root / r["image"]).relative_to(REPO_ROOT)),
+                "image": make_repo_relative(s1m_root / r["image"]),
                 "label": unicodedata.normalize("NFC", str(r["label"])),
                 "writer_id": str(r["writer_id"]),
             })
+
 
     if pretrain_rows:
         df_pre = pd.DataFrame(pretrain_rows)
@@ -348,19 +362,23 @@ def build_consolidated_manifests(
     clean_csv = METADATA_DIR / "labels_clean.csv"
     raw_labels_csv = METADATA_DIR / "labels.csv"
 
-    if clean_csv.exists():
+    if clean_csv.exists() and clean_csv.stat().st_size > 50:
         real_csv = clean_csv
-    elif raw_labels_csv.exists():
+    elif raw_labels_csv.exists() and raw_labels_csv.stat().st_size > 50:
         real_csv = raw_labels_csv
     else:
         real_csv = None
 
     if real_csv is not None:
-        df_real = pd.read_csv(real_csv)
+        try:
+            df_real = pd.read_csv(real_csv)
+        except Exception as e:
+            print(f"  Warning reading {real_csv}: {e}")
+            df_real = pd.DataFrame()
+
         clean_count = 0
         for _, r in df_real.iterrows():
             img_rel = str(r["image"])
-            img_full = REPO_ROOT / img_rel
             label_text = unicodedata.normalize("NFC", str(r["label"])).strip()
             wid = str(r["writer_id"])
 
@@ -368,14 +386,21 @@ def build_consolidated_manifests(
             if re.search(r"\.{3,}", label_text) or label_text.count(".") > 4:
                 continue
 
-            if img_full.exists():
+            # Try to resolve image path to verify height
+            resolved_img = None
+            for root in [Path("."), REPO_ROOT, Path("/content/real-data")]:
+                cand = root / img_rel
+                if cand.is_file():
+                    resolved_img = cand
+                    break
+
+            if resolved_img is not None:
                 try:
-                    with Image.open(img_full) as im:
+                    with Image.open(resolved_img) as im:
                         if im.height < 34:
                             continue
                 except Exception:
                     continue
-
 
             finetune_rows.append({
                 "image": img_rel,
@@ -386,16 +411,18 @@ def build_consolidated_manifests(
         print(f"  Loaded {clean_count:,} pristine, verified real line crops (purged defective/clipped crops).")
 
 
+
     if soyvitou_csv and soyvitou_csv.exists():
         df_sv = pd.read_csv(soyvitou_csv)
         sv_root = soyvitou_csv.parent
         print(f"  Loaded {len(df_sv):,} SoyVitou handwritten words.")
         for _, r in df_sv.iterrows():
             finetune_rows.append({
-                "image": str((sv_root / r["image"]).relative_to(REPO_ROOT)),
+                "image": make_repo_relative(sv_root / r["image"]),
                 "label": unicodedata.normalize("NFC", str(r["label"])),
                 "writer_id": str(r["writer_id"]),
             })
+
 
     if finetune_rows:
         df_fine = pd.DataFrame(finetune_rows)
