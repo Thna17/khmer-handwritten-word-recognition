@@ -40,6 +40,7 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 
 from src.decoder import BLANK_INDEX, collapse_ctc_sequence
+from src.guardrail import validate_ctc_prediction, validate_image_input
 from src.metrics import character_error_rate, word_error_rate
 from src.model_baseline import BaselineCRNN
 from src.model_transfer import TransferCRNN
@@ -349,6 +350,7 @@ def predict_handler(
     stage_mode: str,
     ground_truth: str,
     enable_postprocess: bool,
+    enable_guardrail: bool = True,
     custom_checkpoint_dir: str = "",
 ) -> tuple[str, str, str, Image.Image | None]:
     """Main callback triggered by 'Recognize Handwriting' button."""
@@ -359,6 +361,31 @@ def predict_handler(
             "",
             None,
         )
+
+    # 1. Pre-inference Visual & Physical Topic Guardrail
+    if enable_guardrail:
+        is_valid_img, img_reason = validate_image_input(image)
+        if not is_valid_img:
+            guard_html = f"""
+            <div style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 22px; color: #92400e; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 26px;">⚠️</span>
+                <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #b45309;">
+                  Out-of-Topic / Non-Handwriting Image Detected
+                </h3>
+              </div>
+              <p style="margin: 0 0 10px 0; font-size: 15px; color: #78350f; line-height: 1.5;">
+                This system is specialized exclusively for <b>Khmer Handwritten Text Recognition (lines & words)</b>. The uploaded image was rejected by the topic guardrail.
+              </p>
+              <div style="background: rgba(255, 255, 255, 0.75); border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 4px; font-size: 14px; margin-bottom: 12px; color: #92400e;">
+                <b>Detection Reason:</b> {img_reason}
+              </div>
+              <p style="margin: 0; font-size: 13px; color: #78350f;">
+                💡 <i>Please upload a clear horizontal image crop containing genuine Khmer handwriting on paper (or click one of the preset test examples below).</i>
+              </p>
+            </div>
+            """
+            return guard_html, "", "", None
 
     try:
         tokenizer = get_tokenizer()
@@ -433,6 +460,42 @@ def predict_handler(
         err_html += "<p style='margin: 5px 0 0 0; font-size: 13px; color: #718096;'>💡 Tip: Train in Colab or specify <code>--checkpoint-dir</code> pointing to your saved <code>.pt</code> files.</p>"
         err_html += "</div>"
         return err_html, "", "", None
+
+    # 2. Post-inference CTC Domain Guardrail (catches OOD natural scenes, English text, noise)
+    if enable_guardrail:
+        invalid_results = []
+        for r in results:
+            is_valid_pred, pred_err = validate_ctc_prediction(
+                r["pred_clean"],
+                r["confidence"],
+                new_w,
+                min_confidence=0.40,
+            )
+            if not is_valid_pred:
+                invalid_results.append((r, pred_err))
+
+        if len(invalid_results) == len(results):
+            reasons_html = "".join(f"<li><b>{r['model_name'].split(':')[0]}</b>: {err}</li>" for r, err in invalid_results)
+            guard_html = f"""
+            <div style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 22px; color: #92400e; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15);">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 26px;">⚠️</span>
+                <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: #b45309;">
+                  Out-of-Topic / Non-Handwriting Prediction Rejected
+                </h3>
+              </div>
+              <p style="margin: 0 0 10px 0; font-size: 15px; color: #78350f; line-height: 1.5;">
+                The model could not identify valid Khmer handwriting in this image. Recognition confidence or text structure failed the validity threshold.
+              </p>
+              <div style="background: rgba(255, 255, 255, 0.75); border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 4px; font-size: 14px; margin-bottom: 12px; color: #92400e;">
+                <ul style="margin: 0; padding-left: 18px;">{reasons_html}</ul>
+              </div>
+              <p style="margin: 0; font-size: 13px; color: #78350f;">
+                💡 <i>The model cannot predict images outside of Khmer handwriting. Please ensure your image contains a clear, handwritten Khmer line or word crop.</i>
+              </p>
+            </div>
+            """
+            return guard_html, "", "", None
 
     # Construct HTML Displays
     annotated_img = create_annotated_preview(image, results, ground_truth.strip() if ground_truth.strip() else None)
@@ -517,12 +580,14 @@ CURATED_EXAMPLES = [
         "Fine-Tuned (Real Handwriting)",
         "ប្រធាន: នៅក្នុងច្បាប់ល្បើកថ្មី",
         True,
+        True,
     ],
     [
         "data/handwritten_external/W0011/lines_raw/W0011_P001_L002.png",
         "🚀 Compare All 3 Models Side-by-Side",
         "Fine-Tuned (Real Handwriting)",
         "របស់ព្រះភិរម្យភាសាអ៊ូ ហៅង៉ុយបានចែងថា “ បម្រើម្ចាស់ពិត ប្រុងក្តី",
+        True,
         True,
     ],
     [
@@ -531,12 +596,14 @@ CURATED_EXAMPLES = [
         "Fine-Tuned (Real Handwriting)",
         "ឲ្យមត់ ស្មារតីឲ្យមាន សៅហ្មងឲ្យបាត់ សេពគប់",
         True,
+        True,
     ],
     [
         "data/handwritten_external/W007/lines_raw/W007_P001_L001.png",
         "A2: Transfer Learning (ResNet-18 + BiLSTM)",
         "Fine-Tuned (Real Handwriting)",
         "ប្រធាន ៖ មានទស្សនៈមួយបានចែងមកថា “ ការសិក្សាអក្សរ",
+        True,
         True,
     ],
     [
@@ -545,12 +612,14 @@ CURATED_EXAMPLES = [
         "Fine-Tuned (Real Handwriting)",
         "សិល្ប៍ គឺជាការសិក្សាពីមនុស្ស ដើម្បីមនុស្ស ។",
         True,
+        True,
     ],
     [
         "data/handwritten_external/W007/lines_raw/W007_P001_L005.png",
         "🚀 Compare All 3 Models Side-by-Side",
         "Fine-Tuned (Real Handwriting)",
         "សេចក្តីអធិប្បាយ",
+        True,
         True,
     ],
 ]
@@ -621,6 +690,7 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                 <span class="badge-tag">Candidate: Hong Than Brathna</span>
                 <span class="badge-tag">Advisor: Mr. Soklong HIM</span>
                 <span class="badge-tag">Device: {_DEVICE}</span>
+                <span class="badge-tag">🛡️ Topic Guardrail: Active</span>
               </div>
             </div>
           </div>
@@ -665,7 +735,12 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                     lines=2,
                 )
 
-                with gr.Accordion("Advanced Settings & Checkpoint Override", open=False):
+                with gr.Accordion("Advanced Settings & Topic Guardrail", open=False):
+                    enable_guardrail_chk = gr.Checkbox(
+                        label="🛡️ Enable Handwriting & Topic Guardrail",
+                        value=True,
+                        info="Rejects out-of-domain images (non-handwriting, photos, blank crops, or noise) to prevent false predictions.",
+                    )
                     enable_postprocess_chk = gr.Checkbox(
                         label="Enable Khmer Orthographic Post-Processing",
                         value=True,
@@ -711,6 +786,7 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                     stage_radio,
                     ground_truth_input,
                     enable_postprocess_chk,
+                    enable_guardrail_chk,
                 ],
                 label="Click any test line to load image and verified ground truth immediately:",
             )
@@ -724,6 +800,7 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                 stage_radio,
                 ground_truth_input,
                 enable_postprocess_chk,
+                enable_guardrail_chk,
                 checkpoint_dir_override,
             ],
             outputs=[
