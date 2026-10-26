@@ -990,11 +990,15 @@ def main():
 
     major_version = int(gr.__version__.split(".")[0]) if hasattr(gr, "__version__") else 4
     launch_kwargs = {
-        "server_name": args.host,
+        "server_name": "0.0.0.0",
         "server_port": args.port,
-        "share": args.share,
+        "share": False,
         "show_error": True,
+        "show_api": False,
     }
+    if args.share:
+        launch_kwargs["share"] = True
+
     if major_version >= 6:
         launch_kwargs["theme"] = gr.themes.Soft()
         launch_kwargs["css"] = CUSTOM_CSS
