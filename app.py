@@ -39,6 +39,17 @@ import numpy as np
 import torch
 from PIL import Image, ImageDraw, ImageFont
 
+try:
+    import spaces  # Hugging Face ZeroGPU runtime
+except ImportError:
+    class _SpacesMock:
+        @staticmethod
+        def GPU(fn=None, *args, **kwargs):
+            if fn is not None:
+                return fn
+            return lambda f: f
+    spaces = _SpacesMock()
+
 from src.decoder import BLANK_INDEX, collapse_ctc_sequence
 from src.guardrail import validate_ctc_prediction, validate_image_input
 from src.metrics import character_error_rate, word_error_rate
@@ -425,6 +436,7 @@ def create_annotated_preview(
 # =============================================================================
 # GRADIO INTERFACE LOGIC
 # =============================================================================
+@spaces.GPU
 def predict_handler(
     image: Image.Image | None,
     model_mode: str,
