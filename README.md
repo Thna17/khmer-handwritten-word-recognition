@@ -1,6 +1,6 @@
 ---
 title: Khmer Handwritten Text Recognition
-emoji: 🇰🇭
+emoji: 📝
 colorFrom: blue
 colorTo: indigo
 sdk: gradio
