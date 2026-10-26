@@ -47,3 +47,9 @@ scratch/
 # Temporary & Archive files
 *.zip
 data/metadata/dataset_snapshots/
+.codex-finalizer/
+.codex-pptx-work/
+output/
+slides/assets/test/
+
+

@@ -1,0 +1,30 @@
+# Khmer Handwritten OCR Training & Fine-Tuning Configuration
+
+model:
+  approach: "baseline"          # Options: 'baseline' (A1 VGG+BiLSTM), 'transfer' (A2 ResNet-18), 'transformer' (A3 VGG+Transformer)
+  image_height: 48
+  max_width: 1600
+  num_classes: 87               # 86 Khmer Unicode tokens + 1 CTC Blank
+
+training:
+  batch_size: 16
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  max_epochs: 80
+  patience: 20
+  augment_strength: 1.0
+  real_oversample: 8            # Real ink weight factor
+  mix_size: 3000                # Synthetic mixing size per epoch
+
+paths:
+  vocab_path: "data/metadata/char_to_idx.json"
+  split_path: "data/metadata/writer_split.json"
+  metadata_csv: "data/metadata/labels.csv"
+  images_dir: "data/raw"
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"
+
+evaluation:
+  held_out_writers:
+    - "W007"
+    - "W0011"

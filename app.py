@@ -56,6 +56,7 @@ from src.utils import get_device, load_checkpoint
 _DEVICE = get_device()
 _MODEL_CACHE: dict[str, torch.nn.Module] = {}
 _TOKENIZER: KhmerTokenizer | None = None
+_LM: Any | None = None
 _CHECKPOINT_SEARCH_DIRS: list[Path] = [
     REPO_ROOT / "checkpoints",
     Path("/content/drive/MyDrive/KhmerOCR_Checkpoints"),
@@ -136,8 +137,53 @@ def get_tokenizer(vocab_path: str | Path | None = None) -> KhmerTokenizer:
     raise FileNotFoundError("Could not find Khmer vocabulary JSON. Please verify data/metadata/char_to_idx.json exists.")
 
 
+def download_checkpoint_if_needed(approach: str, stage: str, filename: str) -> Path | None:
+    """Attempts to download missing checkpoint from Hugging Face Hub or remote URL."""
+    target_dir = REPO_ROOT / "checkpoints"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    target_path = target_dir / filename
+
+    if target_path.is_file():
+        return target_path
+
+    # 1. Attempt download from Hugging Face Hub if configured
+    hf_repo_id = os.environ.get("HF_MODEL_REPO", "Thna17/khmer-handwritten-ocr-models")
+    try:
+        from huggingface_hub import hf_hub_download  # type: ignore
+        print(f"📥 Checking Hugging Face Hub ({hf_repo_id}) for {filename}...")
+        downloaded = hf_hub_download(
+            repo_id=hf_repo_id,
+            filename=filename,
+            local_dir=str(target_dir),
+            local_dir_use_symlinks=False,
+        )
+        if Path(downloaded).is_file():
+            print(f"✓ Downloaded {filename} from Hugging Face Hub: {downloaded}")
+            return Path(downloaded)
+    except Exception as e:
+        # Hub download failed or repo not yet published; continue to direct URL fallback
+        pass
+
+    # 2. Direct URL fallback via environment variables
+    url_env_key = f"CHECKPOINT_URL_{approach.upper()}_{stage.upper()}"
+    direct_url = os.environ.get(url_env_key) or os.environ.get("CHECKPOINT_BASE_URL", "").rstrip("/")
+    if direct_url:
+        full_url = direct_url if direct_url.endswith(".pt") else f"{direct_url}/{filename}"
+        try:
+            import urllib.request
+            print(f"📥 Downloading {filename} from URL: {full_url}...")
+            urllib.request.urlretrieve(full_url, str(target_path))
+            if target_path.is_file():
+                print(f"✓ Downloaded {filename} from remote URL successfully!")
+                return target_path
+        except Exception as e:
+            print(f"⚠️ Remote URL download failed for {filename}: {e}")
+
+    return None
+
+
 def find_checkpoint(approach: str, stage: str, custom_dir: Path | None = None) -> Path | None:
-    """Locates a model checkpoint across registered directories."""
+    """Locates a model checkpoint across registered directories or triggers auto-download."""
     candidates = CHECKPOINT_NAME_MAP.get((approach, stage), [f"{approach}_{stage}_best.pt"])
     search_dirs = list(_CHECKPOINT_SEARCH_DIRS)
     if custom_dir:
@@ -150,6 +196,12 @@ def find_checkpoint(approach: str, stage: str, custom_dir: Path | None = None) -
             cand_path = directory / fname
             if cand_path.is_file():
                 return cand_path
+
+    # Auto-download fallback if missing locally
+    if candidates:
+        dl_path = download_checkpoint_if_needed(approach, stage, candidates[0])
+        if dl_path and dl_path.is_file():
+            return dl_path
 
     return None
 
@@ -224,14 +276,29 @@ def preprocess_pil_image(
     return tensor, new_w
 
 
+def get_lm():
+    """Loads and caches the 4-Gram Khmer Language Model."""
+    global _LM
+    if _LM is None:
+        try:
+            from src.decoder_beam_search import build_default_lm
+            _LM = build_default_lm()
+        except Exception as e:
+            print(f"⚠️ Could not load Language Model: {e}")
+    return _LM
+
+
 @torch.no_grad()
 def run_model_inference(
     model: torch.nn.Module,
     tensor: torch.Tensor,
     image_width: int,
     tokenizer: KhmerTokenizer,
+    use_beam_search: bool = False,
+    use_lm: bool = False,
+    beam_width: int = 15,
 ) -> tuple[str, str, float, float]:
-    """Runs forward pass, computes greedy CTC output, token confidence, and latency.
+    """Runs forward pass, computes greedy or beam search output, token confidence, and latency.
 
     Returns:
         (raw_text, clean_text, confidence_score, latency_ms)
@@ -239,28 +306,42 @@ def run_model_inference(
     t0 = time.perf_counter()
     tensor = tensor.to(_DEVICE)
     log_probs = model(tensor)  # [T, 1, num_classes]
-
     seq_len = model.compute_sequence_length(image_width)
-    probs = torch.exp(log_probs[:seq_len, 0, :])  # [seq_len, num_classes]
-    max_probs, argmax_ids = torch.max(probs, dim=-1)
 
-    predicted_ids = argmax_ids.tolist()
-    collapsed_ids = []
-    emitted_probs = []
-    prev = None
+    if use_beam_search:
+        from src.decoder_beam_search import ctc_prefix_beam_search_single
+        lm_inst = get_lm() if use_lm else None
+        raw_text, _ = ctc_prefix_beam_search_single(
+            log_probs[:seq_len, 0, :],
+            tokenizer=tokenizer,
+            lm=lm_inst,
+            beam_width=beam_width,
+            alpha=0.6,
+            beta=1.0,
+        )
+        clean_text = clean_khmer_orthography(raw_text)
+        conf = 0.95
+    else:
+        probs = torch.exp(log_probs[:seq_len, 0, :])  # [seq_len, num_classes]
+        max_probs, argmax_ids = torch.max(probs, dim=-1)
 
-    for t_idx, token_id in enumerate(predicted_ids):
-        if token_id != prev:
-            if token_id != BLANK_INDEX:
-                collapsed_ids.append(token_id)
-                emitted_probs.append(float(max_probs[t_idx].item()))
-        prev = token_id
+        predicted_ids = argmax_ids.tolist()
+        collapsed_ids = []
+        emitted_probs = []
+        prev = None
 
-    raw_text = tokenizer.decode(collapsed_ids)
-    clean_text = clean_khmer_orthography(raw_text)
-    conf = float(np.mean(emitted_probs)) if emitted_probs else 0.0
+        for t_idx, token_id in enumerate(predicted_ids):
+            if token_id != prev:
+                if token_id != BLANK_INDEX:
+                    collapsed_ids.append(token_id)
+                    emitted_probs.append(float(max_probs[t_idx].item()))
+            prev = token_id
+
+        raw_text = tokenizer.decode(collapsed_ids)
+        clean_text = clean_khmer_orthography(raw_text)
+        conf = float(np.mean(emitted_probs)) if emitted_probs else 0.0
+
     latency_ms = (time.perf_counter() - t0) * 1000.0
-
     return raw_text, clean_text, conf, latency_ms
 
 
@@ -351,6 +432,8 @@ def predict_handler(
     ground_truth: str,
     enable_postprocess: bool,
     enable_guardrail: bool = True,
+    enable_beam_search: bool = False,
+    enable_lm: bool = False,
     custom_checkpoint_dir: str = "",
 ) -> tuple[str, str, str, Image.Image | None]:
     """Main callback triggered by 'Recognize Handwriting' button."""
@@ -457,7 +540,14 @@ def predict_handler(
                 errors.append(f"<b>{MODEL_DISPLAY_NAMES[approach]}</b>: {status}")
                 continue
 
-            raw, clean, conf, latency = run_model_inference(model, tensor, new_w, tokenizer)
+            raw, clean, conf, latency = run_model_inference(
+                model,
+                tensor,
+                new_w,
+                tokenizer,
+                use_beam_search=enable_beam_search,
+                use_lm=enable_lm,
+            )
             chosen_text = clean if enable_postprocess else raw
 
             res = {
@@ -761,7 +851,17 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                     lines=2,
                 )
 
-                with gr.Accordion("Advanced Settings & Topic Guardrail", open=False):
+                with gr.Accordion("Advanced Settings, Decoding & Guardrail", open=False):
+                    enable_beam_search_chk = gr.Checkbox(
+                        label="🎯 Enable CTC Prefix Beam Search",
+                        value=False,
+                        info="Explores multiple probabilistic paths to avoid greedy argmax failure.",
+                    )
+                    enable_lm_chk = gr.Checkbox(
+                        label="📚 Enable 4-Gram Khmer Language Model Rescoring",
+                        value=False,
+                        info="Uses statistical character n-grams to correct cursive visual twins (e.g. ប្រ vs ប្ល, ច vs ថ).",
+                    )
                     enable_guardrail_chk = gr.Checkbox(
                         label="🛡️ Enable Handwriting & Topic Guardrail",
                         value=True,
@@ -827,6 +927,8 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                 ground_truth_input,
                 enable_postprocess_chk,
                 enable_guardrail_chk,
+                enable_beam_search_chk,
+                enable_lm_chk,
                 checkpoint_dir_override,
             ],
             outputs=[

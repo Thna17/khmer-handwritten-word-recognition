@@ -42,6 +42,7 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 
 from src.decoder import greedy_decode
+from src.decoder_beam_search import build_default_lm, ctc_prefix_beam_search_single
 from src.metrics import character_error_rate, word_error_rate
 from src.model_baseline import BaselineCRNN
 from src.model_transfer import TransferCRNN
@@ -109,14 +110,31 @@ def predict_image(
     image_width: int,
     tokenizer: KhmerTokenizer,
     device: torch.device,
+    use_beam_search: bool = False,
+    lm: Any | None = None,
+    beam_width: int = 20,
+    alpha: float = 0.6,
+    beta: float = 1.0,
 ) -> str:
-    """Runs forward pass and CTC greedy decoding."""
+    """Runs forward pass with either greedy or CTC prefix beam search decoding."""
     tensor = tensor.to(device)
     log_probs = model(tensor)  # [T, 1, num_classes]
     seq_len = model.compute_sequence_length(image_width)
-    input_lengths = torch.tensor([seq_len], dtype=torch.long)
-    preds = greedy_decode(log_probs, tokenizer, input_lengths=input_lengths)
-    return preds[0]
+
+    if use_beam_search:
+        text, _ = ctc_prefix_beam_search_single(
+            log_probs[:seq_len, 0, :],
+            tokenizer=tokenizer,
+            lm=lm,
+            beam_width=beam_width,
+            alpha=alpha,
+            beta=beta,
+        )
+        return text
+    else:
+        input_lengths = torch.tensor([seq_len], dtype=torch.long)
+        preds = greedy_decode(log_probs, tokenizer, input_lengths=input_lengths)
+        return preds[0]
 
 
 def render_visual_output(
@@ -207,6 +225,11 @@ def main():
     parser.add_argument("--compare-approach", default="baseline", choices=["baseline", "transfer", "transformer"])
     parser.add_argument("--output-viz", default=None, help="Optional path to save annotated visual PNG")
     parser.add_argument("--no-postprocess", action="store_true", help="Disable Khmer orthographic rule post-processing")
+    parser.add_argument("--use-beam-search", action="store_true", help="Enable CTC Prefix Beam Search instead of greedy decoding")
+    parser.add_argument("--use-lm", action="store_true", help="Enable 4-gram Language Model scoring during beam search")
+    parser.add_argument("--beam-width", type=int, default=20, help="Beam width for beam search (default: 20)")
+    parser.add_argument("--alpha", type=float, default=0.6, help="LM score weight alpha (default: 0.6)")
+    parser.add_argument("--beta", type=float, default=1.0, help="Length bonus beta (default: 1.0)")
 
     args = parser.parse_args()
 
@@ -219,12 +242,29 @@ def main():
     device = get_device()
     print(f"Device: {device} | Vocab size: {tokenizer.vocab_size}")
 
+    lm = None
+    if args.use_beam_search and args.use_lm:
+        lm = build_default_lm()
+        print(f"✓ Loaded Khmer 4-Gram LM ({lm.total_chars:,} training characters)")
+
     tensor, new_w = preprocess_image(args.image)
 
     # Primary model inference
-    print(f"\nLoading primary model: {args.checkpoint} ({args.approach}) ...")
+    dec_mode = f"Beam Search (width={args.beam_width}, LM={'on' if lm else 'off'})" if args.use_beam_search else "Greedy CTC"
+    print(f"\nLoading primary model: {args.checkpoint} ({args.approach}) [{dec_mode}] ...")
     model = load_model_from_checkpoint(args.checkpoint, tokenizer.vocab_size, args.approach, device)
-    pred_primary = predict_image(model, tensor, new_w, tokenizer, device)
+    pred_primary = predict_image(
+        model,
+        tensor,
+        new_w,
+        tokenizer,
+        device,
+        use_beam_search=args.use_beam_search,
+        lm=lm,
+        beam_width=args.beam_width,
+        alpha=args.alpha,
+        beta=args.beta,
+    )
     if not args.no_postprocess:
         pred_primary = clean_khmer_orthography(pred_primary)
 
@@ -233,7 +273,18 @@ def main():
     if args.compare_checkpoint:
         print(f"Loading comparison model: {args.compare_checkpoint} ({args.compare_approach}) ...")
         model2 = load_model_from_checkpoint(args.compare_checkpoint, tokenizer.vocab_size, args.compare_approach, device)
-        pred_secondary = predict_image(model2, tensor, new_w, tokenizer, device)
+        pred_secondary = predict_image(
+            model2,
+            tensor,
+            new_w,
+            tokenizer,
+            device,
+            use_beam_search=args.use_beam_search,
+            lm=lm,
+            beam_width=args.beam_width,
+            alpha=args.alpha,
+            beta=args.beta,
+        )
         if not args.no_postprocess:
             pred_secondary = clean_khmer_orthography(pred_secondary)
 

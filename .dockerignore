@@ -1,0 +1,16 @@
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.codex-*
+output/
+scratch/
+*.zip
+.DS_Store
+.ipynb_checkpoints
+tests/
+notebooks/
+slides/*.pptx
+data/synthetic_1m/
+data/cache_soyvitou/
