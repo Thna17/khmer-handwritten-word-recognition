@@ -186,7 +186,7 @@ def download_checkpoint_if_needed(approach: str, stage: str, filename: str) -> P
         return target_path
 
     # 1. Attempt download from Hugging Face Hub if configured
-    hf_repo_id = os.environ.get("HF_MODEL_REPO", "Thna17/khmer-handwritten-ocr-models")
+    hf_repo_id = os.environ.get("HF_MODEL_REPO", "Brathna10/khmer-handwritten-ocr-models")
     try:
         from huggingface_hub import hf_hub_download  # type: ignore
         print(f"📥 Checking Hugging Face Hub ({hf_repo_id}) for {filename}...")
