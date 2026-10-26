@@ -15,6 +15,7 @@ license: mit
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.1+](https://img.shields.io/badge/PyTorch-2.1+-ee4c2c.svg)](https://pytorch.org/)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces%20Live-blue)](https://huggingface.co/spaces/Brathna10/khmer-handwritten-text-recognition)
 [![Gradio Web UI](https://img.shields.io/badge/Demo-Gradio%20Live-orange.svg)](app.py)
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](Dockerfile)
 [![Tests Passing](https://img.shields.io/badge/tests-230%20passed-brightgreen.svg)](tests/)
@@ -24,6 +25,7 @@ license: mit
 **Author:** Hong Than Brathna  
 **Advisor / Project Supervisor:** Mr. Soklong HIM  
 **Institution:** Bachelor of Software Engineering — Deep Learning Final Research Project  
+**Live Web Demo:** [huggingface.co/spaces/Brathna10/khmer-handwritten-text-recognition](https://huggingface.co/spaces/Brathna10/khmer-handwritten-text-recognition)  
 **Slide Deck:** [`slides/Khmer_Handwritten_OCR_Presentation.pdf`](slides/Khmer_Handwritten_OCR_Presentation.pdf)  
 
 ---
@@ -46,11 +48,15 @@ Using a two-stage curriculum learning strategy (HarfBuzz OpenType synthetic pre-
 * **1st Place Model:** Baseline CRNN (Custom VGG + 2-Layer BiLSTM, 8.49M params) achieved **20.06% Test CER** (79.94% Character Accuracy) on out-of-sample writers.
 * **Complex Script Handling:** Solves 3-tier vertical stacking (subscript *Coeng* `ជើង` and floating vowels) with HarfBuzz text shaping and custom anisotropic pooling (`MaxPool(2, 1)`).
 * **Zero Leakage Guarantee:** Writers `W007` and `W0011` were strictly withheld from training and validation partitions.
-* **Production Deployment:** Interactive Gradio Web UI (`app.py`), Dockerized container (`Dockerfile`), and Colab-compatible training workflows.
+* **Production Deployment:** Interactive Gradio Web UI (`app.py`), [Hugging Face Space Live Demo](https://huggingface.co/spaces/Brathna10/khmer-handwritten-text-recognition) with ZeroGPU acceleration, Docker container (`Dockerfile`), and Colab-compatible training workflows.
 
 ---
 
 ## 🚀 Quickstart: Run in 5 Minutes
+
+### 🌐 Live Cloud Demo
+Try the model in your browser immediately without any local installation or GPU setup:  
+👉 **[Launch Hugging Face Space Demo](https://huggingface.co/spaces/Brathna10/khmer-handwritten-text-recognition)**
 
 ### 1. Clone & Set Up Environment
 ```bash
