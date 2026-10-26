@@ -144,9 +144,9 @@ CHECKPOINT_NAME_MAP = {
 }
 
 MODEL_DISPLAY_NAMES = {
-    "baseline": "A1: Baseline CRNN (VGG + BiLSTM)",
-    "transfer": "A2: Transfer Learning (ResNet-18 + BiLSTM)",
-    "transformer": "A3: Transformer Encoder (VGG + Multi-Head Self-Attention)",
+    "baseline": "A1: Baseline CRNN (VGG-11 + BiLSTM) [1st Place]",
+    "transformer": "A3: Transformer Encoder (VGG + Self-Attention) [2nd Place]",
+    "transfer": "A2: Transfer Learning (ResNet-18 + BiLSTM) [3rd Place]",
 }
 
 
@@ -536,76 +536,51 @@ def predict_handler(
 
     approaches_to_run = []
     if "compare all" in model_mode.lower():
-        approaches_to_run = ["baseline", "transfer", "transformer"]
+        approaches_to_run = ["baseline", "transformer", "transfer"]
     elif "baseline" in model_mode.lower():
         approaches_to_run = ["baseline"]
-    elif "transfer" in model_mode.lower():
-        approaches_to_run = ["transfer"]
     elif "transformer" in model_mode.lower():
         approaches_to_run = ["transformer"]
+    elif "transfer" in model_mode.lower():
+        approaches_to_run = ["transfer"]
     else:
         approaches_to_run = ["baseline"]
 
     results = []
     errors = []
 
-    if "netra-ocr" in model_mode.lower():
-        try:
-            from netra_ocr.recognition.recognize_text import recognize as netra_recognize
-            t0 = time.perf_counter()
-            raw = netra_recognize(image)
-            clean = clean_khmer_orthography(raw)
-            lat = (time.perf_counter() - t0) * 1000.0
-            chosen_text = clean if enable_postprocess else raw
-            res = {
-                "approach": "netra_ocr",
-                "model_name": "🌟 Netra-OCR (Zero-Shot SOTA Transformer)",
-                "pred_clean": chosen_text,
-                "pred_raw": raw,
-                "confidence": 0.82,
-                "latency_ms": lat,
-            }
-            if ground_truth.strip():
-                gt = ground_truth.strip()
-                res["cer"] = character_error_rate([gt], [chosen_text])
-                res["wer"] = word_error_rate([gt], [chosen_text])
-                res["exact"] = (chosen_text == gt)
-            results.append(res)
-        except Exception as e:
-            errors.append(f"<b>Netra-OCR</b>: {e}")
-    else:
-        for approach in approaches_to_run:
-            model, status = get_model(approach, stage_key, tokenizer.vocab_size, custom_dir)
-            if model is None:
-                errors.append(f"<b>{MODEL_DISPLAY_NAMES[approach]}</b>: {status}")
-                continue
+    for approach in approaches_to_run:
+        model, status = get_model(approach, stage_key, tokenizer.vocab_size, custom_dir)
+        if model is None:
+            errors.append(f"<b>{MODEL_DISPLAY_NAMES[approach]}</b>: {status}")
+            continue
 
-            raw, clean, conf, latency = run_model_inference(
-                model,
-                tensor,
-                new_w,
-                tokenizer,
-                use_beam_search=enable_beam_search,
-                use_lm=enable_lm,
-            )
-            chosen_text = clean if enable_postprocess else raw
+        raw, clean, conf, latency = run_model_inference(
+            model,
+            tensor,
+            new_w,
+            tokenizer,
+            use_beam_search=enable_beam_search,
+            use_lm=enable_lm,
+        )
+        chosen_text = clean if enable_postprocess else raw
 
-            res = {
-                "approach": approach,
-                "model_name": MODEL_DISPLAY_NAMES[approach],
-                "pred_clean": chosen_text,
-                "pred_raw": raw,
-                "confidence": conf,
-                "latency_ms": latency,
-            }
+        res = {
+            "approach": approach,
+            "model_name": MODEL_DISPLAY_NAMES[approach],
+            "pred_clean": chosen_text,
+            "pred_raw": raw,
+            "confidence": conf,
+            "latency_ms": latency,
+        }
 
-            if ground_truth.strip():
-                gt = ground_truth.strip()
-                res["cer"] = character_error_rate([gt], [chosen_text])
-                res["wer"] = word_error_rate([gt], [chosen_text])
-                res["exact"] = (chosen_text == gt)
+        if ground_truth.strip():
+            gt = ground_truth.strip()
+            res["cer"] = character_error_rate([gt], [chosen_text])
+            res["wer"] = word_error_rate([gt], [chosen_text])
+            res["exact"] = (chosen_text == gt)
 
-            results.append(res)
+        results.append(res)
 
     if not results:
         err_html = "<div style='padding: 15px; background: #fff5f5; border-left: 4px solid #e53e3e; border-radius: 6px;'>"
@@ -658,42 +633,52 @@ def predict_handler(
     # 1. Primary or Comparison Card
     if len(results) == 1:
         r = results[0]
+        approach = r.get("approach", "baseline")
+        rank_badge_text = "🥇 1st Place (Champion)" if approach == "baseline" else ("🥈 2nd Place (Runner-Up)" if approach == "transformer" else "🥉 3rd Place")
         primary_html = f"""
-        <div style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); padding: 22px; border-radius: 12px; color: white; box-shadow: 0 4px 14px rgba(0,0,0,0.15);">
+        <div style="background: linear-gradient(135deg, #064E3B 0%, #0F172A 100%); padding: 22px; border: 1px solid #10B981; border-radius: 14px; color: white; box-shadow: 0 4px 16px rgba(16,185,129,0.2);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.85;">Recognized Khmer Text</span>
-            <span style="background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600;">{r['latency_ms']:.1f} ms</span>
+            <span style="background: #10B981; color: #022C22; padding: 4px 12px; border-radius: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px;">{rank_badge_text}</span>
+            <span style="background: rgba(255,255,255,0.12); padding: 3px 10px; border-radius: 16px; font-size: 12px; font-weight: 600; color: #A7F3D0;">⏱️ {r['latency_ms']:.1f} ms</span>
           </div>
-          <div style="font-family: 'Kantumruy Pro', 'Khmer OS', 'Khmer Sangam MN', sans-serif; font-size: 28px; font-weight: 600; line-height: 1.5; margin: 10px 0; word-break: break-word;">
+          <div style="font-family: 'Kantumruy Pro', 'Khmer OS', 'Khmer Sangam MN', sans-serif; font-size: 26px; font-weight: 600; line-height: 1.6; margin: 10px 0; word-break: break-word; color: #F8FAFC;">
             {r['pred_clean']}
           </div>
-          <div style="display: flex; gap: 15px; margin-top: 14px; font-size: 14px; opacity: 0.95;">
-            <span><b>Confidence:</b> {r['confidence']*100:.1f}%</span>
+          <div style="display: flex; gap: 14px; margin-top: 12px; font-size: 13px; color: #94A3B8;">
+            <span>Confidence: <b style="color: #34D399;">{r['confidence']*100:.1f}%</b></span>
             <span>•</span>
-            <span><b>Length:</b> {len(r['pred_clean'])} chars</span>
+            <span>Length: <b>{len(r['pred_clean'])} chars</b></span>
             <span>•</span>
-            <span><b>Model:</b> {r['model_name'].split(':')[0]}</span>
+            <span>Model: <b style="color: #F8FAFC;">{r['model_name']}</b></span>
           </div>
         </div>
         """
     else:
         # Comparison mode card
         cards = ""
+        rank_badges = {
+            "baseline": ("🥇 1st Place • Baseline CRNN", "#064E3B", "#34D399", "#10B981"),
+            "transformer": ("🥈 2nd Place • Transformer Encoder", "#0C4A6E", "#38BDF8", "#0284C7"),
+            "transfer": ("🥉 3rd Place • Transfer ResNet-18", "#78350F", "#FBBF24", "#D97706"),
+        }
         for r in results:
-            tag = r['model_name'].split(':')[0]
+            approach = r.get("approach", "baseline")
+            badge_title, badge_bg, badge_fg, border_color = rank_badges.get(
+                approach, (r["model_name"], "#1E293B", "#94A3B8", "#334155")
+            )
             metric_badge = ""
             if "cer" in r:
-                metric_badge = f"<span style='color: {'#38a169' if r['cer'] < 0.15 else '#d69e2e'}; font-weight: 600;'>CER: {r['cer']*100:.1f}% | WER: {r['wer']*100:.1f}%</span>"
+                metric_badge = f"<span style='color: {'#34D399' if r['cer'] < 0.25 else '#FBBF24'}; font-weight: 700;'>CER: {r['cer']*100:.2f}% | WER: {r['wer']*100:.2f}%</span>"
             else:
-                metric_badge = f"<span style='color: #4a5568;'>Conf: {r['confidence']*100:.1f}%</span>"
+                metric_badge = f"<span style='color: #94A3B8;'>Conf: {r['confidence']*100:.1f}%</span>"
 
             cards += f"""
-            <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 15px; margin-bottom: 12px; background: white; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                <span style="font-weight: 700; color: #1e3a8a; font-size: 14px;">{r['model_name']}</span>
-                <span style="font-size: 12px; color: #718096;">{r['latency_ms']:.1f} ms | {metric_badge}</span>
+            <div style="border: 1px solid {border_color}; border-radius: 12px; padding: 18px; margin-bottom: 14px; background: #0F172A; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="background: {badge_bg}; color: {badge_fg}; border: 1px solid {badge_fg}; padding: 3px 10px; border-radius: 14px; font-weight: 700; font-size: 12px;">{badge_title}</span>
+                <span style="font-size: 12px; color: #94A3B8;">⏱️ {r['latency_ms']:.1f} ms | {metric_badge}</span>
               </div>
-              <div style="font-family: 'Kantumruy Pro', 'Khmer OS', sans-serif; font-size: 22px; font-weight: 600; color: #1a202c; line-height: 1.5; margin: 6px 0;">
+              <div style="font-family: 'Kantumruy Pro', 'Khmer OS', 'Khmer Sangam MN', sans-serif; font-size: 24px; font-weight: 600; color: #F8FAFC; line-height: 1.6; margin: 8px 0; word-break: break-word;">
                 {r['pred_clean']}
               </div>
             </div>
@@ -731,7 +716,7 @@ def predict_handler(
 CURATED_EXAMPLES = [
     [
         "data/handwritten_external/W0011/lines_raw/W0011_P001_L001.png",
-        "🚀 Compare All 3 Models Side-by-Side",
+        "A1: Baseline CRNN (VGG-11 + BiLSTM) [1st Place]",
         "Fine-Tuned (Real Handwriting)",
         "ប្រធាន: នៅក្នុងច្បាប់ល្បើកថ្មី",
         True,
@@ -747,7 +732,7 @@ CURATED_EXAMPLES = [
     ],
     [
         "data/handwritten_external/W0011/lines_raw/W0011_P001_L003.png",
-        "A1: Baseline CRNN (VGG-11 + BiLSTM)",
+        "A1: Baseline CRNN (VGG-11 + BiLSTM) [1st Place]",
         "Fine-Tuned (Real Handwriting)",
         "ឲ្យមត់ ស្មារតីឲ្យមាន សៅហ្មងឲ្យបាត់ សេពគប់",
         True,
@@ -755,7 +740,7 @@ CURATED_EXAMPLES = [
     ],
     [
         "data/handwritten_external/W007/lines_raw/W007_P001_L001.png",
-        "A2: Transfer Learning (ResNet-18 + BiLSTM)",
+        "A2: Transfer Learning (ResNet-18 + BiLSTM) [3rd Place]",
         "Fine-Tuned (Real Handwriting)",
         "ប្រធាន ៖ មានទស្សនៈមួយបានចែងមកថា “ ការសិក្សាអក្សរ",
         True,
@@ -763,7 +748,7 @@ CURATED_EXAMPLES = [
     ],
     [
         "data/handwritten_external/W007/lines_raw/W007_P001_L002.png",
-        "A3: Transformer Sequence Encoder (VGG + Self-Attention)",
+        "A3: Transformer Encoder (VGG + Self-Attention) [2nd Place]",
         "Fine-Tuned (Real Handwriting)",
         "សិល្ប៍ គឺជាការសិក្សាពីមនុស្ស ដើម្បីមនុស្ស ។",
         True,
@@ -790,32 +775,112 @@ AVAILABLE_EXAMPLES = [
 # BUILD GRADIO APP
 # =============================================================================
 CUSTOM_CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
+/* Global Font & Obsidian Theme */
 body, .gradio-container {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    background-color: #070d1e !important;
+    color: #f8fafc !important;
 }
+
 .khmer-font {
     font-family: 'Kantumruy Pro', 'Khmer OS', 'Khmer Sangam MN', sans-serif !important;
 }
+
+/* Eradicate the clunky solid purple labels from Gradio Soft/Default */
+.gradio-container span[data-testid="block-label"],
+.gradio-container label span,
+.gradio-container .block > label > span,
+.gradio-container .block-label {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #94a3b8 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    text-transform: uppercase !important;
+    padding: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+/* Sleek obsidian card blocks */
+.gradio-container .block,
+.gradio-container .form,
+.gradio-container .panel {
+    background: #0f172a !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 12px !important;
+}
+
+/* Header Box */
 .header-box {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #0b132b 0%, #0f172a 100%);
+    border: 1px solid #1e293b;
     color: white;
     padding: 24px 30px;
     border-radius: 14px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    margin-bottom: 22px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
 .badge-tag {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 4px 12px;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5px 14px;
+    border-radius: 20px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 8px;
     margin-top: 6px;
+    color: #e2e8f0;
+}
+
+.badge-champion {
+    background: #064e3b !important;
+    border-color: #059669 !important;
+    color: #34d399 !important;
+}
+
+.badge-active {
+    background: #0c4a6e !important;
+    border-color: #0284c7 !important;
+    color: #38bdf8 !important;
+}
+
+/* Primary Recognize Button */
+button.primary, button.primary-btn {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+    border: 1px solid #38bdf8 !important;
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+    transition: all 0.2s ease !important;
+}
+button.primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5) !important;
+}
+
+/* Inputs, Textboxes, Dropdowns */
+.gradio-container input,
+.gradio-container textarea,
+.gradio-container select,
+.gradio-container .wrap {
+    background-color: #090e17 !important;
+    color: #f8fafc !important;
+    border-color: #1e293b !important;
+}
+
+/* Accordions */
+.gradio-container .accordion {
+    border-color: #1e293b !important;
+    background: #0f172a !important;
 }
 """
 
@@ -823,10 +888,15 @@ body, .gradio-container {
 def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
     """Builds and returns the Gradio Blocks UI."""
     major_version = int(gr.__version__.split(".")[0]) if hasattr(gr, "__version__") else 4
-    blocks_kwargs = {"title": "Khmer Handwritten Recognition — Live Demo"}
-    if major_version < 6:
-        blocks_kwargs["theme"] = gr.themes.Soft()
-        blocks_kwargs["css"] = CUSTOM_CSS
+    blocks_kwargs = {
+        "title": "Khmer Handwritten Text Recognition — Live Demo",
+        "theme": gr.themes.Base(
+            primary_hue="emerald",
+            secondary_hue="cyan",
+            neutral_hue="slate",
+        ),
+        "css": CUSTOM_CSS,
+    }
 
     with gr.Blocks(**blocks_kwargs) as demo:
 
@@ -844,8 +914,9 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
               <div>
                 <span class="badge-tag">Candidate: Hong Than Brathna</span>
                 <span class="badge-tag">Advisor: Mr. Soklong HIM</span>
+                <span class="badge-tag badge-champion">🥇 Top Model: Baseline CRNN (79.94% Acc)</span>
                 <span class="badge-tag">Device: {_DEVICE}</span>
-                <span class="badge-tag">🛡️ Topic Guardrail: Active</span>
+                <span class="badge-tag badge-active">🛡️ Topic Guardrail: Active</span>
               </div>
             </div>
           </div>
@@ -866,13 +937,12 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                 model_dropdown = gr.Dropdown(
                     label="Model Architecture",
                     choices=[
+                        "A1: Baseline CRNN (VGG-11 + BiLSTM) [1st Place]",
+                        "A3: Transformer Encoder (VGG + Self-Attention) [2nd Place]",
+                        "A2: Transfer Learning (ResNet-18 + BiLSTM) [3rd Place]",
                         "🚀 Compare All 3 Models Side-by-Side",
-                        "A1: Baseline CRNN (VGG-11 + BiLSTM)",
-                        "A2: Transfer Learning (ResNet-18 + BiLSTM)",
-                        "A3: Transformer Sequence Encoder (VGG + Self-Attention)",
-                        "🌟 Netra-OCR (Zero-Shot SOTA Transformer)",
                     ],
-                    value="🚀 Compare All 3 Models Side-by-Side",
+                    value="A1: Baseline CRNN (VGG-11 + BiLSTM) [1st Place]",
                 )
 
                 stage_radio = gr.Radio(
@@ -927,8 +997,10 @@ def build_app(custom_checkpoint_dir: str = "") -> gr.Blocks:
                 gr.Markdown("### 🎯 3. Recognition Results")
                 primary_output = gr.HTML(
                     value="""
-                    <div style="padding: 24px; border: 2px dashed #cbd5e1; border-radius: 12px; text-align: center; color: #64748b;">
-                      Upload an image or pick a preset example below to see real-time Khmer transcription.
+                    <div style="padding: 32px 20px; border: 2px dashed #334155; border-radius: 14px; text-align: center; color: #94A3B8; background: #0F172A;">
+                      <div style="font-size: 32px; margin-bottom: 8px;">🇰🇭</div>
+                      <div style="font-weight: 600; font-size: 15px; color: #F8FAFC; margin-bottom: 4px;">Ready for Khmer Handwriting Inference</div>
+                      <div style="font-size: 13px; color: #64748B;">Upload an image, paste from clipboard, or click a verified test example below.</div>
                     </div>
                     """
                 )
@@ -1028,7 +1100,9 @@ def main():
         launch_kwargs["share"] = True
 
     if major_version >= 6:
-        launch_kwargs["theme"] = gr.themes.Soft()
+        launch_kwargs["theme"] = gr.themes.Base(
+            primary_hue="emerald", secondary_hue="cyan", neutral_hue="slate"
+        )
         launch_kwargs["css"] = CUSTOM_CSS
 
     demo.launch(**launch_kwargs)
