@@ -134,6 +134,10 @@ All three models were evaluated on the **identical held-out test split** (Writer
 | 🥈 | **A3: Transformer Sequence Encoder** | 9.54 M | 1.63% | 22.92% | 77.08% | 19.73% | 20.21% | 2.00% |
 | 🥉 | **A2: Transfer Learning (ResNet-18)** | 30.95 M | 1.83% | 25.78% | 74.22% | 12.24% | 13.00% | 0.00% |
 
+### 📈 Master Evaluation Dashboard
+
+![Master Benchmark Dashboard](results/evaluation_dashboard.png)
+
 ### 📈 Convergence & Qualitative Analysis
 
 | Convergence Learning Curves | Test CER & Word Accuracy Comparison |
