@@ -33,6 +33,34 @@ REPO_ROOT = Path(__file__).resolve().parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+# Patch gradio_client schema parsing bug where boolean additionalProperties crashes ASGI /info
+try:
+    import gradio_client.utils as _gc_utils
+    if hasattr(_gc_utils, "_json_schema_to_python_type"):
+        _orig_json_schema = _gc_utils._json_schema_to_python_type
+        def _safe_json_schema_to_python_type(schema, defs=None):
+            if isinstance(schema, bool):
+                return "bool"
+            return _orig_json_schema(schema, defs)
+        _gc_utils._json_schema_to_python_type = _safe_json_schema_to_python_type
+except Exception:
+    pass
+
+# Patch Starlette >= 0.38 signature change breaking Gradio 4 TemplateResponse(name, context)
+try:
+    import starlette.templating
+    _orig_template_response = starlette.templating.Jinja2Templates.TemplateResponse
+    def _safe_template_response(self, *args, **kwargs):
+        if len(args) >= 2 and isinstance(args[0], str) and isinstance(args[1], dict):
+            name, context = args[0], args[1]
+            request = context.get("request")
+            if request is not None:
+                return _orig_template_response(self, request, name, context, *args[2:], **kwargs)
+        return _orig_template_response(self, *args, **kwargs)
+    starlette.templating.Jinja2Templates.TemplateResponse = _safe_template_response
+except Exception:
+    pass
+
 import cv2
 import gradio as gr
 import numpy as np
